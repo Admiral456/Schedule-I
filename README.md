@@ -53,6 +53,19 @@ This project is intentionally static.
 - Branch: main
 - Folder: / (root)
 
+## Account, sharing and security
+
+- local display-name profile without password storage
+- configurable Share ID
+- share links encode only public view/filter/entity state in the URL
+- Saved workspace is not embedded in share links
+- JSON export/import for Saved workspace and local settings
+- security center and Content Security Policy metadata
+- local data can be deleted from the Account page
+- secure email/CAPTCHA/13-digit OTP login remains server-required in GitHub-only mode
+
+GitHub Pages is a static hosting service; it is not the place to put server-side OTP verification or secret authentication keys. citeturn140620search3turn140620search10
+
 ## Accuracy
 
 The public interactive map is still being surveyed and explicitly notes that some customer locations are not yet confirmed. This project therefore does not invent coordinates or present reconstructed geometry as 1:1.
