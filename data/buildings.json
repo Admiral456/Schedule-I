@@ -1,0 +1,12 @@
+{
+  "buildings": [],
+  "schema": {
+    "id": "string",
+    "name": "string",
+    "footprint": "polygon",
+    "height_m": "number|null",
+    "rotation_deg": "number|null",
+    "source": "string",
+    "verified": "boolean"
+  }
+}
