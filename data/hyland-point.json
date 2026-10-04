@@ -1,0 +1,6 @@
+{
+  "name": "Hyland Point",
+  "status": "reconstruction",
+  "verified": false,
+  "notes": "Store verified geometry and map calibration here. Do not label reconstructed geometry as 1:1 without source data."
+}
