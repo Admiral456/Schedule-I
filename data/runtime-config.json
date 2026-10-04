@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "mode": "github-only",
+  "auth": {
+    "mode": "local-profile",
+    "secure_server_auth": false,
+    "reason": "GitHub Pages is static; no server-side email/OTP verification in this build."
+  },
+  "sharing": {
+    "mode": "url-payload",
+    "share_id": true,
+    "share_saved_data": false,
+    "share_room_images": false
+  },
+  "storage": {
+    "mode": "localStorage",
+    "export_import": true
+  },
+  "security": {
+    "csp": "meta",
+    "no_password_storage": true,
+    "no_client_side_otp_verification": true
+  },
+  "three_d": {
+    "status": "coming-soon"
+  }
+}
