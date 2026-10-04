@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.04.4",
+  "version": "2026.10.04.5",
   "updated_at": "2026-10-04",
-  "message": "Logo, Saved +, room images, employee-room map focus, update confirmation, What’s New and full share-link verification",
+  "message": "Final polish: custom S1 logo and employee-card room navigation",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -11,6 +11,7 @@
     "Přidán update systém s kontrolou version.json a progress lištou po vydání nové verze.",
     "Přidán dynamický blok Co je nového.",
     "Přidána kontrola sdíleného odkazu, která ověřuje, že změny filtru/názvu/ID jsou skutečně zapsané v URL.",
-    "Tlačítko Update nyní nejdřív vyžádá potvrzení uživatele."
+    "Tlačítko Update nyní nejdřív vyžádá potvrzení uživatele.",
+    "Výchozí logo bylo vizuálně upraveno a kliknutí na zaměstnance s přiřazenou místností otevře dočasné mapové zvýraznění."
   ]
 }
