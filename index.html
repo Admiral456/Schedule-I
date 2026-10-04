@@ -52,12 +52,31 @@
       <div class="map-hint">Kolečko / trackpad = zoom · tažení = posun</div>
     </div>
   </div>
-  <div class="map-notice">
-    <div>
-      <b>Ikony jsou součástí skutečného mapového podkladu.</b>
-      <p>Na mapě jsou zachované oranžové, modré a žluté značky stejně jako ve zdrojovém mapovém obrázku. 3D režim zatím zůstává Coming Soon. Customer piny budeme přidávat zvlášť teprve s ověřenými souřadnicemi.</p>
+  <div class="legend-grid">
+    <div class="legend-card">
+      <div class="legend-title">Legenda mapových ikon</div>
+      <div class="legend-source">Podle veřejného Schedule I Map Guide</div>
+      <div class="legend-list">
+        <div class="legend-item"><span class="icon-swatch gas"></span><span>Gas-Mart</span></div>
+        <div class="legend-item"><span class="icon-swatch atm"></span><span>ATM Machine</span></div>
+        <div class="legend-item"><span class="icon-swatch cash"></span><span>Cash for Cash</span></div>
+        <div class="legend-item"><span class="icon-swatch deal"></span><span>Deal Spots</span></div>
+        <div class="legend-item"><span class="icon-swatch phone"></span><span>Payphone</span></div>
+        <div class="legend-item"><span class="icon-swatch checkpoint"></span><span>Checkpoint</span></div>
+        <div class="legend-item"><span class="icon-swatch cuke"></span><span>Cuke Machine</span></div>
+        <div class="legend-item"><span class="icon-swatch dead"></span><span>Dead Drop</span></div>
+        <div class="legend-item"><span class="icon-swatch save"></span><span>Save Points</span></div>
+      </div>
     </div>
-    <button class="btn ghost" type="button" data-tab-jump="customers">Zákazníci</button>
+    <div class="legend-card">
+      <div class="legend-title">Vrstvy dat</div>
+      <div class="legend-source">Podle aktuální veřejné interaktivní mapy</div>
+      <div class="layer-list">
+        <span>Customers · 66</span><span>Dealers · 6</span><span>Properties · 8</span><span>Businesses · 5</span><span>Customer groups · 2</span><span>Districts · 6</span>
+      </div>
+      <p class="legend-foot">Názvy vrstev a počty vycházejí z veřejné interaktivní mapy. Neověřené customer souřadnice nejsou v našem projektu nahrazovány vymyšlenými body.</p>
+      <button class="btn ghost" type="button" data-tab-jump="customers">Otevřít databázi zákazníků</button>
+    </div>
   </div>
 </section>
 <section class="view" id="view-customers">
