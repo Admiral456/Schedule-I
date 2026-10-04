@@ -1,5 +1,1047 @@
 {
-  "source": "schedule1-lab.com/wiki/customers",
+  "schema_version": 1,
+  "source": "https://schedule1-lab.com/wiki/customers",
   "verified_count": 66,
-  "customers": []
+  "customers": [
+    {
+      "id": 1,
+      "name": "Fiona Hancock",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 1050,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Tropic Thunder",
+        "Lethal",
+        "Thought-Provoking"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Herbert Bleuball",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 1050,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Slippery",
+        "Foggy",
+        "Explosive"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Irene Meadows",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 1050,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Euphoric",
+        "Thought-Provoking",
+        "Sneaky"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Jen Heard",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 1050,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Disorienting",
+        "Energizing",
+        "Sneaky"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Lily Turner",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 1050,
+      "orders_per_week": "3-6",
+      "preferred_effects": [],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Michael Boog",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 1050,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Jennerising",
+        "Calming",
+        "Schizophrenic"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Tobias Wentworth",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 1050,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Lethal",
+        "Disorienting",
+        "Spicy"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Walter Cussler",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 1050,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Schizophrenic",
+        "Calming",
+        "Balding"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Pearl Moore",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 857,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Schizophrenic",
+        "Gingeritis",
+        "Explosive"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ray Hoffman",
+      "district": "Uptown",
+      "tier": "Elite",
+      "budget": 857,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Thought-Provoking",
+        "Zombifying",
+        "Glowing"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Alison Knight",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Electrifying",
+        "Toxic",
+        "Euphoric"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Carl Bundy",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Glowing",
+        "Athletic",
+        "Disorienting"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Chris Sullivan",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Electrifying",
+        "Euphoric",
+        "Sneaky"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Dennis Kennedy",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Athletic",
+        "Focused",
+        "Bright-Eyed"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Hank Stevenson",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Schizophrenic",
+        "Sneaky",
+        "Toxic"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Harold Colt",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Foggy",
+        "Spicy",
+        "Jennerising"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Jack Knight",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Shrinking",
+        "Thought-Provoking",
+        "Lethal"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Jackie Stevenson",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Toxic",
+        "Sedating",
+        "Long Faced"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Jeremy Wilkinson",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 720,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Balding",
+        "Slippery",
+        "Calorie-Dense"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 20,
+      "name": "George Greene",
+      "district": "Westville",
+      "tier": "High",
+      "budget": 645,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Energizing",
+        "Focused",
+        "Thought-Provoking"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Geraldine Poon",
+      "district": "Northtown",
+      "tier": "High",
+      "budget": 630,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Balding",
+        "Long Faced",
+        "Sedating"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Dean Webster",
+      "district": "Westville",
+      "tier": "High",
+      "budget": 585,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Glowing",
+        "Laxative",
+        "Spicy"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Anna Chesterfield",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Refreshing",
+        "Euphoric",
+        "Thought-Provoking"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Billy Kramer",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Spicy",
+        "Schizophrenic",
+        "Long Faced"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Bruce Norton",
+      "district": "Downtown",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Energizing",
+        "Paranoia",
+        "Spicy"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Cranky Frank",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Laxative",
+        "Toxic",
+        "Tropic Thunder"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Genghis Barn",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Electrifying",
+        "Gingeritis",
+        "Athletic"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 28,
+      "name": "Kelly Reynolds",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Thought-Provoking",
+        "Zombifying",
+        "Smelly"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 29,
+      "name": "Lisa Gardener",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Laxative",
+        "Anti-Gravity",
+        "Schizophrenic"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 30,
+      "name": "Mac Cooper",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Focused",
+        "Spicy",
+        "Long Faced"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 31,
+      "name": "Marco Barone",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Sneaky",
+        "Long Faced",
+        "Refreshing"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 32,
+      "name": "Melissa Wood",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Anti-Gravity",
+        "Refreshing",
+        "Slippery"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 33,
+      "name": "Sherman Giles",
+      "district": "Docks",
+      "tier": "High",
+      "budget": 570,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Explosive",
+        "Paranoia",
+        "Bright-Eyed"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 34,
+      "name": "Karen Kennedy",
+      "district": "Suburbia",
+      "tier": "High",
+      "budget": 514,
+      "orders_per_week": "3-6",
+      "preferred_effects": [],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 35,
+      "name": "Elizabeth Homley",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Toxic",
+        "Tropic Thunder",
+        "Sedating"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 36,
+      "name": "Eugene Buckley",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Schizophrenic",
+        "Toxic",
+        "Calming"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 37,
+      "name": "Greg Figgle",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Euphoric",
+        "Tropic Thunder",
+        "Toxic"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 38,
+      "name": "Jennifer Rivera",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Toxic",
+        "Slippery",
+        "Shrinking"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 39,
+      "name": "Kevin Oakley",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Schizophrenic",
+        "Munchies",
+        "Calming"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 40,
+      "name": "Kim Delaney",
+      "district": "Westville",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Shrinking",
+        "Jennerising",
+        "Focused"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 41,
+      "name": "Louis Fourier",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Shrinking",
+        "Seizure-Inducing",
+        "Paranoia"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 42,
+      "name": "Lucy Pennington",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Calorie-Dense",
+        "Glowing",
+        "Euphoric"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 43,
+      "name": "Peggy Myers",
+      "district": "Northtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Bright-Eyed",
+        "Refreshing",
+        "Energizing"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 44,
+      "name": "Peter File",
+      "district": "Northtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Focused",
+        "Refreshing",
+        "Sneaky"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 45,
+      "name": "Philip Wentworth",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Refreshing",
+        "Shrinking",
+        "Foggy"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 46,
+      "name": "Randy Caulfield",
+      "district": "Downtown",
+      "tier": "Mid",
+      "budget": 420,
+      "orders_per_week": "3-6",
+      "preferred_effects": [],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 47,
+      "name": "Jessi Waters",
+      "district": "Northtown",
+      "tier": "Mid",
+      "budget": 342,
+      "orders_per_week": "7-7",
+      "preferred_effects": [
+        "Paranoia",
+        "Sneaky",
+        "Energizing"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 48,
+      "name": "Javier Perez",
+      "district": "Docks",
+      "tier": "Mid",
+      "budget": 325,
+      "orders_per_week": "2-5",
+      "preferred_effects": [],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 49,
+      "name": "Jerry Montero",
+      "district": "Westville",
+      "tier": "Mid",
+      "budget": 300,
+      "orders_per_week": "4-7",
+      "preferred_effects": [
+        "Gingeritis",
+        "Smelly",
+        "Thought-Provoking"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 50,
+      "name": "Kyle Cooley",
+      "district": "Northtown",
+      "tier": "Mid",
+      "budget": 300,
+      "orders_per_week": "7-7",
+      "preferred_effects": [
+        "Calming",
+        "Munchies",
+        "Smelly"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 51,
+      "name": "Austin Steiner",
+      "district": "Northtown",
+      "tier": "Mid",
+      "budget": 274,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Calorie-Dense",
+        "Munchies",
+        "Euphoric"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 52,
+      "name": "Kathy Henderson",
+      "district": "Northtown",
+      "tier": "Mid",
+      "budget": 274,
+      "orders_per_week": "6-7",
+      "preferred_effects": [
+        "Athletic",
+        "Energizing",
+        "Focused"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 53,
+      "name": "Mick Lubbin",
+      "district": "Northtown",
+      "tier": "Mid",
+      "budget": 274,
+      "orders_per_week": "6-7",
+      "preferred_effects": [
+        "Euphoric",
+        "Bright-Eyed",
+        "Sneaky"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 54,
+      "name": "Charles Rowland",
+      "district": "Westville",
+      "tier": "Low",
+      "budget": 240,
+      "orders_per_week": "7-7",
+      "preferred_effects": [
+        "Sedating",
+        "Disorienting",
+        "Foggy"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 55,
+      "name": "Donna Martin",
+      "district": "Northtown",
+      "tier": "Low",
+      "budget": 240,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Refreshing",
+        "Lethal",
+        "Munchies"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 56,
+      "name": "Doris Lubbin",
+      "district": "Westville",
+      "tier": "Low",
+      "budget": 240,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Spicy",
+        "Tropic Thunder",
+        "Balding"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 57,
+      "name": "Jeff Gilmore",
+      "district": "Downtown",
+      "tier": "Low",
+      "budget": 240,
+      "orders_per_week": "4-7",
+      "preferred_effects": [
+        "Sedating",
+        "Long Faced",
+        "Laxative"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 58,
+      "name": "Joyce Ball",
+      "district": "Westville",
+      "tier": "Low",
+      "budget": 240,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Thought-Provoking",
+        "Calorie-Dense",
+        "Euphoric"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 59,
+      "name": "Mrs. Ming",
+      "district": "Northtown",
+      "tier": "Low",
+      "budget": 240,
+      "orders_per_week": "1-5",
+      "preferred_effects": [
+        "Gingeritis",
+        "Shrinking",
+        "Electrifying"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 60,
+      "name": "Trent Sherman",
+      "district": "Westville",
+      "tier": "Low",
+      "budget": 240,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Calorie-Dense",
+        "Balding",
+        "Athletic"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 61,
+      "name": "Sam Thompson",
+      "district": "Northtown",
+      "tier": "Low",
+      "budget": 162,
+      "orders_per_week": "6-7",
+      "preferred_effects": [
+        "Munchies",
+        "Athletic",
+        "Smelly"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 62,
+      "name": "Beth Penn",
+      "district": "Northtown",
+      "tier": "Low",
+      "budget": 137,
+      "orders_per_week": "4-7",
+      "preferred_effects": [
+        "Schizophrenic",
+        "Lethal",
+        "Seizure-Inducing"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 63,
+      "name": "Chloe Bowers",
+      "district": "Northtown",
+      "tier": "Low",
+      "budget": 137,
+      "orders_per_week": "6-7",
+      "preferred_effects": [
+        "Euphoric",
+        "Shrinking",
+        "Munchies"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 64,
+      "name": "Keith Wagner",
+      "district": "Westville",
+      "tier": "Low",
+      "budget": 137,
+      "orders_per_week": "3-6",
+      "preferred_effects": [
+        "Slippery",
+        "Sneaky",
+        "Tropic Thunder"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 65,
+      "name": "Ludwig Meyer",
+      "district": "Northtown",
+      "tier": "Low",
+      "budget": 137,
+      "orders_per_week": "6-7",
+      "preferred_effects": [
+        "Euphoric",
+        "Refreshing",
+        "Energizing"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    },
+    {
+      "id": 66,
+      "name": "Meg Cooley",
+      "district": "Westville",
+      "tier": "Low",
+      "budget": 137,
+      "orders_per_week": "5-7",
+      "preferred_effects": [
+        "Slippery",
+        "Thought-Provoking",
+        "Sneaky"
+      ],
+      "map_position": {
+        "status": "not-imported"
+      }
+    }
+  ]
 }
