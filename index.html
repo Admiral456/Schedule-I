@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Schedule 1 Helper — skutečná mapa Hyland Point, zákazníci a Recipe Finder.">
 <title>Schedule 1 Helper</title>
-<link rel="stylesheet" href="./assets/styles.css">
+<link rel="stylesheet" href="./assets/helper.css">
 </head>
 <body>
 <div id="app">
@@ -23,20 +23,18 @@
     <span class="build">GitHub Pages</span>
   </div>
 </header>
-
 <nav class="tabs" aria-label="Hlavní sekce">
   <button class="tab active" data-tab="map">Mapa</button>
   <button class="tab" data-tab="customers">Zákazníci <span id="customerCountBadge">66</span></button>
   <button class="tab" data-tab="recipes">Recipe Finder</button>
 </nav>
-
 <main>
 <section class="view active" id="view-map">
   <div class="toolbar">
     <div>
       <span class="label">Hyland Point · 2D</span>
-      <h2>Velká mapa skutečného světa Schedule 1</h2>
-      <p>Na hlavní mapě používáme skutečný mapový podklad Schedule 1. Nezakreslujeme vymyšlené ulice ani náhodné zákaznické pozice.</p>
+      <h2>Skutečná mapa Schedule 1</h2>
+      <p>Hlavní režim používá skutečný mapový podklad Hyland Point. Žádné vymyšlené ulice, distrikty ani customer souřadnice.</p>
     </div>
     <div class="map-actions">
       <button class="btn" id="zoomIn" type="button">+</button>
@@ -44,27 +42,24 @@
       <button class="btn" id="resetMap" type="button">Reset</button>
     </div>
   </div>
-
   <div class="map-shell">
     <div class="map-topline">
-      <div class="map-source"><span class="source-dot"></span> Map reference: Steam Community / Schedule I Map Guide</div>
+      <div class="map-source"><span class="source-dot"></span> Zdroj: Steam Community · Schedule I Map Guide</div>
       <div class="coming-soon">3D režim · Coming Soon</div>
     </div>
-    <div class="map-viewport" id="mapViewport" aria-label="Mapa Hyland Point">
-      <img id="mapImage" alt="Skutečný mapový podklad Hyland Point ze Schedule 1" src="https://images.steamusercontent.com/ugc/15307435683426882/41584AA6A0EF76B42BF6DF38F9E9340969E9CDDC/">
+    <div class="map-viewport" id="mapViewport" aria-label="Skutečný mapový podklad Hyland Point">
+      <img id="mapImage" alt="Skutečný mapový podklad Hyland Point ze hry Schedule 1" src="https://images.steamusercontent.com/ugc/15307435683426882/41584AA6A0EF76B42BF6DF38F9E9340969E9CDDC/">
       <div class="map-hint">Kolečko / trackpad = zoom · tažení = posun</div>
     </div>
   </div>
-
   <div class="map-notice">
     <div>
-      <b>Proč zatím nejsou na mapě červené customer pins?</b>
-      <p>Veřejná interaktivní mapa uvádí všech 66 zákazníků, ale zároveň upozorňuje, že část pozic ještě není přesně zaměřená. Proto do mapy nebudeme vymýšlet souřadnice. citeturn413372search1</p>
+      <b>3D zatím nevkládám.</b>
+      <p>3D režim bude přidán později jako samostatná funkce. Nejprve držíme hlavní 2D mapu na skutečném podkladu a customer souřadnice budeme přidávat až po ověření.</p>
     </div>
-    <button class="btn ghost" type="button" data-tab-jump="customers">Otevřít zákazníky</button>
+    <button class="btn ghost" type="button" data-tab-jump="customers">Zákazníci</button>
   </div>
 </section>
-
 <section class="view" id="view-customers">
   <div class="toolbar">
     <div>
@@ -83,7 +78,6 @@
     <aside id="customerDetail" class="detail-panel"><div class="empty">Vyber zákazníka.</div></aside>
   </div>
 </section>
-
 <section class="view" id="view-recipes">
   <div class="toolbar">
     <div>
