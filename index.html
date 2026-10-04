@@ -74,8 +74,9 @@
       <div class="setting-line"><span>Automatické ukládání</span><input id="autoSaveSetting" type="checkbox" checked></div>
       <div class="account-note">Nastavení je lokální v prohlížeči.</div>
     </div>
+    <div class="account-card"><div class="label">Přihlášení</div><span class="security-status warn">SERVER REQUIRED</span><h3>Bezpečné přihlášení</h3><div class="login-steps"><div><b>1</b><span>Zobrazované jméno + email</span></div><div><b>2</b><span>CAPTCHA: 10 znaků, minimálně 3 číslice</span></div><div><b>3</b><span>OTP: 13 číslic · platnost 2 minuty</span></div><div><b>4</b><span>Nový OTP nejdříve po 1 minutě</span></div></div><button class="btn" type="button" disabled>Spustit zabezpečené přihlášení</button><div class="account-note">V této GitHub-only verzi není přihlašovací tajemství ani OTP ověřování na klientu. Po přidání serverového auth lze tento workflow aktivovat bez ukládání hesel v prohlížeči.</div></div>
     <div class="account-card wide"><div class="label">Přenos dat</div><h3>Záloha workspace</h3><p>Export obsahuje pouze Saved položky, profil a nastavení. Import je validován před uložením.</p>
-      <div class="share-actions"><button class="btn" id="exportData" type="button">Exportovat JSON</button><button class="btn" id="importData" type="button">Importovat JSON</button><input id="importFile" type="file" accept="application/json" hidden></div>
+      <div class="share-actions"><button class="btn" id="exportData" type="button">Exportovat JSON</button><button class="btn" id="importData" type="button">Importovat JSON</button><button class="btn ghost danger" id="clearLocalData" type="button">Smazat lokální data</button><input id="importFile" type="file" accept="application/json" hidden></div>
     </div>
   </div>
 </section>
