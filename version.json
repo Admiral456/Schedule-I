@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "version": "2026.10.04.2",
+  "updated_at": "2026-10-04",
+  "message": "Logo upload, Saved workspace plus buttons, employee-room map focus, update system and What’s New",
+  "changes": [
+    "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
+    "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
+    "Místnosti podporují obrázek z galerie nebo souboru.",
+    "Zaměstnanec může mít při uložení přiřazenou místnost a tlačítko Zobrazit na mapě.",
+    "Přidán update systém s kontrolou version.json a progress lištou po vydání nové verze.",
+    "Přidán dynamický blok Co je nového.",
+    "Přidána kontrola sdíleného odkazu, která ověřuje, že změny filtru/názvu/ID jsou skutečně zapsané v URL."
+  ]
+}
