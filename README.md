@@ -18,6 +18,14 @@ GitHub-only static web app for Schedule I / Hyland Point.
 - cost, sell price and profit
 - recipe records from published community data plus the user-supplied 8-ingredient recipe
 - separate JSON data for customers, recipes, buildings, roads and props
+- custom web logo upload stored locally in the current browser
+- per-category + buttons in Moje uložené
+- room images from local file/gallery
+- employee → room assignment with temporary map highlight
+- shared folders with read-only URL snapshots
+- Update button + version.json release manifest + progress update bar
+- dynamic Co je nového release panel
+- share-link verification for ID, title, type and filters
 - 3D mode intentionally marked Coming Soon until verified geometry is available
 - no invented customer coordinates
 
@@ -84,3 +92,14 @@ The public interactive map used as reference is still being surveyed and explici
 - https://steamcommunity.com/sharedfiles/filedetails/?id=3455934757
 
 The project is a fan-made helper and is not affiliated with TVGS.
+
+
+## Updates and shared folders
+
+New releases are recorded in `version.json`. Active browsers check that manifest approximately once per minute. When a newer release is detected, the helper shows the "Právě aktualizujeme web" progress bar and reloads after the progress completes.
+
+The Update button performs a confirmed version check. Publishing still happens through a commit to `main` and the GitHub Pages workflow; the browser must not contain a GitHub write token.
+
+Shared folders are local workspace folders containing snapshots of saved Recipes, Customers, Employees, Rooms and Other entries. The share link contains the snapshot itself. It is read-only for recipients and can be copied into their own workspace. It is not a realtime multi-user database.
+
+Custom logos and room images are stored locally in the current browser in GitHub-only mode and are not uploaded to the public repository automatically.
