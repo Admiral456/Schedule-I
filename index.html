@@ -3,63 +3,79 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Schedule 1 Helper — Hyland Point map, customers and Recipe Finder.">
+<meta name="description" content="Schedule 1 Helper — skutečná mapa Hyland Point, zákazníci a Recipe Finder.">
 <title>Schedule 1 Helper</title>
 <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
 <div id="app">
 <header class="site-header">
-  <div>
-    <div class="eyebrow">Schedule 1 Helper</div>
-    <h1>Hyland Point Helper</h1>
-    <p>Velká mapa, zákazníci a Recipe Finder.</p>
+  <div class="brand">
+    <div class="logo">S1</div>
+    <div>
+      <div class="eyebrow">Schedule 1 Helper</div>
+      <h1>Hyland Point</h1>
+      <p>Skutečný mapový podklad · zákazníci · Recipe Finder</p>
+    </div>
   </div>
-  <div class="header-meta"><span id="dataState">Načítám data…</span></div>
+  <div class="header-actions">
+    <a class="btn ghost" href="https://schedule1-lab.com/empire/map" target="_blank" rel="noopener noreferrer">Zdroj interaktivní mapy</a>
+    <span class="build">GitHub Pages</span>
+  </div>
 </header>
 
 <nav class="tabs" aria-label="Hlavní sekce">
   <button class="tab active" data-tab="map">Mapa</button>
-  <button class="tab" data-tab="customers">Zákazníci</button>
+  <button class="tab" data-tab="customers">Zákazníci <span id="customerCountBadge">66</span></button>
   <button class="tab" data-tab="recipes">Recipe Finder</button>
-  <button class="tab" data-tab="status">Projekt</button>
 </nav>
 
 <main>
 <section class="view active" id="view-map">
   <div class="toolbar">
     <div>
-      <span class="label">Hyland Point</span>
-      <h2>Mapa</h2>
-      <p>Reálný mapový podklad je oddělený od rekonstruované geometrie. Přesné customer souřadnice se importují až po ověření.</p>
+      <span class="label">Hyland Point · 2D</span>
+      <h2>Velká mapa skutečného světa Schedule 1</h2>
+      <p>Na hlavní mapě používáme skutečný mapový podklad Schedule 1. Nezakreslujeme vymyšlené ulice ani náhodné zákaznické pozice.</p>
     </div>
-    <div class="actions">
-      <button id="resetMap" class="secondary">Reset zoomu</button>
-      <a class="secondary linkbtn" href="https://schedule1-lab.com/empire/map" target="_blank" rel="noopener">Otevřít zdroj mapy</a>
+    <div class="map-actions">
+      <button class="btn" id="zoomIn" type="button">+</button>
+      <button class="btn" id="zoomOut" type="button">−</button>
+      <button class="btn" id="resetMap" type="button">Reset</button>
     </div>
   </div>
-  <div class="map-stage">
-    <div class="map-viewport" id="mapViewport">
-      <img id="mapImage" alt="Hyland Point — komunitní mapový podklad" src="https://images.steamusercontent.com/ugc/15307435683426882/41584AA6A0EF76B42BF6DF38F9E9340969E9CDDC/">
-      <div class="map-overlay">
-        <div class="map-badge">REFERENCE MAP</div>
-        <div class="map-note">Podklad: komunitní Schedule I mapa. Zákaznické body se zde nezobrazují, dokud nemáme jejich ověřené souřadnice.</div>
-      </div>
+
+  <div class="map-shell">
+    <div class="map-topline">
+      <div class="map-source"><span class="source-dot"></span> Map reference: Steam Community / Schedule I Map Guide</div>
+      <div class="coming-soon">3D režim · Coming Soon</div>
     </div>
+    <div class="map-viewport" id="mapViewport" aria-label="Mapa Hyland Point">
+      <img id="mapImage" alt="Skutečný mapový podklad Hyland Point ze Schedule 1" src="https://images.steamusercontent.com/ugc/15307435683426882/41584AA6A0EF76B42BF6DF38F9E9340969E9CDDC/">
+      <div class="map-hint">Kolečko / trackpad = zoom · tažení = posun</div>
+    </div>
+  </div>
+
+  <div class="map-notice">
+    <div>
+      <b>Proč zatím nejsou na mapě červené customer pins?</b>
+      <p>Veřejná interaktivní mapa uvádí všech 66 zákazníků, ale zároveň upozorňuje, že část pozic ještě není přesně zaměřená. Proto do mapy nebudeme vymýšlet souřadnice. citeturn413372search1</p>
+    </div>
+    <button class="btn ghost" type="button" data-tab-jump="customers">Otevřít zákazníky</button>
   </div>
 </section>
 
 <section class="view" id="view-customers">
   <div class="toolbar">
     <div>
-      <span class="label">Customer database</span>
+      <div class="label">Customer database</div>
       <h2>Zákazníci</h2>
-      <p id="customerSummary">—</p>
+      <p id="customerSummary">Načítám…</p>
     </div>
     <div class="filters">
-      <input id="customerSearch" type="search" placeholder="Hledat zákazníka nebo efekt…">
-      <select id="districtFilter"><option value="">Všechny distrikty</option></select>
-      <select id="tierFilter"><option value="">Všechny tiery</option><option>Elite</option><option>High</option><option>Mid</option><option>Low</option></select>
+      <input id="customerSearch" type="search" placeholder="Hledat jméno, distrikt nebo efekt…" aria-label="Hledat zákazníka">
+      <select id="districtFilter" aria-label="Filtr podle distriktu"><option value="">Všechny distrikty</option></select>
+      <select id="tierFilter" aria-label="Filtr podle tieru"><option value="">Všechny tiery</option><option>Elite</option><option>High</option><option>Mid</option><option>Low</option></select>
     </div>
   </div>
   <div class="customer-layout">
@@ -71,27 +87,16 @@
 <section class="view" id="view-recipes">
   <div class="toolbar">
     <div>
-      <span class="label">Mix intelligence</span>
+      <div class="label">Mix intelligence</div>
       <h2>Recipe Finder</h2>
-      <p>Hledá podle názvu receptu, drogy, ingredience a efektu.</p>
+      <p>Vyhledávání podle názvu, ingredience, efektu nebo drogy.</p>
     </div>
-    <div class="filters"><input id="recipeSearch" type="search" placeholder="Recept, ingredience nebo efekt…"><select id="drugFilter"><option value="">Všechny drogy</option><option>Meth</option><option>Weed</option><option>Shrooms</option><option>Cocaine</option></select></div>
+    <div class="filters">
+      <input id="recipeSearch" type="search" placeholder="Recept, ingredience nebo efekt…" aria-label="Hledat recept">
+      <select id="drugFilter" aria-label="Filtr podle drogy"><option value="">Všechny drogy</option><option>Meth</option><option>Weed</option><option>Shrooms</option><option>Cocaine</option></select>
+    </div>
   </div>
   <div id="recipeList" class="recipe-list"></div>
-</section>
-
-<section class="view" id="view-status">
-  <div class="toolbar"><div><span class="label">GitHub build</span><h2>Stav projektu</h2><p>Repozitář je nyní připraven jako čistá GitHub Pages aplikace.</p></div></div>
-  <div class="status-grid">
-    <div class="status-card"><b>2D mapa</b><span>Mapový podklad zapojen</span></div>
-    <div class="status-card"><b>66 zákazníků</b><span>Data importována</span></div>
-    <div class="status-card"><b>Recipe Finder</b><span>Recepty a kalkulace zapojeny</span></div>
-    <div class="status-card"><b>3D geometrie</b><span>Připravena datová struktura, přesnost čeká na skutečné footprinty/souřadnice</span></div>
-  </div>
-  <div class="source-box">
-    <b>Datová integrita</b>
-    <p>Nepoužívám náhodně vygenerované customer pozice jako „1:1“. Ověřené souřadnice, footprinty a výšky budov budou vkládány samostatně.</p>
-  </div>
 </section>
 </main>
 </div>
