@@ -1,0 +1,24 @@
+:root{
+  color-scheme:dark;
+  --bg:#0d0e10;
+  --panel:#15171a;
+  --panel-2:#1a1c20;
+  --text:#f4f5f7;
+  --muted:#9aa0a8;
+  --border:#2a2d33;
+  --accent:#9ba7ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.site-header{max-width:1100px;margin:0 auto;padding:42px 22px 22px;display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+.eyebrow,.label{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+h1{font-size:34px;line-height:1.05;margin:5px 0 8px}
+h2{margin:5px 0 8px;font-size:25px}
+h3{margin:5px 0 8px;font-size:19px}
+p{margin:0;color:var(--muted)}
+.status-pill{border:1px solid var(--border);background:var(--panel);padding:8px 11px;border-radius:999px;font-size:11px;white-space:nowrap}
+.content{max-width:1100px;margin:0 auto;padding:0 22px 50px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:20px}
+.hero{margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.site-header{display:block}.status-pill{display:inline-block;margin-top:14px}.grid{grid-template-columns:1fr}h1{font-size:29px}}
