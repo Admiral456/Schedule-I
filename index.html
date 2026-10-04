@@ -3,115 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Schedule 1 Helper — skutečná mapa Hyland Point, zákazníci a Recipe Finder.">
+<meta name="description" content="Schedule 1 Helper — Hyland Point mapa, zákazníci, recepty a osobní uložené položky.">
 <title>Schedule 1 Helper</title>
 <link rel="stylesheet" href="./assets/helper.css">
 </head>
 <body>
 <div id="app">
 <header class="site-header">
-  <div class="brand">
-    <div class="logo">S1</div>
-    <div>
-      <div class="eyebrow">Schedule 1 Helper</div>
-      <h1>Hyland Point</h1>
-      <p>Skutečný mapový podklad · zákazníci · Recipe Finder</p>
-    </div>
-  </div>
-  <div class="header-actions">
-    <a class="btn ghost" href="https://schedule1-lab.com/empire/map" target="_blank" rel="noopener noreferrer">Zdroj interaktivní mapy</a>
-    <span class="build">GitHub Pages</span>
-  </div>
+  <div class="brand"><div class="logo">S1</div><div><div class="eyebrow">Schedule 1 Helper</div><h1>Hyland Point</h1><p>Skutečný 2D mapový podklad · zákazníci · Recipe Finder</p></div></div>
+  <div class="header-actions"><a class="btn ghost" href="https://schedule1-lab.com/empire/map" target="_blank" rel="noopener noreferrer">Zdroj mapy</a><span class="build">GitHub Pages</span></div>
 </header>
 <nav class="tabs" aria-label="Hlavní sekce">
-  <button class="tab active" data-tab="map">Mapa</button>
-  <button class="tab" data-tab="customers">Zákazníci <span id="customerCountBadge">66</span></button>
-  <button class="tab" data-tab="recipes">Recipe Finder</button>
+  <button class="tab active" data-tab="map">Mapa</button><button class="tab" data-tab="customers">Zákazníci <span id="customerCountBadge">66</span></button><button class="tab" data-tab="recipes">Recipe Finder</button><button class="tab" data-tab="saved">Moje uložené</button><button class="tab" data-tab="guide">Guide</button>
 </nav>
 <main>
 <section class="view active" id="view-map">
-  <div class="toolbar">
-    <div>
-      <span class="label">Hyland Point · 2D</span>
-      <h2>Skutečná mapa Schedule 1</h2>
-      <p>Hlavní režim používá skutečný mapový podklad Hyland Point včetně mapových ikon. Žádné vymyšlené ulice ani nahodilé mapové značky.</p>
-    </div>
-    <div class="map-actions">
-      <button class="btn" id="zoomIn" type="button">+</button>
-      <button class="btn" id="zoomOut" type="button">−</button>
-      <button class="btn" id="resetMap" type="button">Reset</button>
-    </div>
-  </div>
-  <div class="map-shell">
-    <div class="map-topline">
-      <div class="map-source"><span class="source-dot"></span> Skutečný mapový podklad · mapové ikony podle podkladu</div>
-      <div class="coming-soon">3D režim · Coming Soon</div>
-    </div>
-    <div class="map-viewport" id="mapViewport" aria-label="Skutečný mapový podklad Hyland Point">
-      <img id="mapImage" alt="Skutečný mapový podklad Hyland Point ze hry Schedule 1" src="https://images.steamusercontent.com/ugc/13562576119991961762/A5D0CBA243749DA41CD219EDA782A291DED542C5/">
-      <div class="map-hint">Kolečko / trackpad = zoom · tažení = posun</div>
-    </div>
-  </div>
+  <div class="toolbar"><div><div class="label">Hyland Point · 2D</div><h2>Skutečná mapa Schedule 1</h2><p>Reálný mapový podklad s ikonovou vrstvou. 3D režim zatím zůstává Coming Soon.</p></div><div class="map-actions"><button class="btn" id="zoomIn">+</button><button class="btn" id="zoomOut">−</button><button class="btn" id="resetMap">Reset</button></div></div>
+  <div class="map-shell"><div class="map-topline"><div class="map-source"><span class="source-dot"></span> Hyland Point · mapa s ikonami</div><div class="coming-soon">3D režim · Coming Soon</div></div><div class="map-viewport" id="mapViewport" aria-label="Skutečný mapový podklad Hyland Point"><img id="mapImage" alt="Skutečný mapový podklad Hyland Point ze Schedule 1" src="https://images.steamusercontent.com/ugc/13562576119991961762/A5D0CBA243749DA41CD219EDA782A291DED542C5/"><div class="map-hint">Kolečko / trackpad = zoom · tažení = posun</div></div></div>
   <div class="legend-grid">
-    <div class="legend-card">
-      <div class="legend-title">Legenda mapových ikon</div>
-      <div class="legend-source">Lokální assety podle dodaného skutečného mapového podkladu</div>
-      <div class="legend-list legend-assets">
-        <div class="legend-item"><img src="./assets/map-icons/atm.svg" alt="ATM icon"><span>ATM</span></div>
-        <div class="legend-item"><img src="./assets/map-icons/recycler.svg" alt="Recycler icon"><span>Recycler</span></div>
-        <div class="legend-item"><img src="./assets/map-icons/telephone-booth.svg" alt="Telephone Booth icon"><span>Telephone Booth</span></div>
-        <div class="legend-item"><img src="./assets/map-icons/post-office.svg" alt="Post Office icon"><span>Post Office</span></div>
-        <div class="legend-item"><img src="./assets/map-icons/area-location.svg" alt="Area Location icon"><span>Area / Location</span></div>
-        <div class="legend-item"><img src="./assets/map-icons/main-mission.svg" alt="Main Mission icon"><span>Main Mission</span></div>
-        <div class="legend-item"><img src="./assets/map-icons/shop-building.svg" alt="Shop or Business icon"><span>Shop / Business</span></div>
-        <div class="legend-item"><img src="./assets/map-icons/hardware.svg" alt="Hardware icon"><span>Hardware</span></div>
-      </div>
-    </div>
-    <div class="legend-card">
-      <div class="legend-title">Vrstvy dat</div>
-      <div class="legend-source">Kategorie potvrzené veřejnými mapovými zdroji</div>
-      <div class="layer-list">
-        <span>Customers</span><span>Suppliers</span><span>Dealers</span><span>Locations</span><span>Mission</span><span>Shops</span>
-      </div>
-      <p class="legend-foot">Veřejné zdroje potvrzují samostatné mapové kategorie jako ATM, Recycler, Telephone Booth, Vending Machine, Dead Drop, Area/Location, Stash, RV, Purchasable Area, Main Mission, Post Office, Laundromat, Car Wash a Taco Ticklers. Zatím zobrazujeme jen ty ikony, které máme bezpečně spárované se skutečným podkladem.</p>
-      <button class="btn ghost" type="button" data-tab-jump="customers">Otevřít databázi zákazníků</button>
-    </div>
+    <div class="legend-card"><div class="legend-title">Legenda mapových ikon</div><div class="legend-source">Lokální ikonové assety podle skutečného podkladu</div><div class="legend-list legend-assets">
+      <div class="legend-item"><img src="./assets/map-icons/atm.svg" alt="ATM"><span>ATM</span></div><div class="legend-item"><img src="./assets/map-icons/recycler.svg" alt="Recycler"><span>Recycler</span></div><div class="legend-item"><img src="./assets/map-icons/telephone-booth.svg" alt="Telephone Booth"><span>Telephone Booth</span></div><div class="legend-item"><img src="./assets/map-icons/post-office.svg" alt="Post Office"><span>Post Office</span></div><div class="legend-item"><img src="./assets/map-icons/area-location.svg" alt="Area Location"><span>Area / Location</span></div><div class="legend-item"><img src="./assets/map-icons/main-mission.svg" alt="Main Mission"><span>Main Mission</span></div><div class="legend-item"><img src="./assets/map-icons/shop-building.svg" alt="Shop / Business"><span>Shop / Business</span></div><div class="legend-item"><img src="./assets/map-icons/hardware.svg" alt="Hardware"><span>Hardware</span></div>
+    </div></div>
+    <div class="legend-card"><div class="legend-title">Ověřené mapové kategorie</div><div class="legend-source">Veřejný Hyland Point checklist</div><div id="mapCategoryList" class="category-list"></div><p class="legend-foot">Počty jsou veřejný cross-check a mohou se mezi zdroji lišit. Naše customer databáze používá 66 zákazníků podle Schedule 1 Lab.</p></div>
   </div>
+  <div class="map-notice"><div><b>Customer piny až z ověřených souřadnic.</b><p>Veřejná interaktivní mapa vysvětluje, že část customer pozic ještě není přesně zaměřená. Proto je nevymýšlíme.</p></div><button class="btn ghost" data-tab-jump="customers">Zákazníci</button></div>
 </section>
 <section class="view" id="view-customers">
-  <div class="toolbar">
-    <div>
-      <div class="label">Customer database</div>
-      <h2>Zákazníci</h2>
-      <p id="customerSummary">Načítám…</p>
-    </div>
-    <div class="filters">
-      <input id="customerSearch" type="search" placeholder="Hledat jméno, distrikt nebo efekt…" aria-label="Hledat zákazníka">
-      <select id="districtFilter" aria-label="Filtr podle distriktu"><option value="">Všechny distrikty</option></select>
-      <select id="tierFilter" aria-label="Filtr podle tieru"><option value="">Všechny tiery</option><option>Elite</option><option>High</option><option>Mid</option><option>Low</option></select>
-    </div>
-  </div>
-  <div class="customer-layout">
-    <div id="customerList" class="customer-list"></div>
-    <aside id="customerDetail" class="detail-panel"><div class="empty">Vyber zákazníka.</div></aside>
-  </div>
+  <div class="toolbar"><div><div class="label">Customer database</div><h2>Zákazníci</h2><p id="customerSummary">Načítám…</p></div><div class="filters"><input id="customerSearch" type="search" placeholder="Hledat jméno, distrikt nebo efekt…"><select id="districtFilter"><option value="">Všechny distrikty</option></select><select id="tierFilter"><option value="">Všechny tiery</option><option>Elite</option><option>High</option><option>Mid</option><option>Low</option></select></div></div>
+  <div class="customer-layout"><div id="customerList" class="customer-list"></div><aside id="customerDetail" class="detail-panel"><div class="empty">Vyber zákazníka.</div></aside></div>
 </section>
 <section class="view" id="view-recipes">
-  <div class="toolbar">
-    <div>
-      <div class="label">Mix intelligence</div>
-      <h2>Recipe Finder</h2>
-      <p>Vyhledávání podle názvu, ingredience, efektu nebo drogy.</p>
-    </div>
-    <div class="filters">
-      <input id="recipeSearch" type="search" placeholder="Recept, ingredience nebo efekt…" aria-label="Hledat recept">
-      <select id="drugFilter" aria-label="Filtr podle drogy"><option value="">Všechny drogy</option><option>Meth</option><option>Weed</option><option>Shrooms</option><option>Cocaine</option></select>
-    </div>
-  </div>
+  <div class="toolbar"><div><div class="label">Mix intelligence</div><h2>Recipe Finder</h2><p>Hledání podle názvu, drogy, ingredience nebo efektu + výpočet effect matchingu.</p></div><div class="filters"><input id="recipeSearch" type="search" placeholder="Recept, ingredience nebo efekt…"><select id="drugFilter"><option value="">Všechny drogy</option><option>Meth</option><option>Weed</option><option>Shrooms</option><option>Cocaine</option></select></div></div>
   <div id="recipeList" class="recipe-list"></div>
 </section>
-</main>
-</div>
+<section class="view" id="view-saved">
+  <div class="toolbar"><div><div class="label">Local workspace</div><h2>Moje uložené</h2><p>Recipes, Customers, Employees, Rooms a Other jsou oddělené a ukládají se lokálně v prohlížeči.</p></div></div>
+  <div class="saved-tabs"><button class="saved-tab active" data-saved="recipes">Recipes</button><button class="saved-tab" data-saved="customers">Customers</button><button class="saved-tab" data-saved="employees">Employees</button><button class="saved-tab" data-saved="rooms">Rooms</button><button class="saved-tab" data-saved="other">Other</button></div>
+  <div class="saved-grid"><div id="savedList" class="saved-list"></div><aside class="saved-editor"><div class="label">Přidat vlastní položku</div><h3 id="editorTitle">Recipe</h3><form id="savedForm"><input id="savedName" required placeholder="Název"><textarea id="savedNote" rows="4" placeholder="Poznámka"></textarea><input id="savedImage" type="file" accept="image/*" hidden><button class="btn" id="imageButton" type="button" hidden>Vybrat obrázek</button><button class="btn primary" type="submit">Uložit</button></form><div id="imagePreview" class="image-preview" hidden></div></aside></div>
+</section>
+<section class="view" id="view-guide">
+  <div class="toolbar"><div><div class="label">Project guide</div><h2>Guide & Co je nového</h2><p>Co je hotové, co je ověřené a co čeká.</p></div></div>
+  <div class="guide-grid"><article class="guide-card"><span class="label">Hotovo</span><h3>Skutečná 2D mapa</h3><p>Hyland Point podklad, ikony, zoom a posun.</p></article><article class="guide-card"><span class="label">Hotovo</span><h3>Legenda</h3><p>Lokální ikonové assety místo barevných placeholderů.</p></article><article class="guide-card"><span class="label">Hotovo</span><h3>66 zákazníků</h3><p>Search, distrikty, tiery, budget, orders/week a efekty.</p></article><article class="guide-card"><span class="label">Hotovo</span><h3>Recipe Finder</h3><p>Ingredience v pořadí, efekty, náklady, prodej, profit a matching.</p></article><article class="guide-card"><span class="label">Hotovo</span><h3>Moje uložené</h3><p>Recipes, Customers, Employees, Rooms a Other.</p></article><article class="guide-card"><span class="label">Coming Soon</span><h3>3D režim</h3><p>3D budovy, silnice, voda, stromy, props a POI až po ověřených datech.</p></article></div>
+  <div class="source-box"><b>Zdroje</b><p><a href="https://schedule1-lab.com/empire/map" target="_blank" rel="noopener noreferrer">Schedule 1 Lab · Interactive Map</a> · <a href="https://wand.com/de/maps/schedule-i/hyland-point" target="_blank" rel="noopener noreferrer">Wand · Hyland Point</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3455934757" target="_blank" rel="noopener noreferrer">Steam · Schedule I Map Guide</a></p></div>
+</section>
+</main></div>
 <script type="module" src="./js/app.js"></script>
-</body>
-</html>
+</body></html>
