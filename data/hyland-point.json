@@ -1,6 +1,16 @@
 {
   "name": "Hyland Point",
-  "status": "reconstruction",
-  "verified": false,
-  "notes": "Store verified geometry and map calibration here. Do not label reconstructed geometry as 1:1 without source data."
+  "map_reference": "https://schedule1-lab.com/empire/map",
+  "reference_image": "https://images.steamusercontent.com/ugc/15307435683426882/41584AA6A0EF76B42BF6DF38F9E9340969E9CDDC/",
+  "status": "reference + reconstruction pipeline",
+  "districts": [
+    "Suburbia",
+    "Docks",
+    "Uptown",
+    "Downtown",
+    "Northtown",
+    "Westville"
+  ],
+  "customer_positions": "not imported",
+  "note": "Do not represent unsurveyed customer coordinates or reconstructed building geometry as 1:1."
 }
