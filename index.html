@@ -2,6 +2,8 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://images.steamusercontent.com; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Schedule 1 Helper — Hyland Point mapa, zákazníci, recepty a osobní uložené položky.">
 <title>Schedule 1 Helper</title>
@@ -14,7 +16,7 @@
   <div class="header-actions"><a class="btn ghost" href="https://schedule1-lab.com/empire/map" target="_blank" rel="noopener noreferrer">Zdroj mapy</a><span class="build">GitHub Pages</span></div>
 </header>
 <nav class="tabs" aria-label="Hlavní sekce">
-  <button class="tab active" data-tab="map">Mapa</button><button class="tab" data-tab="customers">Zákazníci <span id="customerCountBadge">66</span></button><button class="tab" data-tab="recipes">Recipe Finder</button><button class="tab" data-tab="saved">Moje uložené</button><button class="tab" data-tab="guide">Guide</button>
+  <button class="tab active" data-tab="map">Mapa</button><button class="tab" data-tab="customers">Zákazníci <span id="customerCountBadge">66</span></button><button class="tab" data-tab="recipes">Recipe Finder</button><button class="tab" data-tab="saved">Moje uložené</button><button class="tab" data-tab="share">Sdílení</button><button class="tab" data-tab="account">Účet</button><button class="tab" data-tab="security">Bezpečnost</button><button class="tab" data-tab="guide">Guide</button>
 </nav>
 <main>
 <section class="view active" id="view-map">
@@ -40,6 +42,52 @@
   <div class="toolbar"><div><div class="label">Local workspace</div><h2>Moje uložené</h2><p>Recipes, Customers, Employees, Rooms a Other jsou oddělené a ukládají se lokálně v prohlížeči.</p></div></div>
   <div class="saved-tabs"><button class="saved-tab active" data-saved="recipes">Recipes</button><button class="saved-tab" data-saved="customers">Customers</button><button class="saved-tab" data-saved="employees">Employees</button><button class="saved-tab" data-saved="rooms">Rooms</button><button class="saved-tab" data-saved="other">Other</button></div>
   <div class="saved-grid"><div id="savedList" class="saved-list"></div><aside class="saved-editor"><div class="label">Přidat vlastní položku</div><h3 id="editorTitle">Recipe</h3><form id="savedForm"><input id="savedName" required placeholder="Název"><textarea id="savedNote" rows="4" placeholder="Poznámka"></textarea><input id="savedImage" type="file" accept="image/*" hidden><button class="btn" id="imageButton" type="button" hidden>Vybrat obrázek</button><button class="btn primary" type="submit">Uložit</button></form><div id="imagePreview" class="image-preview" hidden></div></aside></div>
+</section>
+<section class="view" id="view-share">
+  <div class="toolbar"><div><div class="label">Share center</div><h2>Sdílení</h2><p>Nastavitelný odkaz sdílí jen veřejný stav Helperu. Soukromé Saved položky a obrázky místností se nesdílí.</p></div></div>
+  <div class="share-layout">
+    <div class="share-card">
+      <div class="label">Nastavení odkazu</div><h3>Share ID</h3>
+      <div class="share-row"><input id="shareId" maxlength="32" placeholder="my-hyland-route"><button class="btn ghost" id="randomShareId" type="button">Nové ID</button></div>
+      <label class="field-label" for="shareKind">Co sdílet</label><select id="shareKind"><option value="view">Aktuální zobrazení a filtry</option><option value="customer">Konkrétního zákazníka</option><option value="recipe">Konkrétní recept</option></select>
+      <label class="field-label" for="shareTitle">Název odkazu</label><input id="shareTitle" maxlength="80" placeholder="Moje Hyland Point nastavení">
+      <div class="share-summary" id="shareSummary">Odkaz zatím nebyl vytvořen.</div>
+      <div class="share-actions"><button class="btn primary" id="buildShare" type="button">Vytvořit odkaz</button><button class="btn" id="copyShare" type="button">Kopírovat</button></div>
+      <input id="shareUrl" class="share-url" readonly aria-label="Vygenerovaný odkaz">
+    </div>
+    <aside class="share-card"><div class="label">Co je v odkazu</div><h3>Bezpečné sdílení</h3>
+      <div class="security-list"><div><b>✓</b> mapa, filtr a veřejné ID</div><div><b>✓</b> vybraný customer / recipe ID</div><div><b>×</b> hesla a OTP</div><div><b>×</b> Saved data</div><div><b>×</b> room obrázky</div></div>
+      <div class="share-warning">Share ID není heslo. Všechno, co je vložené do URL, může vidět člověk, který odkaz získá.</div>
+    </aside>
+  </div>
+</section>
+<section class="view" id="view-account">
+  <div class="toolbar"><div><div class="label">Account</div><h2>Účet a nastavení</h2><p>GitHub-only režim používá místní profil. Bez backendu se nepokoušíme dělat falešné serverové přihlášení.</p></div></div>
+  <div class="account-grid">
+    <div class="account-card"><div class="label">Místní profil</div><h3 id="accountStatus">Nepřihlášen</h3>
+      <form id="profileForm"><label class="field-label" for="displayName">Zobrazované jméno</label><input id="displayName" maxlength="40" placeholder="Tvé jméno"><button class="btn primary" type="submit">Uložit profil</button><button class="btn ghost danger" id="localSignOut" type="button">Odhlásit místní profil</button></form>
+      <div class="account-note">Žádné heslo ani OTP se neukládá. Toto není serverová identita a nepřenáší se mezi zařízeními.</div>
+    </div>
+    <div class="account-card"><div class="label">Nastavení aplikace</div>
+      <label class="field-label" for="densitySetting">Hustota rozhraní</label><select id="densitySetting"><option value="normal">Normální</option><option value="compact">Kompaktní</option></select>
+      <label class="field-label" for="defaultTabSetting">Výchozí sekce</label><select id="defaultTabSetting"><option value="map">Mapa</option><option value="customers">Zákazníci</option><option value="recipes">Recipe Finder</option><option value="saved">Moje uložené</option><option value="share">Sdílení</option></select>
+      <div class="setting-line"><span>Automatické ukládání</span><input id="autoSaveSetting" type="checkbox" checked></div>
+      <div class="account-note">Nastavení je lokální v prohlížeči.</div>
+    </div>
+    <div class="account-card wide"><div class="label">Přenos dat</div><h3>Záloha workspace</h3><p>Export obsahuje pouze Saved položky, profil a nastavení. Import je validován před uložením.</p>
+      <div class="share-actions"><button class="btn" id="exportData" type="button">Exportovat JSON</button><button class="btn" id="importData" type="button">Importovat JSON</button><input id="importFile" type="file" accept="application/json" hidden></div>
+    </div>
+  </div>
+</section>
+<section class="view" id="view-security">
+  <div class="toolbar"><div><div class="label">Security center</div><h2>Bezpečnost</h2><p>Stav bezpečnostních prvků a jasně označené hranice GitHub-only varianty.</p></div></div>
+  <div class="security-grid">
+    <article class="security-card"><span class="security-status good">AKTIVNÍ</span><h3>CSP</h3><p>Skripty a síťová volání jsou omezená na vlastní web a povolený mapový obrázek.</p></article>
+    <article class="security-card"><span class="security-status good">AKTIVNÍ</span><h3>Bez hesel</h3><p>Helper nikde neukládá heslo ani OTP.</p></article>
+    <article class="security-card"><span class="security-status good">AKTIVNÍ</span><h3>Share bez secrets</h3><p>Sdílené URL neobsahuje autentizační údaje ani Saved workspace.</p></article>
+    <article class="security-card"><span class="security-status warn">BACKEND NUTNÝ</span><h3>Skutečné přihlášení</h3><p>Email + CAPTCHA + serverově ověřený OTP není bezpečné implementovat pouze v GitHub Pages.</p></article>
+  </div>
+  <div class="security-spec"><div><b>Login specifikace</b><span>Zobrazované jméno → CAPTCHA 10 znaků, min. 3 číslice → OTP 13 číslic.</span></div><div><b>OTP</b><span>Platnost 2 minuty · nový kód nejdříve po 1 minutě.</span></div><div><b>Produkční pravidlo</b><span>OTP ověřovat serverově; do statického klientu nedávat tajné klíče.</span></div></div>
 </section>
 <section class="view" id="view-guide">
   <div class="toolbar"><div><div class="label">Project guide</div><h2>Guide & Co je nového</h2><p>Co je hotové, co je ověřené a co čeká.</p></div></div>
