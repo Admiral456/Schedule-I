@@ -1,4 +1,85 @@
 {
-  "source": "schedule1-lab.com/community/recipes",
-  "recipes": []
+  "schema_version": 1,
+  "sources": [
+    "https://schedule1-lab.com/community/recipes",
+    "user-provided recipe screenshot"
+  ],
+  "recipes": [
+    {
+      "id": "meth-4-max",
+      "drug": "Meth",
+      "name": "4 Ingredient Meth — Most Profitable",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": 20,
+      "sell": 206,
+      "profit": 186,
+      "base_price": 70,
+      "customers": 7,
+      "source": "Schedule 1 Lab community recipes"
+    },
+    {
+      "id": "og-kush-3",
+      "drug": "Weed",
+      "name": "OG Kush — Early Game 3 Mix",
+      "ingredients": [
+        "Mouth Wash",
+        "Banana",
+        "Cuke"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "cost": 8,
+      "sell": 88,
+      "profit": 80,
+      "base_price": 35,
+      "customers": 19,
+      "source": "Schedule 1 Lab community recipes"
+    },
+    {
+      "id": "meth-8-user",
+      "drug": "Meth",
+      "name": "Meth — Donut / Battery / Cuke / Mega Bean / Addy / Energy Drink / Viagra / Horse Semen",
+      "ingredients": [
+        "Donut",
+        "Battery",
+        "Cuke",
+        "Mega Bean",
+        "Addy",
+        "Energy Drink",
+        "Viagra",
+        "Horse Semen"
+      ],
+      "effects": [
+        "Calorie-Dense",
+        "Energizing",
+        "Sneaky",
+        "Bright-Eyed",
+        "Tropic Thunder",
+        "Cyclopean",
+        "Electrifying",
+        "Long Faced"
+      ],
+      "cost": 48,
+      "sell": 293,
+      "profit": 245,
+      "base_price": null,
+      "customers": null,
+      "source": "User-provided recipe screenshot"
+    }
+  ]
 }
