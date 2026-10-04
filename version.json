@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.04.3",
+  "version": "2026.10.04.4",
   "updated_at": "2026-10-04",
-  "message": "Logo, Saved +, employee-room focus, update confirmation, What’s New and share-link verification",
+  "message": "Logo, Saved +, room images, employee-room map focus, update confirmation, What’s New and full share-link verification",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
