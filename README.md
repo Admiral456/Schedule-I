@@ -24,17 +24,17 @@ GitHub-only static web app for Schedule I / Hyland Point.
 
 ## Map legend
 
-The map legend currently follows labels documented by the public Schedule I Map Guide:
+The legend uses local SVG assets visually reproduced from the user-provided real Hyland Point map screenshot. Public map sources are used to cross-check the category names; these SVGs are not claimed to be extracted internal game files.
 
-- Gas-Mart
-- ATM Machine
-- Cash for Cash
-- Deal Spots
-- Payphone
-- Checkpoint
-- Cuke Machine
-- Dead Drop
-- Save Points
+Currently included local assets:
+- ATM
+- Recycler
+- Telephone Booth
+- Post Office
+- Area / Location
+- Main Mission
+- Shop / Business
+- Hardware
 
 The public interactive map also documents these layers:
 
