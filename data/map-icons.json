@@ -1,67 +1,66 @@
 {
-  "schema_version": 1,
-  "source_reference": "user-provided Hyland Point map screenshot",
-  "note": "Local SVG map-icon assets visually reproduced from the user-provided real Hyland Point map screenshot. They match the screenshot's visible pin style and sampled colors; they are not claimed to be extracted internal game files.",
-  "legend": [
-    {
-      "id": "atm",
-      "label": "ATM",
-      "color": "orange",
-      "asset": "assets/map-icons/atm.svg",
-      "source_confirmed": true
-    },
-    {
-      "id": "recycler",
-      "label": "Recycler",
-      "color": "orange",
-      "asset": "assets/map-icons/recycler.svg",
-      "source_confirmed": true
-    },
-    {
-      "id": "telephone-booth",
-      "label": "Telephone Booth",
-      "color": "orange",
-      "asset": "assets/map-icons/telephone-booth.svg",
-      "source_confirmed": true
-    },
-    {
-      "id": "post-office",
-      "label": "Post Office",
-      "color": "orange",
-      "asset": "assets/map-icons/post-office.svg",
-      "source_confirmed": true
-    },
-    {
-      "id": "area-location",
-      "label": "Area (Location)",
-      "color": "orange",
-      "asset": "assets/map-icons/area-location.svg",
-      "source_confirmed": true
-    },
-    {
-      "id": "main-mission",
-      "label": "Main Mission",
-      "color": "yellow",
-      "asset": "assets/map-icons/main-mission.svg",
-      "source_confirmed": true
-    },
-    {
-      "id": "shop-building",
-      "label": "Shop / Business",
-      "color": "blue",
-      "asset": "assets/map-icons/shop-building.svg",
-      "source_confirmed": true
-    },
-    {
-      "id": "hardware",
-      "label": "Hardware",
-      "color": "blue",
-      "asset": "assets/map-icons/hardware.svg",
-      "source_confirmed": true
-    }
-  ],
+  "schema_version": 2,
   "source_crosscheck": [
-    "https://wand.com/de/maps/schedule-i/hyland-point",
-    "https://steamcommunity.com/sharedfiles/filedetails/?id=3455934757"
+    "https://schedule1-lab.com/empire/map",
+    "https://wand.com/de/maps/schedule-i/hyland-point"
+  ],
+  "note": "Current public map category cross-check. Local icon assets are visual reproductions from the supplied real map screenshot, not claimed to be extracted internal game files.",
+  "categories": [
+    {
+      "name": "ATM",
+      "count": 16
+    },
+    {
+      "name": "Recycler",
+      "count": 13
+    },
+    {
+      "name": "Telephone Booth",
+      "count": 19
+    },
+    {
+      "name": "Vending Machine",
+      "count": 12
+    },
+    {
+      "name": "Dead Drop",
+      "count": 25
+    },
+    {
+      "name": "Area / Location",
+      "count": 40
+    },
+    {
+      "name": "Stash",
+      "count": 3
+    },
+    {
+      "name": "RV",
+      "count": 1
+    },
+    {
+      "name": "Purchasable Area",
+      "count": 5
+    },
+    {
+      "name": "Main Mission",
+      "count": 16
+    },
+    {
+      "name": "Post Office",
+      "count": 1
+    },
+    {
+      "name": "Laundromat",
+      "count": 1
+    },
+    {
+      "name": "Car Wash",
+      "count": 1
+    },
+    {
+      "name": "Taco Ticklers",
+      "count": 1
+    }
   ]
 }
