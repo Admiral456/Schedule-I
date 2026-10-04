@@ -1,12 +1,13 @@
 {
+  "schema_version": 1,
   "buildings": [],
-  "schema": {
-    "id": "string",
-    "name": "string",
-    "footprint": "polygon",
-    "height_m": "number|null",
-    "rotation_deg": "number|null",
-    "source": "string",
-    "verified": "boolean"
-  }
+  "fields": [
+    "id",
+    "name",
+    "footprint",
+    "height_m",
+    "rotation_deg",
+    "source",
+    "verified"
+  ]
 }
