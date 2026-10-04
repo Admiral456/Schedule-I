@@ -1,1 +1,5 @@
-{"roads":[]}
+{
+  "schema_version": 1,
+  "roads": [],
+  "note": "Import surveyed centerlines/geometry here."
+}
