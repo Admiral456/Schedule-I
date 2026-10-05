@@ -55,7 +55,7 @@ function cMatch(c,q,d,t,day,pinOnly){const s=customerSchedule(c);if(d&&c.distric
 function renderCustomers(){
   const q=$("#customerSearch").value.trim().toLowerCase(),d=$("#districtFilter").value,t=$("#tierFilter").value,day=$("#customerDayFilter").value,pinOnly=$("#customerPinFilter")?.checked;
   const list=state.customers.filter(c=>cMatch(c,q,d,t,day,pinOnly));
-  $("#customerSummary").textContent=list.length+" z "+state.customers.length+" zákazníků zobrazených · 62 má ověřený veřejný pin v Wand, 4 čekají na veřejné ověření";
+  $("#customerSummary").textContent=list.length+" z "+state.customers.length+" zákazníků zobrazených · "+verifiedCustomerCount()+" má ověřený veřejný pin v Wand, "+(state.customers.length-verifiedCustomerCount())+" čeká na veřejné ověření";
   $("#customerList").innerHTML=list.map(c=>{
     const sel=c.id===state.selectedCustomer?" selected":"",sched=customerScheduleLabel(c);
     const eff=c.preferred_effects.length?c.preferred_effects.map(e=>"<span class='effect'>"+esc(e)+"</span>").join(""):"<span class='meta'>Bez preferovaného efektu</span>";
