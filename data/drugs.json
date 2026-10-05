@@ -93,17 +93,17 @@
       "family": "Shrooms",
       "base_price": 65,
       "base_effects": [],
-      "source_page": "https://schedule1-lab.com/mix-explorer",
-      "icon_url": "https://schedule1-lab.com/images/products/shrooms.webp",
-      "icon_status": "verified-source-image",
+      "source_page": "https://schedule-1.fandom.com/wiki/Shrooms",
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/7/72/Shroom_Icon.png/revision/latest?cb=20251230011802",
+      "icon_status": "verified-image-source",
       "icon_local_path": null,
-      "icon_source_type": "Schedule 1 Lab published product image"
+      "icon_source_type": "Fandom published image index"
     }
   ],
   "icon_audit": {
     "checked_on": "2026-10-05",
     "verified_direct_image_count": 7,
     "unresolved": [],
-    "rule": "Only published image URLs are accepted; Shrooms was verified from the published Schedule 1 Lab product image used on the Reverse Recipe Search."
+    "rule": "Shrooms uses the published Shroom_Icon.png asset indexed by the Schedule 1 Wiki image inventory."
   }
 }
