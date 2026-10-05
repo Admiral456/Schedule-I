@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "source": "Wand",
+  "source_url": "https://wand.com/maps/schedule-i/hyland-point",
+  "source_updated": "06/02/2026",
+  "public_pin_total": 243,
+  "groups": [
+    {
+      "id": "locations",
+      "name": "Locations",
+      "count": 134,
+      "items": [
+        [
+          "ATM",
+          16
+        ],
+        [
+          "Recycler",
+          13
+        ],
+        [
+          "Telephone Booth",
+          19
+        ],
+        [
+          "Vending Machine",
+          12
+        ],
+        [
+          "Dead Drop",
+          25
+        ],
+        [
+          "Area / Location",
+          40
+        ],
+        [
+          "Stash",
+          3
+        ],
+        [
+          "RV",
+          1
+        ],
+        [
+          "Purchasable Area",
+          5
+        ]
+      ]
+    },
+    {
+      "id": "missions",
+      "name": "Mission",
+      "count": 16,
+      "items": [
+        [
+          "Main Mission",
+          16
+        ]
+      ]
+    },
+    {
+      "id": "laundering",
+      "name": "Money Laundering",
+      "count": 4,
+      "items": [
+        [
+          "Post Office",
+          1
+        ],
+        [
+          "Laundromat",
+          1
+        ],
+        [
+          "Car Wash",
+          1
+        ],
+        [
+          "Taco Ticklers",
+          1
+        ]
+      ]
+    },
+    {
+      "id": "npcs",
+      "name": "NPCs",
+      "count": 74,
+      "items": [
+        [
+          "Customers",
+          62
+        ],
+        [
+          "Suppliers",
+          6
+        ],
+        [
+          "Dealers",
+          6
+        ]
+      ]
+    },
+    {
+      "id": "shops",
+      "name": "Shops",
+      "count": 15,
+      "items": [
+        [
+          "Bleuball's Boutique",
+          1
+        ],
+        [
+          "Barbershop",
+          1
+        ],
+        [
+          "Casino",
+          1
+        ],
+        [
+          "Hardware",
+          2
+        ],
+        [
+          "Gas Mart",
+          2
+        ],
+        [
+          "Car Service",
+          2
+        ],
+        [
+          "Pawn Shop",
+          1
+        ],
+        [
+          "Ray's Realty",
+          1
+        ],
+        [
+          "Shred Shack",
+          1
+        ],
+        [
+          "Thrifty Threads",
+          1
+        ],
+        [
+          "Top Tattoo",
+          1
+        ],
+        [
+          "Warehouse",
+          1
+        ]
+      ]
+    }
+  ],
+  "entity_layers": {
+    "customers": {
+      "local_count": 66,
+      "verified_external_pins": 62,
+      "unverified_local": 4,
+      "source_url": "https://wand.com/hi/maps/schedule-i/hyland-point/checklist/npcs/customers"
+    },
+    "dealers": {
+      "local_count": 6,
+      "source_url": "https://schedule1.io/wiki/dealers"
+    },
+    "suppliers": {
+      "local_count": 6,
+      "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+    },
+    "properties": {
+      "local_count": 3,
+      "source_url": "https://schedule1.io/wiki/properties"
+    },
+    "businesses": {
+      "local_count": 4,
+      "source_url": "https://schedule1.io/wiki/businesses"
+    }
+  },
+  "policy": {
+    "preserve_existing_map_icons": true,
+    "no_fabricated_coordinates": true,
+    "exact_positions_are_only_shown_when_the_source_exposes_them": true
+  }
+}
