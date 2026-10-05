@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.14",
+  "version": "2026.10.05.15",
   "updated_at": "2026-10-05",
-  "message": "Finální refine: vyhledávání, mapová legenda, registry a receptové ikony",
+  "message": "Map data layer: kategorie 243 pinů a propojené entity",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -39,6 +39,10 @@
     "Globální vyhledávání bezpečně používá společný catalog registry bridge.",
     "Všechny ověřené ingredient ikony se zobrazují i přímo v Recipe Finderu.",
     "Mapové ověření zákazníků se bere přímo z datového statusu místo duplicitního seznamu jmen.",
-    "HTML styly sjednoceny do validní struktury dokumentu."
+    "HTML styly sjednoceny do validní struktury dokumentu.",
+    "Přidána lokální Map Data Layer pro 243 veřejných mapových pinů rozdělených do 29 kategorií a 5 skupin.",
+    "Mapová vrstva má vyhledávání, filtry kategorií a rychlé přepnutí na zákazníky, dealery, nemovitosti a podniky.",
+    "Kliknutí na entitu propojuje mapovou vrstvu přímo s detailem zákazníka nebo katalogem.",
+    "Přesné souřadnice se nevymýšlejí; veřejné customer piny zůstávají označené podle ověřeného externího zdroje."
   ]
 }
