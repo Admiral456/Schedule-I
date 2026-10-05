@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.7",
+  "version": "2026.10.05.8",
   "updated_at": "2026-10-05",
-  "message": "Nová hlavní stránka a kompaktní navigace",
+  "message": "Pozice zákazníků a přesnost asset registru",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -14,6 +14,9 @@
     "Moje uložené zůstává lokální, takže stávající osobní data se nepřepisují.",
     "Nová tmavá hlavní stránka inspirovaná strukturou Schedule 1 mixing guide.",
     "Přidáno logo Schedule 1 Helper a kompaktní kruhové rychlé akce vpravo.",
-    "Nastavení má nový ozdobný kruhový ovladač a Domů je nová výchozí sekce."
+    "Nastavení má nový ozdobný kruhový ovladač a Domů je nová výchozí sekce.",
+    "Zarovnané ozubené kolečko Nastavení v hlavičce.",
+    "Přidaná externí Wand vrstva s aktuálními 62 customer piny.",
+    "Opravený manifest přesných assetů na 16/16 ingrediencí a 6/7 drog."
   ]
 }
