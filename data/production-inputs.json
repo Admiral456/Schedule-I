@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "source": "https://schedule1.io/wiki/items",
+  "source_checked": "2026-10-05",
+  "purpose": "Production-chain inputs, kept separate from mixer ingredients.",
+  "items": [
+    {
+      "id": "acid",
+      "name": "Acid",
+      "price": 40,
+      "category": "production-input",
+      "icon_url": "https://cdn.schedule1.io/wiki/items/acid.png",
+      "icon_status": "source-page-direct"
+    },
+    {
+      "id": "phosphorus",
+      "name": "Phosphorus",
+      "price": 40,
+      "category": "production-input",
+      "icon_url": "https://cdn.schedule1.io/wiki/items/phosphorus.png",
+      "icon_status": "source-page-direct"
+    },
+    {
+      "id": "low-quality-pseudo",
+      "name": "Low-Quality Pseudo",
+      "price": 60,
+      "category": "production-input",
+      "icon_url": "https://cdn.schedule1.io/wiki/items/low-quality-pseudo.png",
+      "icon_status": "source-page-direct"
+    },
+    {
+      "id": "pseudo",
+      "name": "Pseudo",
+      "price": 80,
+      "category": "production-input",
+      "icon_url": "https://cdn.schedule1.io/wiki/items/pseudo.png",
+      "icon_status": "source-page-direct"
+    },
+    {
+      "id": "high-quality-pseudo",
+      "name": "High-Quality Pseudo",
+      "price": 110,
+      "category": "production-input",
+      "icon_url": "https://cdn.schedule1.io/wiki/items/high-quality-pseudo.png",
+      "icon_status": "source-page-direct"
+    }
+  ]
+}
