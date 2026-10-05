@@ -66,3 +66,61 @@ $("#customerSearch")?.addEventListener("input",renderCustomers);$("#districtFilt
 loadLocal();setSavedTab("recipes");loadShareSettings();renderRoomHighlight();loadData().catch(err=>{console.error(err);$("#customerSummary").textContent="Data se nepodařilo načíst";});
 
 $("#clearLocalData").addEventListener("click",()=>{if(!confirm("Smazat lokální profil, nastavení a všechny Saved položky z tohoto zařízení?"))return;localStorage.removeItem(savedKey);localStorage.removeItem(profileKey);localStorage.removeItem(settingsKey);localStorage.removeItem(shareKey);sessionStorage.removeItem("s1-room-highlight");state.saved={recipes:[],customers:[],employees:[],rooms:[],other:[]};state.profile={displayName:""};state.settings={density:"normal",defaultTab:"map",autoSave:true};state.savedTab="recipes";renderProfile();applySettings();renderSaved();loadShareSettings();renderRoomHighlight();});
+
+/* Supabase backend integration */
+(function(){
+  const SUPABASE_URL="https://rwrmtuaopbomstjfdlsx.supabase.co";
+  const SUPABASE_KEY=atob("c2JfcHVibGlzaGFibGVfYmt5cHVSNENRRXpTeDVHM2FvZG5Td18zX3g4YWY4Zw==");
+  if(!window.supabase){console.error("Supabase JS klient není načten.");return;}
+  window.s1Supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+  const authCard=document.querySelector("#view-account .account-card:nth-child(3)");
+  function ensureAuthUI(){
+    if(!authCard||document.querySelector("#s1ServerAuthUI"))return;
+    const old=authCard.querySelector(".login-steps");
+    if(old)old.hidden=true;
+    const box=document.createElement("div");box.id="s1ServerAuthUI";box.className="s1-feature-card";box.innerHTML="<div class='label'>Supabase účet</div><div class='meta' id='serverAuthStatus'>Nepřihlášen</div><label class='field-label' for='authEmail'>Email</label><input id='authEmail' type='email' autocomplete='email' placeholder='tvuj@email.cz'><div class='share-actions'><button class='btn' id='sendAuthCode' type='button'>Poslat kód</button></div><label class='field-label' for='authCode'>Ověřovací kód</label><input id='authCode' inputmode='numeric' autocomplete='one-time-code' placeholder='Kód z emailu'><div class='share-actions'><button class='btn primary' id='verifyAuthCode' type='button'>Přihlásit</button><button class='btn ghost' id='serverSignOut' type='button'>Odhlásit</button><button class='btn' id='serverProfileSave' type='button'>Uložit profil na server</button></div><div class='account-note'>Přihlášení používá Supabase Auth a emailový OTP kód. Heslo se v Helperu neukládá.</div>";
+    authCard.appendChild(box);
+    document.querySelector("#profileForm")?.addEventListener("submit",async()=>{if(window.s1Session)await syncProfile();});
+    box.querySelector("#sendAuthCode").onclick=sendOtp;
+    box.querySelector("#verifyAuthCode").onclick=verifyOtp;
+    box.querySelector("#serverSignOut").onclick=async()=>{await window.s1Supabase.auth.signOut();await refreshAuth();};
+    box.querySelector("#serverProfileSave").onclick=syncProfile;
+    box.querySelector("#authEmail").addEventListener("input",updateVerifyButton);
+    box.querySelector("#authCode").addEventListener("input",updateVerifyButton);
+  }
+  function updateVerifyButton(){const b=document.querySelector("#verifyAuthCode");if(b)b.disabled=!document.querySelector("#authEmail")?.value.trim()||!document.querySelector("#authCode")?.value.trim();}
+  async function refreshAuth(){
+    const {data}=await window.s1Supabase.auth.getSession();window.s1Session=data?.session||null;
+    ensureAuthUI();
+    const status=document.querySelector("#serverAuthStatus");if(status)status.textContent=window.s1Session?"Přihlášen: "+(window.s1Session.user.email||""):"Nepřihlášen";
+    const signout=document.querySelector("#serverSignOut");if(signout)signout.disabled=!window.s1Session;
+    const name=document.querySelector("#displayName");
+    if(name&&window.s1Session&&!name.value)name.value=window.s1Session.user.user_metadata?.display_name||"";
+    document.dispatchEvent(new CustomEvent("s1-auth-changed",{detail:{session:window.s1Session}}));
+  }
+  async function sendOtp(){
+    const email=(document.querySelector("#authEmail")?.value||"").trim();
+    if(!/^\S+@\S+\.\S+$/.test(email)){alert("Zadej platný email.");return;}
+    const displayName=(document.querySelector("#displayName")?.value||"").trim().slice(0,40);
+    const {error}=await window.s1Supabase.auth.signInWithOtp({email,options:{shouldCreateUser:true,data:{display_name:displayName}}});
+    if(error){alert("Kód se nepodařilo odeslat: "+error.message);return;}
+    alert("Kód byl odeslán na email.");document.querySelector("#authCode")?.focus();
+  }
+  async function verifyOtp(){
+    const email=(document.querySelector("#authEmail")?.value||"").trim(),token=(document.querySelector("#authCode")?.value||"").trim();
+    if(!email||!token){alert("Zadej email a kód.");return;}
+    const {error}=await window.s1Supabase.auth.verifyOtp({email,token,type:"email"});
+    if(error){alert("Kód není platný nebo vypršel: "+error.message);return;}
+    await refreshAuth();alert("Přihlášení proběhlo úspěšně.");
+  }
+  async function syncProfile(){
+    if(!window.s1Session)return;
+    const displayName=(document.querySelector("#displayName")?.value||"").trim().slice(0,40);
+    const {error}=await window.s1Supabase.from("profiles").upsert({id:window.s1Session.user.id,display_name:displayName},{onConflict:"id"});
+    if(error){alert("Profil se nepodařilo uložit: "+error.message);return;}
+    await window.s1Supabase.auth.updateUser({data:{display_name:displayName}});
+    document.dispatchEvent(new CustomEvent("s1-profile-saved"));alert("Profil uložen na serveru.");
+  }
+  window.s1RefreshAuth=refreshAuth;
+  document.addEventListener("DOMContentLoaded",async()=>{ensureAuthUI();window.s1Supabase.auth.onAuthStateChange(()=>refreshAuth());await refreshAuth();});
+})();
