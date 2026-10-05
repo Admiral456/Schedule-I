@@ -26,14 +26,7 @@
         </div>
         <div class="filters">
           <input id="productSearch" type="search" placeholder="Hledat produkt, ingredienci nebo efekt…">
-          <select id="productFamily">
-            <option value="">Všechny skupiny</option>
-            <option value="Weed">Weed</option>
-            <option value="Meth · Low Quality">Meth · Low Quality</option>
-            <option value="Meth · Blue Star">Meth · Blue Star</option>
-            <option value="Cocaine">Cocaine</option>
-            <option value="Shrooms">Shrooms</option>
-          </select>
+          <select id="productFamily"><option value="">Všechny skupiny</option></select>
         </div>
       </div>
       <div class="s1-products-note">
