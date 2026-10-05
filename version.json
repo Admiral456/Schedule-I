@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.8",
+  "version": "2026.10.05.9",
   "updated_at": "2026-10-05",
-  "message": "Pozice zákazníků a přesnost asset registru",
+  "message": "Centrování ovládání a rozšíření přesných assetů",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -17,6 +17,9 @@
     "Nastavení má nový ozdobný kruhový ovladač a Domů je nová výchozí sekce.",
     "Zarovnané ozubené kolečko Nastavení v hlavičce.",
     "Přidaná externí Wand vrstva s aktuálními 62 customer piny.",
-    "Opravený manifest přesných assetů na 16/16 ingrediencí a 6/7 drog."
+    "Opravený manifest přesných assetů na 16/16 ingrediencí a 6/7 drog.",
+    "Ovládání Nastavení je přesně vycentrované pomocí flex zarovnání.",
+    "Katalog nyní zobrazuje ověřené CDN ikony všech 6 vozidel.",
+    "Externí mapa Wand zůstává dostupná pro aktuální zákaznické piny."
   ]
 }
