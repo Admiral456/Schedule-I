@@ -18,18 +18,54 @@
       "count": 7,
       "source": "Schedule 1 Lab / Schedule 1 Wiki",
       "file": "data/drugs.json",
-      "verified_icon_count": 6,
-      "pending_icon_count": 1
+      "verified_icon_count": 7,
+      "pending_icon_count": 0
     },
     "effects": {
       "count": 35,
       "source": "Schedule 1 Lab",
-      "file": "data/effects.json"
+      "file": "data/effects.json",
+      "verified_icon_count": 0,
+      "pending_icon_count": 35
+    },
+    "dealers": {
+      "count": 6,
+      "source": "Schedule 1 Wiki",
+      "file": "data/dealers.json",
+      "verified_icon_count": 6,
+      "pending_icon_count": 0
+    },
+    "properties": {
+      "count": 3,
+      "source": "Schedule 1 Wiki",
+      "file": "data/properties.json",
+      "verified_icon_count": 3,
+      "pending_icon_count": 0
+    },
+    "businesses": {
+      "count": 4,
+      "source": "Schedule 1 Wiki",
+      "file": "data/businesses.json",
+      "verified_icon_count": 4,
+      "pending_icon_count": 0
+    },
+    "vehicles": {
+      "count": 6,
+      "source": "Schedule 1 Wiki",
+      "file": "data/vehicles.json",
+      "verified_icon_count": 6,
+      "pending_icon_count": 0
     }
   },
   "next_download_targets": [
-    "Verify and add the exact Shrooms icon from a published source.",
     "Find and verify a published standalone exact icon set for the 35 effects before adding effect icons.",
-    "Verify standalone exact icons for dealers, properties, businesses and vehicles before adding them to the catalog."
-  ]
+    "Keep the four customers missing from Wand's current 62-customer layer unverified until a public exact map pin is available."
+  ],
+  "customer_map": {
+    "source": "Wand",
+    "source_url": "https://wand.com/maps/schedule-i/hyland-point",
+    "verified_customer_pins": 62,
+    "local_customers": 66,
+    "not_verified": 4
+  }
 }
