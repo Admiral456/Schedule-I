@@ -1,0 +1,670 @@
+{
+  "schema_version": 1,
+  "source": "https://schedule1-lab.com/wiki/customers",
+  "source_checked": "2026-10-05",
+  "verified_count": 66,
+  "total_count": 66,
+  "note": "Preferred day and usual order time are taken from the current individual customer profile. Daily routines are separate community-sourced/approximate data and are not implied by this schedule file.",
+  "schedules": [
+    {
+      "id": 1,
+      "name": "Fiona Hancock",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Saturday",
+      "order_time": "11:10",
+      "source_page": "https://schedule1-lab.com/wiki/customers/fiona-hancock",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 2,
+      "name": "Herbert Bleuball",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Tuesday",
+      "order_time": "12:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/herbert-bleuball",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 3,
+      "name": "Irene Meadows",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Wednesday",
+      "order_time": "07:45",
+      "source_page": "https://schedule1-lab.com/wiki/customers/irene-meadows",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 4,
+      "name": "Jen Heard",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Thursday",
+      "order_time": "23:20",
+      "source_page": "https://schedule1-lab.com/wiki/customers/jen-heard",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 5,
+      "name": "Lily Turner",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Monday",
+      "order_time": "06:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/lily-turner",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 6,
+      "name": "Michael Boog",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Friday",
+      "order_time": "15:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/michael-boog",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 7,
+      "name": "Tobias Wentworth",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Friday",
+      "order_time": "15:45",
+      "source_page": "https://schedule1-lab.com/wiki/customers/tobias-wentworth",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 8,
+      "name": "Walter Cussler",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Tuesday",
+      "order_time": "18:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/walter-cussler",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 9,
+      "name": "Pearl Moore",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Saturday",
+      "order_time": "14:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/pearl-moore",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 10,
+      "name": "Ray Hoffman",
+      "district": "Uptown",
+      "tier": "Elite",
+      "preferred_day": "Thursday",
+      "order_time": "21:20",
+      "source_page": "https://schedule1-lab.com/wiki/customers/ray-hoffman",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 11,
+      "name": "Alison Knight",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Wednesday",
+      "order_time": "06:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/alison-knight",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 12,
+      "name": "Carl Bundy",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Monday",
+      "order_time": "19:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/carl-bundy",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 13,
+      "name": "Chris Sullivan",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Tuesday",
+      "order_time": "10:10",
+      "source_page": "https://schedule1-lab.com/wiki/customers/chris-sullivan",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 14,
+      "name": "Dennis Kennedy",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Saturday",
+      "order_time": "22:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/dennis-kennedy",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 15,
+      "name": "Hank Stevenson",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Monday",
+      "order_time": "13:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/hank-stevenson",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 16,
+      "name": "Harold Colt",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Wednesday",
+      "order_time": "11:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/harold-colt",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 17,
+      "name": "Jack Knight",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Monday",
+      "order_time": "15:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/jack-knight",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 18,
+      "name": "Jackie Stevenson",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Sunday",
+      "order_time": "13:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/jackie-stevenson",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 19,
+      "name": "Jeremy Wilkinson",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Thursday",
+      "order_time": "21:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/jeremy-wilkinson",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 20,
+      "name": "George Greene",
+      "district": "Westville",
+      "tier": "High",
+      "preferred_day": "Friday",
+      "order_time": "12:45",
+      "source_page": "https://schedule1-lab.com/wiki/customers/george-greene",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 21,
+      "name": "Geraldine Poon",
+      "district": "Northtown",
+      "tier": "High",
+      "preferred_day": "Thursday",
+      "order_time": "14:20",
+      "source_page": "https://schedule1-lab.com/wiki/customers/geraldine-poon",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 22,
+      "name": "Dean Webster",
+      "district": "Westville",
+      "tier": "High",
+      "preferred_day": "Thursday",
+      "order_time": "20:50",
+      "source_page": "https://schedule1-lab.com/wiki/customers/dean-webster",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 23,
+      "name": "Anna Chesterfield",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Tuesday",
+      "order_time": "18:50",
+      "source_page": "https://schedule1-lab.com/wiki/customers/anna-chesterfield",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 24,
+      "name": "Billy Kramer",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Sunday",
+      "order_time": "19:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/billy-kramer",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 25,
+      "name": "Bruce Norton",
+      "district": "Downtown",
+      "tier": "High",
+      "preferred_day": "Thursday",
+      "order_time": "14:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/bruce-norton",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 26,
+      "name": "Cranky Frank",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Friday",
+      "order_time": "02:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/cranky-frank",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 27,
+      "name": "Genghis Barn",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Wednesday",
+      "order_time": "01:05",
+      "source_page": "https://schedule1-lab.com/wiki/customers/genghis-barn",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 28,
+      "name": "Kelly Reynolds",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Saturday",
+      "order_time": "16:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/kelly-reynolds",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 29,
+      "name": "Lisa Gardener",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Friday",
+      "order_time": "11:50",
+      "source_page": "https://schedule1-lab.com/wiki/customers/lisa-gardener",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 30,
+      "name": "Mac Cooper",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Wednesday",
+      "order_time": "16:45",
+      "source_page": "https://schedule1-lab.com/wiki/customers/mac-cooper",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 31,
+      "name": "Marco Barone",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Saturday",
+      "order_time": "17:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/marco-barone",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 32,
+      "name": "Melissa Wood",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Monday",
+      "order_time": "18:45",
+      "source_page": "https://schedule1-lab.com/wiki/customers/melissa-wood",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 33,
+      "name": "Sherman Giles",
+      "district": "Docks",
+      "tier": "High",
+      "preferred_day": "Thursday",
+      "order_time": "20:45",
+      "source_page": "https://schedule1-lab.com/wiki/customers/sherman-giles",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 34,
+      "name": "Karen Kennedy",
+      "district": "Suburbia",
+      "tier": "High",
+      "preferred_day": "Friday",
+      "order_time": "16:10",
+      "source_page": "https://schedule1-lab.com/wiki/customers/karen-kennedy",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 35,
+      "name": "Elizabeth Homley",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Tuesday",
+      "order_time": "10:20",
+      "source_page": "https://schedule1-lab.com/wiki/customers/elizabeth-homley",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 36,
+      "name": "Eugene Buckley",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Sunday",
+      "order_time": "13:50",
+      "source_page": "https://schedule1-lab.com/wiki/customers/eugene-buckley",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 37,
+      "name": "Greg Figgle",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Wednesday",
+      "order_time": "12:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/greg-figgle",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 38,
+      "name": "Jennifer Rivera",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Wednesday",
+      "order_time": "14:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/jennifer-rivera",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 39,
+      "name": "Kevin Oakley",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Sunday",
+      "order_time": "08:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/kevin-oakley",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 40,
+      "name": "Kim Delaney",
+      "district": "Westville",
+      "tier": "Mid",
+      "preferred_day": "Monday",
+      "order_time": "21:55",
+      "source_page": "https://schedule1-lab.com/wiki/customers/kim-delaney",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 41,
+      "name": "Louis Fourier",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Saturday",
+      "order_time": "10:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/louis-fourier",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 42,
+      "name": "Lucy Pennington",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Thursday",
+      "order_time": "14:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/lucy-pennington",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 43,
+      "name": "Peggy Myers",
+      "district": "Northtown",
+      "tier": "Mid",
+      "preferred_day": "Saturday",
+      "order_time": "17:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/peggy-myers",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 44,
+      "name": "Peter File",
+      "district": "Northtown",
+      "tier": "Mid",
+      "preferred_day": "Tuesday",
+      "order_time": "10:50",
+      "source_page": "https://schedule1-lab.com/wiki/customers/peter-file",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 45,
+      "name": "Philip Wentworth",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Wednesday",
+      "order_time": "22:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/philip-wentworth",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 46,
+      "name": "Randy Caulfield",
+      "district": "Downtown",
+      "tier": "Mid",
+      "preferred_day": "Saturday",
+      "order_time": "16:25",
+      "source_page": "https://schedule1-lab.com/wiki/customers/randy-caulfield",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 47,
+      "name": "Jessi Waters",
+      "district": "Northtown",
+      "tier": "Mid",
+      "preferred_day": "Wednesday",
+      "order_time": "23:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/jessi-waters",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 48,
+      "name": "Javier Perez",
+      "district": "Docks",
+      "tier": "Mid",
+      "preferred_day": "Monday",
+      "order_time": "18:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/javier-perez",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 49,
+      "name": "Jerry Montero",
+      "district": "Westville",
+      "tier": "Mid",
+      "preferred_day": "Tuesday",
+      "order_time": "17:40",
+      "source_page": "https://schedule1-lab.com/wiki/customers/jerry-montero",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 50,
+      "name": "Kyle Cooley",
+      "district": "Northtown",
+      "tier": "Mid",
+      "preferred_day": "Tuesday",
+      "order_time": "10:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/kyle-cooley",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 51,
+      "name": "Austin Steiner",
+      "district": "Northtown",
+      "tier": "Mid",
+      "preferred_day": "Monday",
+      "order_time": "08:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/austin-steiner",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 52,
+      "name": "Kathy Henderson",
+      "district": "Northtown",
+      "tier": "Mid",
+      "preferred_day": "Sunday",
+      "order_time": "16:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/kathy-henderson",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 53,
+      "name": "Mick Lubbin",
+      "district": "Northtown",
+      "tier": "Mid",
+      "preferred_day": "Sunday",
+      "order_time": "19:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/mick-lubbin",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 54,
+      "name": "Charles Rowland",
+      "district": "Westville",
+      "tier": "Low",
+      "preferred_day": "Tuesday",
+      "order_time": "13:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/charles-rowland",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 55,
+      "name": "Donna Martin",
+      "district": "Northtown",
+      "tier": "Low",
+      "preferred_day": "Sunday",
+      "order_time": "20:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/donna-martin",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 56,
+      "name": "Doris Lubbin",
+      "district": "Westville",
+      "tier": "Low",
+      "preferred_day": "Thursday",
+      "order_time": "12:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/doris-lubbin",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 57,
+      "name": "Jeff Gilmore",
+      "district": "Downtown",
+      "tier": "Low",
+      "preferred_day": "Thursday",
+      "order_time": "07:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/jeff-gilmore",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 58,
+      "name": "Joyce Ball",
+      "district": "Westville",
+      "tier": "Low",
+      "preferred_day": "Friday",
+      "order_time": "09:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/joyce-ball",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 59,
+      "name": "Mrs. Ming",
+      "district": "Northtown",
+      "tier": "Low",
+      "preferred_day": "Thursday",
+      "order_time": "19:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/mrs-ming",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 60,
+      "name": "Trent Sherman",
+      "district": "Westville",
+      "tier": "Low",
+      "preferred_day": "Monday",
+      "order_time": "20:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/trent-sherman",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 61,
+      "name": "Sam Thompson",
+      "district": "Northtown",
+      "tier": "Low",
+      "preferred_day": "Friday",
+      "order_time": "12:50",
+      "source_page": "https://schedule1-lab.com/wiki/customers/sam-thompson",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 62,
+      "name": "Beth Penn",
+      "district": "Northtown",
+      "tier": "Low",
+      "preferred_day": "Friday",
+      "order_time": "19:45",
+      "source_page": "https://schedule1-lab.com/wiki/customers/beth-penn",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 63,
+      "name": "Chloe Bowers",
+      "district": "Northtown",
+      "tier": "Low",
+      "preferred_day": "Sunday",
+      "order_time": "15:00",
+      "source_page": "https://schedule1-lab.com/wiki/customers/chloe-bowers",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 64,
+      "name": "Keith Wagner",
+      "district": "Westville",
+      "tier": "Low",
+      "preferred_day": "Sunday",
+      "order_time": "00:30",
+      "source_page": "https://schedule1-lab.com/wiki/customers/keith-wagner",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 65,
+      "name": "Ludwig Meyer",
+      "district": "Northtown",
+      "tier": "Low",
+      "preferred_day": "Sunday",
+      "order_time": "14:45",
+      "source_page": "https://schedule1-lab.com/wiki/customers/ludwig-meyer",
+      "verification_status": "verified-current-profile"
+    },
+    {
+      "id": 66,
+      "name": "Meg Cooley",
+      "district": "Westville",
+      "tier": "Low",
+      "preferred_day": "Tuesday",
+      "order_time": "09:15",
+      "source_page": "https://schedule1-lab.com/wiki/customers/meg-cooley",
+      "verification_status": "verified-current-profile"
+    }
+  ]
+}
