@@ -26,6 +26,8 @@ GitHub-only static web app for Schedule I / Hyland Point.
 - Update button + version.json release manifest + progress update bar
 - dynamic Co je nového release panel
 - share-link verification for ID, title, type and filters
+- central source/provenance registry in data/sources.json
+- customer portrait source plan prepared; no portrait is invented or substituted
 - 3D mode intentionally marked Coming Soon until verified geometry is available
 - no invented customer coordinates
 
@@ -54,6 +56,7 @@ Schedule-I/
 │   ├── helper.css
 │   └── map-icons/
 ├── data/
+│   ├── sources.json
 │   ├── customers.json
 │   ├── recipes.json
 │   ├── hyland-point.json
@@ -85,11 +88,38 @@ The public interactive map used as reference is still being surveyed and explici
 
 ## Sources
 
+The complete source/provenance registry is maintained in `data/sources.json`.
+
+Primary/current references:
 - https://schedule1-lab.com/empire/map
 - https://schedule1-lab.com/wiki/customers
 - https://schedule1-lab.com/community/recipes
+- https://schedule1.io/wiki/drugs
+- https://www.schedule1wiki.org/customers
+- https://www.schedule1wiki.org/items
+- https://www.schedule1wiki.org/drugs
+- https://www.schedule1wiki.org/locations
+- https://schedule1.app/customers/
+- https://scheduleonemixer.com/customers
+
+Additional map/NPC cross-checks:
+- https://www.playerauctions.com/schedule-1-guide/tips-guides/all-npc-locations-and-schedules/
+- https://techsngames.com/schedule-1-all-customer-locations-preferences/
+- https://maps.tcno.co/maps/s1
+- https://wand.com/de/maps/schedule-i/hyland-point
 - https://steamcommunity.com/sharedfiles/filedetails/?id=3672513712
 - https://steamcommunity.com/sharedfiles/filedetails/?id=3455934757
+- https://schedule-1.fandom.com/
+
+### Customer heads / portraits
+
+Customer portraits are treated as separate assets from customer data. The preferred order is:
+1. exact customer profile photo from schedule1.app
+2. customer image from ScheduleOneMixer
+3. verified game-derived wiki/Fandom image
+4. another clearly game-derived source only after verification
+
+Before adding a portrait to the public repository, its direct asset URL, source page and verification status must be recorded in the data. Random real-person photos and invented replacements are not allowed.
 
 The project is a fan-made helper and is not affiliated with TVGS.
 
