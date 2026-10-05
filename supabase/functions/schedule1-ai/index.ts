@@ -65,33 +65,57 @@ Deno.serve(async (req: Request) => {
     return json({ error: "Neplatný JSON." }, 400);
   }
 
-  const message = String(body?.message || "").trim().slice(0, 600);
+  const forbiddenKeys = ["file","files","image","images","attachment","attachments","audio","video","blob"];
+  const receivedKeys = Object.keys(body || {});
+  const unexpected = receivedKeys.filter(k => !["message","context"].includes(k));
+  if (unexpected.length || forbiddenKeys.some(k => receivedKeys.includes(k))) {
+    return json({ error: "AI přijímá pouze textovou zprávu a volitelný herní kontext. Soubory a obrázky nejsou podporované." }, 400);
+  }
+
+  if (typeof body?.message !== "string") {
+    return json({ error: "Dotaz musí být text." }, 400);
+  }
+  const message = body.message.trim().slice(0, 600);
   if (!message) return json({ error: "Chybí dotaz." }, 400);
 
-  const clientId = String(body?.clientId || "").slice(0, 120);
-  const forwardedFor = req.headers.get("x-forwarded-for") || "";
-  const ip =
-    req.headers.get("cf-connecting-ip") ||
-    req.headers.get("x-real-ip") ||
-    forwardedFor.split(",")[0].trim() ||
-    "unknown";
-  const userAgent = req.headers.get("user-agent") || "";
-  const rateKey = await sha256Hex(`${ip}|${userAgent}|${clientId}`);
+  const authHeader = req.headers.get("Authorization") || "";
+  if (!authHeader.startsWith("Bearer ")) {
+    return json({ error: "Pro použití AI se musíš přihlásit." }, 401);
+  }
 
-  const rate = await consumeRateLimit(rateKey);
-  if (!rate?.allowed) {
-    const reason = rate?.reason;
-    const message =
-      reason === "minute"
-        ? "AI limit: maximálně 5 dotazů za minutu."
-        : reason === "hour"
-          ? "AI limit: maximálně 30 dotazů za hodinu."
-          : reason === "day"
-            ? "AI limit: tento prohlížeč/IP už dnes vyčerpal 100 AI dotazů."
-            : reason === "global"
-              ? "AI pomocník dnes dosáhl bezpečnostního limitu pro všechny uživatele. Zkus to zítra."
-              : "AI je dočasně nedostupná. Zkus to za chvíli.";
-    return json({ error: message }, reason === "rate_limit_unavailable" ? 503 : 429);
+  const authResponse = await fetch(`${SUPABASE_URL}/auth/v1/user`, {
+    method: "GET",
+    headers: {
+      "apikey": SUPABASE_SERVICE_ROLE_KEY,
+      "Authorization": authHeader,
+    },
+  });
+  if (!authResponse.ok) {
+    return json({ error: "Přihlášení není platné nebo vypršelo. Přihlas se znovu." }, 401);
+  }
+  const user = await authResponse.json();
+  if (!user?.id) {
+    return json({ error: "Uživatel nebyl ověřen." }, 401);
+  }
+
+  const isAdmin = user?.app_metadata?.role === "admin";
+  if (!isAdmin) {
+    const rateKey = await sha256Hex(`user:${user.id}`);
+    const rate = await consumeRateLimit(rateKey);
+    if (!rate?.allowed) {
+      const reason = rate?.reason;
+      const limitMessage =
+        reason === "minute"
+          ? "AI limit: maximálně 5 dotazů za minutu."
+          : reason === "hour"
+            ? "AI limit: maximálně 30 dotazů za hodinu."
+            : reason === "day"
+              ? "AI limit: tento účet už dnes vyčerpal 100 AI dotazů."
+              : reason === "global"
+                ? "AI pomocník dnes dosáhl bezpečnostního limitu pro všechny běžné uživatele. Zkus to zítra."
+                : "AI je dočasně nedostupná. Zkus to za chvíli.";
+      return json({ error: limitMessage }, reason === "rate_limit_unavailable" ? 503 : 429);
+    }
   }
 
   const context = body?.context && typeof body.context === "object"
