@@ -20,7 +20,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/cuke.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/cuke.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -39,7 +41,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/banana.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/banana.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -58,7 +62,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/paracetamol.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/paracetamol.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -77,7 +83,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/donut.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/donut.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -96,7 +104,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/viagor.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/viagra.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -115,7 +125,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/mouth-wash.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/mouth-wash.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -134,7 +146,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/flu-medicine.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/flu-medicine.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -153,7 +167,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/gasoline.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/gasoline.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -172,7 +188,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/energy-drink.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/energy-drink.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -191,7 +209,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/motor-oil.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/motor-oil.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -229,7 +249,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/chili.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/chili.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -267,7 +289,9 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/iodine.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/iodine.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     },
     {
@@ -305,8 +329,36 @@
         "use_for_production": "yes",
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/horse-semen.webp",
-        "build_sync": true
+        "build_sync": true,
+        "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/horse-semen.png",
+        "secondary_status": "schedule1.io-direct-cdn"
       }
     }
-  ]
+  ],
+  "icon_audit": {
+    "checked_source": "https://schedule1.io/wiki/items",
+    "checked_on": "2026-10-05",
+    "direct_cdn_verified_count": 13,
+    "direct_cdn_verified_ids": [
+      "cuke",
+      "flu-medicine",
+      "gasoline",
+      "donut",
+      "energy-drink",
+      "mouth-wash",
+      "motor-oil",
+      "banana",
+      "chili",
+      "iodine",
+      "paracetamol",
+      "viagor",
+      "horse-semen"
+    ],
+    "remaining_ids": [
+      "battery",
+      "addy",
+      "mega-bean"
+    ],
+    "rule": "Do not guess missing URLs; keep existing verified schedule1-lab render source and user reference until an independently accessible exact asset is confirmed."
+  }
 }
