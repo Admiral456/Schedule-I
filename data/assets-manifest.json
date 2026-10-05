@@ -10,12 +10,16 @@
     "ingredients": {
       "count": 16,
       "source": "Schedule 1 Lab",
-      "file": "data/ingredients.json"
+      "file": "data/ingredients.json",
+      "verified_icon_count": 16,
+      "pending_icon_count": 0
     },
     "drugs": {
       "count": 7,
       "source": "Schedule 1 Lab / Schedule 1 Wiki",
-      "file": "data/drugs.json"
+      "file": "data/drugs.json",
+      "verified_icon_count": 6,
+      "pending_icon_count": 1
     },
     "effects": {
       "count": 35,
@@ -24,8 +28,8 @@
     }
   },
   "next_download_targets": [
-    "Download and commit exact ingredient source images into assets/ingredients/",
-    "Download and commit exact drug source images into assets/drugs/",
-    "Verify effect icons and commit only after visual/source verification"
+    "Verify and add the exact Shrooms icon from a published source.",
+    "Find and verify a published standalone exact icon set for the 35 effects before adding effect icons.",
+    "Verify standalone exact icons for dealers, properties, businesses and vehicles before adding them to the catalog."
   ]
 }
