@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.17",
+  "version": "2026.10.05.18",
   "updated_at": "2026-10-05",
-  "message": "Hardened AI helper with protected OpenAI usage",
+  "message": "Authenticated AI with admin-ready unlimited role",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -56,6 +56,10 @@
     "AI má globální bezpečnostní strop 500 požadavků za UTC den pro celý Helper.",
     "API klíč zůstává pouze jako Supabase Edge Function secret OPENAI_API_KEY a není ve frontendovém kódu.",
     "Frontend posílá anonymní lokální client ID pro oddělení běžných uživatelů; databáze ukládá pouze hash fingerprintu.",
-    "AI požadavky mají omezení délky vstupu a max. 300 výstupních tokenů kvůli nákladům."
+    "AI požadavky mají omezení délky vstupu a max. 300 výstupních tokenů kvůli nákladům.",
+    "AI nyní vyžaduje platné Supabase přihlášení a limit se váže přímo na účet.",
+    "Administrátorská role je připravena přes Supabase app_metadata role=admin, ale žádný účet zatím není označen jako administrátor.",
+    "Administrátor obchází AI rate limit i globální strop; běžné účty zůstávají omezené.",
+    "AI backend přijímá pouze textovou zprávu a herní kontext; soubory, obrázky, audio a video jsou odmítnuty."
   ]
 }
