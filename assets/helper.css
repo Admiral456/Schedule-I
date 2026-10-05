@@ -29,3 +29,5 @@ main{max-width:1200px;margin:auto;padding:20px}.view{display:none}.view.active{d
  .customer-portrait{width:48px;height:48px}
  .customer-portrait.detail{width:68px;height:68px;min-width:68px}
 }
+
+.customer-schedule{font-weight:700;color:var(--accent);white-space:nowrap}.customer-card .meta{line-height:1.45}
