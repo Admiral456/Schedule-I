@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.19",
-  "updated_at": "2026-10-05",
-  "message": "Functional cleanup: navigation, employees and product recipe book",
+  "version": "2026.10.05.20",
+  "updated_at": "2026-10-06",
+  "message": "Audit fixes: real mixing engine, reference recipes, map/entity focus and Supabase security cleanup",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -66,6 +66,15 @@
     "Přidána databáze veřejně zdokumentovaných produktových variant a receptních cest.",
     "Přidána sekce Produkty / příchutě s filtrem, hledáním a skutečnými ověřenými ikonami základních produktů a ingrediencí.",
     "Globální hledání nově najde i produktové varianty.",
-    "Update ovladač je napojen na nový header."
+    "Update ovladač je napojen na nový header.",
+    "Přidán skutečný forward mixing engine s transformačními pravidly pro 16 ingrediencí.",
+    "Přidán Reverse Finder do 8 kroků s požadovanými a zakázanými efekty.",
+    "Přidáno 48 zdrojových referenčních mixů z veřejné databáze Schedule1.dev odděleně od vlastních výpočtů.",
+    "Mix kalkulačka zobrazuje ověřené ikonové zdroje ingrediencí a základních produktů.",
+    "Změny v generovaných mixech se okamžitě projeví v Saved workspace.",
+    "Globální zákaznický souhrn mapových pinů se počítá dynamicky z aktuálních dat.",
+    "Propojení zaměstnanec → místnost → mapa používá společný mapový event; externí cross-origin iframe nelze programově ovládat.",
+    "Supabase: odebráno veřejné EXECUTE na interní SECURITY DEFINER trigger/event funkce.",
+    "Supabase: přidány covering indexy na foreign keys shared_notifications."
   ]
 }
