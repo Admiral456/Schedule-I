@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "sources": [
+    "https://schedule1.io/wiki/drugs",
+    "https://schedule1-lab.com/mix-explorer"
+  ],
+  "verified_count": 6,
+  "total_count": 7,
+  "drugs": [
+    {
+      "id": "og-kush",
+      "name": "OG Kush",
+      "family": "Weed",
+      "base_price": 35,
+      "base_effects": [
+        "Calming"
+      ],
+      "source_page": "https://schedule1.io/wiki/drugs",
+      "icon_url": "https://cdn.schedule1.io/wiki/drugs/og-kush.png",
+      "icon_status": "verified-cdn"
+    },
+    {
+      "id": "sour-diesel",
+      "name": "Sour Diesel",
+      "family": "Weed",
+      "base_price": 35,
+      "base_effects": [
+        "Refreshing"
+      ],
+      "source_page": "https://schedule1.io/wiki/drugs",
+      "icon_url": "https://cdn.schedule1.io/wiki/drugs/sour-diesel.png",
+      "icon_status": "verified-cdn"
+    },
+    {
+      "id": "green-crack",
+      "name": "Green Crack",
+      "family": "Weed",
+      "base_price": 35,
+      "base_effects": [
+        "Energizing"
+      ],
+      "source_page": "https://schedule1.io/wiki/drugs",
+      "icon_url": "https://cdn.schedule1.io/wiki/drugs/green-crack.png",
+      "icon_status": "verified-cdn"
+    },
+    {
+      "id": "granddaddy-purple",
+      "name": "Granddaddy Purple",
+      "family": "Weed",
+      "base_price": 35,
+      "base_effects": [
+        "Sedating"
+      ],
+      "source_page": "https://schedule1.io/wiki/drugs",
+      "icon_url": "https://cdn.schedule1.io/wiki/drugs/granddaddy-purple.png",
+      "icon_status": "verified-cdn"
+    },
+    {
+      "id": "meth",
+      "name": "Meth",
+      "family": "Meth",
+      "base_price": 70,
+      "base_effects": [],
+      "source_page": "https://schedule1-lab.com/mix-explorer",
+      "icon_url": "https://cdn.schedule1.io/wiki/drugs/methamphetamine.png",
+      "icon_status": "verified-cdn"
+    },
+    {
+      "id": "cocaine",
+      "name": "Cocaine",
+      "family": "Cocaine",
+      "base_price": 150,
+      "base_effects": [],
+      "source_page": "https://schedule1-lab.com/mix-explorer",
+      "icon_url": "https://cdn.schedule1.io/wiki/drugs/cocaine.png",
+      "icon_status": "verified-cdn"
+    },
+    {
+      "id": "shrooms",
+      "name": "Shrooms",
+      "family": "Shrooms",
+      "base_price": 65,
+      "base_effects": [],
+      "source_page": "https://schedule1-lab.com/mix-explorer",
+      "icon_url": null,
+      "icon_status": "pending-exact-icon-verification"
+    }
+  ]
+}
