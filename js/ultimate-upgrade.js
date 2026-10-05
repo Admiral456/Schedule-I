@@ -22,7 +22,79 @@ function nav(){const header=document.querySelector(".site-header"),primary=docum
 function renderPlanner(){const q=norm(document.querySelector("#s1PlanSearch")?.value),day=document.querySelector("#s1PlanDay")?.value,tier=document.querySelector("#s1PlanTier")?.value;const rows=customers.filter(c=>{const s=c.schedule||c._schedule||{};return(!q||norm(c.name).includes(q))&&(!day||s.preferred_day===day)&&(!tier||c.tier===tier)}).sort((a,b)=>String(a.schedule?.order_time||"99:99").localeCompare(String(b.schedule?.order_time||"99:99")));const today=new Intl.DateTimeFormat("en-US",{weekday:"long"}).format(new Date());const todayRows=rows.filter(c=>c.schedule?.preferred_day===today);document.querySelector("#s1PlanTitle").textContent=today;document.querySelector("#s1PlanStats").innerHTML='<div class="s1-side-stat"><span>Výsledků</span><b>'+rows.length+'</b></div><div class="s1-side-stat"><span>Dnes v seznamu</span><b>'+todayRows.length+'</b></div><div class="s1-side-stat"><span>Ověřených map pinů</span><b>'+customers.filter(c=>c.map_position?.status==="verified-external-pin").length+'/66</b></div>';document.querySelector("#s1PlanList").innerHTML=rows.map(c=>{const s=c.schedule||{};return '<article class="s1-plan-card"><div><div class="s1-plan-name">'+esc(c.name)+'</div><div class="s1-plan-meta">'+esc(c.district)+' · '+esc(c.tier)+' · $'+esc(c.budget)+' / deal · '+esc(c.orders_per_week)+' / týden</div><span class="s1-chip">'+esc(s.preferred_day||"Den neuveden")+'</span><span class="s1-chip">'+esc(s.verification_status||"profil")+'</span></div><div class="s1-plan-time">'+esc(s.order_time||"—")+'</div></article>'}).join("")||'<div class="empty">Nic nenalezeno.</div>'}
 function renderDealers(){const q=norm(document.querySelector("#s1DealerSearch")?.value);document.querySelector("#s1DealerList").innerHTML=dealers.filter(d=>!q||norm([d.name,d.location,d.specialty,d.type].join(" ")).includes(q)).map(d=>'<article class="s1-dealer-card"><strong>'+esc(d.name)+'</strong><small>'+esc(d.location||"Lokace neuvedena")+'</small><small>'+esc(d.specialty||d.type||"Dealer")+'</small><div class="s1-dealer-actions"><button class="s1-btn primary" data-open-dealer="'+esc(d.name)+'">Databáze</button><button class="s1-btn" data-save-dealer="'+esc(d.name)+'">Uložit</button></div></article>').join("")||'<div class="empty">Dealer nenalezen.</div>'}
 function renderEffects(){const q=norm(document.querySelector("#s1EffectSearch")?.value);document.querySelector("#s1EffectList").innerHTML=effects.filter(x=>!q||norm([x.name,x.description,x.category,x.type].join(" ")).includes(q)).map(x=>'<article class="s1-effect-card"><strong>'+esc(x.name)+'</strong><small>'+esc(x.description||x.category||x.type||"Efekt v databázi")+'</small></article>').join("")||'<div class="empty">Efekt nenalezen.</div>'}
-function ai(){const getAiClientId=()=>{try{let id=localStorage.getItem("s1_ai_client_id");if(!id){id=(crypto.randomUUID?crypto.randomUUID():("s1-"+Math.random().toString(36).slice(2)+Date.now().toString(36)));localStorage.setItem("s1_ai_client_id",id)}return id}catch{return "ephemeral-"+Math.random().toString(36).slice(2)}};const aiClientId=getAiClientId();const launch=document.createElement("button");launch.className="s1-ai-launch";launch.title="AI pomocník";launch.textContent="✦";document.body.appendChild(launch);const panel=document.createElement("div");panel.className="s1-ai-panel";panel.innerHTML='<div class="s1-ai-head"><div><b>AI pomocník</b><small>Schedule 1 Helper · ChatGPT</small><small style="color:#73808b">Ochrana: 5/min · 30/h · 100/den</small></div><button class="s1-ai-close">×</button></div><div class="s1-ai-msgs" id="s1AiMsgs"><div class="s1-ai-msg bot">Ahoj! Můžu ti pomoct najít zákazníka, recept, efekt nebo vysvětlit data v Helperu. Pouze text — bez souborů a obrázků.</div></div><form class="s1-ai-form"><textarea id="s1AiInput" placeholder="Napiš dotaz… (jen text)"></textarea><button>➤</button></form>';document.body.appendChild(panel);const msgs=panel.querySelector("#s1AiMsgs");const add=(t,who)=>{const m=document.createElement("div");m.className="s1-ai-msg "+who;m.textContent=t;msgs.appendChild(m);msgs.scrollTop=msgs.scrollHeight};launch.onclick=()=>panel.classList.toggle("open");panel.querySelector(".s1-ai-close").onclick=()=>panel.classList.remove("open");panel.querySelector("form").onsubmit=async ev=>{ev.preventDefault();const input=panel.querySelector("#s1AiInput"),q=input.value.trim();if(!q)return;input.value="";add(q,"user");add("Přemýšlím…","bot");const wait=msgs.lastElementChild;try{const r=await fetch("https://rwrmtuaopbomstjfdlsx.supabase.co/functions/v1/schedule1-ai",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:q,clientId:aiClientId,context:{customers:customers.length,dealers:dealers.length,recipes:recipes.length,effects:effects.length}})});const j=await r.json();wait.remove();add(j.answer||j.error||"AI odpověď není dostupná.","bot")}catch{wait.textContent="AI zatím není připojená. UI je připravené, ale na Supabase Edge Function je potřeba nastavit OpenAI API klíč."}}}
+function ai(){
+  const launch=document.createElement("button");
+  launch.className="s1-ai-launch";
+  launch.title="AI pomocník";
+  launch.textContent="✦";
+  document.body.appendChild(launch);
+
+  const panel=document.createElement("div");
+  panel.className="s1-ai-panel";
+  panel.innerHTML='<div class="s1-ai-head"><div><b>AI pomocník</b><small>Schedule 1 Helper · ChatGPT</small><small style="color:#73808b" id="s1AiLimitNote">Pro AI je potřeba přihlášení</small></div><button class="s1-ai-close">×</button></div><div class="s1-ai-msgs" id="s1AiMsgs"><div class="s1-ai-msg bot">Ahoj! Můžu ti pomoct najít zákazníka, recept, efekt nebo vysvětlit data v Helperu. Pouze text — bez souborů a obrázků.</div></div><form class="s1-ai-form"><textarea id="s1AiInput" maxlength="600" placeholder="Napiš dotaz… (jen text)"></textarea><button>➤</button></form>';
+  document.body.appendChild(panel);
+
+  const msgs=panel.querySelector("#s1AiMsgs");
+  const note=panel.querySelector("#s1AiLimitNote");
+  const input=panel.querySelector("#s1AiInput");
+
+  const add=(t,who)=>{
+    const m=document.createElement("div");
+    m.className="s1-ai-msg "+who;
+    m.textContent=t;
+    msgs.appendChild(m);
+    msgs.scrollTop=msgs.scrollHeight;
+    return m;
+  };
+
+  const refreshAiState=()=>{
+    const logged=Boolean(window.s1Session?.user);
+    note.textContent=logged ? "Přihlášeno · běžný účet má ochranné limity" : "Pro AI je potřeba přihlášení";
+    input.disabled=!logged;
+  };
+
+  launch.onclick=()=>{
+    refreshAiState();
+    panel.classList.toggle("open");
+  };
+  panel.querySelector(".s1-ai-close").onclick=()=>panel.classList.remove("open");
+
+  panel.querySelector("form").onsubmit=async ev=>{
+    ev.preventDefault();
+    const q=input.value.trim();
+    if(!q)return;
+    if(!window.s1Supabase||!window.s1Session?.user){
+      add("Nejdřív se přihlas v sekci Účet. AI je dostupná jen přihlášeným uživatelům.","bot");
+      return;
+    }
+
+    input.value="";
+    add(q,"user");
+    const wait=add("Přemýšlím…","bot");
+
+    try{
+      const {data,error}=await window.s1Supabase.functions.invoke("schedule1-ai",{
+        body:{
+          message:q,
+          context:{
+            customers:customers.length,
+            dealers:dealers.length,
+            recipes:recipes.length,
+            effects:effects.length
+          }
+        }
+      });
+      wait.remove();
+      if(error) throw error;
+      add(data?.answer||data?.error||"AI odpověď není dostupná.","bot");
+    }catch(err){
+      wait.textContent=err?.message||"AI je momentálně nedostupná. Zkus to za chvíli.";
+    }
+  };
+
+  document.addEventListener("s1-auth-changed",refreshAiState);
+  refreshAiState();
+}
 async function boot(){addStyle();makeViews();nav();const [c,d,r,e,s]=await Promise.all([get("./data/customers.json",{}),get("./data/dealers.json",{}),get("./data/recipes.json",{}),get("./data/effects.json",{}),get("./data/customer-schedules.json",{})]);customers=(c.customers||[]).map(x=>({...x,schedule:(s.schedules||[]).find(y=>Number(y.id)===Number(x.id))}));dealers=d.dealers||[];recipes=r.recipes||[];effects=e.effects||[];document.querySelector("#s1PlanSearch").oninput=renderPlanner;document.querySelector("#s1PlanDay").onchange=renderPlanner;document.querySelector("#s1PlanTier").onchange=renderPlanner;document.querySelector("#s1DealerSearch").oninput=renderDealers;document.querySelector("#s1EffectSearch").oninput=renderEffects;document.addEventListener("click",ev=>{const b=ev.target.closest("[data-open-dealer]");if(b){const input=document.querySelector("#catalogSearch");const kind=document.querySelector("#catalogKind");if(input&&kind){kind.value="dealers";input.value=b.dataset.openDealer;input.dispatchEvent(new Event("input",{bubbles:true}));activate("view-catalog","catalog")}}});renderPlanner();renderDealers();renderEffects();ai();
 // Recipe Finder upgrades: local sorting by profit and effect match via lightweight control.
 const rh=document.querySelector("#view-recipes .toolbar");if(rh&&!document.querySelector("#s1RecipeSort")){const sel=document.createElement("select");sel.id="s1RecipeSort";sel.innerHTML='<option value="default">Řazení: výchozí</option><option value="profit">Nejvyšší profit</option><option value="ingredients">Nejméně ingrediencí</option>';sel.addEventListener("change",()=>{const cards=[...document.querySelectorAll("#recipeList .recipe-card")];cards.sort((a,b)=>{if(sel.value==="profit")return Number(b.querySelector(".metric.profit b")?.textContent.replace(/\D/g,"")||0)-Number(a.querySelector(".metric.profit b")?.textContent.replace(/\D/g,"")||0);if(sel.value==="ingredients")return (a.querySelector(".ingredients")?.textContent.match(/→/g)||[]).length-(b.querySelector(".ingredients")?.textContent.match(/→/g)||[]).length;return 0});cards.forEach(x=>document.querySelector("#recipeList").appendChild(x))});rh.querySelector(".filters")?.appendChild(sel)}}
