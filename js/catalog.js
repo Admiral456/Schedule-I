@@ -1,3 +1,95 @@
-const CATALOG={ingredients:[],drugs:[],effects:[],dealers:[],properties:[],businesses:[],vehicles:[]};const $c=s=>document.querySelector(s);const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));async function loadCatalogData(){const [i,d,e,dl,p,b,v]=await Promise.all([fetch("./data/ingredients.json?ts="+Date.now()).then(r=>r.json()),fetch("./data/drugs.json?ts="+Date.now()).then(r=>r.json()),fetch("./data/effects.json?ts="+Date.now()).then(r=>r.json()),fetch("./data/dealers.json?ts="+Date.now()).then(r=>r.json()),fetch("./data/properties.json?ts="+Date.now()).then(r=>r.json()),fetch("./data/businesses.json?ts="+Date.now()).then(r=>r.json()),fetch("./data/vehicles.json?ts="+Date.now()).then(r=>r.json())]);CATALOG.ingredients=Array.isArray(i.items)?i.items:[];CATALOG.drugs=Array.isArray(d.drugs)?d.drugs:[];CATALOG.effects=Array.isArray(e.effects)?e.effects:[];CATALOG.dealers=Array.isArray(dl.dealers)?dl.dealers:[];CATALOG.properties=Array.isArray(p.properties)?p.properties:[];CATALOG.businesses=Array.isArray(b.businesses)?b.businesses:[];CATALOG.vehicles=Array.isArray(v.vehicles)?v.vehicles:[];renderCatalog()}function ingredientIcon(x){return x.icon?.rendered_asset_url||x.icon?.secondary_source_asset_url||""}function renderCatalog(){const kind=$c("#catalogKind")?.value||"ingredients",q=($c("#catalogSearch")?.value||"").trim().toLowerCase();const all=CATALOG[kind]||[];const list=all.filter(x=>{const name=String(x.name||"").toLowerCase();const effect=String(x.base_effect||"").toLowerCase();const family=String(x.family||"").toLowerCase();return !q||(name+" "+effect+" "+family).includes(q)});$c("#catalogSummary").textContent=list.length+" / "+all.length+" položek · zdrojové ikony jsou označené podle provenance";if(kind==="ingredients"){$c("#catalogList").innerHTML=list.map(x=>{const src=ingredientIcon(x);const icon=src?"<img src='"+esc(src)+"' alt='"+esc(x.name)+"' loading='lazy' referrerpolicy='no-referrer'>":"<span class='catalog-missing'>Ikona čeká na ověření</span>";return "<article class='catalog-card'><div class='catalog-icon'>"+icon+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.cost)+" · od "+esc(x.unlock_rank)+" · base effect "+esc(x.base_effect||"—")+"</div><div class='catalog-tags'><span class='catalog-tag ok'>"+esc(x.icon?.status||"unknown")+"</span><span class='catalog-tag'>"+esc(x.transformation_count||0)+" transformací</span></div><div class='catalog-source'>"+esc(x.icon?.source_page||"")+"</div></div></article>"}).join("")||"<div class='empty'>Žádná surovina neodpovídá hledání.</div>"}else if(kind==="drugs"){$c("#catalogList").innerHTML=list.map(x=>{const src=x.icon_url;const icon=src?"<img src='"+esc(src)+"' alt='"+esc(x.name)+"' loading='lazy' referrerpolicy='no-referrer'>":"<span class='catalog-missing'>Přesná ikona zatím nebyla ověřena</span>";return "<article class='catalog-card'><div class='catalog-icon'>"+icon+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>"+esc(x.family||x.type||"")+" · base $"+esc(x.base_price??"—")+"</div><div class='catalog-tags'><span class='catalog-tag ok'>"+esc(x.icon_status||"unknown")+"</span></div><div class='catalog-source'>"+esc(x.source_page||"")+"</div></div></article>"}).join("")||"<div class='empty'>Žádná droga neodpovídá hledání.</div>"}else if(kind==="effects"){$c("#catalogList").innerHTML=list.map(x=>"<article class='catalog-card'><div class='catalog-icon'><span class='catalog-missing'>Bez ověřené ikony</span></div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-effect'><span>Price ×</span><b>"+Number(x.price_multiplier||0).toFixed(3)+"</b></div><div class='catalog-meta'>"+esc(x.customer_count||0)+" zákazníků · tier "+esc(x.tier||"—")+"</div><div class='catalog-tags'><span class='catalog-tag pending'>ikona se ověřuje</span></div><div class='catalog-source'>"+esc(x.source_page||"")+"</div></div></article>").join("")||"<div class='empty'>Žádný efekt neodpovídá hledání.</div>"}else if(kind==="dealers"){$c("#catalogList").innerHTML=list.map(x=>"<article class='catalog-card'><div class='catalog-icon'><span class='catalog-missing'>Ikona čeká na ověření</span></div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>"+esc(x.location)+" · nákup $"+esc(x.buy_in)+" · "+(Number(x.cut)*100).toFixed(0)+"% podíl · max "+esc(x.max_customers)+" zákazníků</div><div class='catalog-tags'><span class='catalog-tag ok'>Ověřená data</span><span class='catalog-tag pending'>ikona čeká</span></div><div class='catalog-source'>"+esc(x.source_page||"")+"</div></div></article>").join("")||"<div class='empty'>Žádný dealer neodpovídá hledání.</div>"}else if(kind==="properties"){$c("#catalogList").innerHTML=list.map(x=>"<article class='catalog-card'><div class='catalog-icon'><span class='catalog-missing'>Ikona čeká na ověření</span></div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.price)+" · "+esc(x.loading_bays)+" loading bays · "+esc(x.employee_limit)+" zaměstnanců</div><div class='catalog-tags'><span class='catalog-tag ok'>Ověřená data</span><span class='catalog-tag pending'>ikona čeká</span></div><div class='catalog-source'>https://schedule1.io/wiki/properties</div></div></article>").join("")||"<div class='empty'>Žádná nemovitost neodpovídá hledání.</div>"}else if(kind==="businesses"){$c("#catalogList").innerHTML=list.map(x=>"<article class='catalog-card'><div class='catalog-icon'><span class='catalog-missing'>Ikona čeká na ověření</span></div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.price)+" · laundering capacity $"+esc(x.laundering_capacity)+"</div><div class='catalog-tags'><span class='catalog-tag ok'>Ověřená data</span><span class='catalog-tag pending'>ikona čeká</span></div><div class='catalog-source'>https://schedule1.io/wiki/businesses</div></div></article>").join("")||"<div class='empty'>Žádný podnik neodpovídá hledání.</div>"}else{$c("#catalogList").innerHTML=list.map(x=>{const src=x.icon_url||"";const icon=src?"<img src='"+esc(src)+"' alt='"+esc(x.name)+"' loading='lazy' referrerpolicy='no-referrer'>":"<span class='catalog-missing'>Přesná ikona zatím nebyla ověřena</span>";return "<article class='catalog-card'><div class='catalog-icon'>"+icon+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.price)+" · "+esc(x.cargo_slots)+" cargo · "+esc(x.top_speed_kmh)+" km/h · 0–40 "+esc(x.zero_to_40_seconds)+" s · 0–60 "+esc(x.zero_to_60_seconds??"—")+" s</div><div class='catalog-tags'><span class='catalog-tag ok'>"+esc(x.icon_status==="verified-cdn"?"verified-cdn":"Ověřená data")+"</span>"+(src?"":"<span class='catalog-tag pending'>ikona čeká</span>")+"</div><div class='catalog-source'>"+esc(x.icon_source_page||"https://schedule1.io/wiki/vehicles")+"</div></div></article>"}).join("")||"<div class='empty'>Žádné vozidlo neodpovídá hledání.</div>"}}
-function initCatalog(){const root=$c("#view-catalog");if(!root||root.dataset.ready)return;root.dataset.ready="1";$c("#catalogSearch").addEventListener("input",renderCatalog);$c("#catalogKind").addEventListener("change",renderCatalog);loadCatalogData().catch(()=>{$c("#catalogSummary").textContent="Databázi se nepodařilo načíst."})}
+
+const CATALOG={ingredients:[],drugs:[],effects:[],dealers:[],properties:[],businesses:[],vehicles:[]};
+const $c=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+async function loadCatalogData(){
+  const [i,d,e,dl,p,b,v]=await Promise.all([
+    fetch("./data/ingredients.json?ts="+Date.now()).then(r=>r.json()),
+    fetch("./data/drugs.json?ts="+Date.now()).then(r=>r.json()),
+    fetch("./data/effects.json?ts="+Date.now()).then(r=>r.json()),
+    fetch("./data/dealers.json?ts="+Date.now()).then(r=>r.json()),
+    fetch("./data/properties.json?ts="+Date.now()).then(r=>r.json()),
+    fetch("./data/businesses.json?ts="+Date.now()).then(r=>r.json()),
+    fetch("./data/vehicles.json?ts="+Date.now()).then(r=>r.json())
+  ]);
+  CATALOG.ingredients=Array.isArray(i.items)?i.items:[];
+  CATALOG.drugs=Array.isArray(d.drugs)?d.drugs:[];
+  CATALOG.effects=Array.isArray(e.effects)?e.effects:[];
+  CATALOG.dealers=Array.isArray(dl.dealers)?dl.dealers:[];
+  CATALOG.properties=Array.isArray(p.properties)?p.properties:[];
+  CATALOG.businesses=Array.isArray(b.businesses)?b.businesses:[];
+  CATALOG.vehicles=Array.isArray(v.vehicles)?v.vehicles:[];
+  renderCatalog();
+}
+function imageMarkup(src,name){
+  return src
+    ? "<img src='"+esc(src)+"' alt='"+esc(name)+"' loading='lazy' referrerpolicy='no-referrer'>"
+    : "<span class='catalog-missing'>Přesná ikona zatím nebyla ověřena</span>";
+}
+function renderCatalog(){
+  const kind=$c("#catalogKind")?.value||"ingredients";
+  const q=($c("#catalogSearch")?.value||"").trim().toLowerCase();
+  const all=CATALOG[kind]||[];
+  const list=all.filter(x=>{
+    const name=String(x.name||"").toLowerCase();
+    const effect=String(x.base_effect||"").toLowerCase();
+    const family=String(x.family||x.type||"").toLowerCase();
+    return !q||(name+" "+effect+" "+family).includes(q);
+  });
+  $c("#catalogSummary").textContent=list.length+" / "+all.length+" položek · zdrojové ikony jsou označené podle provenance";
+  if(kind==="ingredients"){
+    $c("#catalogList").innerHTML=list.map(x=>{
+      const src=x.icon?.rendered_asset_url||x.icon?.secondary_source_asset_url||"";
+      return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.cost)+" · od "+esc(x.unlock_rank)+" · base effect "+esc(x.base_effect||"—")+"</div><div class='catalog-tags'><span class='catalog-tag ok'>"+esc(x.icon?.status||"unknown")+"</span><span class='catalog-tag'>"+esc(x.transformation_count||0)+" transformací</span></div><div class='catalog-source'>"+esc(x.icon?.source_page||"")+"</div></div></article>";
+    }).join("")||"<div class='empty'>Žádná surovina neodpovídá hledání.</div>";
+    return;
+  }
+  if(kind==="drugs"){
+    $c("#catalogList").innerHTML=list.map(x=>{
+      const src=x.icon_url||"";
+      return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>"+esc(x.family||x.type||"")+" · base $"+esc(x.base_price??"—")+"</div><div class='catalog-tags'><span class='catalog-tag "+(src?"ok":"pending")+"'>"+esc(x.icon_status||"unknown")+"</span></div><div class='catalog-source'>"+esc(x.source_page||"")+"</div></div></article>";
+    }).join("")||"<div class='empty'>Žádná droga neodpovídá hledání.</div>";
+    return;
+  }
+  if(kind==="effects"){
+    $c("#catalogList").innerHTML=list.map(x=>{
+      const src=x.icon_url||x.icon?.url||"";
+      return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-effect'><span>Price ×</span><b>"+Number(x.price_multiplier||0).toFixed(3)+"</b></div><div class='catalog-meta'>"+esc(x.customer_count||0)+" zákazníků · tier "+esc(x.rating_band||x.tier||"—")+"</div><div class='catalog-tags'><span class='catalog-tag "+(src?"ok":"pending")+"'>"+esc(src?"ověřená ikona":"ikona se ověřuje")+"</span></div><div class='catalog-source'>"+esc(x.source_page||"")+"</div></div></article>";
+    }).join("")||"<div class='empty'>Žádný efekt neodpovídá hledání.</div>";
+    return;
+  }
+  if(kind==="dealers"){
+    $c("#catalogList").innerHTML=list.map(x=>{
+      const src=x.icon?.icon_url||x.icon_url||"";
+      return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>"+esc(x.location)+" · nákup $"+esc(x.buy_in)+" · "+(Number(x.cut)*100).toFixed(0)+"% podíl · max "+esc(x.max_customers)+" zákazníků</div><div class='catalog-tags'><span class='catalog-tag "+(src?"ok":"pending")+"'>"+esc(x.icon?.status||x.icon_status||"Ověřená data")+"</span></div><div class='catalog-source'>"+esc(x.source_page||"https://schedule1.io/wiki/dealers")+"</div></div></article>";
+    }).join("")||"<div class='empty'>Žádný dealer neodpovídá hledání.</div>";
+    return;
+  }
+  if(kind==="properties"){
+    $c("#catalogList").innerHTML=list.map(x=>{
+      const src=x.icon_url||"";
+      return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.price)+" · "+esc(x.loading_bays)+" loading bays · "+esc(x.employee_limit)+" zaměstnanců</div><div class='catalog-tags'><span class='catalog-tag "+(src?"ok":"pending")+"'>"+esc(x.icon_status||"Ověřená data")+"</span></div><div class='catalog-source'>"+esc(x.icon_source_page||"https://schedule1.io/wiki/properties")+"</div></div></article>";
+    }).join("")||"<div class='empty'>Žádná nemovitost neodpovídá hledání.</div>";
+    return;
+  }
+  if(kind==="businesses"){
+    $c("#catalogList").innerHTML=list.map(x=>{
+      const src=x.icon_url||"";
+      return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.price)+" · laundering capacity $"+esc(x.laundering_capacity)+"</div><div class='catalog-tags'><span class='catalog-tag "+(src?"ok":"pending")+"'>"+esc(x.icon_status||"Ověřená data")+"</span></div><div class='catalog-source'>"+esc(x.icon_source_page||"https://schedule1.io/wiki/businesses")+"</div></div></article>";
+    }).join("")||"<div class='empty'>Žádný podnik neodpovídá hledání.</div>";
+    return;
+  }
+  $c("#catalogList").innerHTML=list.map(x=>{
+    const src=x.icon_url||"";
+    return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.price)+" · "+esc(x.cargo_slots)+" cargo · "+esc(x.top_speed_kmh)+" km/h · 0–40 "+esc(x.zero_to_40_seconds)+" s · 0–60 "+esc(x.zero_to_60_seconds??"—")+" s</div><div class='catalog-tags'><span class='catalog-tag "+(src?"ok":"pending")+"'>"+esc(x.icon_status||"Ověřená data")+"</span></div><div class='catalog-source'>"+esc(x.icon_source_page||"https://schedule1.io/wiki/vehicles")+"</div></div></article>";
+  }).join("")||"<div class='empty'>Žádné vozidlo neodpovídá hledání.</div>";
+}
+function initCatalog(){
+  const root=$c("#view-catalog");
+  if(!root||root.dataset.ready)return;
+  root.dataset.ready="1";
+  $c("#catalogSearch").addEventListener("input",renderCatalog);
+  $c("#catalogKind").addEventListener("change",renderCatalog);
+  loadCatalogData().catch(()=>{$c("#catalogSummary").textContent="Databázi se nepodařilo načíst."});
+}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initCatalog,{once:true});else initCatalog();
