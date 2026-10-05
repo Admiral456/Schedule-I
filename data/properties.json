@@ -11,7 +11,9 @@
       "price": 6000,
       "loading_bays": 1,
       "employee_limit": 5,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/properties/bungalow.jpg",
+      "icon_source_page": "https://schedule1.io/wiki/properties"
     },
     {
       "id": "property-barn",
@@ -19,7 +21,9 @@
       "price": 25000,
       "loading_bays": 2,
       "employee_limit": 10,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/properties/the-barn.jpeg",
+      "icon_source_page": "https://schedule1.io/wiki/properties"
     },
     {
       "id": "property-docks-warehouse",
@@ -27,7 +31,9 @@
       "price": 50000,
       "loading_bays": 2,
       "employee_limit": 10,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/properties/the-docks-warehouse.jpeg",
+      "icon_source_page": "https://schedule1.io/wiki/properties"
     }
   ]
 }
