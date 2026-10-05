@@ -1,1 +1,65 @@
-document.addEventListener('DOMContentLoaded',()=>{console.log('map layer ready')});
+const $m=s=>document.querySelector(s);
+const esc=v=>String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const norm=v=>String(v||"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase().trim();
+let reg={},customers=[],dealers=[],properties=[],businesses=[],kind="all",group="all";
+const kinds=[["all","Vše"],["customers","Zákazníci"],["dealers","Dealeři"],["properties","Nemovitosti"],["businesses","Podniky"],["pins","Mapové kategorie"]];
+function inject(){
+ const anchor=$m("#view-map .legend-grid"); if(!anchor||$m("#mapDataLayer"))return;
+ anchor.insertAdjacentHTML("beforebegin",'<section class="map-data-layer" id="mapDataLayer"><div class="map-data-head"><div><div class="label">MAP DATA LAYER</div><h3>Datová vrstva Hyland Point</h3><p id="mapDataSummary">Načítám…</p></div><a class="map-data-source" href="https://wand.com/maps/schedule-i/hyland-point" target="_blank" rel="noopener noreferrer">Wand ↗</a></div><input id="mapDataSearch" class="map-data-search" type="search" placeholder="Hledat zákazníka, dealera, podnik nebo kategorii…" autocomplete="off"><div id="mapKindTabs" class="map-kind-tabs"></div><div id="mapGroupTabs" class="map-group-tabs"></div><div id="mapDataResults" class="map-data-results"></div><div class="map-data-note">Vrstva propojuje lokální databáze s mapou a zachovává stávající ikonový podklad. Přesné souřadnice, které veřejný zdroj nepublikuje, nevymýšlíme.</div></section>');
+}
+function renderKinds(){
+ $m("#mapKindTabs").innerHTML=kinds.map(x=>'<button class="map-kind-tab '+(kind===x[0]?"active":"")+'" data-map-kind="'+x[0]+'" type="button">'+x[1]+'</button>').join("");
+}
+function renderGroups(){
+ if(!reg.groups)return;
+ const gs=[{id:"all",name:"Všechny skupiny",count:reg.public_pin_total},...reg.groups];
+ $m("#mapGroupTabs").innerHTML=gs.map(x=>'<button class="map-group-tab '+(group===x.id?"active":"")+'" data-map-group="'+x.id+'" type="button">'+esc(x.name)+' <b>'+x.count+'</b></button>').join("");
+}
+function openEntity(type,id,name,target){
+ document.dispatchEvent(new CustomEvent("s1-map-open",{detail:{type,id,name,kind:target}}));
+}
+function render(){
+ const root=$m("#mapDataResults"),summary=$m("#mapDataSummary"),q=norm($m("#mapDataSearch").value);
+ if(kind==="pins"||kind==="all"&&group!=="all"){
+  const gs=group==="all"?reg.groups:reg.groups.filter(x=>x.id===group); let html="";
+  for(const g of gs){
+   const items=g.items.filter(x=>!q||norm(x[0]).includes(q)||norm(g.name).includes(q));
+   if(!items.length)continue;
+   html+='<article class="map-group-card"><div class="map-group-title"><b>'+esc(g.name)+'</b><strong>'+g.count+'</strong></div><div class="map-pin-list">'+items.map(x=>'<a class="map-pin-row" href="'+esc(reg.source_url)+'" target="_blank" rel="noopener noreferrer"><span>⌖</span><div><b>'+esc(x[0])+'</b><small>'+x[1]+' veřejných pinů</small></div><i>↗</i></a>').join("")+'</div></article>';
+  }
+  summary.textContent=(gs.reduce((n,g)=>n+g.items.length,0))+" mapových kategorií · "+reg.public_pin_total+" veřejných pinů";
+  root.innerHTML=html||'<div class="map-data-empty">Žádný výsledek.</div>'; return;
+ }
+ let data=[];
+ if(kind==="all"||kind==="customers")data.push(...customers.map(x=>({...x,_t:"customer"})));
+ if(kind==="all"||kind==="dealers")data.push(...dealers.map(x=>({...x,_t:"dealer"})));
+ if(kind==="all"||kind==="properties")data.push(...properties.map(x=>({...x,_t:"property"})));
+ if(kind==="all"||kind==="businesses")data.push(...businesses.map(x=>({...x,_t:"business"})));
+ data=data.filter(x=>!q||norm([x.name,x.district,x.tier,x.location].filter(Boolean).join(" ")).includes(q));
+ summary.textContent=data.length+" entit v této vrstvě";
+ root.innerHTML=data.map(x=>{
+  if(x._t==="customer"){const ok=x.map_position?.status==="verified-external-pin";return '<button class="map-entity" data-e="customer" data-id="'+x.id+'" data-name="'+esc(x.name)+'" type="button"><span class="map-e-icon">●</span><span><b>'+esc(x.name)+'</b><small>'+esc(x.district)+' · '+esc(x.tier)+' · $'+esc(x.budget)+'</small></span><em class="'+(ok?'ok':'pending')+'">'+(ok?'PIN OVĚŘEN':'PIN ČEKÁ')+'</em><i>→</i></button>'}
+  if(x._t==="dealer")return '<button class="map-entity" data-e="dealer" data-id="'+x.id+'" data-name="'+esc(x.name)+'" type="button"><span class="map-e-icon">◆</span><span><b>'+esc(x.name)+'</b><small>'+esc(x.location||"Dealer")+' · nákup $'+esc(x.buy_in)+'</small></span><em class="ok">DATA</em><i>→</i></button>';
+  if(x._t==="property")return '<button class="map-entity" data-e="property" data-id="'+x.id+'" data-name="'+esc(x.name)+'" type="button"><span class="map-e-icon">⌂</span><span><b>'+esc(x.name)+'</b><small>$'+esc(x.price)+' · '+esc(x.employee_limit)+' zaměstnanců</small></span><em class="ok">DATA</em><i>→</i></button>';
+  return '<button class="map-entity" data-e="business" data-id="'+x.id+'" data-name="'+esc(x.name)+'" type="button"><span class="map-e-icon">▣</span><span><b>'+esc(x.name)+'</b><small>$'+esc(x.price)+' · kapacita $'+esc(x.laundering_capacity)+'</small></span><em class="ok">DATA</em><i>→</i></button>';
+ }).join("")||'<div class="map-data-empty">Žádný výsledek.</div>';
+ root.querySelectorAll("[data-e]").forEach(b=>b.addEventListener("click",()=>openEntity(b.dataset.e,Number(b.dataset.id),b.dataset.name,b.dataset.e==="dealer"?"dealers":b.dataset.e==="property"?"properties":b.dataset.e==="business"?"businesses":"customers")));
+}
+async function load(){
+ inject();
+ try{
+  [reg,customers,dealers,properties,businesses]=await Promise.all([
+   fetch("./data/map-layer.json?ts="+Date.now()).then(r=>r.json()),
+   fetch("./data/customers.json?ts="+Date.now()).then(r=>r.json()).then(x=>x.customers||[]),
+   fetch("./data/dealers.json?ts="+Date.now()).then(r=>r.json()).then(x=>x.dealers||[]),
+   fetch("./data/properties.json?ts="+Date.now()).then(r=>r.json()).then(x=>x.properties||[]),
+   fetch("./data/businesses.json?ts="+Date.now()).then(r=>r.json()).then(x=>x.businesses||[])
+  ]);
+ }catch(e){$m("#mapDataSummary").textContent="Mapová data se nepodařilo načíst.";return}
+ renderKinds();renderGroups();render();
+ $m("#mapDataSearch").addEventListener("input",render);
+ $m("#mapKindTabs").addEventListener("click",e=>{const b=e.target.closest("[data-map-kind]");if(!b)return;kind=b.dataset.mapKind;group="all";renderKinds();renderGroups();render()});
+ $m("#mapGroupTabs").addEventListener("click",e=>{const b=e.target.closest("[data-map-group]");if(!b)return;group=b.dataset.mapGroup;kind="pins";renderKinds();renderGroups();render()});
+}
+const css=document.createElement("style");css.textContent='.map-data-layer{border:1px solid var(--border);background:var(--panel);border-radius:14px;margin:12px 0;padding:13px}.map-data-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.map-data-head h3{margin:2px 0 4px;font-size:15px}.map-data-head p{margin:0;color:var(--muted);font-size:10px;line-height:1.45;max-width:800px}.map-data-source{border:1px solid var(--border);border-radius:999px;padding:6px 9px;font-size:9px;color:var(--muted);white-space:nowrap}.map-data-search{margin-top:10px;width:100%;box-sizing:border-box;background:var(--panel2);border:1px solid var(--border);border-radius:10px;color:var(--text);padding:10px 12px;font-size:11px}.map-kind-tabs,.map-group-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.map-kind-tab,.map-group-tab{border:1px solid var(--border);background:var(--panel2);color:var(--muted);border-radius:999px;padding:7px 10px;font-size:9px;cursor:pointer}.map-kind-tab.active,.map-group-tab.active{color:var(--text);background:rgba(114,227,160,.07);border-color:rgba(114,227,160,.3)}.map-data-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}.map-group-card{border:1px solid var(--border);border-radius:12px;background:var(--panel2);padding:10px}.map-group-title{display:flex;justify-content:space-between;gap:8px;align-items:end}.map-group-title b{font-size:10px}.map-group-title strong{font-size:18px}.map-pin-list{display:grid;gap:5px;margin-top:8px}.map-pin-row,.map-entity{width:100%;box-sizing:border-box;text-decoration:none;text-align:left;border:1px solid var(--border);background:rgba(255,255,255,.02);color:var(--text);border-radius:9px;padding:8px;display:grid;align-items:center;gap:8px}.map-pin-row{grid-template-columns:22px 1fr 15px}.map-pin-row span,.map-e-icon{display:grid;place-items:center;width:22px;height:22px;border-radius:7px;background:rgba(255,255,255,.03);color:var(--muted)}.map-pin-row b,.map-entity b{font-size:10px}.map-pin-row small,.map-entity small{display:block;color:var(--muted);font-size:9px;margin-top:2px}.map-pin-row i,.map-entity i{font-style:normal;color:var(--muted)}.map-entity{grid-template-columns:28px minmax(0,1fr) auto 15px;cursor:pointer}.map-e-icon{width:26px;height:26px}.map-entity em{font-style:normal;font-size:7px;border:1px solid var(--border);border-radius:999px;padding:4px 6px;color:var(--muted)}.map-entity em.ok{border-color:rgba(114,227,160,.25);color:#cdeed9}.map-entity em.pending{border-color:rgba(217,197,138,.25);color:#d9c58a}.map-data-empty{grid-column:1/-1;border:1px dashed var(--border);border-radius:10px;padding:14px;text-align:center;color:var(--muted);font-size:10px}.map-data-note{margin-top:9px;color:var(--muted);font-size:9px;line-height:1.45}@media(max-width:850px){.map-data-results{grid-template-columns:1fr}.map-data-head{flex-direction:column}.map-data-source{align-self:flex-start}}@media(max-width:600px){.map-entity{grid-template-columns:28px minmax(0,1fr)}.map-entity em{grid-column:2;justify-self:start}.map-entity i{display:none}}';document.head.appendChild(css);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
