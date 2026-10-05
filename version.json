@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.1",
+  "version": "2026.10.05.2",
   "updated_at": "2026-10-05",
-  "message": "Asset Registry: exact icon provenance for mixer ingredients, production inputs and drugs",
+  "message": "Asset Registry UI: real source-linked ingredient and drug icon references",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -21,6 +21,8 @@
     "Přidán Asset Registry a manifest provenience ikon.",
     "13/16 mixer ingrediencí má potvrzený přímý veřejný CDN asset; 3 zůstávají pending verification bez hádání URL.",
     "6/7 aktuálně vedených drug ikon má potvrzený přímý CDN asset; Shrooms zůstává pending, protože kontrolovaný zdroj neposkytl přesnou ikonu.",
-    "Přidány samostatné production-inputs.json a audit přesných asset URL."
+    "Přidány samostatné production-inputs.json a audit přesných asset URL.",
+    "Přidán vizuální Asset Registry do Guide se stavem každé ikony a přímými zdrojovými URL.",
+    "GitHub Pages CSP povoluje pouze evidovaný ikonový CDN host pro tyto asset reference."
   ]
 }
