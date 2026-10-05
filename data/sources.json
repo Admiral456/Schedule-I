@@ -6,7 +6,13 @@
       "id": "schedule1-lab-map",
       "type": "map",
       "url": "https://schedule1-lab.com/empire/map",
-      "use": ["Hyland Point 2D mapa", "zákazníci a jejich obvyklé lokace", "dealers", "properties", "districts"],
+      "use": [
+        "Hyland Point 2D mapa",
+        "zákazníci a jejich obvyklé lokace",
+        "dealers",
+        "properties",
+        "districts"
+      ],
       "status": "verified",
       "notes": "Veřejná interaktivní mapa uvádí 66 zákazníků a upozorňuje, že některé zákaznické pozice ještě nejsou přesně zaměřené."
     },
@@ -14,63 +20,103 @@
       "id": "schedule1-lab-customers",
       "type": "customers",
       "url": "https://schedule1-lab.com/wiki/customers",
-      "use": ["zákaznická databáze", "preferované efekty", "rozpočty", "orders per week"],
+      "use": [
+        "zákaznická databáze",
+        "preferované efekty",
+        "rozpočty",
+        "orders per week"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1-lab-recipes",
       "type": "recipes",
       "url": "https://schedule1-lab.com/community/recipes",
-      "use": ["komunitní recepty", "ingredience", "efekty", "ceny", "profit", "customer matching"],
+      "use": [
+        "komunitní recepty",
+        "ingredience",
+        "efekty",
+        "ceny",
+        "profit",
+        "customer matching"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1-io-drugs",
       "type": "drugs",
       "url": "https://schedule1.io/wiki/drugs",
-      "use": ["základní drogy", "dodavatelé", "unlock informace", "přímé obrázkové assety"],
+      "use": [
+        "základní drogy",
+        "dodavatelé",
+        "unlock informace",
+        "přímé obrázkové assety"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1wiki-customers",
       "type": "customers",
       "url": "https://www.schedule1wiki.org/customers",
-      "use": ["cross-check zákaznických preferencí", "standards", "affinities"],
+      "use": [
+        "cross-check zákaznických preferencí",
+        "standards",
+        "affinities"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1wiki-locations",
       "type": "map",
       "url": "https://www.schedule1wiki.org/locations",
-      "use": ["cross-check mapových kategorií a POI"],
+      "use": [
+        "cross-check mapových kategorií a POI"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1wiki-items",
       "type": "items",
       "url": "https://www.schedule1wiki.org/items",
-      "use": ["suroviny", "items", "obrázky", "cross-check názvů"],
+      "use": [
+        "suroviny",
+        "items",
+        "obrázky",
+        "cross-check názvů"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1wiki-drugs",
       "type": "drugs",
       "url": "https://www.schedule1wiki.org/drugs",
-      "use": ["cross-check počtu a názvů drog", "produkční data"],
+      "use": [
+        "cross-check počtu a názvů drog",
+        "produkční data"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1wiki-fandom",
       "type": "wiki-reference",
       "url": "https://schedule-1.fandom.com/",
-      "use": ["detailní stránky jednotlivých NPC", "appearance", "location/schedule", "historické cross-checky"],
+      "use": [
+        "detailní stránky jednotlivých NPC",
+        "appearance",
+        "location/schedule",
+        "historické cross-checky"
+      ],
       "status": "reference"
     },
     {
       "id": "schedule1-app-customer-profiles",
       "type": "customers",
       "url": "https://schedule1.app/customers/",
-      "use": ["profily jednotlivých zákazníků", "customer profile photos/portraits", "preference cross-check"],
+      "use": [
+        "profily jednotlivých zákazníků",
+        "customer profile photos/portraits",
+        "preference cross-check"
+      ],
       "status": "verified",
       "notes": "Používat konkrétní customer URL ve tvaru /customers/<slug> pro práci s hlavou/portrétem a profilem. Asset URL je potřeba ověřit před lokálním mirrorováním."
     },
@@ -78,57 +124,94 @@
       "id": "schedule1-lab-customer-tracker",
       "type": "customers",
       "url": "https://schedule1-lab.com/empire/customer-tracker",
-      "use": ["seznam zákazníků", "distriktové zkratky", "dealer assignment cross-check"],
+      "use": [
+        "seznam zákazníků",
+        "distriktové zkratky",
+        "dealer assignment cross-check"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1-mixer-customers",
       "type": "customers",
       "url": "https://scheduleonemixer.com/customers",
-      "use": ["zákaznické portréty", "names/slugs", "preferences cross-check"],
+      "use": [
+        "zákaznické portréty",
+        "names/slugs",
+        "preferences cross-check"
+      ],
       "status": "verified"
     },
     {
       "id": "schedule1-lab-community",
       "type": "community",
       "url": "https://schedule1-lab.com/community",
-      "use": ["komunitní recepty", "community examples", "customer matching"],
+      "use": [
+        "komunitní recepty",
+        "community examples",
+        "customer matching"
+      ],
       "status": "verified"
     },
     {
       "id": "steam-map-guide-3455934757",
       "type": "map",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3455934757",
-      "use": ["map reference"],
+      "use": [
+        "map reference"
+      ],
       "status": "reference"
     },
     {
       "id": "steam-map-guide-3672513712",
       "type": "map",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3672513712",
-      "use": ["map/community reference"],
+      "use": [
+        "map/community reference"
+      ],
       "status": "reference"
     },
     {
       "id": "wand-hyland-point",
       "type": "map",
       "url": "https://wand.com/de/maps/schedule-i/hyland-point",
-      "use": ["map cross-check"],
+      "use": [
+        "map cross-check"
+      ],
       "status": "reference"
     },
     {
       "id": "schedule1-customer-locations-article",
       "type": "customers",
       "url": "https://techsngames.com/schedule-1-all-customer-locations-preferences/",
-      "use": ["customer locations cross-check", "district placement", "preferences"],
+      "use": [
+        "customer locations cross-check",
+        "district placement",
+        "preferences"
+      ],
       "status": "reference"
     },
     {
       "id": "schedule1-npc-schedules",
       "type": "customers",
       "url": "https://www.playerauctions.com/schedule-1-guide/tips-guides/all-npc-locations-and-schedules/",
-      "use": ["NPC schedule/location cross-check"],
+      "use": [
+        "NPC schedule/location cross-check"
+      ],
       "status": "reference"
+    },
+    {
+      "id": "schedule1-poptracker-customer-assets",
+      "type": "customer-portraits",
+      "url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+      "use": [
+        "66 customer head/unlocked icons",
+        "portrait asset cross-check"
+      ],
+      "status": "verified",
+      "license": "MIT",
+      "pinned_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+      "notes": "Customer asset paths were matched 66/66 against the Helper customer database. The local build sync pins this commit."
     }
   ],
   "asset_policy": {
