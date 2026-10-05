@@ -1,25 +1,27 @@
 {
   "schema_version": 1,
-  "mode": "github-only",
+  "mode": "github-static+supabase",
   "auth": {
-    "mode": "local-profile",
-    "secure_server_auth": false,
-    "reason": "GitHub Pages is static; no server-side email/OTP verification in this build."
+    "mode": "supabase-auth",
+    "secure_server_auth": true,
+    "reason": "GitHub Pages serves the static client; Supabase Auth, RLS and Edge Functions provide the server-side identity and protected services."
   },
   "sharing": {
-    "mode": "url-payload",
+    "mode": "supabase-folders+url-payload",
     "share_id": true,
     "share_saved_data": false,
     "share_room_images": false
   },
   "storage": {
-    "mode": "localStorage",
+    "mode": "localStorage+supabase-storage",
     "export_import": true
   },
   "security": {
     "csp": "meta",
     "no_password_storage": true,
-    "no_client_side_otp_verification": true
+    "no_client_side_otp_verification": true,
+    "client_uses_publishable_key": true,
+    "secrets_server_only": true
   },
   "three_d": {
     "status": "coming-soon"
