@@ -237,6 +237,41 @@
         "locations"
       ],
       "status": "verified"
+    },
+    {
+      "id": "schedule1-io-properties",
+      "type": "properties",
+      "url": "https://schedule1.io/wiki/properties",
+      "use": [
+        "nemovitosti",
+        "cena",
+        "loading bays",
+        "limit zaměstnanců"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1-io-businesses",
+      "type": "businesses",
+      "url": "https://schedule1.io/wiki/businesses",
+      "use": [
+        "podniky",
+        "cena",
+        "laundering capacity"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1-io-vehicles",
+      "type": "vehicles",
+      "url": "https://schedule1.io/wiki/vehicles",
+      "use": [
+        "vozidla",
+        "cargo slots",
+        "top speed",
+        "acceleration"
+      ],
+      "status": "verified"
     }
   ],
   "asset_policy": {
