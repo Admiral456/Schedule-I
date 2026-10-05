@@ -212,6 +212,19 @@
       "license": "MIT",
       "pinned_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
       "notes": "Customer asset paths were matched 66/66 against the Helper customer database. The local build sync pins this commit."
+    },
+    {
+      "id": "schedule1-io-dealers",
+      "type": "dealers",
+      "url": "https://schedule1.io/wiki/dealers",
+      "use": [
+        "dealer database",
+        "buy-in",
+        "cut",
+        "customer capacity",
+        "locations"
+      ],
+      "status": "verified"
     }
   ],
   "asset_policy": {
