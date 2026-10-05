@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "source": "https://schedule1-lab.com/wiki/effects",
+  "verified_count": 35,
+  "total_count": 35,
+  "effects": [
+    {
+      "id": "shrinking",
+      "name": "Shrinking",
+      "price_multiplier": 0.607,
+      "rating_band": "S",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/shrinking",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "zombifying",
+      "name": "Zombifying",
+      "price_multiplier": 0.582,
+      "rating_band": "S",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/zombifying",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "cyclopean",
+      "name": "Cyclopean",
+      "price_multiplier": 0.56,
+      "rating_band": "S",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/cyclopean",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "anti-gravity",
+      "name": "Anti-Gravity",
+      "price_multiplier": 0.542,
+      "rating_band": "S",
+      "type": "Ability",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/anti-gravity",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "long-faced",
+      "name": "Long Faced",
+      "price_multiplier": 0.526,
+      "rating_band": "S",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/long-faced",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "electrifying",
+      "name": "Electrifying",
+      "price_multiplier": 0.504,
+      "rating_band": "S",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/electrifying",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "glowing",
+      "name": "Glowing",
+      "price_multiplier": 0.484,
+      "rating_band": "A",
+      "type": "Ability",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/glowing",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "tropic-thunder",
+      "name": "Tropic Thunder",
+      "price_multiplier": 0.466,
+      "rating_band": "A",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/tropic-thunder",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "thought-provoking",
+      "name": "Thought-Provoking",
+      "price_multiplier": 0.441,
+      "rating_band": "A",
+      "type": "Ability",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/thought-provoking",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "jennerising",
+      "name": "Jennerising",
+      "price_multiplier": 0.423,
+      "rating_band": "A",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/jennerising",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "bright-eyed",
+      "name": "Bright-Eyed",
+      "price_multiplier": 0.404,
+      "rating_band": "A",
+      "type": "Ability",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/bright-eyed",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "price_multiplier": 0.387,
+      "rating_band": "A",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/spicy",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "foggy",
+      "name": "Foggy",
+      "price_multiplier": 0.364,
+      "rating_band": "A",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/foggy",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "slippery",
+      "name": "Slippery",
+      "price_multiplier": 0.346,
+      "rating_band": "A",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/slippery",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "athletic",
+      "name": "Athletic",
+      "price_multiplier": 0.326,
+      "rating_band": "A",
+      "type": "Ability",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/athletic",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "balding",
+      "name": "Balding",
+      "price_multiplier": 0.305,
+      "rating_band": "A",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/balding",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "calorie-dense",
+      "name": "Calorie-Dense",
+      "price_multiplier": 0.285,
+      "rating_band": "B",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/calorie-dense",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "sedating",
+      "name": "Sedating",
+      "price_multiplier": 0.265,
+      "rating_band": "B",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/sedating",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "sneaky",
+      "name": "Sneaky",
+      "price_multiplier": 0.241,
+      "rating_band": "B",
+      "type": "Ability",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/sneaky",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "energizing",
+      "name": "Energizing",
+      "price_multiplier": 0.227,
+      "rating_band": "B",
+      "type": "Ability",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/energizing",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "gingeritis",
+      "name": "Gingeritis",
+      "price_multiplier": 0.204,
+      "rating_band": "B",
+      "type": "Cosmetic",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/gingeritis",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "euphoric",
+      "name": "Euphoric",
+      "price_multiplier": 0.181,
+      "rating_band": "B",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/euphoric",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "focused",
+      "name": "Focused",
+      "price_multiplier": 0.166,
+      "rating_band": "B",
+      "type": "Ability",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/focused",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "refreshing",
+      "name": "Refreshing",
+      "price_multiplier": 0.148,
+      "rating_band": "C",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/refreshing",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "munchies",
+      "name": "Munchies",
+      "price_multiplier": 0.126,
+      "rating_band": "C",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/munchies",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "calming",
+      "name": "Calming",
+      "price_multiplier": 0.105,
+      "rating_band": "C",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/calming",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "disorienting",
+      "name": "Disorienting",
+      "price_multiplier": 0.004,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/disorienting",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "explosive",
+      "name": "Explosive",
+      "price_multiplier": 0.003,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/explosive",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "laxative",
+      "name": "Laxative",
+      "price_multiplier": 0.004,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/laxative",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "lethal",
+      "name": "Lethal",
+      "price_multiplier": 0.005,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/lethal",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "paranoia",
+      "name": "Paranoia",
+      "price_multiplier": 0.004,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/paranoia",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "schizophrenic",
+      "name": "Schizophrenic",
+      "price_multiplier": 0.009,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/schizophrenic",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "seizure-inducing",
+      "name": "Seizure-Inducing",
+      "price_multiplier": 0.002,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/seizure-inducing",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "smelly",
+      "name": "Smelly",
+      "price_multiplier": 0.004,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/smelly",
+        "downloaded_to_repo": false
+      }
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "price_multiplier": 0.008,
+      "rating_band": "D",
+      "type": "State",
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1-lab.com/wiki/effects/toxic",
+        "downloaded_to_repo": false
+      }
+    }
+  ]
+}
