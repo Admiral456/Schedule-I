@@ -37,6 +37,8 @@ const shared = page.locator('[data-tab="shared"]').first();
 await shared.click();
 if (!(await page.locator("#view-shared").evaluate(el => el.classList.contains("active")))) throw new Error("Shared navigation failed");
 
+await page.locator('[data-tab-jump="home"]').first().click();
+await page.waitForFunction(() => document.querySelector("#view-home")?.classList.contains("active"));
 await page.locator("#homeSearch").fill("Fiona Hancock");
 await page.locator("#homeSearch").press("Enter");
 if (!(await page.locator("#view-customers").evaluate(el => el.classList.contains("active")))) throw new Error("Global customer search failed");
