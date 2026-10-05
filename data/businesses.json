@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "source_page": "https://schedule1.io/wiki/businesses",
+  "source_checked": "2026-10-05",
+  "verified_count": 4,
+  "total_count": 4,
+  "businesses": [
+    {
+      "id": "business-laundromat",
+      "name": "Laundromat",
+      "price": 4000,
+      "laundering_capacity": 2000,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "business-post-office",
+      "name": "The Post Office",
+      "price": 10000,
+      "laundering_capacity": 4000,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "business-car-wash",
+      "name": "The Car Wash",
+      "price": 20000,
+      "laundering_capacity": 6000,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "business-taco-ticklers",
+      "name": "Taco Ticklers",
+      "price": 50000,
+      "laundering_capacity": 8000,
+      "icon_status": "pending-exact-icon-verification"
+    }
+  ]
+}
