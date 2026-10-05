@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "purpose": "Centrální registr zdrojů použitých nebo ověřených při tvorbě Schedule I Helperu. Každý další import dat nebo assetů má přednostně vycházet z těchto zdrojů a provenance se má zapisovat přímo k datu.",
+  "sources": [
+    {
+      "id": "schedule1-lab-map",
+      "type": "map",
+      "url": "https://schedule1-lab.com/empire/map",
+      "use": ["Hyland Point 2D mapa", "zákazníci a jejich obvyklé lokace", "dealers", "properties", "districts"],
+      "status": "verified",
+      "notes": "Veřejná interaktivní mapa uvádí 66 zákazníků a upozorňuje, že některé zákaznické pozice ještě nejsou přesně zaměřené."
+    },
+    {
+      "id": "schedule1-lab-customers",
+      "type": "customers",
+      "url": "https://schedule1-lab.com/wiki/customers",
+      "use": ["zákaznická databáze", "preferované efekty", "rozpočty", "orders per week"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1-lab-recipes",
+      "type": "recipes",
+      "url": "https://schedule1-lab.com/community/recipes",
+      "use": ["komunitní recepty", "ingredience", "efekty", "ceny", "profit", "customer matching"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1-io-drugs",
+      "type": "drugs",
+      "url": "https://schedule1.io/wiki/drugs",
+      "use": ["základní drogy", "dodavatelé", "unlock informace", "přímé obrázkové assety"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1wiki-customers",
+      "type": "customers",
+      "url": "https://www.schedule1wiki.org/customers",
+      "use": ["cross-check zákaznických preferencí", "standards", "affinities"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1wiki-locations",
+      "type": "map",
+      "url": "https://www.schedule1wiki.org/locations",
+      "use": ["cross-check mapových kategorií a POI"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1wiki-items",
+      "type": "items",
+      "url": "https://www.schedule1wiki.org/items",
+      "use": ["suroviny", "items", "obrázky", "cross-check názvů"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1wiki-drugs",
+      "type": "drugs",
+      "url": "https://www.schedule1wiki.org/drugs",
+      "use": ["cross-check počtu a názvů drog", "produkční data"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1wiki-fandom",
+      "type": "wiki-reference",
+      "url": "https://schedule-1.fandom.com/",
+      "use": ["detailní stránky jednotlivých NPC", "appearance", "location/schedule", "historické cross-checky"],
+      "status": "reference"
+    },
+    {
+      "id": "schedule1-app-customer-profiles",
+      "type": "customers",
+      "url": "https://schedule1.app/customers/",
+      "use": ["profily jednotlivých zákazníků", "customer profile photos/portraits", "preference cross-check"],
+      "status": "verified",
+      "notes": "Používat konkrétní customer URL ve tvaru /customers/<slug> pro práci s hlavou/portrétem a profilem. Asset URL je potřeba ověřit před lokálním mirrorováním."
+    },
+    {
+      "id": "schedule1-lab-customer-tracker",
+      "type": "customers",
+      "url": "https://schedule1-lab.com/empire/customer-tracker",
+      "use": ["seznam zákazníků", "distriktové zkratky", "dealer assignment cross-check"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1-mixer-customers",
+      "type": "customers",
+      "url": "https://scheduleonemixer.com/customers",
+      "use": ["zákaznické portréty", "names/slugs", "preferences cross-check"],
+      "status": "verified"
+    },
+    {
+      "id": "schedule1-lab-community",
+      "type": "community",
+      "url": "https://schedule1-lab.com/community",
+      "use": ["komunitní recepty", "community examples", "customer matching"],
+      "status": "verified"
+    },
+    {
+      "id": "steam-map-guide-3455934757",
+      "type": "map",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3455934757",
+      "use": ["map reference"],
+      "status": "reference"
+    },
+    {
+      "id": "steam-map-guide-3672513712",
+      "type": "map",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3672513712",
+      "use": ["map/community reference"],
+      "status": "reference"
+    },
+    {
+      "id": "wand-hyland-point",
+      "type": "map",
+      "url": "https://wand.com/de/maps/schedule-i/hyland-point",
+      "use": ["map cross-check"],
+      "status": "reference"
+    },
+    {
+      "id": "schedule1-customer-locations-article",
+      "type": "customers",
+      "url": "https://techsngames.com/schedule-1-all-customer-locations-preferences/",
+      "use": ["customer locations cross-check", "district placement", "preferences"],
+      "status": "reference"
+    },
+    {
+      "id": "schedule1-npc-schedules",
+      "type": "customers",
+      "url": "https://www.playerauctions.com/schedule-1-guide/tips-guides/all-npc-locations-and-schedules/",
+      "use": ["NPC schedule/location cross-check"],
+      "status": "reference"
+    }
+  ],
+  "asset_policy": {
+    "portrait_priority": [
+      "schedule1.app customer profile photo",
+      "scheduleonemixer.com customer image",
+      "verified Schedule I wiki/Fandom image",
+      "only then another clearly game-derived source"
+    ],
+    "rules": [
+      "Never use a random real-person photo for a fictional customer.",
+      "Do not invent a customer portrait.",
+      "Before mirroring an image into the repository, verify the direct asset URL and provenance.",
+      "Prefer exact game-derived assets over fan-made recreations.",
+      "Keep source_page, source_asset and verification_status with every imported portrait."
+    ]
+  }
+}
