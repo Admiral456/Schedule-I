@@ -40,3 +40,14 @@ jobs:
           assert len(json.load(open('data/recipes.json'))['recipes']) >= 3
           print('PASS required data counts')
           PY
+      - name: Browser smoke test
+        run: |
+          set -e
+          npm init -y >/dev/null 2>&1
+          npm install --no-save playwright@1.55.0 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+          python3 -m http.server 4173 >/tmp/s1-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid || true' EXIT
+          sleep 2
+          node scripts/browser-smoke.mjs
