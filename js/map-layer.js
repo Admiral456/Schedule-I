@@ -15,6 +15,8 @@ function renderGroups(){
  const gs=[{id:"all",name:"Všechny skupiny",count:reg.public_pin_total},...reg.groups];
  $m("#mapGroupTabs").innerHTML=gs.map(x=>'<button class="map-group-tab '+(group===x.id?"active":"")+'" data-map-group="'+x.id+'" type="button">'+esc(x.name)+' <b>'+x.count+'</b></button>').join("");
 }
+function focusExternalEntity(type,id,name){if(!name)return;kind=type==="customer"?"customers":type==="dealer"?"dealers":type==="property"?"properties":type==="business"?"businesses":kind;group="all";const input=$m("#mapDataSearch");if(input)input.value=name;const dataType=type;const target=String(id);render();const item=$m("#mapDataResults [data-e='"+dataType+"'][data-id='"+CSS.escape(target)+"']");if(item){selectedKey=dataType+":"+target;render();item.scrollIntoView({block:"center",behavior:"smooth"});return true;}return false;}
+document.addEventListener("s1-map-focus",e=>{const d=e.detail||{};if(d.type&&d.id!=null)focusExternalEntity(d.type,d.id,d.name||"");});
 function openEntity(type,id,name,target){
  document.dispatchEvent(new CustomEvent("s1-map-open",{detail:{type,id,name,kind:target}}));
 }
