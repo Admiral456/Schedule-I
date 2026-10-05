@@ -13,9 +13,13 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "pending-exact-icon-verification",
-        "source_page": "https://schedule1.io/wiki/dealers"
-      }
+        "status": "verified-cdn",
+        "source_page": "https://schedule1.io/wiki/dealers",
+        "icon_url": "https://cdn.schedule1.io/wiki/dealers/benji-coleman.png"
+      },
+      "icon_url": "https://cdn.schedule1.io/wiki/dealers/benji-coleman.png",
+      "icon_status": "verified-cdn",
+      "icon_source_page": "https://schedule1.io/wiki/dealers"
     },
     {
       "id": "dealer-2",
@@ -25,9 +29,13 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "pending-exact-icon-verification",
-        "source_page": "https://schedule1.io/wiki/dealers"
-      }
+        "status": "verified-cdn",
+        "source_page": "https://schedule1.io/wiki/dealers",
+        "icon_url": "https://cdn.schedule1.io/wiki/dealers/molly-presley.png"
+      },
+      "icon_url": "https://cdn.schedule1.io/wiki/dealers/molly-presley.png",
+      "icon_status": "verified-cdn",
+      "icon_source_page": "https://schedule1.io/wiki/dealers"
     },
     {
       "id": "dealer-3",
@@ -37,9 +45,13 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "pending-exact-icon-verification",
-        "source_page": "https://schedule1.io/wiki/dealers"
-      }
+        "status": "verified-cdn",
+        "source_page": "https://schedule1.io/wiki/dealers",
+        "icon_url": "https://cdn.schedule1.io/wiki/dealers/brad-crosby.png"
+      },
+      "icon_url": "https://cdn.schedule1.io/wiki/dealers/brad-crosby.png",
+      "icon_status": "verified-cdn",
+      "icon_source_page": "https://schedule1.io/wiki/dealers"
     },
     {
       "id": "dealer-4",
@@ -49,9 +61,13 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "pending-exact-icon-verification",
-        "source_page": "https://schedule1.io/wiki/dealers"
-      }
+        "status": "verified-cdn",
+        "source_page": "https://schedule1.io/wiki/dealers",
+        "icon_url": "https://cdn.schedule1.io/wiki/dealers/jane-lucero.png"
+      },
+      "icon_url": "https://cdn.schedule1.io/wiki/dealers/jane-lucero.png",
+      "icon_status": "verified-cdn",
+      "icon_source_page": "https://schedule1.io/wiki/dealers"
     },
     {
       "id": "dealer-5",
@@ -61,9 +77,13 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "pending-exact-icon-verification",
-        "source_page": "https://schedule1.io/wiki/dealers"
-      }
+        "status": "verified-cdn",
+        "source_page": "https://schedule1.io/wiki/dealers",
+        "icon_url": "https://cdn.schedule1.io/wiki/dealers/wei-long.png"
+      },
+      "icon_url": "https://cdn.schedule1.io/wiki/dealers/wei-long.png",
+      "icon_status": "verified-cdn",
+      "icon_source_page": "https://schedule1.io/wiki/dealers"
     },
     {
       "id": "dealer-6",
@@ -73,9 +93,13 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "pending-exact-icon-verification",
-        "source_page": "https://schedule1.io/wiki/dealers"
-      }
+        "status": "verified-cdn",
+        "source_page": "https://schedule1.io/wiki/dealers",
+        "icon_url": "https://cdn.schedule1.io/wiki/dealers/leo-rivers.png"
+      },
+      "icon_url": "https://cdn.schedule1.io/wiki/dealers/leo-rivers.png",
+      "icon_status": "verified-cdn",
+      "icon_source_page": "https://schedule1.io/wiki/dealers"
     }
   ]
 }
