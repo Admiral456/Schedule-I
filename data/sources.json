@@ -29,6 +29,18 @@
       "status": "verified"
     },
     {
+      "id": "schedule1-lab-customer-schedules",
+      "type": "customers",
+      "url": "https://schedule1-lab.com/wiki/customers",
+      "use": [
+        "preferovaný den objednávky",
+        "obvyklý čas objednávky",
+        "customer schedule cross-check"
+      ],
+      "status": "verified",
+      "notes": "Aktuální profily zákazníků uvádějí Best day a Order time. Daily routines jsou samostatně uváděné jako komunitně získané a přibližné."
+    },
+    {
       "id": "schedule1-lab-recipes",
       "type": "recipes",
       "url": "https://schedule1-lab.com/community/recipes",
