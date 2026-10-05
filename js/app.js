@@ -6,6 +6,8 @@ const mapCategories=[{"name":"ATM","count":16},{"name":"Recycler","count":13},{"
 function showTab(name){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+name));window.scrollTo({top:0,behavior:"smooth"});}
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
 document.querySelectorAll("[data-tab-jump]").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tabJump)));
+$("#homeSearch")?.addEventListener("keydown",e=>{if(e.key!=="Enter")return;const value=e.currentTarget.value.trim().toLowerCase();if(!value)return;const customer=state.customers.find(c=>[c.name,c.district,c.tier,...c.preferred_effects].join(" ").toLowerCase().includes(value));if(customer){state.selectedCustomer=Number(customer.id);$("#customerSearch").value=e.currentTarget.value;showTab("customers");renderCustomers();return;}$("#recipeSearch").value=e.currentTarget.value;showTab("recipes");renderRecipes();});
+
 
 function loadLocal(){try{state.saved={recipes:[],customers:[],employees:[],rooms:[],other:[],...JSON.parse(localStorage.getItem(savedKey)||"{}")};}catch{state.saved={recipes:[],customers:[],employees:[],rooms:[],other:[]};}try{state.profile={displayName:"",...JSON.parse(localStorage.getItem(profileKey)||"{}")};}catch{}try{state.settings={density:"normal",defaultTab:"home",autoSave:true,...JSON.parse(localStorage.getItem(settingsKey)||"{}")};}catch{}}
 function persistSaved(){localStorage.setItem(savedKey,JSON.stringify(state.saved));}
