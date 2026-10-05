@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.13",
+  "version": "2026.10.05.14",
   "updated_at": "2026-10-05",
-  "message": "Komplexní dotažení vyhledávání, mapové legendy a asset registru",
+  "message": "Finální refine: vyhledávání, mapová legenda, registry a receptové ikony",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -35,6 +35,10 @@
     "Vyhledávání je tolerantní k diakritice.",
     "Mapová legenda rozšířena o veřejné kategorie obchodů a NPC podle aktuálního Wand cross-checku.",
     "Asset Registry opraven na správný manifest a aktuální status ikon.",
-    "Drobné UI fallbacky a přístupnost v katalogu a filtrech."
+    "Drobné UI fallbacky a přístupnost v katalogu a filtrech.",
+    "Globální vyhledávání bezpečně používá společný catalog registry bridge.",
+    "Všechny ověřené ingredient ikony se zobrazují i přímo v Recipe Finderu.",
+    "Mapové ověření zákazníků se bere přímo z datového statusu místo duplicitního seznamu jmen.",
+    "HTML styly sjednoceny do validní struktury dokumentu."
   ]
 }
