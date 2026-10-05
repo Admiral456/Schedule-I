@@ -6,7 +6,7 @@
     "https://steamcommunity.com/sharedfiles/filedetails/?id=3648936312"
   ],
   "notes": [
-    "Apply transformations to the current effect state before adding the ingredient base effect.",
+    "Apply transformations to the current effect state before adding the ingredient base effect. One replacement is chosen per ingredient; documented priority exceptions below are applied first.",
     "Paracetamol: Energizing -> Paranoia has priority; if Paranoia already exists, Energizing -> Balding.",
     "Donut: Calorie-Dense is not removed; adding Donut while Calorie-Dense exists also adds Explosive.",
     "Banana: Cyclopean -> Thought-Provoking has priority over Energizing -> Thought-Provoking.",
@@ -44,7 +44,9 @@
         "Long Faced": "Refreshing",
         "Calming": "Sneaky",
         "Paranoia": "Jennerising",
-        "Smelly": "Anti-Gravity"
+        "Smelly": "Anti-Gravity",
+        "Disorienting": "Focused",
+        "Focused": "Seizure-Inducing"
       }
     },
     {
@@ -181,7 +183,8 @@
         "Seizure-Inducing": "Focused",
         "Focused": "Disorienting",
         "Calming": "Glowing",
-        "Shrinking": "Electrifying"
+        "Shrinking": "Electrifying",
+        "Foggy": "Glowing"
       }
     },
     {
@@ -251,5 +254,6 @@
         "Seizure-Inducing": "Energizing"
       }
     }
-  ]
+  ],
+  "transformation_rule_count": 109
 }
