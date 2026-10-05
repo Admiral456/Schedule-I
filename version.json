@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.4",
+  "version": "2026.10.05.5",
   "updated_at": "2026-10-05",
-  "message": "Customer schedules v1",
+  "message": "Properties, businesses & vehicles v1",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -37,6 +37,10 @@
     "Přidána databáze 6 dealerů: lokace, vstupní cena, 20% podíl a kapacita 8 zákazníků.",
     "Dealeři jsou nyní dostupní přímo v Databázi vedle surovin, drog a efektů; jejich ikony zůstávají pending, dokud nebude ověřen přesný herní asset.",
     "Přidán ověřený den a obvyklý čas objednávky pro všech 66 zákazníků.",
-    "Zákazníky lze filtrovat podle dne a v profilu se zobrazuje obvyklý čas nákupu."
+    "Zákazníky lze filtrovat podle dne a v profilu se zobrazuje obvyklý čas nákupu.",
+    "Přidána databáze 3 nemovitostí s cenou, loading bays a limitem zaměstnanců.",
+    "Přidána databáze 4 podniků s cenou a kapacitou praní peněz.",
+    "Přidána databáze 6 vozidel s nákladovým prostorem a výkonnostními údaji.",
+    "Nemovitosti, podniky a vozidla jsou dostupné v Databázi; jejich ikony zůstávají pending do přesného ověření."
   ]
 }
