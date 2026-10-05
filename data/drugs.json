@@ -4,7 +4,7 @@
     "https://schedule1.io/wiki/drugs",
     "https://schedule1-lab.com/mix-explorer"
   ],
-  "verified_count": 6,
+  "verified_count": 7,
   "total_count": 7,
   "drugs": [
     {
@@ -94,17 +94,16 @@
       "base_price": 65,
       "base_effects": [],
       "source_page": "https://schedule1-lab.com/mix-explorer",
-      "icon_url": null,
-      "icon_status": "pending-exact-icon-verification",
-      "icon_local_path": null
+      "icon_url": "https://schedule1-lab.com/images/products/shrooms.webp",
+      "icon_status": "verified-source-image",
+      "icon_local_path": null,
+      "icon_source_type": "Schedule 1 Lab published product image"
     }
   ],
   "icon_audit": {
     "checked_on": "2026-10-05",
-    "verified_direct_image_count": 6,
-    "unresolved": [
-      "shrooms"
-    ],
-    "rule": "Never guess a missing icon URL. Shrooms remains unresolved because current public sources disagree on whether it is currently available."
+    "verified_direct_image_count": 7,
+    "unresolved": [],
+    "rule": "Only published image URLs are accepted; Shrooms was verified from the published Schedule 1 Lab product image used on the Reverse Recipe Search."
   }
 }
