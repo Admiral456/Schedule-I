@@ -121,10 +121,9 @@
         "Spicy"
       ],
       "map_position": {
-        "status": "not-verified-publicly",
+        "status": "verified-external-pin",
         "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
-        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -819,10 +818,9 @@
       "orders_per_week": "3-6",
       "preferred_effects": [],
       "map_position": {
-        "status": "not-verified-publicly",
+        "status": "verified-external-pin",
         "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
-        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -1187,6 +1185,12 @@
     "verified_external_pin_count": 62,
     "local_customer_count": 66,
     "unverified_customer_count": 4,
-    "note": "62 customer pins are published on Wand. Four customers in the 66-customer database are not present in that public customer layer; no coordinates are guessed."
+    "unverified_customers": [
+      "Irene Meadows",
+      "Bruce Norton",
+      "Kelly Reynolds",
+      "Sherman Giles"
+    ],
+    "note": "Wand's current checklist contains 62 named customer pins. Two local spellings are aliases (Tobas/Tobias and Caufield/Caulfield), leaving four local customers not represented in the public 62-pin layer. Exact local coordinates are not guessed."
   }
 }
