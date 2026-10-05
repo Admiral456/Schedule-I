@@ -31,10 +31,12 @@ function searchEverything(raw){
 }
 $("#homeSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")searchEverything(e.currentTarget.value);});
 document.addEventListener("s1-products-loaded",()=>{state.products=Array.isArray(window.__s1Products)?window.__s1Products:state.products;renderRecipes();});
+document.addEventListener("s1-saved-updated",reloadSavedFromStorage);
 
 
 function loadLocal(){try{state.saved={recipes:[],customers:[],employees:[],rooms:[],other:[],...JSON.parse(localStorage.getItem(savedKey)||"{}")};}catch{state.saved={recipes:[],customers:[],employees:[],rooms:[],other:[]};}try{state.profile={displayName:"",...JSON.parse(localStorage.getItem(profileKey)||"{}")};}catch{}try{state.settings={density:"normal",defaultTab:"home",autoSave:true,...JSON.parse(localStorage.getItem(settingsKey)||"{}")};}catch{}}
 function persistSaved(){localStorage.setItem(savedKey,JSON.stringify(state.saved));}
+function reloadSavedFromStorage(){try{const x=JSON.parse(localStorage.getItem(savedKey)||"{}");state.saved={recipes:[],customers:[],employees:[],rooms:[],other:[],...x};renderSaved();}catch{}}
 function persistProfile(){localStorage.setItem(profileKey,JSON.stringify(state.profile));}
 function persistSettings(){localStorage.setItem(settingsKey,JSON.stringify(state.settings));}
 function saveRecord(type,data){if(!state.saved[type])state.saved[type]=[];if(!state.saved[type].some(x=>x.key===data.key)){state.saved[type].unshift(data);persistSaved();renderSaved();}}
