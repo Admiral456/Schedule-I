@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://images.steamusercontent.com https://schedule1-lab.com https://cdn.schedule1.io https://www.schedule1wiki.org https://raw.githubusercontent.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://rwrmtuaopbomstjfdlsx.supabase.co wss://rwrmtuaopbomstjfdlsx.supabase.co; base-uri 'self'; form-action 'self'; object-src 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://images.steamusercontent.com https://schedule1-lab.com https://cdn.schedule1.io https://www.schedule1wiki.org https://raw.githubusercontent.com https://rwrmtuaopbomstjfdlsx.supabase.co; style-src 'self' 'unsafe-inline'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://rwrmtuaopbomstjfdlsx.supabase.co wss://rwrmtuaopbomstjfdlsx.supabase.co; base-uri 'self'; form-action 'self'; object-src 'none';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Schedule 1 Helper — Hyland Point mapa, zákazníci, recepty a osobní uložené položky.">
@@ -62,7 +62,7 @@
   </div>
 </section>
 <section class="view" id="view-account">
-  <div class="toolbar"><div><div class="label">Account</div><h2>Účet a nastavení</h2><p>GitHub-only režim používá místní profil. Bez backendu se nepokoušíme dělat falešné serverové přihlášení.</p></div></div>
+  <div class="toolbar"><div><div class="label">Account</div><h2>Účet a nastavení</h2><p>Profil a nastavení fungují lokálně, zatímco serverové sdílení a účet používají Supabase.</p></div></div>
   <div class="account-grid">
     <div class="account-card"><div class="label">Místní profil</div><h3 id="accountStatus">Nepřihlášen</h3>
       <form id="profileForm"><label class="field-label" for="displayName">Zobrazované jméno</label><input id="displayName" maxlength="40" placeholder="Tvé jméno"><button class="btn primary" type="submit">Uložit profil</button><button class="btn ghost danger" id="localSignOut" type="button">Odhlásit místní profil</button></form>
@@ -74,7 +74,7 @@
       <div class="setting-line"><span>Automatické ukládání</span><input id="autoSaveSetting" type="checkbox" checked></div>
       <div class="account-note">Nastavení je lokální v prohlížeči.</div>
     </div>
-    <div class="account-card"><div class="label">Přihlášení</div><span class="security-status warn">SERVER REQUIRED</span><h3>Bezpečné přihlášení</h3><div class="login-steps"><div><b>1</b><span>Zobrazované jméno + email</span></div><div><b>2</b><span>CAPTCHA: 10 znaků, minimálně 3 číslice</span></div><div><b>3</b><span>OTP: 13 číslic · platnost 2 minuty</span></div><div><b>4</b><span>Nový OTP nejdříve po 1 minutě</span></div></div><button class="btn" type="button" disabled>Spustit zabezpečené přihlášení</button><div class="account-note">V této GitHub-only verzi není přihlašovací tajemství ani OTP ověřování na klientu. Po přidání serverového auth lze tento workflow aktivovat bez ukládání hesel v prohlížeči.</div></div>
+    <div class="account-card"><div class="label">Přihlášení</div><span class="security-status good">SUPABASE AUTH</span><h3>Bezpečné přihlášení</h3><div class="login-steps"><div><b>1</b><span>Zobrazované jméno + email</span></div><div><b>2</b><span>CAPTCHA: 10 znaků, minimálně 3 číslice</span></div><div><b>3</b><span>OTP: 13 číslic · platnost 2 minuty</span></div><div><b>4</b><span>Nový OTP nejdříve po 1 minutě</span></div></div><button class="btn" type="button" disabled>Spustit zabezpečené přihlášení</button><div class="account-note">Serverový účet používá Supabase Auth a emailový OTP kód. Hesla se v Helperu neukládají.</div></div>
     <div class="account-card wide"><div class="label">Přenos dat</div><h3>Záloha workspace</h3><p>Export obsahuje pouze Saved položky, profil a nastavení. Import je validován před uložením.</p>
       <div class="share-actions"><button class="btn" id="exportData" type="button">Exportovat JSON</button><button class="btn" id="importData" type="button">Importovat JSON</button><button class="btn ghost danger" id="clearLocalData" type="button">Smazat lokální data</button><input id="importFile" type="file" accept="application/json" hidden></div>
     </div>
