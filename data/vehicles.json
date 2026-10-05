@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "source_page": "https://schedule1.io/wiki/vehicles",
+  "source_checked": "2026-10-05",
+  "verified_count": 6,
+  "total_count": 6,
+  "vehicles": [
+    {
+      "id": "vehicle-shitbox",
+      "name": "The Shitbox",
+      "price": 5000,
+      "cargo_slots": 5,
+      "top_speed_kmh": 53,
+      "zero_to_40_seconds": 3.1,
+      "zero_to_60_seconds": null,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "vehicle-veeper",
+      "name": "The Veeper",
+      "price": 9000,
+      "cargo_slots": 16,
+      "top_speed_kmh": 86,
+      "zero_to_40_seconds": 3.1,
+      "zero_to_60_seconds": 5.7,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "vehicle-bruiser",
+      "name": "The Bruiser",
+      "price": 12000,
+      "cargo_slots": 5,
+      "top_speed_kmh": 68,
+      "zero_to_40_seconds": 2.7,
+      "zero_to_60_seconds": 7.6,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "vehicle-dinkler",
+      "name": "The Dinkler",
+      "price": 15000,
+      "cargo_slots": 8,
+      "top_speed_kmh": 77,
+      "zero_to_40_seconds": 3.7,
+      "zero_to_60_seconds": 7.1,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "vehicle-hounddog",
+      "name": "The Hounddog",
+      "price": 25000,
+      "cargo_slots": 5,
+      "top_speed_kmh": 84,
+      "zero_to_40_seconds": 2.3,
+      "zero_to_60_seconds": 4.2,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "vehicle-cheetah",
+      "name": "The Cheetah",
+      "price": 40000,
+      "cargo_slots": 4,
+      "top_speed_kmh": 93,
+      "zero_to_40_seconds": 1.8,
+      "zero_to_60_seconds": 2.5,
+      "icon_status": "pending-exact-icon-verification"
+    }
+  ]
+}
