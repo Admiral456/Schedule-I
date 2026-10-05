@@ -18,7 +18,9 @@
         "source_asset_path": "/img/ingredients/cuke.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fcuke.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/cuke.webp",
+        "build_sync": true
       }
     },
     {
@@ -35,7 +37,9 @@
         "source_asset_path": "/img/ingredients/banana.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fbanana.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/banana.webp",
+        "build_sync": true
       }
     },
     {
@@ -52,7 +56,9 @@
         "source_asset_path": "/img/ingredients/paracetamol.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fparacetamol.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/paracetamol.webp",
+        "build_sync": true
       }
     },
     {
@@ -69,7 +75,9 @@
         "source_asset_path": "/img/ingredients/donut.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fdonut.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/donut.webp",
+        "build_sync": true
       }
     },
     {
@@ -86,7 +94,9 @@
         "source_asset_path": "/img/ingredients/viagor.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fviagor.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/viagor.webp",
+        "build_sync": true
       }
     },
     {
@@ -103,7 +113,9 @@
         "source_asset_path": "/img/ingredients/mouthwash.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fmouthwash.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/mouth-wash.webp",
+        "build_sync": true
       }
     },
     {
@@ -120,7 +132,9 @@
         "source_asset_path": "/img/ingredients/flu-medicine.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fflu-medicine.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/flu-medicine.webp",
+        "build_sync": true
       }
     },
     {
@@ -137,7 +151,9 @@
         "source_asset_path": "/img/ingredients/gasoline.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fgasoline.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/gasoline.webp",
+        "build_sync": true
       }
     },
     {
@@ -154,7 +170,9 @@
         "source_asset_path": "/img/ingredients/energy-drink.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fenergy-drink.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/energy-drink.webp",
+        "build_sync": true
       }
     },
     {
@@ -171,7 +189,9 @@
         "source_asset_path": "/img/ingredients/motor-oil.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_2EpygqDj9tzvGFeVq4tzzdbX2BR9&q=75&url=%2Fimg%2Fingredients%2Fmotor-oil.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/motor-oil.webp",
+        "build_sync": true
       }
     },
     {
@@ -188,7 +208,9 @@
         "source_asset_path": "/img/ingredients/mega-bean.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fmega-bean.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/mega-bean.webp",
+        "build_sync": true
       }
     },
     {
@@ -205,7 +227,9 @@
         "source_asset_path": "/img/ingredients/chili.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fchili.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/chili.webp",
+        "build_sync": true
       }
     },
     {
@@ -222,7 +246,9 @@
         "source_asset_path": "/img/ingredients/battery.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fbattery.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/battery.webp",
+        "build_sync": true
       }
     },
     {
@@ -239,7 +265,9 @@
         "source_asset_path": "/img/ingredients/iodine.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fiodine.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/iodine.webp",
+        "build_sync": true
       }
     },
     {
@@ -256,7 +284,9 @@
         "source_asset_path": "/img/ingredients/addy.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Faddy.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/addy.webp",
+        "build_sync": true
       }
     },
     {
@@ -273,7 +303,9 @@
         "source_asset_path": "/img/ingredients/horse-semen.webp",
         "rendered_asset_url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fhorse-semen.webp&w=96",
         "use_for_production": "yes",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "local_path": "./assets/game/ingredients/horse-semen.webp",
+        "build_sync": true
       }
     }
   ]
