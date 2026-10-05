@@ -2,867 +2,1072 @@
   "schema_version": 1,
   "purpose": "Evidence registry for exact in-game customer head/portrait assets. No fabricated portraits are used.",
   "source_priority": [
+    "ScheduleOne PopTracker asset mirror (MIT)",
     "https://schedule1.app/customers/",
     "https://scheduleonemixer.com/customers",
     "https://schedule-1.fandom.com/wiki/Customers"
   ],
+  "source": {
+    "repo": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+    "commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+    "license": "MIT",
+    "note": "Customer unlocked icons were matched 66/66 against the repository's customer database. These are game-derived assets; game/IP rights remain with respective owners."
+  },
   "customers": [
     {
       "id": 1,
       "name": "Fiona Hancock",
-      "slug": "fiona-hancock",
+      "slug": "fionahancock",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/fiona-hancock",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/fionahancockunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/fionahancockunlocked.png",
+        "local_path": "./assets/game/customers/fionahancockunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 2,
       "name": "Herbert Bleuball",
-      "slug": "herbert-bleuball",
+      "slug": "herbertbleuball",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/herbert-bleuball",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/herbertbleuballunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/herbertbleuballunlocked.png",
+        "local_path": "./assets/game/customers/herbertbleuballunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 3,
       "name": "Irene Meadows",
-      "slug": "irene-meadows",
+      "slug": "irenemeadows",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/irene-meadows",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/irenemeadowsunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/irenemeadowsunlocked.png",
+        "local_path": "./assets/game/customers/irenemeadowsunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 4,
       "name": "Jen Heard",
-      "slug": "jen-heard",
+      "slug": "jenheard",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/jen-heard",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jenheardunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jenheardunlocked.png",
+        "local_path": "./assets/game/customers/jenheardunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 5,
       "name": "Lily Turner",
-      "slug": "lily-turner",
+      "slug": "lilyturner",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/lily-turner",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/lilyturnerunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/lilyturnerunlocked.png",
+        "local_path": "./assets/game/customers/lilyturnerunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 6,
       "name": "Michael Boog",
-      "slug": "michael-boog",
+      "slug": "michaelboog",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/michael-boog",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/michaelboogunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/michaelboogunlocked.png",
+        "local_path": "./assets/game/customers/michaelboogunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 7,
       "name": "Tobias Wentworth",
-      "slug": "tobias-wentworth",
+      "slug": "tobiaswentworth",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/tobias-wentworth",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/tobiaswentworthunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/tobiaswentworthunlocked.png",
+        "local_path": "./assets/game/customers/tobiaswentworthunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 8,
       "name": "Walter Cussler",
-      "slug": "walter-cussler",
+      "slug": "waltercussler",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/walter-cussler",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/waltercusslerunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/waltercusslerunlocked.png",
+        "local_path": "./assets/game/customers/waltercusslerunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 9,
       "name": "Pearl Moore",
-      "slug": "pearl-moore",
+      "slug": "pearlmoore",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/pearl-moore",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/pearlmooreunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/pearlmooreunlocked.png",
+        "local_path": "./assets/game/customers/pearlmooreunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 10,
       "name": "Ray Hoffman",
-      "slug": "ray-hoffman",
+      "slug": "rayhoffman",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/ray-hoffman",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/rayhoffmanunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/rayhoffmanunlocked.png",
+        "local_path": "./assets/game/customers/rayhoffmanunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 11,
       "name": "Alison Knight",
-      "slug": "alison-knight",
+      "slug": "alisonknight",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/alison-knight",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/alisonknightunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/alisonknightunlocked.png",
+        "local_path": "./assets/game/customers/alisonknightunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 12,
       "name": "Carl Bundy",
-      "slug": "carl-bundy",
+      "slug": "carlbundy",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/carl-bundy",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/carlbundyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/carlbundyunlocked.png",
+        "local_path": "./assets/game/customers/carlbundyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 13,
       "name": "Chris Sullivan",
-      "slug": "chris-sullivan",
+      "slug": "chrissullivan",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/chris-sullivan",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/chrissullivanunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/chrissullivanunlocked.png",
+        "local_path": "./assets/game/customers/chrissullivanunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 14,
       "name": "Dennis Kennedy",
-      "slug": "dennis-kennedy",
+      "slug": "denniskennedy",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/dennis-kennedy",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/denniskennedyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/denniskennedyunlocked.png",
+        "local_path": "./assets/game/customers/denniskennedyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 15,
       "name": "Hank Stevenson",
-      "slug": "hank-stevenson",
+      "slug": "hankstevenson",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/hank-stevenson",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/hankstevensonunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/hankstevensonunlocked.png",
+        "local_path": "./assets/game/customers/hankstevensonunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 16,
       "name": "Harold Colt",
-      "slug": "harold-colt",
+      "slug": "haroldcolt",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/harold-colt",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/haroldcoltunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/haroldcoltunlocked.png",
+        "local_path": "./assets/game/customers/haroldcoltunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 17,
       "name": "Jack Knight",
-      "slug": "jack-knight",
+      "slug": "jackknight",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/jack-knight",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jackknightunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jackknightunlocked.png",
+        "local_path": "./assets/game/customers/jackknightunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 18,
       "name": "Jackie Stevenson",
-      "slug": "jackie-stevenson",
+      "slug": "jackiestevenson",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/jackie-stevenson",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jackiestevensonunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jackiestevensonunlocked.png",
+        "local_path": "./assets/game/customers/jackiestevensonunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 19,
       "name": "Jeremy Wilkinson",
-      "slug": "jeremy-wilkinson",
+      "slug": "jeremywilkinson",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/jeremy-wilkinson",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jeremywilkinsonunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jeremywilkinsonunlocked.png",
+        "local_path": "./assets/game/customers/jeremywilkinsonunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 20,
       "name": "George Greene",
-      "slug": "george-greene",
+      "slug": "georgegreene",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/george-greene",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/georgegreeneunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/georgegreeneunlocked.png",
+        "local_path": "./assets/game/customers/georgegreeneunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 21,
       "name": "Geraldine Poon",
-      "slug": "geraldine-poon",
+      "slug": "geraldinepoon",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/geraldine-poon",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/geraldinepoonunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/geraldinepoonunlocked.png",
+        "local_path": "./assets/game/customers/geraldinepoonunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 22,
       "name": "Dean Webster",
-      "slug": "dean-webster",
+      "slug": "deanwebster",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/dean-webster",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/deanwebsterunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/deanwebsterunlocked.png",
+        "local_path": "./assets/game/customers/deanwebsterunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 23,
       "name": "Anna Chesterfield",
-      "slug": "anna-chesterfield",
+      "slug": "annachesterfield",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/anna-chesterfield",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/annachesterfieldunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/annachesterfieldunlocked.png",
+        "local_path": "./assets/game/customers/annachesterfieldunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 24,
       "name": "Billy Kramer",
-      "slug": "billy-kramer",
+      "slug": "billykramer",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/billy-kramer",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/billykramerunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/billykramerunlocked.png",
+        "local_path": "./assets/game/customers/billykramerunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 25,
       "name": "Bruce Norton",
-      "slug": "bruce-norton",
+      "slug": "brucenorton",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/bruce-norton",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/brucenortonunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/brucenortonunlocked.png",
+        "local_path": "./assets/game/customers/brucenortonunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 26,
       "name": "Cranky Frank",
-      "slug": "cranky-frank",
+      "slug": "crankyfrank",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/cranky-frank",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/crankyfrankunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/crankyfrankunlocked.png",
+        "local_path": "./assets/game/customers/crankyfrankunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 27,
       "name": "Genghis Barn",
-      "slug": "genghis-barn",
+      "slug": "genghisbarn",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/genghis-barn",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/genghisbarnunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/genghisbarnunlocked.png",
+        "local_path": "./assets/game/customers/genghisbarnunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 28,
       "name": "Kelly Reynolds",
-      "slug": "kelly-reynolds",
+      "slug": "kellyreynolds",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/kelly-reynolds",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kellyreynoldsunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kellyreynoldsunlocked.png",
+        "local_path": "./assets/game/customers/kellyreynoldsunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 29,
       "name": "Lisa Gardener",
-      "slug": "lisa-gardener",
+      "slug": "lisagardener",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/lisa-gardener",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/lisagardenerunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/lisagardenerunlocked.png",
+        "local_path": "./assets/game/customers/lisagardenerunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 30,
       "name": "Mac Cooper",
-      "slug": "mac-cooper",
+      "slug": "maccooper",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/mac-cooper",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/maccooperunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/maccooperunlocked.png",
+        "local_path": "./assets/game/customers/maccooperunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 31,
       "name": "Marco Barone",
-      "slug": "marco-barone",
+      "slug": "marcobarone",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/marco-barone",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/marcobaroneunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/marcobaroneunlocked.png",
+        "local_path": "./assets/game/customers/marcobaroneunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 32,
       "name": "Melissa Wood",
-      "slug": "melissa-wood",
+      "slug": "melissawood",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/melissa-wood",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/melissawoodunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/melissawoodunlocked.png",
+        "local_path": "./assets/game/customers/melissawoodunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 33,
       "name": "Sherman Giles",
-      "slug": "sherman-giles",
+      "slug": "shermangiles",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/sherman-giles",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/shermangilesunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/shermangilesunlocked.png",
+        "local_path": "./assets/game/customers/shermangilesunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 34,
       "name": "Karen Kennedy",
-      "slug": "karen-kennedy",
+      "slug": "karenkennedy",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/karen-kennedy",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/karenkennedyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/karenkennedyunlocked.png",
+        "local_path": "./assets/game/customers/karenkennedyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 35,
       "name": "Elizabeth Homley",
-      "slug": "elizabeth-homley",
+      "slug": "elizabethhomley",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/elizabeth-homley",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/elizabethhomleyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/elizabethhomleyunlocked.png",
+        "local_path": "./assets/game/customers/elizabethhomleyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 36,
       "name": "Eugene Buckley",
-      "slug": "eugene-buckley",
+      "slug": "eugenebuckley",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/eugene-buckley",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/eugenebuckleyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/eugenebuckleyunlocked.png",
+        "local_path": "./assets/game/customers/eugenebuckleyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 37,
       "name": "Greg Figgle",
-      "slug": "greg-figgle",
+      "slug": "gregfiggle",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/greg-figgle",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/gregfiggleunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/gregfiggleunlocked.png",
+        "local_path": "./assets/game/customers/gregfiggleunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 38,
       "name": "Jennifer Rivera",
-      "slug": "jennifer-rivera",
+      "slug": "jenniferrivera",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/jennifer-rivera",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jenniferriveraunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jenniferriveraunlocked.png",
+        "local_path": "./assets/game/customers/jenniferriveraunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 39,
       "name": "Kevin Oakley",
-      "slug": "kevin-oakley",
+      "slug": "kevinoakley",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/kevin-oakley",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kevinoakleyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kevinoakleyunlocked.png",
+        "local_path": "./assets/game/customers/kevinoakleyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 40,
       "name": "Kim Delaney",
-      "slug": "kim-delaney",
+      "slug": "kimdelaney",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/kim-delaney",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kimdelaneyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kimdelaneyunlocked.png",
+        "local_path": "./assets/game/customers/kimdelaneyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 41,
       "name": "Louis Fourier",
-      "slug": "louis-fourier",
+      "slug": "louisfourier",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/louis-fourier",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/louisfourierunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/louisfourierunlocked.png",
+        "local_path": "./assets/game/customers/louisfourierunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 42,
       "name": "Lucy Pennington",
-      "slug": "lucy-pennington",
+      "slug": "lucypennington",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/lucy-pennington",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/lucypenningtonunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/lucypenningtonunlocked.png",
+        "local_path": "./assets/game/customers/lucypenningtonunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 43,
       "name": "Peggy Myers",
-      "slug": "peggy-myers",
+      "slug": "peggymyers",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/peggy-myers",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/peggymyersunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/peggymyersunlocked.png",
+        "local_path": "./assets/game/customers/peggymyersunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 44,
       "name": "Peter File",
-      "slug": "peter-file",
+      "slug": "peterfile",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/peter-file",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/peterfileunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/peterfileunlocked.png",
+        "local_path": "./assets/game/customers/peterfileunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 45,
       "name": "Philip Wentworth",
-      "slug": "philip-wentworth",
+      "slug": "philipwentworth",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/philip-wentworth",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/philipwentworthunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/philipwentworthunlocked.png",
+        "local_path": "./assets/game/customers/philipwentworthunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 46,
       "name": "Randy Caulfield",
-      "slug": "randy-caulfield",
+      "slug": "randycaulfield",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/randy-caulfield",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/randycaulfieldunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/randycaulfieldunlocked.png",
+        "local_path": "./assets/game/customers/randycaulfieldunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 47,
       "name": "Jessi Waters",
-      "slug": "jessi-waters",
+      "slug": "jessiwaters",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/jessi-waters",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jessiwatersunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jessiwatersunlocked.png",
+        "local_path": "./assets/game/customers/jessiwatersunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 48,
       "name": "Javier Perez",
-      "slug": "javier-perez",
+      "slug": "javierperez",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/javier-perez",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/javierperezunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/javierperezunlocked.png",
+        "local_path": "./assets/game/customers/javierperezunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 49,
       "name": "Jerry Montero",
-      "slug": "jerry-montero",
+      "slug": "jerrymontero",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/jerry-montero",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jerrymonterounlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jerrymonterounlocked.png",
+        "local_path": "./assets/game/customers/jerrymonterounlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 50,
       "name": "Kyle Cooley",
-      "slug": "kyle-cooley",
+      "slug": "kylecooley",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/kyle-cooley",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kylecooleyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kylecooleyunlocked.png",
+        "local_path": "./assets/game/customers/kylecooleyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 51,
       "name": "Austin Steiner",
-      "slug": "austin-steiner",
+      "slug": "austinsteiner",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/austin-steiner",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/austinsteinerunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/austinsteinerunlocked.png",
+        "local_path": "./assets/game/customers/austinsteinerunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 52,
       "name": "Kathy Henderson",
-      "slug": "kathy-henderson",
+      "slug": "kathyhenderson",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/kathy-henderson",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kathyhendersonunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kathyhendersonunlocked.png",
+        "local_path": "./assets/game/customers/kathyhendersonunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 53,
       "name": "Mick Lubbin",
-      "slug": "mick-lubbin",
+      "slug": "micklubbin",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/mick-lubbin",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/micklubbinunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/micklubbinunlocked.png",
+        "local_path": "./assets/game/customers/micklubbinunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 54,
       "name": "Charles Rowland",
-      "slug": "charles-rowland",
+      "slug": "charlesrowland",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/charles-rowland",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/charlesrowlandunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/charlesrowlandunlocked.png",
+        "local_path": "./assets/game/customers/charlesrowlandunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 55,
       "name": "Donna Martin",
-      "slug": "donna-martin",
+      "slug": "donnamartin",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/donna-martin",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/donnamartinunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/donnamartinunlocked.png",
+        "local_path": "./assets/game/customers/donnamartinunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 56,
       "name": "Doris Lubbin",
-      "slug": "doris-lubbin",
+      "slug": "dorislubbin",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/doris-lubbin",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/dorislubbinunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/dorislubbinunlocked.png",
+        "local_path": "./assets/game/customers/dorislubbinunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 57,
       "name": "Jeff Gilmore",
-      "slug": "jeff-gilmore",
+      "slug": "jeffgilmore",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/jeff-gilmore",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jeffgilmoreunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jeffgilmoreunlocked.png",
+        "local_path": "./assets/game/customers/jeffgilmoreunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 58,
       "name": "Joyce Ball",
-      "slug": "joyce-ball",
+      "slug": "joyceball",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/joyce-ball",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/joyceballunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/joyceballunlocked.png",
+        "local_path": "./assets/game/customers/joyceballunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 59,
       "name": "Mrs. Ming",
-      "slug": "mrs-ming",
+      "slug": "mrsming",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/mrs-ming",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/mrsmingunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/mrsmingunlocked.png",
+        "local_path": "./assets/game/customers/mrsmingunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 60,
       "name": "Trent Sherman",
-      "slug": "trent-sherman",
+      "slug": "trentsherman",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/trent-sherman",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/trentshermanunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/trentshermanunlocked.png",
+        "local_path": "./assets/game/customers/trentshermanunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 61,
       "name": "Sam Thompson",
-      "slug": "sam-thompson",
+      "slug": "samthompson",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/sam-thompson",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/samthompsonunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/samthompsonunlocked.png",
+        "local_path": "./assets/game/customers/samthompsonunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 62,
       "name": "Beth Penn",
-      "slug": "beth-penn",
+      "slug": "bethpenn",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/beth-penn",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/bethpennunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/bethpennunlocked.png",
+        "local_path": "./assets/game/customers/bethpennunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 63,
       "name": "Chloe Bowers",
-      "slug": "chloe-bowers",
+      "slug": "chloebowers",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/chloe-bowers",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/chloebowersunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/chloebowersunlocked.png",
+        "local_path": "./assets/game/customers/chloebowersunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 64,
       "name": "Keith Wagner",
-      "slug": "keith-wagner",
+      "slug": "keithwagner",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/keith-wagner",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/keithwagnerunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/keithwagnerunlocked.png",
+        "local_path": "./assets/game/customers/keithwagnerunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 65,
       "name": "Ludwig Meyer",
-      "slug": "ludwig-meyer",
+      "slug": "ludwigmeyer",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/ludwig-meyer",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/ludwigmeyerunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/ludwigmeyerunlocked.png",
+        "local_path": "./assets/game/customers/ludwigmeyerunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     },
     {
       "id": 66,
       "name": "Meg Cooley",
-      "slug": "meg-cooley",
+      "slug": "megcooley",
       "portrait": {
-        "status": "pending-direct-asset-verification",
-        "source_page": "https://schedule1.app/customers/meg-cooley",
-        "fallback_source_page": "https://scheduleonemixer.com/customers",
-        "asset_url": null,
-        "local_path": null,
-        "verified": false
+        "status": "verified-source-asset",
+        "source_page": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_repo": "RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_asset_path": "schedule_i_poptracker_razgriz/images/items/megcooleyunlocked.png",
+        "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+        "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/megcooleyunlocked.png",
+        "local_path": "./assets/game/customers/megcooleyunlocked.png",
+        "verified": true,
+        "license": "MIT (source repository); game/IP rights remain with respective owners"
       }
     }
   ]
