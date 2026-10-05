@@ -2,7 +2,7 @@
   "schema_version": 1,
   "version": "2026.10.05.1",
   "updated_at": "2026-10-05",
-  "message": "Core asset registry: 16 mixer ingredient icons, 6 verified base-drug icons, 35 effects data",
+  "message": "Asset Registry: exact icon provenance for mixer ingredients, production inputs and drugs",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -17,6 +17,10 @@
     "Do data/ingredients.json bylo přidáno všech 16 aktuálních mixer surovin s cenou, unlock rankem, base efektem a počtem transformačních pravidel.",
     "Do data/drugs.json bylo přidáno všech 7 základních produktů; 6 z nich má ověřený CDN icon source, Shrooms zůstává čekající na přesné ověření ikony.",
     "Do data/effects.json bylo přidáno všech 35 aktuálně vedených efektů a jejich price multipliers.",
-    "GitHub Pages build nyní při publikaci synchronizuje ověřené core assety do lokálního build artifactu."
+    "GitHub Pages build nyní při publikaci synchronizuje ověřené core assety do lokálního build artifactu.",
+    "Přidán Asset Registry a manifest provenience ikon.",
+    "13/16 mixer ingrediencí má potvrzený přímý veřejný CDN asset; 3 zůstávají pending verification bez hádání URL.",
+    "6/7 aktuálně vedených drug ikon má potvrzený přímý CDN asset; Shrooms zůstává pending, protože kontrolovaný zdroj neposkytl přesnou ikonu.",
+    "Přidány samostatné production-inputs.json a audit přesných asset URL."
   ]
 }
