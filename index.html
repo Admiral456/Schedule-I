@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://images.steamusercontent.com https://schedule1-lab.com https://cdn.schedule1.io https://www.schedule1wiki.org https://raw.githubusercontent.com https://rwrmtuaopbomstjfdlsx.supabase.co; style-src 'self' 'unsafe-inline'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://rwrmtuaopbomstjfdlsx.supabase.co wss://rwrmtuaopbomstjfdlsx.supabase.co; base-uri 'self'; form-action 'self'; object-src 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://images.steamusercontent.com https://schedule1-lab.com https://cdn.schedule1.io https://www.schedule1wiki.org https://raw.githubusercontent.com https://rwrmtuaopbomstjfdlsx.supabase.co; style-src 'self' 'unsafe-inline'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://rwrmtuaopbomstjfdlsx.supabase.co wss://rwrmtuaopbomstjfdlsx.supabase.co; frame-src https://wand.com; base-uri 'self'; form-action 'self'; object-src 'none';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Schedule 1 Helper — Hyland Point mapa, zákazníci, recepty a osobní uložené položky.">
@@ -58,6 +58,11 @@
     <div class="legend-card"><div class="legend-title">Ověřené mapové kategorie</div><div class="legend-source">Veřejný Hyland Point checklist</div><div id="mapCategoryList" class="category-list"></div><p class="legend-foot">Počty jsou veřejný cross-check a mohou se mezi zdroji lišit. Naše customer databáze používá 66 zákazníků podle Schedule 1 Lab.</p></div>
   </div>
   <div class="map-notice"><div><b>Customer piny až z ověřených souřadnic.</b><p>Veřejná interaktivní mapa vysvětluje, že část customer pozic ještě není přesně zaměřená. Proto je nevymýšlíme.</p></div><button class="btn ghost" data-tab-jump="customers">Zákazníci</button></div>
+  <section class="verified-map-source">
+    <div class="verified-map-head"><div><div class="label">Ověřený externí mapový layer</div><h3>Přesné pozice zákazníků</h3><p>Wand má na své mapě aktuálně 62 customer pinů. Používáme ho jako referenční mapovou vrstvu; naše databáze zákazníků zůstává na 66.</p></div><a class="btn ghost" href="https://wand.com/maps/schedule-i/hyland-point" target="_blank" rel="noopener noreferrer">Otevřít samostatně</a></div>
+    <div class="verified-map-frame"><iframe src="https://wand.com/maps/schedule-i/hyland-point" title="Wand – Hyland Point Schedule I map" loading="lazy" allow="clipboard-write"></iframe></div>
+    <div class="verified-map-foot">Zdroj mapových pinů: Wand. Stav zdroje se může změnit po patchi hry.</div>
+  </section>
 </section>
 <section class="view" id="view-customers">
   <div class="toolbar"><div><div class="label">Customer database</div><h2>Zákazníci</h2><p id="customerSummary">Načítám…</p></div><div class="filters"><input id="customerSearch" type="search" placeholder="Hledat jméno, distrikt nebo efekt…"><select id="districtFilter"><option value="">Všechny distrikty</option></select><select id="tierFilter"><option value="">Všechny tiery</option><option>Elite</option><option>High</option><option>Mid</option><option>Low</option></select><select id="customerDayFilter"><option value="">Všechny dny</option><option value="Monday">Pondělí</option><option value="Tuesday">Úterý</option><option value="Wednesday">Středa</option><option value="Thursday">Čtvrtek</option><option value="Friday">Pátek</option><option value="Saturday">Sobota</option><option value="Sunday">Neděle</option></select></div></div>
