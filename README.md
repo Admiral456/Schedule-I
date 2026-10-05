@@ -22,7 +22,7 @@ GitHub-only static web app for Schedule I / Hyland Point.
 - per-category + buttons in Moje uložené
 - room images from local file/gallery
 - employee → room assignment with temporary map highlight
-- shared folders with read-only URL snapshots
+- Supabase-backed shared folders with persistent server state
 - Update button + version.json release manifest + progress update bar
 - dynamic Co je nového release panel
 - share-link verification for ID, title, type and filters
@@ -80,7 +80,7 @@ Schedule-I/
 - security center and Content Security Policy metadata
 - local data can be deleted from the Account page
 
-Secure email/CAPTCHA/13-digit OTP login is not implemented as a fake client-side feature. GitHub Pages is static, so real server-side OTP verification and secret authentication keys require a separate backend.
+Serverové účty a sdílené složky používají Supabase Auth, PostgreSQL, Storage a Realtime. Frontend používá pouze publishable key; tajné klíče nejsou součástí webu.
 
 ## Accuracy
 
@@ -130,7 +130,11 @@ New releases are recorded in `version.json`. Active browsers check that manifest
 
 The Update button performs a confirmed version check. Publishing still happens through a commit to `main` and the GitHub Pages workflow; the browser must not contain a GitHub write token.
 
-Shared folders are local workspace folders containing snapshots of saved Recipes, Customers, Employees, Rooms and Other entries. The share link contains the snapshot itself. It is read-only for recipients and can be copied into their own workspace. It is not a realtime multi-user database.
+Shared folders jsou serverové workspace v Supabase. Mají role owner/editor/viewer, vlastní náhodný share token, databázové položky, soukromé obrázky ve Storage a Realtime aktualizace. Moje uložené zůstává lokální.
 
 Custom logos and room images are stored locally in the current browser in GitHub-only mode and are not uploaded to the public repository automatically.
 
+
+### Supabase backend
+
+The production shared-workspace backend is the Supabase project `Schedule 1` in the EU region. Database tables use Row Level Security and the browser uses a Supabase publishable key, which Supabase documents as safe to expose when access is constrained by RLS. See https://supabase.com/docs/guides/getting-started/api-keys and https://supabase.com/docs/guides/database/secure-data.
