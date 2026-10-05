@@ -71,3 +71,5 @@ body{background:#070a0e;color:var(--text);min-height:100vh}
 .verified-map-frame iframe{display:block;width:100%;height:560px;border:0;background:#06090c}
 .verified-map-foot{margin-top:7px;color:var(--muted);font-size:9px}
 @media(max-width:620px){.verified-map-frame iframe{height:480px}}
+
+.customer-map-badge{display:inline-flex;align-items:center;margin-top:5px;font-size:8px;line-height:1;border:1px solid var(--border);border-radius:999px;padding:4px 6px}.customer-map-badge.verified{color:var(--accent);border-color:rgba(114,227,160,.35);background:rgba(114,227,160,.06)}.customer-map-badge.pending{color:#d7b967}.detail-actions .full{margin-top:0}
