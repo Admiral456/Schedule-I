@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-05",
+  "policy": {
+    "official_game_mesh": false,
+    "exact_asset_claim_requires_source": true,
+    "unknown_assets_must_be_marked_pending": true
+  },
+  "groups": {
+    "ingredients": {
+      "count": 16,
+      "source": "Schedule 1 Lab",
+      "file": "data/ingredients.json"
+    },
+    "drugs": {
+      "count": 7,
+      "source": "Schedule 1 Lab / Schedule 1 Wiki",
+      "file": "data/drugs.json"
+    },
+    "effects": {
+      "count": 35,
+      "source": "Schedule 1 Lab",
+      "file": "data/effects.json"
+    }
+  },
+  "next_download_targets": [
+    "Download and commit exact ingredient source images into assets/ingredients/",
+    "Download and commit exact drug source images into assets/drugs/",
+    "Verify effect icons and commit only after visual/source verification"
+  ]
+}
