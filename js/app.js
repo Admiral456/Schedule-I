@@ -13,7 +13,7 @@ function searchEverything(raw){
  if(customer){state.selectedCustomer=Number(customer.id);$("#customerSearch").value=String(raw);showTab("customers");renderCustomers();return;}
  const recipe=state.recipes.find(x=>searchNorm([x.name,x.drug,...x.ingredients,...x.effects].join(" ")).includes(value));
  if(recipe){$("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();return;}
- const product=window.__s1Products?.find(x=>searchNorm([x.name,x.family,x.base_product,...x.ingredients,...x.effects].join(" ")).includes(value));
+ const product=(state.products||window.__s1Products||[]).find(x=>searchNorm([x.name,x.family,x.base_product,...x.ingredients,...x.effects].join(" ")).includes(value));
  if(product){
    const tab=document.querySelector('.tab[data-tab="products"]');
    tab?.click();
