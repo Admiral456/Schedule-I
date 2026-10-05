@@ -121,7 +121,10 @@
       drugs = d.drugs || [];
       ingredients = i.items || [];
       window.__s1Products = products;
+      const familySelect = document.querySelector("#productFamily");
+      if (familySelect) familySelect.innerHTML = "<option value=''>Všechny skupiny</option>" + [...new Set(products.map(x=>x.family).filter(Boolean))].sort().map(x=>"<option value='"+esc(x)+"'>"+esc(x)+"</option>").join("");
       render();
+      document.dispatchEvent(new CustomEvent("s1-products-loaded"));
     } catch {
       const root=document.querySelector("#productList");
       if(root)root.innerHTML='<div class="empty">Databázi produktů se nepodařilo načíst.</div>';
