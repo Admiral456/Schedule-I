@@ -59,7 +59,7 @@
   </div>
   <div class="map-notice"><div><b>Customer piny až z ověřených souřadnic.</b><p>Veřejná interaktivní mapa vysvětluje, že část customer pozic ještě není přesně zaměřená. Proto je nevymýšlíme.</p></div><button class="btn ghost" data-tab-jump="customers">Zákazníci</button></div>
   <section class="verified-map-source">
-    <div class="verified-map-head"><div><div class="label">Ověřený externí mapový layer</div><h3>Ověřené pozice zákazníků</h3><p>Wand má aktuálně 62 customer pinů. Vkládáme je jako externí referenční vrstvu; naše databáze zůstává na 66 zákaznících a neověřené 4 pozice nepřepisujeme odhadem.</p></div><a class="btn ghost" href="https://wand.com/maps/schedule-i/hyland-point" target="_blank" rel="noopener noreferrer">Otevřít samostatně</a></div>
+    <div class="verified-map-head"><div><div class="label">Ověřený externí mapový layer</div><h3>Ověřené pozice zákazníků</h3><p>Wand má aktuálně 62 pojmenovaných customer pinů. Vkládáme je jako externí referenční vrstvu; naše databáze zůstává na 66 zákaznících. Dvě lokální varianty jména jsou spárovány a 4 zákazníci zůstávají bez veřejně ověřeného pinu.</p></div><div class="verified-map-links"><a class="btn ghost" href="https://wand.com/maps/schedule-i/hyland-point" target="_blank" rel="noopener noreferrer">Otevřít mapu</a><a class="btn ghost" href="https://wand.com/hi/maps/schedule-i/hyland-point/checklist/npcs/customers" target="_blank" rel="noopener noreferrer">Checklist 62</a></div></div>
     <div class="verified-map-frame"><iframe src="https://wand.com/maps/schedule-i/hyland-point" title="Wand – Hyland Point Schedule I map" loading="lazy" allow="clipboard-write"></iframe></div>
     <div class="verified-map-foot">Zdroj mapových pinů: Wand. Stav zdroje se může změnit po patchi hry.</div>
   </section>
@@ -133,3 +133,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script type="module" src="./js/app.js"></script><script type="module" src="./js/shared.js"></script><script type="module" src="./js/ui-features.js"></script><script type="module" src="./js/catalog.js"></script><script type="module" src="./js/asset-ui.js"></script><script type="module" src="./js/asset-registry.js"></script>
 <script type="module" src="./js/recipe-assets-ui.js"></script>
 </body></html>
+<style>.verified-map-links{display:flex;gap:7px;flex-wrap:wrap}.customer-map-badge{margin-right:4px}</style>
