@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.15",
+  "version": "2026.10.05.16",
   "updated_at": "2026-10-05",
-  "message": "Map data layer: kategorie 243 pinů a propojené entity",
+  "message": "Ultimate upgrade: Planner, mobile UI, Saved tools and AI helper",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -43,6 +43,13 @@
     "Přidána lokální Map Data Layer pro 243 veřejných mapových pinů rozdělených do 29 kategorií a 5 skupin.",
     "Mapová vrstva má vyhledávání, filtry kategorií a rychlé přepnutí na zákazníky, dealery, nemovitosti a podniky.",
     "Kliknutí na entitu propojuje mapovou vrstvu přímo s detailem zákazníka nebo katalogem.",
-    "Přesné souřadnice se nevymýšlejí; veřejné customer piny zůstávají označené podle ověřeného externího zdroje."
+    "Přesné souřadnice se nevymýšlejí; veřejné customer piny zůstávají označené podle ověřeného externího zdroje.",
+    "Přidán Customer Planner pro 66 zákazníků s filtrem dne, tieru a času a napojením na ověřené customer schedules.",
+    "Přidán Dealer Planner a rychlé propojení dealerů do katalogu.",
+    "Recipe Finder dostal řazení podle profitu a počtu ingrediencí.",
+    "Přidána samostatná rychlá databáze 35 efektů s vyhledáváním.",
+    "Přidána responzivní mobilní navigace a společná PC/mobile layout vrstva.",
+    "Saved workspace má export a import JSON.",
+    "Přidán plovoucí AI pomocník připravený přes Supabase Edge Function + OpenAI API."
   ]
 }
