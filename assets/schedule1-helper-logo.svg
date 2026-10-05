@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 76" role="img" aria-labelledby="t d">
+<title id="t">Schedule 1 Helper</title><desc id="d">Schedule 1 Helper logo with a green leaf and number one</desc>
+<rect width="520" height="76" rx="12" fill="none"/>
+<g transform="translate(4 7)">
+<rect width="62" height="62" rx="11" fill="#101820" stroke="#293640" stroke-width="2"/>
+<path d="M31 52C28 39 19 33 16 20c10 0 17 5 20 13 3-8 9-15 18-18 0 12-6 23-18 27v10z" fill="#4be35f"/>
+<path d="M30 29v26" stroke="#1d7f2e" stroke-width="2.5" stroke-linecap="round"/>
+</g>
+<text x="78" y="55" font-family="Arial Narrow,Impact,Arial,sans-serif" font-size="43" font-weight="900" letter-spacing="1.1" fill="#f6f8fa">SCHEDULE</text>
+<text x="356" y="56" font-family="Arial Narrow,Impact,Arial,sans-serif" font-size="55" font-weight="900" fill="#9bf36d">1</text>
+<text x="402" y="52" font-family="Arial,sans-serif" font-size="25" font-weight="900" letter-spacing="1" fill="#25d85a">HELPER</text>
+</svg>
