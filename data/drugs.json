@@ -16,9 +16,10 @@
         "Calming"
       ],
       "source_page": "https://schedule1.io/wiki/drugs",
-      "icon_url": "https://cdn.schedule1.io/wiki/drugs/og-kush.png",
-      "icon_status": "verified-cdn",
-      "icon_local_path": "./assets/game/drugs/og-kush.png"
+      "icon_url": "https://www.schedule1wiki.org/drugs/OGKush_Icon.png",
+      "icon_status": "verified-image-source",
+      "icon_local_path": null,
+      "icon_source_type": "public-wiki-image"
     },
     {
       "id": "sour-diesel",
@@ -29,9 +30,10 @@
         "Refreshing"
       ],
       "source_page": "https://schedule1.io/wiki/drugs",
-      "icon_url": "https://cdn.schedule1.io/wiki/drugs/sour-diesel.png",
-      "icon_status": "verified-cdn",
-      "icon_local_path": "./assets/game/drugs/sour-diesel.png"
+      "icon_url": "https://www.schedule1wiki.org/drugs/SourDiesel_Icon.png",
+      "icon_status": "verified-image-source",
+      "icon_local_path": null,
+      "icon_source_type": "public-wiki-image"
     },
     {
       "id": "green-crack",
@@ -42,9 +44,10 @@
         "Energizing"
       ],
       "source_page": "https://schedule1.io/wiki/drugs",
-      "icon_url": "https://cdn.schedule1.io/wiki/drugs/green-crack.png",
-      "icon_status": "verified-cdn",
-      "icon_local_path": "./assets/game/drugs/green-crack.png"
+      "icon_url": "https://www.schedule1wiki.org/drugs/GreenCrack_Icon.png",
+      "icon_status": "verified-image-source",
+      "icon_local_path": null,
+      "icon_source_type": "public-wiki-image"
     },
     {
       "id": "granddaddy-purple",
@@ -55,9 +58,10 @@
         "Sedating"
       ],
       "source_page": "https://schedule1.io/wiki/drugs",
-      "icon_url": "https://cdn.schedule1.io/wiki/drugs/granddaddy-purple.png",
-      "icon_status": "verified-cdn",
-      "icon_local_path": "./assets/game/drugs/granddaddy-purple.png"
+      "icon_url": "https://www.schedule1wiki.org/drugs/GranddaddyPurple_Icon.png",
+      "icon_status": "verified-image-source",
+      "icon_local_path": null,
+      "icon_source_type": "public-wiki-image"
     },
     {
       "id": "meth",
@@ -66,9 +70,10 @@
       "base_price": 70,
       "base_effects": [],
       "source_page": "https://schedule1-lab.com/mix-explorer",
-      "icon_url": "https://cdn.schedule1.io/wiki/drugs/methamphetamine.png",
-      "icon_status": "verified-cdn",
-      "icon_local_path": "./assets/game/drugs/meth.png"
+      "icon_url": "https://www.schedule1wiki.org/drugs/Meth_Icon.png",
+      "icon_status": "verified-image-source",
+      "icon_local_path": null,
+      "icon_source_type": "public-wiki-image"
     },
     {
       "id": "cocaine",
@@ -77,9 +82,10 @@
       "base_price": 150,
       "base_effects": [],
       "source_page": "https://schedule1-lab.com/mix-explorer",
-      "icon_url": "https://cdn.schedule1.io/wiki/drugs/cocaine.png",
-      "icon_status": "verified-cdn",
-      "icon_local_path": "./assets/game/drugs/cocaine.png"
+      "icon_url": "https://www.schedule1wiki.org/drugs/Cocaine_Icon.png",
+      "icon_status": "verified-image-source",
+      "icon_local_path": null,
+      "icon_source_type": "public-wiki-image"
     },
     {
       "id": "shrooms",
@@ -95,10 +101,10 @@
   ],
   "icon_audit": {
     "checked_on": "2026-10-05",
-    "direct_cdn_verified_count": 6,
+    "verified_direct_image_count": 6,
     "unresolved": [
       "shrooms"
     ],
-    "rule": "Never guess a missing icon URL."
+    "rule": "Never guess a missing icon URL. Shrooms remains unresolved because current public sources disagree on whether it is currently available."
   }
 }
