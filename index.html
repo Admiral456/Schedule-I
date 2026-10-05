@@ -65,7 +65,7 @@
   </section>
 </section>
 <section class="view" id="view-customers">
-  <div class="toolbar"><div><div class="label">Customer database</div><h2>Zákazníci</h2><p id="customerSummary">Načítám…</p></div><div class="filters"><input id="customerSearch" type="search" placeholder="Hledat jméno, distrikt nebo efekt…"><select id="districtFilter"><option value="">Všechny distrikty</option></select><select id="tierFilter"><option value="">Všechny tiery</option><option>Elite</option><option>High</option><option>Mid</option><option>Low</option></select><select id="customerDayFilter"><option value="">Všechny dny</option><option value="Monday">Pondělí</option><option value="Tuesday">Úterý</option><option value="Wednesday">Středa</option><option value="Thursday">Čtvrtek</option><option value="Friday">Pátek</option><option value="Saturday">Sobota</option><option value="Sunday">Neděle</option></select></div></div>
+  <div class="toolbar"><div><div class="label">Customer database</div><h2>Zákazníci</h2><p id="customerSummary">Načítám…</p></div><div class="filters"><input id="customerSearch" type="search" placeholder="Hledat jméno, distrikt nebo efekt…"><select id="districtFilter"><option value="">Všechny distrikty</option></select><select id="tierFilter"><option value="">Všechny tiery</option><option>Elite</option><option>High</option><option>Mid</option><option>Low</option></select><select id="customerDayFilter"><option value="">Všechny dny</option><option value="Monday">Pondělí</option><option value="Tuesday">Úterý</option><option value="Wednesday">Středa</option><option value="Thursday">Čtvrtek</option><option value="Friday">Pátek</option><option value="Saturday">Sobota</option><option value="Sunday">Neděle</option></select><label class="pin-filter"><input id="customerPinFilter" type="checkbox"> Jen ověřené PINy</label></div></div>
   <div class="customer-layout"><div id="customerList" class="customer-list"></div><aside id="customerDetail" class="detail-panel"><div class="empty">Vyber zákazníka.</div></aside></div>
 </section>
 <section class="view" id="view-recipes">
@@ -134,3 +134,5 @@
 <script type="module" src="./js/recipe-assets-ui.js"></script>
 </body></html>
 <style>.verified-map-links{display:flex;gap:7px;flex-wrap:wrap}.customer-map-badge{margin-right:4px}</style>
+
+<style>.pin-filter{display:flex;align-items:center;gap:7px;min-height:42px;padding:8px 11px;border:1px solid var(--border);background:var(--panel);color:var(--muted);border-radius:10px;font-size:10px;cursor:pointer}.pin-filter input{width:16px;height:16px;margin:0;accent-color:#72e3a0}</style>
