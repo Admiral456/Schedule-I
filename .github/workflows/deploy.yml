@@ -28,6 +28,9 @@ jobs:
       - name: Sync core game icons
         run: bash scripts/sync-core-assets.sh
 
+      - name: Sync customer portraits
+        run: bash scripts/sync-customer-portraits.sh
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
