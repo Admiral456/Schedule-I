@@ -1,0 +1,703 @@
+{
+  "schema_version": 1,
+  "source": "https://schedule1.io/wiki/products",
+  "checked_on": "2026-10-05",
+  "note": "Produktové varianty jsou vedené jako veřejně zdokumentované kombinace. Smíšené produkty používají ověřenou ikonu svého základního produktu; samostatná přesná veřejná ikona konkrétní varianty se nevymýšlí.",
+  "products": [
+    {
+      "id": "og-kush",
+      "name": "OG Kush",
+      "family": "Weed",
+      "base_product": "OG Kush",
+      "effects": [
+        "Calming"
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "sour-diesel",
+      "name": "Sour Diesel",
+      "family": "Weed",
+      "base_product": "Sour Diesel",
+      "effects": [
+        "Refreshing"
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "green-crack",
+      "name": "Green Crack",
+      "family": "Weed",
+      "base_product": "Green Crack",
+      "effects": [
+        "Energizing"
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "granddaddy-purple",
+      "name": "Granddaddy Purple",
+      "family": "Weed",
+      "base_product": "Granddaddy Purple",
+      "effects": [
+        "Sedating"
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "aspen-death-og-donut",
+      "name": "Aspen Death",
+      "family": "Weed",
+      "base_product": "OG Kush",
+      "effects": [
+        "Calming",
+        "Calorie-Dense"
+      ],
+      "ingredients": [
+        "Donut"
+      ]
+    },
+    {
+      "id": "thick-crack",
+      "name": "Thick Crack",
+      "family": "Weed",
+      "base_product": "Sour Diesel",
+      "effects": [
+        "Refreshing",
+        "Calorie-Dense"
+      ],
+      "ingredients": [
+        "Donut"
+      ]
+    },
+    {
+      "id": "wedding-ass",
+      "name": "Wedding Ass",
+      "family": "Weed",
+      "base_product": "Sour Diesel",
+      "effects": [
+        "Refreshing",
+        "Tropic Thunder"
+      ],
+      "ingredients": [
+        "Viagor"
+      ]
+    },
+    {
+      "id": "ultra-slime",
+      "name": "Ultra Slime",
+      "family": "Weed",
+      "base_product": "Sour Diesel",
+      "effects": [
+        "Refreshing",
+        "Sneaky"
+      ],
+      "ingredients": [
+        "Paracetamol"
+      ]
+    },
+    {
+      "id": "thick-cake",
+      "name": "Thick Cake",
+      "family": "Weed",
+      "base_product": "OG Kush",
+      "effects": [
+        "Calming",
+        "Thought-Provoking"
+      ],
+      "ingredients": [
+        "Addy"
+      ]
+    },
+    {
+      "id": "super-cake",
+      "name": "Super Cake",
+      "family": "Weed",
+      "base_product": "OG Kush",
+      "effects": [
+        "Sneaky",
+        "Slippery"
+      ],
+      "ingredients": [
+        "Paracetamol"
+      ]
+    },
+    {
+      "id": "super-ass",
+      "name": "Super Ass",
+      "family": "Weed",
+      "base_product": "Thick Crack",
+      "effects": [
+        "Refreshing",
+        "Calorie-Dense",
+        "Explosive"
+      ],
+      "ingredients": [
+        "Donut"
+      ]
+    },
+    {
+      "id": "strawberry-shart",
+      "name": "Strawberry Shart",
+      "family": "Weed",
+      "base_product": "Granddaddy Purple",
+      "effects": [
+        "Munchies",
+        "Athletic"
+      ],
+      "ingredients": [
+        "Energy Drink"
+      ]
+    },
+    {
+      "id": "sexy-mclovin",
+      "name": "Sexy McLovin",
+      "family": "Weed",
+      "base_product": "Purple Diesel",
+      "effects": [
+        "Energizing",
+        "Calorie-Dense",
+        "Explosive"
+      ],
+      "ingredients": [
+        "Donut"
+      ]
+    },
+    {
+      "id": "purple-diesel",
+      "name": "Purple Diesel",
+      "family": "Weed",
+      "base_product": "Green Crack",
+      "effects": [
+        "Energizing",
+        "Calorie-Dense"
+      ],
+      "ingredients": [
+        "Donut"
+      ]
+    },
+    {
+      "id": "purple-cheese",
+      "name": "Purple Cheese",
+      "family": "Weed",
+      "base_product": "OG Kush",
+      "effects": [
+        "Balding",
+        "Anti-Gravity"
+      ],
+      "ingredients": [
+        "Mouth Wash"
+      ]
+    },
+    {
+      "id": "pink-cookies",
+      "name": "Pink Cookies",
+      "family": "Weed",
+      "base_product": "Green Crack",
+      "effects": [
+        "Energizing",
+        "Jennerising"
+      ],
+      "ingredients": [
+        "Iodine"
+      ]
+    },
+    {
+      "id": "la-monkey",
+      "name": "LA Monkey",
+      "family": "Weed",
+      "base_product": "OG Kush",
+      "effects": [
+        "Sedating",
+        "Bright-Eyed"
+      ],
+      "ingredients": [
+        "Flu Medicine"
+      ]
+    },
+    {
+      "id": "ice-cream-grool",
+      "name": "Ice Cream Grool",
+      "family": "Weed",
+      "base_product": "Granddaddy Purple",
+      "effects": [
+        "Sedating",
+        "Balding"
+      ],
+      "ingredients": [
+        "Mouth Wash"
+      ]
+    },
+    {
+      "id": "girl-scout-bud",
+      "name": "Girl Scout Bud",
+      "family": "Weed",
+      "base_product": "Sour Diesel",
+      "effects": [
+        "Refreshing",
+        "Long Faced"
+      ],
+      "ingredients": [
+        "Horse Semen"
+      ]
+    },
+    {
+      "id": "fat-cum",
+      "name": "Fat Cum",
+      "family": "Weed",
+      "base_product": "Green Crack",
+      "effects": [
+        "Energizing",
+        "Balding"
+      ],
+      "ingredients": [
+        "Mouth Wash"
+      ]
+    },
+    {
+      "id": "extreme-death",
+      "name": "Extreme Death",
+      "family": "Weed",
+      "base_product": "OG Kush",
+      "effects": [
+        "Calming",
+        "Calorie-Dense"
+      ],
+      "ingredients": [
+        "Donut"
+      ]
+    },
+    {
+      "id": "big-stink",
+      "name": "Big Stink",
+      "family": "Weed",
+      "base_product": "OG Kush",
+      "effects": [
+        "Calming",
+        "Bright-Eyed"
+      ],
+      "ingredients": [
+        "Battery"
+      ]
+    },
+    {
+      "id": "big-queef",
+      "name": "Big Queef",
+      "family": "Weed",
+      "base_product": "Extreme Death",
+      "effects": [
+        "Calming",
+        "Calorie-Dense",
+        "Explosive"
+      ],
+      "ingredients": [
+        "Donut"
+      ]
+    },
+    {
+      "id": "aspen-smegma",
+      "name": "Aspen Smegma",
+      "family": "Weed",
+      "base_product": "Granddaddy Purple",
+      "effects": [
+        "Energizing",
+        "Sedating"
+      ],
+      "ingredients": [
+        "Cuke"
+      ]
+    },
+    {
+      "id": "aspen-death-gdp-banana",
+      "name": "Aspen Death",
+      "family": "Weed",
+      "base_product": "Granddaddy Purple",
+      "effects": [
+        "Gingeritis",
+        "Sedating"
+      ],
+      "ingredients": [
+        "Banana"
+      ]
+    },
+    {
+      "id": "meth-lq",
+      "name": "Meth",
+      "family": "Meth · Low Quality",
+      "base_product": "Meth",
+      "effects": [],
+      "ingredients": []
+    },
+    {
+      "id": "white-grool",
+      "name": "White Grool",
+      "family": "Meth · Low Quality",
+      "base_product": "Meth",
+      "effects": [
+        "Gingeritis"
+      ],
+      "ingredients": [
+        "Banana"
+      ]
+    },
+    {
+      "id": "banana-shart-lq",
+      "name": "(LQ Meth) Banana Shart",
+      "family": "Meth · Low Quality",
+      "base_product": "White Grool",
+      "effects": [
+        "Energizing",
+        "Thought-Provoking"
+      ],
+      "ingredients": [
+        "Cuke"
+      ]
+    },
+    {
+      "id": "sweet-splooge-lq",
+      "name": "(LQ Meth) Sweet Splooge",
+      "family": "Meth · Low Quality",
+      "base_product": "Banana Shart",
+      "effects": [
+        "Paranoia",
+        "Sneaky",
+        "Thought-Provoking"
+      ],
+      "ingredients": [
+        "Paracetamol"
+      ]
+    },
+    {
+      "id": "death-cake-lq",
+      "name": "(LQ Meth) Death Cake",
+      "family": "Meth · Low Quality",
+      "base_product": "Sweet Splooge",
+      "effects": [
+        "Calming",
+        "Toxic",
+        "Thought-Provoking",
+        "Tropic Thunder"
+      ],
+      "ingredients": [
+        "Gasoline"
+      ]
+    },
+    {
+      "id": "aspen-grool-lq",
+      "name": "(LQ Meth) Aspen Grool",
+      "family": "Meth · Low Quality",
+      "base_product": "Death Cake",
+      "effects": [
+        "Calming",
+        "Euphoric",
+        "Energizing",
+        "Thought-Provoking",
+        "Tropic Thunder"
+      ],
+      "ingredients": [
+        "Cuke"
+      ]
+    },
+    {
+      "id": "meth-blue",
+      "name": "Meth",
+      "family": "Meth · Blue Star",
+      "base_product": "Meth",
+      "effects": [],
+      "ingredients": []
+    },
+    {
+      "id": "purple-diamond",
+      "name": "Purple Diamond",
+      "family": "Meth · Blue Star",
+      "base_product": "Meth",
+      "effects": [
+        "Gingeritis"
+      ],
+      "ingredients": [
+        "Banana"
+      ]
+    },
+    {
+      "id": "miracle-cock",
+      "name": "Miracle Cock",
+      "family": "Meth · Blue Star",
+      "base_product": "Purple Diamond",
+      "effects": [
+        "Gingeritis",
+        "Bright-Eyed"
+      ],
+      "ingredients": [
+        "Battery"
+      ]
+    },
+    {
+      "id": "pink-diesel",
+      "name": "Pink Diesel",
+      "family": "Meth · Blue Star",
+      "base_product": "Miracle Cock",
+      "effects": [
+        "Refreshing",
+        "Bright-Eyed",
+        "Long Faced"
+      ],
+      "ingredients": [
+        "Horse Semen"
+      ]
+    },
+    {
+      "id": "og-crack",
+      "name": "OG Crack",
+      "family": "Meth · Blue Star",
+      "base_product": "Pink Diesel",
+      "effects": [
+        "Refreshing",
+        "Sneaky",
+        "Bright-Eyed",
+        "Long Faced"
+      ],
+      "ingredients": [
+        "Paracetamol"
+      ]
+    },
+    {
+      "id": "super-queef-blue",
+      "name": "Super Queef",
+      "family": "Meth · Blue Star",
+      "base_product": "OG Crack",
+      "effects": [
+        "Refreshing",
+        "Toxic",
+        "Bright-Eyed",
+        "Tropic Thunder",
+        "Long Faced"
+      ],
+      "ingredients": [
+        "Gasoline"
+      ]
+    },
+    {
+      "id": "gorilla-cookies",
+      "name": "Gorilla Cookies",
+      "family": "Meth · Blue Star",
+      "base_product": "Super Queef",
+      "effects": [
+        "Refreshing",
+        "Euphoric",
+        "Energizing",
+        "Bright-Eyed",
+        "Tropic Thunder"
+      ],
+      "ingredients": [
+        "Cuke"
+      ]
+    },
+    {
+      "id": "fruity-stink",
+      "name": "Fruity Stink",
+      "family": "Meth · Blue Star",
+      "base_product": "Gorilla Cookies",
+      "effects": [
+        "Refreshing",
+        "Energizing",
+        "Laxative",
+        "Bright-Eyed",
+        "Tropic Thunder"
+      ],
+      "ingredients": [
+        "Cuke"
+      ]
+    },
+    {
+      "id": "granddaddy-cum",
+      "name": "Granddaddy Cum",
+      "family": "Meth · Blue Star",
+      "base_product": "Purple Diamond",
+      "effects": [
+        "Energizing",
+        "Thought-Provoking"
+      ],
+      "ingredients": [
+        "Cuke"
+      ]
+    },
+    {
+      "id": "fruity-smegma",
+      "name": "Fruity Smegma",
+      "family": "Meth · Blue Star",
+      "base_product": "Granddaddy Cum",
+      "effects": [
+        "Paranoia",
+        "Sneaky",
+        "Thought-Provoking"
+      ],
+      "ingredients": [
+        "Paracetamol"
+      ]
+    },
+    {
+      "id": "la-slime",
+      "name": "LA Slime",
+      "family": "Meth · Blue Star",
+      "base_product": "Fruity Smegma",
+      "effects": [
+        "Calming",
+        "Toxic",
+        "Thought-Provoking",
+        "Tropic Thunder"
+      ],
+      "ingredients": [
+        "Gasoline"
+      ]
+    },
+    {
+      "id": "ice-cream-ass",
+      "name": "Ice Cream Ass",
+      "family": "Meth · Blue Star",
+      "base_product": "LA Slime",
+      "effects": [
+        "Calming",
+        "Euphoric",
+        "Energizing",
+        "Thought-Provoking",
+        "Tropic Thunder"
+      ],
+      "ingredients": [
+        "Cuke"
+      ]
+    },
+    {
+      "id": "gorilla-durkle",
+      "name": "Gorilla Durkle",
+      "family": "Meth · Blue Star",
+      "base_product": "Ice Cream Ass",
+      "effects": [
+        "Calming",
+        "Euphoric",
+        "Energizing",
+        "Tropic Thunder",
+        "Electrifying"
+      ],
+      "ingredients": [
+        "Horse Semen"
+      ]
+    },
+    {
+      "id": "hairy-balls",
+      "name": "Hairy Balls",
+      "family": "Meth · Blue Star",
+      "base_product": "Gorilla Durkle",
+      "effects": [
+        "Euphoric",
+        "Foggy",
+        "Tropic Thunder",
+        "Glowing",
+        "Electrifying"
+      ],
+      "ingredients": [
+        "Mega Bean"
+      ]
+    },
+    {
+      "id": "dream-diesel",
+      "name": "Dream Diesel",
+      "family": "Meth · Blue Star",
+      "base_product": "Hairy Balls",
+      "effects": [
+        "Euphoric",
+        "Foggy",
+        "Bright-Eyed",
+        "Tropic Thunder",
+        "Glowing"
+      ],
+      "ingredients": [
+        "Battery"
+      ]
+    },
+    {
+      "id": "tokyo-stink",
+      "name": "Tokyo Stink",
+      "family": "Meth · Blue Star",
+      "base_product": "Ice Cream Ass",
+      "effects": [
+        "Calming",
+        "Energizing",
+        "Bright-Eyed",
+        "Thought-Provoking",
+        "Tropic Thunder"
+      ],
+      "ingredients": [
+        "Battery"
+      ]
+    },
+    {
+      "id": "slimy-puke",
+      "name": "Slimy Puke",
+      "family": "Meth · Blue Star",
+      "base_product": "Tokyo Stink",
+      "effects": [
+        "Calming",
+        "Energizing",
+        "Bright-Eyed",
+        "Tropic Thunder",
+        "Electrifying"
+      ],
+      "ingredients": [
+        "Horse Semen"
+      ]
+    },
+    {
+      "id": "ice-cream-cock",
+      "name": "Ice Cream Cock",
+      "family": "Meth · Blue Star",
+      "base_product": "Slimy Puke",
+      "effects": [
+        "Foggy",
+        "Bright-Eyed",
+        "Tropic Thunder",
+        "Glowing",
+        "Electrifying"
+      ],
+      "ingredients": [
+        "Mega Bean"
+      ]
+    }
+  ],
+  "base_products": [
+    {
+      "id": "og-kush",
+      "name": "OG Kush",
+      "family": "Weed"
+    },
+    {
+      "id": "sour-diesel",
+      "name": "Sour Diesel",
+      "family": "Weed"
+    },
+    {
+      "id": "green-crack",
+      "name": "Green Crack",
+      "family": "Weed"
+    },
+    {
+      "id": "granddaddy-purple",
+      "name": "Granddaddy Purple",
+      "family": "Weed"
+    },
+    {
+      "id": "meth",
+      "name": "Meth",
+      "family": "Meth"
+    },
+    {
+      "id": "cocaine",
+      "name": "Cocaine",
+      "family": "Cocaine"
+    },
+    {
+      "id": "shrooms",
+      "name": "Shrooms",
+      "family": "Shrooms"
+    }
+  ]
+}
