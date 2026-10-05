@@ -10,36 +10,40 @@
       "name": "Laundromat",
       "price": 4000,
       "laundering_capacity": 2000,
-      "icon_status": "verified-cdn",
-      "icon_url": "https://cdn.schedule1.io/wiki/businesses/laundromat.jpg",
-      "icon_source_page": "https://schedule1.io/wiki/businesses"
+      "icon_status": "verified-image-source",
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/d/d8/Laundromat.png/revision/latest?cb=20250403191629",
+      "icon_source_page": "https://schedule1.io/wiki/businesses",
+      "icon_source_type": "Fandom published image index"
     },
     {
       "id": "business-post-office",
       "name": "The Post Office",
       "price": 10000,
       "laundering_capacity": 4000,
-      "icon_status": "verified-cdn",
-      "icon_url": "https://cdn.schedule1.io/wiki/businesses/the-post-office.jpg",
-      "icon_source_page": "https://schedule1.io/wiki/businesses"
+      "icon_status": "verified-image-source",
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/1/1b/Post_Office.png/revision/latest?cb=20250403191618",
+      "icon_source_page": "https://schedule1.io/wiki/businesses",
+      "icon_source_type": "Fandom published image index"
     },
     {
       "id": "business-car-wash",
       "name": "The Car Wash",
       "price": 20000,
       "laundering_capacity": 6000,
-      "icon_status": "verified-cdn",
-      "icon_url": "https://cdn.schedule1.io/wiki/businesses/the-car-wash.jpg",
-      "icon_source_page": "https://schedule1.io/wiki/businesses"
+      "icon_status": "verified-image-source",
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/e/e2/Car_Wash.png/revision/latest?cb=20250403191640",
+      "icon_source_page": "https://schedule1.io/wiki/businesses",
+      "icon_source_type": "Fandom published image index"
     },
     {
       "id": "business-taco-ticklers",
       "name": "Taco Ticklers",
       "price": 50000,
       "laundering_capacity": 8000,
-      "icon_status": "verified-cdn",
-      "icon_url": "https://cdn.schedule1.io/wiki/businesses/taco-ticklers.jpg",
-      "icon_source_page": "https://schedule1.io/wiki/businesses"
+      "icon_status": "verified-image-source",
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/f/fc/Taco_Ticklers.png/revision/latest?cb=20250403191654",
+      "icon_source_page": "https://schedule1.io/wiki/businesses",
+      "icon_source_type": "Fandom published image index"
     }
   ]
 }
