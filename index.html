@@ -12,14 +12,43 @@
 <body>
 <div id="app">
 <header class="site-header">
-  <div class="brand"><div class="logo">S1</div><div><div class="eyebrow">Schedule 1 Helper</div><h1>Hyland Point</h1><p>Skutečný 2D mapový podklad · zákazníci · Recipe Finder</p></div></div>
-  <div class="header-actions"><a class="btn ghost" href="https://schedule1-lab.com/empire/map" target="_blank" rel="noopener noreferrer">Zdroj mapy</a><span class="build">GitHub Pages</span></div>
+  <div class="brand-wrap">
+    <a class="brand-logo" href="#" data-tab-jump="home" aria-label="Schedule 1 Helper – Domů"><img src="./assets/schedule1-helper-logo.svg" alt="Schedule 1 Helper"></a>
+  </div>
+  <nav class="primary-nav" aria-label="Hlavní sekce">
+    <button class="tab nav-tab active" data-tab="map" type="button">Mapa</button>
+    <button class="tab nav-tab" data-tab="recipes" type="button">Recipe Finder</button>
+    <button class="tab nav-tab" data-tab="guide" type="button">Guide</button>
+  </nav>
+  <div class="header-icon-actions" aria-label="Rychlý přístup">
+    <button class="tab round-tab" data-tab="customers" type="button" title="Zákazníci" aria-label="Zákazníci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.1"/><path d="M5.4 20c.7-3.6 3.1-5.3 6.6-5.3s5.9 1.7 6.6 5.3"/></svg></button>
+    <button class="tab round-tab" data-tab="saved" type="button" title="Saved" aria-label="Saved"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.6A2.6 2.6 0 0 1 8.6 2h6.8A2.6 2.6 0 0 1 18 4.6V21l-6-3.7L6 21V4.6Z"/></svg></button>
+    <button class="tab round-tab" data-tab="shared" type="button" title="Sdílení" aria-label="Sdílení"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5h5v5"/><path d="M20 5l-8 8"/><path d="M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></button>
+    <button class="tab settings-tab" data-tab="account" type="button" title="Nastavení" aria-label="Nastavení">
+      <span class="gear-ring" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.62.06-.94s-.02-.64-.07-.94l2.03-1.58-1.92-3.32-2.39.96a7.3 7.3 0 0 0-1.62-.94L14.9 3.5h-3.84l-.36 2.68c-.58.23-1.12.55-1.62.94l-2.39-.96L4.77 9.48l2.03 1.58c-.04.3-.07.62-.07.94s.02.64.06.94L4.77 14.52l1.92 3.32 2.39-.96c.49.39 1.04.71 1.62.94l.36 2.68h3.84l.36-2.68a7.2 7.2 0 0 0 1.62-.94l2.39.96 1.92-3.32-2.05-1.58ZM13 15.5A3.5 3.5 0 1 1 13 8a3.5 3.5 0 0 1 0 7.5Z"/></svg></span>
+    </button>
+  </div>
 </header>
-<nav class="tabs" aria-label="Hlavní sekce">
-  <button class="tab active" data-tab="map">Mapa</button><button class="tab" data-tab="customers">Zákazníci <span id="customerCountBadge">66</span></button><button class="tab" data-tab="recipes">Recipe Finder</button><button class="tab" data-tab="catalog">Databáze</button><button class="tab" data-tab="saved">Moje uložené</button><button class="tab" data-tab="shared">Sdílené složky</button><button class="tab" data-tab="share">Sdílení</button><button class="tab" data-tab="account">Účet</button><button class="tab" data-tab="security">Bezpečnost</button><button class="tab" data-tab="guide">Guide</button>
-</nav>
-<main>
-<section class="view active" id="view-map">
+<main><section class="view active" id="view-home">
+  <div class="home-hero">
+    <div class="home-kicker">CONTROL CENTER</div>
+    <h2>Všechno potřebné pro Hyland Point.</h2>
+    <p>Mapa, recepty a zákazníci bez zbytečného přepínání. Hlavní funkce jsou vpředu, ostatní zůstávají malé a po ruce.</p>
+    <label class="home-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg><input id="homeSearch" type="search" placeholder="Hledat zákazníka, recept, ingredienci nebo efekt…" autocomplete="off"></label>
+    <div class="home-quick"><button class="home-pill primary" type="button" data-tab-jump="map">Otevřít mapu</button><button class="home-pill" type="button" data-tab-jump="recipes">Recipe Finder</button><button class="home-pill" type="button" data-tab-jump="customers">Zákazníci</button></div>
+  </div>
+  <div class="home-heading"><h3>Hlavní nástroje</h3><span>Mapa + Recipe Finder</span></div>
+  <div class="home-tools">
+    <button class="home-tool home-map" type="button" data-tab-jump="map"><span class="home-tool-top"><span class="home-label">EXPLORE</span><span class="home-arrow">↗</span></span><strong>Mapa</strong><small>Hyland Point se stávajícími ikonami a důležitými místy.</small><span class="home-open">Otevřít mapu</span><i class="home-orbit"></i></button>
+    <button class="home-tool home-recipe" type="button" data-tab-jump="recipes"><span class="home-tool-top"><span class="home-label">CALCULATE</span><span class="home-arrow">↗</span></span><strong>Recipe Finder</strong><small>Hledej recepty podle drogy, ingredience nebo efektu.</small><span class="home-open">Otevřít Recipe Finder</span><i class="home-orbit"></i></button>
+  </div>
+  <div class="home-bottom">
+    <button class="home-link" type="button" data-tab-jump="catalog"><span>Databáze</span><small>věci, efekty, ceny a zdroje</small></button>
+    <button class="home-link" type="button" data-tab-jump="guide"><span>Guide</span><small>jak Helper používat</small></button>
+    <span class="home-note">Mapové ikony jsou zachované přímo v hlavním mapovém režimu.</span>
+  </div>
+</section>
+<section class="view" id="view-map">
   <div class="toolbar"><div><div class="label">Hyland Point · 2D</div><h2>Skutečná mapa Schedule 1</h2><p>Reálný mapový podklad s ikonovou vrstvou. 3D režim zatím zůstává Coming Soon.</p></div><div class="map-actions"><button class="btn" id="zoomIn">+</button><button class="btn" id="zoomOut">−</button><button class="btn" id="resetMap">Reset</button></div></div>
   <div class="map-shell"><div class="map-topline"><div class="map-source"><span class="source-dot"></span> Hyland Point · mapa s ikonami</div><div class="coming-soon">3D režim · Coming Soon</div></div><div class="map-viewport" id="mapViewport" aria-label="Skutečný mapový podklad Hyland Point"><img id="mapImage" alt="Skutečný mapový podklad Hyland Point ze Schedule 1" src="https://images.steamusercontent.com/ugc/13562576119991961762/A5D0CBA243749DA41CD219EDA782A291DED542C5/"><div class="map-hint">Kolečko / trackpad = zoom · tažení = posun</div></div></div>
   <div class="legend-grid">
