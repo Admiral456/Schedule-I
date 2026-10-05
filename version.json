@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.18",
+  "version": "2026.10.05.19",
   "updated_at": "2026-10-05",
-  "message": "Authenticated AI with admin-ready unlimited role",
+  "message": "Functional cleanup: navigation, employees and product recipe book",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -60,6 +60,12 @@
     "AI nyní vyžaduje platné Supabase přihlášení a limit se váže přímo na účet.",
     "Administrátorská role je připravena přes Supabase app_metadata role=admin, ale žádný účet zatím není označen jako administrátor.",
     "Administrátor obchází AI rate limit i globální strop; běžné účty zůstávají omezené.",
-    "AI backend přijímá pouze textovou zprávu a herní kontext; soubory, obrázky, audio a video jsou odmítnuty."
+    "AI backend přijímá pouze textovou zprávu a herní kontext; soubory, obrázky, audio a video jsou odmítnuty.",
+    "Opravené klikání na hlavní navigační prvky včetně Nastavení pomocí společné tab navigace.",
+    "Employees nyní ukládají Pozici a Místnost přímo k novému záznamu místo chybného přepsání prvního zaměstnance.",
+    "Přidána databáze veřejně zdokumentovaných produktových variant a receptních cest.",
+    "Přidána sekce Produkty / příchutě s filtrem, hledáním a skutečnými ověřenými ikonami základních produktů a ingrediencí.",
+    "Globální hledání nově najde i produktové varianty.",
+    "Update ovladač je napojen na nový header."
   ]
 }
