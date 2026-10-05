@@ -23,7 +23,7 @@ async function loadCatalogData(){
 }
 function imageMarkup(src,name){
   return src
-    ? "<img src='"+esc(src)+"' alt='"+esc(name)+"' loading='lazy' referrerpolicy='no-referrer'>"
+    ? "<img src='"+esc(src)+"' alt='"+esc(name)+"' loading='lazy' decoding='async' referrerpolicy='no-referrer' onerror=\"this.hidden=true;this.nextElementSibling.hidden=false\"><span class='catalog-missing' hidden>Zdrojový obrázek nelze načíst</span>"
     : "<span class='catalog-missing'>Přesná ikona zatím nebyla ověřena</span>";
 }
 function renderCatalog(){
@@ -36,7 +36,7 @@ function renderCatalog(){
     const family=String(x.family||x.type||"").toLowerCase();
     return !q||(name+" "+effect+" "+family).includes(q);
   });
-  $c("#catalogSummary").textContent=list.length+" / "+all.length+" položek · zdrojové ikony jsou označené podle provenance";
+  $c("#catalogSummary").textContent=list.length+" / "+all.length+" položek · ověřené ikony používají publikovaný zdroj; neověřené zůstávají označené";
   if(kind==="ingredients"){
     $c("#catalogList").innerHTML=list.map(x=>{
       const src=x.icon?.rendered_asset_url||x.icon?.secondary_source_asset_url||"";
