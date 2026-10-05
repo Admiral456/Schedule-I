@@ -37,6 +37,13 @@
     <label class="home-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg><input id="homeSearch" type="search" placeholder="Hledat zákazníka, recept, ingredienci nebo efekt…" autocomplete="off"></label>
     <div class="home-quick"><button class="home-pill primary" type="button" data-tab-jump="map">Otevřít mapu</button><button class="home-pill" type="button" data-tab-jump="recipes">Recipe Finder</button><button class="home-pill" type="button" data-tab-jump="customers">Zákazníci</button></div>
   </div>
+  <div class="home-data-strip" aria-label="Aktuální databázové pokrytí">
+    <div class="home-data"><strong>66</strong><span>Zákazníků</span><small>62 veřejných pinů</small></div>
+    <div class="home-data"><strong>35</strong><span>Efektů</span><small>data ověřena</small></div>
+    <div class="home-data"><strong>7</strong><span>Drog</span><small>7 ikon ověřeno</small></div>
+    <div class="home-data"><strong>6</strong><span>Dealerů</span><small>6 ikon ověřeno</small></div>
+    <div class="home-data"><strong>6</strong><span>Vozidel</span><small>6 ikon ověřeno</small></div>
+  </div>
   <div class="home-heading"><h3>Hlavní nástroje</h3><span>Mapa + Recipe Finder</span></div>
   <div class="home-tools">
     <button class="home-tool home-map" type="button" data-tab-jump="map"><span class="home-tool-top"><span class="home-label">EXPLORE</span><span class="home-arrow">↗</span></span><strong>Mapa</strong><small>Hyland Point se stávajícími ikonami a důležitými místy.</small><span class="home-open">Otevřít mapu</span><i class="home-orbit"></i></button>
@@ -136,3 +143,4 @@
 <style>.verified-map-links{display:flex;gap:7px;flex-wrap:wrap}.customer-map-badge{margin-right:4px}</style>
 
 <style>.pin-filter{display:flex;align-items:center;gap:7px;min-height:42px;padding:8px 11px;border:1px solid var(--border);background:var(--panel);color:var(--muted);border-radius:10px;font-size:10px;cursor:pointer}.pin-filter input{width:16px;height:16px;margin:0;accent-color:#72e3a0}</style>
+<style>.home-data-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin:0 12px 12px}.home-data{border:1px solid #202a34;background:#0b1015;border-radius:10px;padding:9px 10px;min-width:0}.home-data strong{display:block;font-size:18px;line-height:1.1;letter-spacing:-.03em}.home-data span{display:block;color:#c2cbd2;font-size:10px;margin-top:3px}.home-data small{display:block;color:#5f6b76;font-size:8px;margin-top:2px}@media(max-width:900px){.home-data-strip{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:620px){.home-data-strip{grid-template-columns:repeat(2,minmax(0,1fr));margin-left:4px;margin-right:4px}}</style>
