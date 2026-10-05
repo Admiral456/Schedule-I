@@ -133,3 +133,4 @@ The Update button performs a confirmed version check. Publishing still happens t
 Shared folders are local workspace folders containing snapshots of saved Recipes, Customers, Employees, Rooms and Other entries. The share link contains the snapshot itself. It is read-only for recipients and can be copied into their own workspace. It is not a realtime multi-user database.
 
 Custom logos and room images are stored locally in the current browser in GitHub-only mode and are not uploaded to the public repository automatically.
+
