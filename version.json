@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.04.5",
-  "updated_at": "2026-10-04",
-  "message": "Final polish: custom S1 logo and employee-card room navigation",
+  "version": "2026.10.05.1",
+  "updated_at": "2026-10-05",
+  "message": "Core asset registry: 16 mixer ingredient icons, 6 verified base-drug icons, 35 effects data",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -12,6 +12,11 @@
     "Přidán dynamický blok Co je nového.",
     "Přidána kontrola sdíleného odkazu, která ověřuje, že změny filtru/názvu/ID jsou skutečně zapsané v URL.",
     "Tlačítko Update nyní nejdřív vyžádá potvrzení uživatele.",
-    "Výchozí logo bylo vizuálně upraveno a kliknutí na zaměstnance s přiřazenou místností otevře dočasné mapové zvýraznění."
+    "Výchozí logo bylo vizuálně upraveno a kliknutí na zaměstnance s přiřazenou místností otevře dočasné mapové zvýraznění.",
+    "Nová sekce Databáze zobrazuje ověřené suroviny, základní produkty a efekty.",
+    "Do data/ingredients.json bylo přidáno všech 16 aktuálních mixer surovin s cenou, unlock rankem, base efektem a počtem transformačních pravidel.",
+    "Do data/drugs.json bylo přidáno všech 7 základních produktů; 6 z nich má ověřený CDN icon source, Shrooms zůstává čekající na přesné ověření ikony.",
+    "Do data/effects.json bylo přidáno všech 35 aktuálně vedených efektů a jejich price multipliers.",
+    "GitHub Pages build nyní při publikaci synchronizuje ověřené core assety do lokálního build artifactu."
   ]
 }
