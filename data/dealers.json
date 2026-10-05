@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "source_page": "https://schedule1.io/wiki/dealers",
+  "source_checked": "2026-10-05",
+  "verified_count": 6,
+  "total_count": 6,
+  "dealers": [
+    {
+      "id": "dealer-1",
+      "name": "Benji Coleman",
+      "location": "Motel Room 2",
+      "buy_in": 500,
+      "cut": 0.2,
+      "max_customers": 8,
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1.io/wiki/dealers"
+      }
+    },
+    {
+      "id": "dealer-2",
+      "name": "Molly Presley",
+      "location": "Brown Apartment",
+      "buy_in": 1000,
+      "cut": 0.2,
+      "max_customers": 8,
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1.io/wiki/dealers"
+      }
+    },
+    {
+      "id": "dealer-3",
+      "name": "Brad Crosby",
+      "location": "Parking Garage",
+      "buy_in": 2000,
+      "cut": 0.2,
+      "max_customers": 8,
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1.io/wiki/dealers"
+      }
+    },
+    {
+      "id": "dealer-4",
+      "name": "Jane Lucero",
+      "location": "Docks RV",
+      "buy_in": 3000,
+      "cut": 0.2,
+      "max_customers": 8,
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1.io/wiki/dealers"
+      }
+    },
+    {
+      "id": "dealer-5",
+      "name": "Wei Long",
+      "location": "Suburbia Shack",
+      "buy_in": 4000,
+      "cut": 0.2,
+      "max_customers": 8,
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1.io/wiki/dealers"
+      }
+    },
+    {
+      "id": "dealer-6",
+      "name": "Leo Rivers",
+      "location": "Near Church",
+      "buy_in": 5000,
+      "cut": 0.2,
+      "max_customers": 8,
+      "icon": {
+        "status": "pending-exact-icon-verification",
+        "source_page": "https://schedule1.io/wiki/dealers"
+      }
+    }
+  ]
+}
