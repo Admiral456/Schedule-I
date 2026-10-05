@@ -14,9 +14,10 @@ function searchEverything(raw){
  const recipe=state.recipes.find(x=>[x.name,x.drug,...x.ingredients,...x.effects].join(" ").toLowerCase().includes(value));
  if(recipe){$("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();return;}
  $("#catalogSearch").value=String(raw);
+ const catalog=window.__s1Catalog||{};
  const kindOrder=["ingredients","drugs","effects","dealers","properties","businesses","vehicles"];
- const hit=kindOrder.find(kind=>(CATALOG[kind]||[]).some(x=>[x.name,x.family,x.type,x.base_effect,x.location].filter(Boolean).join(" ").toLowerCase().includes(value)));
- if(hit){$("#catalogKind").value=hit;showTab("catalog");if(typeof renderCatalog==="function")renderCatalog();return;}
+ const hit=kindOrder.find(kind=>(catalog[kind]||[]).some(x=>[x.name,x.family,x.type,x.base_effect,x.location].filter(Boolean).join(" ").toLowerCase().includes(value)));
+ if(hit){$("#catalogKind").value=hit;showTab("catalog");$("#catalogSearch").dispatchEvent(new Event("input",{bubbles:true}));return;}
  $("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();
 }
 $("#homeSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")searchEverything(e.currentTarget.value);});
