@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-05",
+  "source_policy": {
+    "exact": "Source page exposes the asset directly; URL is recorded.",
+    "verified_render": "Rendered image from a published community source; keep provenance.",
+    "pending": "No independently accessible exact asset; do not invent.",
+    "user_reference": "Useful for visual comparison only, not proof of an official internal file."
+  },
+  "groups": {
+    "mixer_ingredients": {
+      "count": 16,
+      "verified_exact_cdn": 13,
+      "pending_exact": [
+        "battery",
+        "addy",
+        "mega-bean"
+      ]
+    },
+    "production_inputs": {
+      "count": 5,
+      "verified_exact_cdn": 5
+    },
+    "drugs": {
+      "count": 7,
+      "verified_exact_cdn": 6,
+      "pending_exact": [
+        "shrooms"
+      ]
+    },
+    "effects": {
+      "count": 35,
+      "exact_icons_pending": 35
+    }
+  },
+  "recommended_display": "Use transparent exact CDN/community assets where provenance is recorded; never replace missing assets with emoji, generic stock art, or invented SVGs.",
+  "sources": [
+    {
+      "id": "schedule1io-items",
+      "url": "https://schedule1.io/wiki/items",
+      "role": "item and ingredient image index"
+    },
+    {
+      "id": "schedule1io-drugs",
+      "url": "https://schedule1.io/wiki/drugs",
+      "role": "drug image index"
+    },
+    {
+      "id": "schedule1lab-ingredients",
+      "url": "https://schedule1-lab.com/wiki/ingredients",
+      "role": "ingredient data and rendered assets"
+    },
+    {
+      "id": "schedule1lab-map",
+      "url": "https://schedule1-lab.com/empire/map",
+      "role": "map reference"
+    }
+  ],
+  "icon_urls": [
+    {
+      "id": "cuke",
+      "type": "mixer-ingredient",
+      "name": "Cuke",
+      "url": "https://cdn.schedule1.io/wiki/items/cuke.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "banana",
+      "type": "mixer-ingredient",
+      "name": "Banana",
+      "url": "https://cdn.schedule1.io/wiki/items/banana.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "paracetamol",
+      "type": "mixer-ingredient",
+      "name": "Paracetamol",
+      "url": "https://cdn.schedule1.io/wiki/items/paracetamol.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "donut",
+      "type": "mixer-ingredient",
+      "name": "Donut",
+      "url": "https://cdn.schedule1.io/wiki/items/donut.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "viagor",
+      "type": "mixer-ingredient",
+      "name": "Viagor",
+      "url": "https://cdn.schedule1.io/wiki/items/viagra.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "mouth-wash",
+      "type": "mixer-ingredient",
+      "name": "Mouth Wash",
+      "url": "https://cdn.schedule1.io/wiki/items/mouth-wash.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "flu-medicine",
+      "type": "mixer-ingredient",
+      "name": "Flu Medicine",
+      "url": "https://cdn.schedule1.io/wiki/items/flu-medicine.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "gasoline",
+      "type": "mixer-ingredient",
+      "name": "Gasoline",
+      "url": "https://cdn.schedule1.io/wiki/items/gasoline.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "energy-drink",
+      "type": "mixer-ingredient",
+      "name": "Energy Drink",
+      "url": "https://cdn.schedule1.io/wiki/items/energy-drink.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "motor-oil",
+      "type": "mixer-ingredient",
+      "name": "Motor Oil",
+      "url": "https://cdn.schedule1.io/wiki/items/motor-oil.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "mega-bean",
+      "type": "mixer-ingredient",
+      "name": "Mega Bean",
+      "url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fmega-bean.webp&w=96",
+      "status": "verified-rendered-source"
+    },
+    {
+      "id": "chili",
+      "type": "mixer-ingredient",
+      "name": "Chili",
+      "url": "https://cdn.schedule1.io/wiki/items/chili.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "battery",
+      "type": "mixer-ingredient",
+      "name": "Battery",
+      "url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Fbattery.webp&w=96",
+      "status": "verified-rendered-source"
+    },
+    {
+      "id": "iodine",
+      "type": "mixer-ingredient",
+      "name": "Iodine",
+      "url": "https://cdn.schedule1.io/wiki/items/iodine.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "addy",
+      "type": "mixer-ingredient",
+      "name": "Addy",
+      "url": "https://schedule1-lab.com/_next/image?dpl=dpl_3qtCHHhU7tqyv2TUUN13EUd7Gmix&q=75&url=%2Fimg%2Fingredients%2Faddy.webp&w=96",
+      "status": "verified-rendered-source"
+    },
+    {
+      "id": "horse-semen",
+      "type": "mixer-ingredient",
+      "name": "Horse Semen",
+      "url": "https://cdn.schedule1.io/wiki/items/horse-semen.png",
+      "status": "schedule1.io-direct-cdn"
+    },
+    {
+      "id": "acid",
+      "type": "production-input",
+      "name": "Acid",
+      "url": "https://cdn.schedule1.io/wiki/items/acid.png",
+      "status": "source-page-direct"
+    },
+    {
+      "id": "phosphorus",
+      "type": "production-input",
+      "name": "Phosphorus",
+      "url": "https://cdn.schedule1.io/wiki/items/phosphorus.png",
+      "status": "source-page-direct"
+    },
+    {
+      "id": "low-quality-pseudo",
+      "type": "production-input",
+      "name": "Low-Quality Pseudo",
+      "url": "https://cdn.schedule1.io/wiki/items/low-quality-pseudo.png",
+      "status": "source-page-direct"
+    },
+    {
+      "id": "pseudo",
+      "type": "production-input",
+      "name": "Pseudo",
+      "url": "https://cdn.schedule1.io/wiki/items/pseudo.png",
+      "status": "source-page-direct"
+    },
+    {
+      "id": "high-quality-pseudo",
+      "type": "production-input",
+      "name": "High-Quality Pseudo",
+      "url": "https://cdn.schedule1.io/wiki/items/high-quality-pseudo.png",
+      "status": "source-page-direct"
+    },
+    {
+      "id": "og-kush",
+      "type": "drug",
+      "name": "OG Kush",
+      "url": "https://cdn.schedule1.io/wiki/drugs/og-kush.png",
+      "status": "verified-cdn"
+    },
+    {
+      "id": "sour-diesel",
+      "type": "drug",
+      "name": "Sour Diesel",
+      "url": "https://cdn.schedule1.io/wiki/drugs/sour-diesel.png",
+      "status": "verified-cdn"
+    },
+    {
+      "id": "green-crack",
+      "type": "drug",
+      "name": "Green Crack",
+      "url": "https://cdn.schedule1.io/wiki/drugs/green-crack.png",
+      "status": "verified-cdn"
+    },
+    {
+      "id": "granddaddy-purple",
+      "type": "drug",
+      "name": "Granddaddy Purple",
+      "url": "https://cdn.schedule1.io/wiki/drugs/granddaddy-purple.png",
+      "status": "verified-cdn"
+    },
+    {
+      "id": "meth",
+      "type": "drug",
+      "name": "Meth",
+      "url": "https://cdn.schedule1.io/wiki/drugs/methamphetamine.png",
+      "status": "verified-cdn"
+    },
+    {
+      "id": "cocaine",
+      "type": "drug",
+      "name": "Cocaine",
+      "url": "https://cdn.schedule1.io/wiki/drugs/cocaine.png",
+      "status": "verified-cdn"
+    },
+    {
+      "id": "shrooms",
+      "type": "drug",
+      "name": "Shrooms",
+      "url": null,
+      "status": "pending-exact-icon-verification"
+    }
+  ]
+}
