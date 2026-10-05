@@ -86,9 +86,9 @@
     <article class="security-card"><span class="security-status good">AKTIVNÍ</span><h3>CSP</h3><p>Skripty a síťová volání jsou omezená na vlastní web a povolený mapový obrázek.</p></article>
     <article class="security-card"><span class="security-status good">AKTIVNÍ</span><h3>Bez hesel</h3><p>Helper nikde neukládá heslo ani OTP.</p></article>
     <article class="security-card"><span class="security-status good">AKTIVNÍ</span><h3>Share bez secrets</h3><p>Sdílené URL neobsahuje autentizační údaje ani Saved workspace.</p></article>
-    <article class="security-card"><span class="security-status warn">BACKEND NUTNÝ</span><h3>Skutečné přihlášení</h3><p>Email + CAPTCHA + serverově ověřený OTP není bezpečné implementovat pouze v GitHub Pages.</p></article>
+    <article class="security-card"><span class="security-status warn">BACKEND NUTNÝ</span><h3>Skutečné přihlášení</h3><p>Supabase Auth zajišťuje serverové ověření emailového přihlášení; vlastní CAPTCHA bez serverového ověření nepřidáváme.</p></article>
   </div>
-  <div class="security-spec"><div><b>Login specifikace</b><span>Zobrazované jméno → CAPTCHA 10 znaků, min. 3 číslice → OTP 13 číslic.</span></div><div><b>OTP</b><span>Platnost 2 minuty · nový kód nejdříve po 1 minutě.</span></div><div><b>Produkční pravidlo</b><span>OTP ověřovat serverově; do statického klientu nedávat tajné klíče.</span></div></div>
+  <div class="security-spec"><div><b>Login specifikace</b><span>Zobrazované jméno → CAPTCHA 10 znaků, min. 3 číslice → OTP 13 číslic.</span></div><div><b>OTP</b><span>Platnost a limity přihlašovacího emailu/OTP řídí Supabase Auth.</span></div><div><b>Produkční pravidlo</b><span>Používat publishable key v klientu + RLS; tajné klíče pouze na backendu.</span></div></div>
 </section>
 <section class="view" id="view-guide">
   <div class="toolbar"><div><div class="label">Project guide</div><h2>Guide & Co je nového</h2><p>Co je hotové, co je ověřené a co čeká.</p></div></div>
