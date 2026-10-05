@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.11",
+  "version": "2026.10.05.12",
   "updated_at": "2026-10-05",
-  "message": "Zpřesnění mapových aliasů a ověřené Shrooms ikony",
+  "message": "Další zdokonalení katalogu a customer mapy",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -27,6 +27,9 @@
     "Zákaznický detail a seznam ukazují stav veřejného mapového pinu.",
     "Opraveno párování lokálních variant jmen Tobias/Tobas a Caulfield/Caufield na 62 veřejných customer pinů.",
     "CSP nyní povoluje ověřenou Shroom_Icon.png z veřejného Fandom CDN.",
-    "Mapová coverage výslovně uvádí 62 veřejných pinů a 4 zákazníky bez veřejného ověření."
+    "Mapová coverage výslovně uvádí 62 veřejných pinů a 4 zákazníky bez veřejného ověření.",
+    "Zdrojové URL dealerů, nemovitostí a podniků nahrazeny přesnými publikovanými image assety z Fandom image indexu.",
+    "Katalog má bezpečný fallback pro nedostupný zdrojový obrázek.",
+    "Zákazníci mají filtr Jen ověřené PINy."
   ]
 }
