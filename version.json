@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.3",
+  "version": "2026.10.05.4",
   "updated_at": "2026-10-05",
-  "message": "Dealer database v1",
+  "message": "Customer schedules v1",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -35,6 +35,8 @@
     "Přidán bezpečný fallback na pinned zdrojový asset, pokud lokální kopie při deployi není dostupná.",
     "Opravena duplicitní záložka Databáze.",
     "Přidána databáze 6 dealerů: lokace, vstupní cena, 20% podíl a kapacita 8 zákazníků.",
-    "Dealeři jsou nyní dostupní přímo v Databázi vedle surovin, drog a efektů; jejich ikony zůstávají pending, dokud nebude ověřen přesný herní asset."
+    "Dealeři jsou nyní dostupní přímo v Databázi vedle surovin, drog a efektů; jejich ikony zůstávají pending, dokud nebude ověřen přesný herní asset.",
+    "Přidán ověřený den a obvyklý čas objednávky pro všech 66 zákazníků.",
+    "Zákazníky lze filtrovat podle dne a v profilu se zobrazuje obvyklý čas nákupu."
   ]
 }
