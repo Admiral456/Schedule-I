@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.6",
+  "version": "2026.10.05.7",
   "updated_at": "2026-10-05",
-  "message": "Supabase serverové sdílení",
+  "message": "Nová hlavní stránka a kompaktní navigace",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -11,6 +11,9 @@
     "Obrázky ve sdílených položkách se ukládají do privátního Supabase Storage.",
     "Realtime aktualizace synchronizují změny sdílených položek mezi připojenými zařízeními.",
     "Účet používá Supabase Auth s emailovým přihlášením/OTP; hesla se v Helperu neukládají.",
-    "Moje uložené zůstává lokální, takže stávající osobní data se nepřepisují."
+    "Moje uložené zůstává lokální, takže stávající osobní data se nepřepisují.",
+    "Nová tmavá hlavní stránka inspirovaná strukturou Schedule 1 mixing guide.",
+    "Přidáno logo Schedule 1 Helper a kompaktní kruhové rychlé akce vpravo.",
+    "Nastavení má nový ozdobný kruhový ovladač a Domů je nová výchozí sekce."
   ]
 }
