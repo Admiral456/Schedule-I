@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.2",
+  "version": "2026.10.05.3",
   "updated_at": "2026-10-05",
-  "message": "Customer portraits v1: verified 66 portrait assets and local build sync",
+  "message": "Dealer database v1",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -33,6 +33,8 @@
     "Ověřeno 66/66 customer head/portrait assetů ze Schedule I PopTrackeru a vytvořena provenance evidence.",
     "Zákaznické portréty se zobrazují v seznamu i detailu zákazníka; build je synchronizuje do lokálních assetů.",
     "Přidán bezpečný fallback na pinned zdrojový asset, pokud lokální kopie při deployi není dostupná.",
-    "Opravena duplicitní záložka Databáze."
+    "Opravena duplicitní záložka Databáze.",
+    "Přidána databáze 6 dealerů: lokace, vstupní cena, 20% podíl a kapacita 8 zákazníků.",
+    "Dealeři jsou nyní dostupní přímo v Databázi vedle surovin, drog a efektů; jejich ikony zůstávají pending, dokud nebude ověřen přesný herní asset."
   ]
 }
