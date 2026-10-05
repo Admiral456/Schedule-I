@@ -16,7 +16,9 @@
         "Thought-Provoking"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -32,7 +34,9 @@
         "Explosive"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -48,7 +52,10 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "not-verified-publicly",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
+        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
       }
     },
     {
@@ -64,7 +71,9 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -76,7 +85,9 @@
       "orders_per_week": "3-6",
       "preferred_effects": [],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -92,7 +103,9 @@
         "Schizophrenic"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -108,7 +121,10 @@
         "Spicy"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "not-verified-publicly",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
+        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
       }
     },
     {
@@ -124,7 +140,9 @@
         "Balding"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -140,7 +158,9 @@
         "Explosive"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -156,7 +176,9 @@
         "Glowing"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -172,7 +194,9 @@
         "Euphoric"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -188,7 +212,9 @@
         "Disorienting"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -204,7 +230,9 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -220,7 +248,9 @@
         "Bright-Eyed"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -236,7 +266,9 @@
         "Toxic"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -252,7 +284,9 @@
         "Jennerising"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -268,7 +302,9 @@
         "Lethal"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -284,7 +320,9 @@
         "Long Faced"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -300,7 +338,9 @@
         "Calorie-Dense"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -316,7 +356,9 @@
         "Thought-Provoking"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -332,7 +374,9 @@
         "Sedating"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -348,7 +392,9 @@
         "Spicy"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -364,7 +410,9 @@
         "Thought-Provoking"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -380,7 +428,9 @@
         "Long Faced"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -396,7 +446,10 @@
         "Spicy"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "not-verified-publicly",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
+        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
       }
     },
     {
@@ -412,7 +465,9 @@
         "Tropic Thunder"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -428,7 +483,9 @@
         "Athletic"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -444,7 +501,10 @@
         "Smelly"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "not-verified-publicly",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
+        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
       }
     },
     {
@@ -460,7 +520,9 @@
         "Schizophrenic"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -476,7 +538,9 @@
         "Long Faced"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -492,7 +556,9 @@
         "Refreshing"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -508,7 +574,9 @@
         "Slippery"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -524,7 +592,10 @@
         "Bright-Eyed"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "not-verified-publicly",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
+        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
       }
     },
     {
@@ -536,7 +607,9 @@
       "orders_per_week": "3-6",
       "preferred_effects": [],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -552,7 +625,9 @@
         "Sedating"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -568,7 +643,9 @@
         "Calming"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -584,7 +661,9 @@
         "Toxic"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -600,7 +679,9 @@
         "Shrinking"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -616,7 +697,9 @@
         "Calming"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -632,7 +715,9 @@
         "Focused"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -648,7 +733,9 @@
         "Paranoia"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -664,7 +751,9 @@
         "Euphoric"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -680,7 +769,9 @@
         "Energizing"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -696,7 +787,9 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -712,7 +805,9 @@
         "Foggy"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -724,7 +819,10 @@
       "orders_per_week": "3-6",
       "preferred_effects": [],
       "map_position": {
-        "status": "not-imported"
+        "status": "not-verified-publicly",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
+        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
       }
     },
     {
@@ -740,7 +838,9 @@
         "Energizing"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -752,7 +852,9 @@
       "orders_per_week": "2-5",
       "preferred_effects": [],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -768,7 +870,9 @@
         "Thought-Provoking"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -784,7 +888,9 @@
         "Smelly"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -800,7 +906,9 @@
         "Euphoric"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -816,7 +924,9 @@
         "Focused"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -832,7 +942,9 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -848,7 +960,9 @@
         "Foggy"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -864,7 +978,9 @@
         "Munchies"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -880,7 +996,9 @@
         "Balding"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -896,7 +1014,9 @@
         "Laxative"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -912,7 +1032,9 @@
         "Euphoric"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -928,7 +1050,9 @@
         "Electrifying"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -944,7 +1068,9 @@
         "Athletic"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -960,7 +1086,9 @@
         "Smelly"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -976,7 +1104,9 @@
         "Seizure-Inducing"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -992,7 +1122,9 @@
         "Munchies"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -1008,7 +1140,9 @@
         "Tropic Thunder"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -1024,7 +1158,9 @@
         "Energizing"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     },
     {
@@ -1040,8 +1176,17 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "not-imported"
+        "status": "verified-external-pin",
+        "source": "Wand",
+        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
       }
     }
-  ]
+  ],
+  "map_position_coverage": {
+    "source": "https://wand.com/maps/schedule-i/hyland-point",
+    "verified_external_pin_count": 62,
+    "local_customer_count": 66,
+    "unverified_customer_count": 4,
+    "note": "62 customer pins are published on Wand. Four customers in the 66-customer database are not present in that public customer layer; no coordinates are guessed."
+  }
 }
