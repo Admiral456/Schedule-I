@@ -6,7 +6,20 @@ const wandCustomerNames=["Austin Steiner","Billy Kramer","Carl Bundy","Charles R
 function showTab(name){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+name));window.scrollTo({top:0,behavior:"smooth"});}
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));$("#customerPinFilter")?.addEventListener("change",renderCustomers);
 document.querySelectorAll("[data-tab-jump]").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tabJump)));
-$("#homeSearch")?.addEventListener("keydown",e=>{if(e.key!=="Enter")return;const value=e.currentTarget.value.trim().toLowerCase();if(!value)return;const customer=state.customers.find(c=>[c.name,c.district,c.tier,...c.preferred_effects].join(" ").toLowerCase().includes(value));if(customer){state.selectedCustomer=Number(customer.id);$("#customerSearch").value=e.currentTarget.value;showTab("customers");renderCustomers();return;}$("#recipeSearch").value=e.currentTarget.value;showTab("recipes");renderRecipes();});
+function searchEverything(raw){
+ const value=String(raw||"").trim().toLowerCase();
+ if(!value)return;
+ const customer=state.customers.find(c=>[c.name,c.district,c.tier,...c.preferred_effects].join(" ").toLowerCase().includes(value));
+ if(customer){state.selectedCustomer=Number(customer.id);$("#customerSearch").value=String(raw);showTab("customers");renderCustomers();return;}
+ const recipe=state.recipes.find(x=>[x.name,x.drug,...x.ingredients,...x.effects].join(" ").toLowerCase().includes(value));
+ if(recipe){$("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();return;}
+ $("#catalogSearch").value=String(raw);
+ const kindOrder=["ingredients","drugs","effects","dealers","properties","businesses","vehicles"];
+ const hit=kindOrder.find(kind=>(CATALOG[kind]||[]).some(x=>[x.name,x.family,x.type,x.base_effect,x.location].filter(Boolean).join(" ").toLowerCase().includes(value)));
+ if(hit){$("#catalogKind").value=hit;showTab("catalog");if(typeof renderCatalog==="function")renderCatalog();return;}
+ $("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();
+}
+$("#homeSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")searchEverything(e.currentTarget.value);});
 
 
 function loadLocal(){try{state.saved={recipes:[],customers:[],employees:[],rooms:[],other:[],...JSON.parse(localStorage.getItem(savedKey)||"{}")};}catch{state.saved={recipes:[],customers:[],employees:[],rooms:[],other:[]};}try{state.profile={displayName:"",...JSON.parse(localStorage.getItem(profileKey)||"{}")};}catch{}try{state.settings={density:"normal",defaultTab:"home",autoSave:true,...JSON.parse(localStorage.getItem(settingsKey)||"{}")};}catch{}}
@@ -22,7 +35,7 @@ function customerPortrait(c){const p=state.portraitRegistry.get(Number(c.id));re
 function portraitMarkup(c,variant="card"){const p=customerPortrait(c),local=typeof p.local_path==="string"?p.local_path:"",remote=typeof p.asset_url==="string"?p.asset_url:"",src=local||remote;if(!src)return "";return "<div class='customer-portrait "+variant+"'><img src='"+esc(src)+"' data-customer-portrait data-portrait-fallback='"+esc(remote)+"' alt='' loading='lazy' decoding='async'><span class='portrait-placeholder' aria-hidden='true'>S1</span></div>";}
 function bindPortraitFallbacks(){document.querySelectorAll("[data-customer-portrait]").forEach(img=>{if(img.dataset.portraitBound)return;img.dataset.portraitBound="1";img.addEventListener("error",()=>{if(img.dataset.portraitFallbackUsed)return;const fallback=img.dataset.portraitFallback||"";if(fallback&&img.getAttribute("src")!==fallback){img.dataset.portraitFallbackUsed="1";img.src=fallback;return;}img.hidden=true;img.parentElement?.classList.add("portrait-missing");});});}
 
-function renderCategories(){$("#mapCategoryList").innerHTML=mapCategories.map(x=>"<div class='category-row'><span>"+esc(x.name)+"</span><b>"+x.count+"</b></div>").join("");}
+function verifiedCustomerCount(){return state.customers.filter(customerMapVerified).length;}function renderCategories(){$("#mapCategoryList").innerHTML=mapCategories.map(x=>"<div class='category-row'><span>"+esc(x.name)+"</span><b>"+x.count+"</b></div>").join("");}
 async function loadData(){const [c,r,p,s]=await Promise.all([fetch("./data/customers.json",{cache:"no-store"}).then(x=>x.json()),fetch("./data/recipes.json",{cache:"no-store"}).then(x=>x.json()),fetch("./data/customer-portraits.json",{cache:"no-store"}).then(x=>x.json()).catch(()=>({customers:[]})),fetch("./data/customer-schedules.json",{cache:"no-store"}).then(x=>x.json()).catch(()=>({schedules:[]}))]);state.customers=Array.isArray(c.customers)?c.customers:[];state.recipes=Array.isArray(r.recipes)?r.recipes:[];state.portraitRegistry=new Map((Array.isArray(p.customers)?p.customers:[]).map(x=>[Number(x.id),x.portrait||{}]));state.customerSchedules=new Map((Array.isArray(s.schedules)?s.schedules:[]).map(x=>[Number(x.id),x]));$("#customerCountBadge").textContent=state.customers.length;const districts=[...new Set(state.customers.map(x=>x.district))].sort();$("#districtFilter").insertAdjacentHTML("beforeend",districts.map(x=>"<option>"+esc(x)+"</option>").join(""));renderCategories();renderCustomers();renderRecipes();applySettings();applyIncomingShare();}
 
 function cMatch(c,q,d,t,day,pinOnly){const s=customerSchedule(c);if(d&&c.district!==d)return false;if(t&&c.tier!==t)return false;if(day&&s?.preferred_day!==day)return false;if(pinOnly&&!customerMapVerified(c))return false;if(!q)return true;return[c.name,c.district,c.tier,...c.preferred_effects].join(" ").toLowerCase().includes(q);}
