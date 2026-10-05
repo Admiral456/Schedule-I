@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.1",
+  "version": "2026.10.05.2",
   "updated_at": "2026-10-05",
-  "message": "Asset Registry v1: verified ingredient and drug icon catalog plus 35-effect database",
+  "message": "Customer portraits v1: verified 66 portrait assets and local build sync",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -28,6 +28,11 @@
     "Recipe Finder nyní zobrazuje ověřené ikonové assety surovin v pořadí receptu a ikonu základního produktu.",
     "Ikony s nedostatečnou jistotou zůstávají označené jako pending místo vymyšlené náhrady.",
     "Aktualizována provenance ikon a CSP pro veřejné image zdroje.",
-    "Přidána Databáze se surovinami, drogami a efekty; suroviny a drogy zobrazují ověřené zdrojové ikony, chybějící ikony zůstávají výslovně označené."
+    "Přidána Databáze se surovinami, drogami a efekty; suroviny a drogy zobrazují ověřené zdrojové ikony, chybějící ikony zůstávají výslovně označené.",
+    "Přidán centrální registr zdrojů v data/sources.json.",
+    "Ověřeno 66/66 customer head/portrait assetů ze Schedule I PopTrackeru a vytvořena provenance evidence.",
+    "Zákaznické portréty se zobrazují v seznamu i detailu zákazníka; build je synchronizuje do lokálních assetů.",
+    "Přidán bezpečný fallback na pinned zdrojový asset, pokud lokální kopie při deployi není dostupná.",
+    "Opravena duplicitní záložka Databáze."
   ]
 }
