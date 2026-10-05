@@ -13,7 +13,9 @@
       "top_speed_kmh": 53,
       "zero_to_40_seconds": 3.1,
       "zero_to_60_seconds": null,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/vehicles/the-shitbox.jpg",
+      "icon_source_page": "https://schedule1.io/wiki/vehicles"
     },
     {
       "id": "vehicle-veeper",
@@ -23,7 +25,9 @@
       "top_speed_kmh": 86,
       "zero_to_40_seconds": 3.1,
       "zero_to_60_seconds": 5.7,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/vehicles/the-veeper.jpg",
+      "icon_source_page": "https://schedule1.io/wiki/vehicles"
     },
     {
       "id": "vehicle-bruiser",
@@ -33,7 +37,9 @@
       "top_speed_kmh": 68,
       "zero_to_40_seconds": 2.7,
       "zero_to_60_seconds": 7.6,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/vehicles/the-bruiser.jpg",
+      "icon_source_page": "https://schedule1.io/wiki/vehicles"
     },
     {
       "id": "vehicle-dinkler",
@@ -43,7 +49,9 @@
       "top_speed_kmh": 77,
       "zero_to_40_seconds": 3.7,
       "zero_to_60_seconds": 7.1,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/vehicles/the-dinkler.jpg",
+      "icon_source_page": "https://schedule1.io/wiki/vehicles"
     },
     {
       "id": "vehicle-hounddog",
@@ -53,7 +61,9 @@
       "top_speed_kmh": 84,
       "zero_to_40_seconds": 2.3,
       "zero_to_60_seconds": 4.2,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/vehicles/the-hounddog.jpg",
+      "icon_source_page": "https://schedule1.io/wiki/vehicles"
     },
     {
       "id": "vehicle-cheetah",
@@ -63,7 +73,9 @@
       "top_speed_kmh": 93,
       "zero_to_40_seconds": 1.8,
       "zero_to_60_seconds": 2.5,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "verified-cdn",
+      "icon_url": "https://cdn.schedule1.io/wiki/vehicles/the-cheetah.jpg",
+      "icon_source_page": "https://schedule1.io/wiki/vehicles"
     }
   ]
 }
