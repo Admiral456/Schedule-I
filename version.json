@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.16",
+  "version": "2026.10.05.17",
   "updated_at": "2026-10-05",
-  "message": "Ultimate upgrade: Planner, mobile UI, Saved tools and AI helper",
+  "message": "Hardened AI helper with protected OpenAI usage",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -50,6 +50,12 @@
     "Přidána samostatná rychlá databáze 35 efektů s vyhledáváním.",
     "Přidána responzivní mobilní navigace a společná PC/mobile layout vrstva.",
     "Saved workspace má export a import JSON.",
-    "Přidán plovoucí AI pomocník připravený přes Supabase Edge Function + OpenAI API."
+    "Přidán plovoucí AI pomocník připravený přes Supabase Edge Function + OpenAI API.",
+    "AI pomocník převeden na aktuální model gpt-6-luna přes OpenAI Responses API.",
+    "AI má serverový persistentní limit 5 dotazů/minutu, 30/hodinu a 100/den na klientský fingerprint.",
+    "AI má globální bezpečnostní strop 500 požadavků za UTC den pro celý Helper.",
+    "API klíč zůstává pouze jako Supabase Edge Function secret OPENAI_API_KEY a není ve frontendovém kódu.",
+    "Frontend posílá anonymní lokální client ID pro oddělení běžných uživatelů; databáze ukládá pouze hash fingerprintu.",
+    "AI požadavky mají omezení délky vstupu a max. 300 výstupních tokenů kvůli nákladům."
   ]
 }
