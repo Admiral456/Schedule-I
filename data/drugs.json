@@ -17,7 +17,8 @@
       ],
       "source_page": "https://schedule1.io/wiki/drugs",
       "icon_url": "https://cdn.schedule1.io/wiki/drugs/og-kush.png",
-      "icon_status": "verified-cdn"
+      "icon_status": "verified-cdn",
+      "icon_local_path": "./assets/game/drugs/og-kush.png"
     },
     {
       "id": "sour-diesel",
@@ -29,7 +30,8 @@
       ],
       "source_page": "https://schedule1.io/wiki/drugs",
       "icon_url": "https://cdn.schedule1.io/wiki/drugs/sour-diesel.png",
-      "icon_status": "verified-cdn"
+      "icon_status": "verified-cdn",
+      "icon_local_path": "./assets/game/drugs/sour-diesel.png"
     },
     {
       "id": "green-crack",
@@ -41,7 +43,8 @@
       ],
       "source_page": "https://schedule1.io/wiki/drugs",
       "icon_url": "https://cdn.schedule1.io/wiki/drugs/green-crack.png",
-      "icon_status": "verified-cdn"
+      "icon_status": "verified-cdn",
+      "icon_local_path": "./assets/game/drugs/green-crack.png"
     },
     {
       "id": "granddaddy-purple",
@@ -53,7 +56,8 @@
       ],
       "source_page": "https://schedule1.io/wiki/drugs",
       "icon_url": "https://cdn.schedule1.io/wiki/drugs/granddaddy-purple.png",
-      "icon_status": "verified-cdn"
+      "icon_status": "verified-cdn",
+      "icon_local_path": "./assets/game/drugs/granddaddy-purple.png"
     },
     {
       "id": "meth",
@@ -63,7 +67,8 @@
       "base_effects": [],
       "source_page": "https://schedule1-lab.com/mix-explorer",
       "icon_url": "https://cdn.schedule1.io/wiki/drugs/methamphetamine.png",
-      "icon_status": "verified-cdn"
+      "icon_status": "verified-cdn",
+      "icon_local_path": "./assets/game/drugs/meth.png"
     },
     {
       "id": "cocaine",
@@ -73,7 +78,8 @@
       "base_effects": [],
       "source_page": "https://schedule1-lab.com/mix-explorer",
       "icon_url": "https://cdn.schedule1.io/wiki/drugs/cocaine.png",
-      "icon_status": "verified-cdn"
+      "icon_status": "verified-cdn",
+      "icon_local_path": "./assets/game/drugs/cocaine.png"
     },
     {
       "id": "shrooms",
@@ -83,7 +89,8 @@
       "base_effects": [],
       "source_page": "https://schedule1-lab.com/mix-explorer",
       "icon_url": null,
-      "icon_status": "pending-exact-icon-verification"
+      "icon_status": "pending-exact-icon-verification",
+      "icon_local_path": null
     }
   ]
 }
