@@ -20,7 +20,57 @@ async function rotateFolderToken(){if(!activeFolderId)return;const {data,error}=
 async function deleteFolder(){if(!activeFolderId||!confirm("Opravdu smazat celou sdílenou složku?"))return;const {error}=await window.s1Supabase.from("shared_folders").delete().eq("id",activeFolderId);if(error){alert("Smazání se nepodařilo: "+error.message);return;}activeFolderId=null;renderFolders();}
 async function claimIncoming(){const token=new URLSearchParams(location.search).get("folderToken");if(!token)return;if(!window.s1Supabase||!window.s1Session){q("#incomingSharedFolder").innerHTML="<div class='incoming-title'>Sdílená složka</div><div class='incoming-note'>Nejdřív se přihlas v sekci Účet. Po přihlášení se odkaz automaticky načte.</div>";return;}const {data,error}=await window.s1Supabase.rpc("claim_shared_folder",{p_share_token:token});if(error){q("#incomingSharedFolder").innerHTML="<div class='empty'>Odkaz není platný nebo byl zrušen: "+esc(error.message)+"</div>";return;}if(data?.[0]?.folder_id){showTabServer();await loadFolder(data[0].folder_id);}}
 function showTabServer(){const tab=document.querySelector("[data-tab=shared]");tab?.click();}
-async function renderFolders(){const root=q("#sharedFolderList");if(!root)return;if(!window.s1Supabase||!window.s1Session){root.innerHTML="<div class='shared-empty'>Pro serverové sdílení se nejdřív přihlas v sekci Účet.</div>";return;}const {data,error}=await window.s1Supabase.from("shared_folders").select("id,name,note,default_role,created_at,updated_at,share_token").order("updated_at",{ascending:false});if(error){root.innerHTML="<div class='empty'>Složky se nepodařilo načíst: "+esc(error.message)+"</div>";return;}root.innerHTML=(data||[]).length?(data||[]).map(f=>"<article class='shared-folder'><div class='shared-folder-top'><div class='shared-folder-name'>"+esc(f.name)+"</div><span class='shared-type'>"+esc(f.default_role==="editor"?"Editor":"Prohlížeč")+"</span></div><div class='shared-folder-note'>"+esc(f.note||"Bez poznámky")+"</div><div class='shared-folder-meta'>"+esc(new Date(f.updated_at||f.created_at).toLocaleString("cs-CZ"))+"</div><div class='shared-folder-actions'><button class='btn ghost' type='button' data-open-server-folder='"+esc(f.id)+"'>Otevřít</button><button class='btn' type='button' data-share-server-folder='"+esc(f.id)+"'>Sdílet odkaz</button></div></article>").join(""):"<div class='shared-empty'>Zatím nemáš žádnou serverovou složku.</div>";root.querySelectorAll("[data-open-server-folder]").forEach(b=>b.addEventListener("click",()=>loadFolder(b.dataset.openServerFolder).then(refreshOpenFolder)));root.querySelectorAll("[data-share-server-folder]").forEach(b=>b.addEventListener("click",async()=>{const f=(data||[]).find(x=>x.id===b.dataset.shareServerFolder);if(!f)return;const url=location.origin+location.pathname+"?folderToken="+encodeURIComponent(f.share_token);showTabServer();q("#incomingSharedFolder").innerHTML="<div class='incoming-title'>"+esc(f.name)+"</div><div class='incoming-note'>Odkaz pro "+esc(f.default_role==="editor"?"editaci":"prohlížení")+".</div><input class='share-url' readonly value='"+esc(url)+"'><div class='share-actions'><button class='btn primary' id='copyServerFolderUrl2' type='button'>Kopírovat odkaz</button></div>";q("#copyServerFolderUrl2")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(url);alert("Odkaz zkopírován.");}catch{}});});}
+async function renderFolders(){
+  const root=q("#sharedFolderList");
+  if(!root)return;
+  if(!window.s1Supabase||!window.s1Session){
+    root.innerHTML="<div class='shared-empty'>Pro serverové sdílení se nejdřív přihlas v sekci Účet.</div>";
+    return;
+  }
+  const {data,error}=await window.s1Supabase.from("shared_folders")
+    .select("id,name,note,default_role,created_at,updated_at,share_token")
+    .order("updated_at",{ascending:false});
+  if(error){
+    root.innerHTML="<div class='empty'>Složky se nepodařilo načíst: "+esc(error.message)+"</div>";
+    return;
+  }
+  const folders=Array.isArray(data)?data:[];
+  root.innerHTML=folders.length
+    ? folders.map(f=>`
+      <article class="shared-folder">
+        <div class="shared-folder-top">
+          <div class="shared-folder-name">${esc(f.name)}</div>
+          <span class="shared-type">${esc(f.default_role==="editor"?"Editor":"Prohlížeč")}</span>
+        </div>
+        <div class="shared-folder-note">${esc(f.note||"Bez poznámky")}</div>
+        <div class="shared-folder-meta">${esc(new Date(f.updated_at||f.created_at).toLocaleString("cs-CZ"))}</div>
+        <div class="shared-folder-actions">
+          <button class="btn ghost" type="button" data-open-server-folder="${esc(f.id)}">Otevřít</button>
+          <button class="btn" type="button" data-share-server-folder="${esc(f.id)}">Sdílet odkaz</button>
+        </div>
+      </article>`).join("")
+    : "<div class='shared-empty'>Zatím nemáš žádnou serverovou složku.</div>";
+  root.querySelectorAll("[data-open-server-folder]").forEach(b=>{
+    b.addEventListener("click",()=>loadFolder(b.dataset.openServerFolder).then(refreshOpenFolder));
+  });
+  root.querySelectorAll("[data-share-server-folder]").forEach(b=>{
+    b.addEventListener("click",async()=>{
+      const f=folders.find(x=>x.id===b.dataset.shareServerFolder);
+      if(!f)return;
+      const url=location.origin+location.pathname+"?folderToken="+encodeURIComponent(f.share_token);
+      showTabServer();
+      q("#incomingSharedFolder").innerHTML=`
+        <div class="incoming-title">${esc(f.name)}</div>
+        <div class="incoming-note">Odkaz pro ${esc(f.default_role==="editor"?"editaci":"prohlížení")}.</div>
+        <input class="share-url" readonly value="${esc(url)}">
+        <div class="share-actions"><button class="btn primary" id="copyServerFolderUrl2" type="button">Kopírovat odkaz</button></div>`;
+      q("#copyServerFolderUrl2")?.addEventListener("click",async()=>{
+        try{await navigator.clipboard.writeText(url);alert("Odkaz zkopírován.");}
+        catch{alert("Odkaz je připravený ke zkopírování.");}
+      });
+    });
+  });
+}
 async function createFolder(e){e.preventDefault();if(!window.s1Supabase||!window.s1Session){alert("Pro vytvoření serverové složky se nejdřív přihlas.");return;}const name=q("#sharedFolderName").value.trim(),note=q("#sharedFolderNote").value.trim(),defaultRole=q("#sharedFolderRole")?.value||"editor";if(!name){alert("Zadej název složky.");return;}const localItems=getItems(),chosen=[...document.querySelectorAll("#sharedItemPicker input[type=checkbox]:checked")].map(x=>localItems[Number(x.dataset.i)]).filter(Boolean).slice(0,200);if(!chosen.length){alert("Vyber alespoň jednu položku.");return;}const {data:f,error}=await window.s1Supabase.from("shared_folders").insert({owner_id:window.s1Session.user.id,name,note,default_role:defaultRole,share_token:encToken()}).select("id,share_token").single();if(error){alert("Složku se nepodařilo vytvořit: "+error.message);return;}for(const item of chosen){const {data:row,error:itemError}=await window.s1Supabase.from("shared_items").insert({folder_id:f.id,item_type:item.type,source_key:item.key,name:item.name,note:item.note,created_by:window.s1Session.user.id,updated_by:window.s1Session.user.id}).select("id").single();if(itemError){alert("Položku "+item.name+" se nepodařilo uložit: "+itemError.message);continue;}if(item.image){try{const blob=await dataUrlBlob(item.image),ext=extForBlob(blob),path=f.id+"/"+crypto.randomUUID()+"."+ext;const up=await window.s1Supabase.storage.from("shared-attachments").upload(path,blob,{contentType:blob.type||"image/jpeg",upsert:false});if(!up.error)await window.s1Supabase.from("shared_items").update({image_path:path,updated_by:window.s1Session.user.id}).eq("id",row.id);}catch(err){console.warn("Upload obrázku selhal",err);}}}q("#sharedFolderForm").reset();renderFolders();renderPicker();await loadFolder(f.id);alert("Serverová sdílená složka byla vytvořena.");}
 async function loadSharedNotifications(){
  if(!window.s1Supabase||!window.s1Session)return;
