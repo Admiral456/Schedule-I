@@ -2,7 +2,7 @@
   "schema_version": 1,
   "version": "2026.10.05.1",
   "updated_at": "2026-10-05",
-  "message": "Asset Registry: verified ingredient and drug icons, 35-effect data registry, exact asset provenance",
+  "message": "Asset Registry v1: verified ingredient and drug icon catalog plus 35-effect database",
   "changes": [
     "Přidáno vlastní logo webu z obrázku/souboru, včetně návratu na výchozí logo.",
     "V Moje uložené má každá sekce vlastní + pro rychlé přidání.",
@@ -27,6 +27,7 @@
     "Přidán Asset Registry pro 16 mixer surovin, 7 základních produktů/drog a 35 efektů.",
     "Recipe Finder nyní zobrazuje ověřené ikonové assety surovin v pořadí receptu a ikonu základního produktu.",
     "Ikony s nedostatečnou jistotou zůstávají označené jako pending místo vymyšlené náhrady.",
-    "Aktualizována provenance ikon a CSP pro veřejné image zdroje."
+    "Aktualizována provenance ikon a CSP pro veřejné image zdroje.",
+    "Přidána Databáze se surovinami, drogami a efekty; suroviny a drogy zobrazují ověřené zdrojové ikony, chybějící ikony zůstávají výslovně označené."
   ]
 }
