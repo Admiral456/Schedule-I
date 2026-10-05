@@ -92,5 +92,13 @@
       "icon_status": "pending-exact-icon-verification",
       "icon_local_path": null
     }
-  ]
+  ],
+  "icon_audit": {
+    "checked_on": "2026-10-05",
+    "direct_cdn_verified_count": 6,
+    "unresolved": [
+      "shrooms"
+    ],
+    "rule": "Never guess a missing icon URL."
+  }
 }
