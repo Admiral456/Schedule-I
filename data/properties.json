@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source_page": "https://schedule1.io/wiki/properties",
+  "source_checked": "2026-10-05",
+  "verified_count": 3,
+  "total_count": 3,
+  "properties": [
+    {
+      "id": "property-bungalow",
+      "name": "Bungalow",
+      "price": 6000,
+      "loading_bays": 1,
+      "employee_limit": 5,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "property-barn",
+      "name": "The Barn",
+      "price": 25000,
+      "loading_bays": 2,
+      "employee_limit": 10,
+      "icon_status": "pending-exact-icon-verification"
+    },
+    {
+      "id": "property-docks-warehouse",
+      "name": "The Docks Warehouse",
+      "price": 50000,
+      "loading_bays": 2,
+      "employee_limit": 10,
+      "icon_status": "pending-exact-icon-verification"
+    }
+  ]
+}
