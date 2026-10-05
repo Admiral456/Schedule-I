@@ -1,0 +1,869 @@
+{
+  "schema_version": 1,
+  "purpose": "Evidence registry for exact in-game customer head/portrait assets. No fabricated portraits are used.",
+  "source_priority": [
+    "https://schedule1.app/customers/",
+    "https://scheduleonemixer.com/customers",
+    "https://schedule-1.fandom.com/wiki/Customers"
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Fiona Hancock",
+      "slug": "fiona-hancock",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/fiona-hancock",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 2,
+      "name": "Herbert Bleuball",
+      "slug": "herbert-bleuball",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/herbert-bleuball",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 3,
+      "name": "Irene Meadows",
+      "slug": "irene-meadows",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/irene-meadows",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 4,
+      "name": "Jen Heard",
+      "slug": "jen-heard",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/jen-heard",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 5,
+      "name": "Lily Turner",
+      "slug": "lily-turner",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/lily-turner",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 6,
+      "name": "Michael Boog",
+      "slug": "michael-boog",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/michael-boog",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 7,
+      "name": "Tobias Wentworth",
+      "slug": "tobias-wentworth",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/tobias-wentworth",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 8,
+      "name": "Walter Cussler",
+      "slug": "walter-cussler",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/walter-cussler",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 9,
+      "name": "Pearl Moore",
+      "slug": "pearl-moore",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/pearl-moore",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ray Hoffman",
+      "slug": "ray-hoffman",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/ray-hoffman",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 11,
+      "name": "Alison Knight",
+      "slug": "alison-knight",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/alison-knight",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 12,
+      "name": "Carl Bundy",
+      "slug": "carl-bundy",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/carl-bundy",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 13,
+      "name": "Chris Sullivan",
+      "slug": "chris-sullivan",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/chris-sullivan",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 14,
+      "name": "Dennis Kennedy",
+      "slug": "dennis-kennedy",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/dennis-kennedy",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 15,
+      "name": "Hank Stevenson",
+      "slug": "hank-stevenson",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/hank-stevenson",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 16,
+      "name": "Harold Colt",
+      "slug": "harold-colt",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/harold-colt",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 17,
+      "name": "Jack Knight",
+      "slug": "jack-knight",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/jack-knight",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 18,
+      "name": "Jackie Stevenson",
+      "slug": "jackie-stevenson",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/jackie-stevenson",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 19,
+      "name": "Jeremy Wilkinson",
+      "slug": "jeremy-wilkinson",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/jeremy-wilkinson",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 20,
+      "name": "George Greene",
+      "slug": "george-greene",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/george-greene",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 21,
+      "name": "Geraldine Poon",
+      "slug": "geraldine-poon",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/geraldine-poon",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 22,
+      "name": "Dean Webster",
+      "slug": "dean-webster",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/dean-webster",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 23,
+      "name": "Anna Chesterfield",
+      "slug": "anna-chesterfield",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/anna-chesterfield",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 24,
+      "name": "Billy Kramer",
+      "slug": "billy-kramer",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/billy-kramer",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 25,
+      "name": "Bruce Norton",
+      "slug": "bruce-norton",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/bruce-norton",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 26,
+      "name": "Cranky Frank",
+      "slug": "cranky-frank",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/cranky-frank",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 27,
+      "name": "Genghis Barn",
+      "slug": "genghis-barn",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/genghis-barn",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 28,
+      "name": "Kelly Reynolds",
+      "slug": "kelly-reynolds",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/kelly-reynolds",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 29,
+      "name": "Lisa Gardener",
+      "slug": "lisa-gardener",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/lisa-gardener",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 30,
+      "name": "Mac Cooper",
+      "slug": "mac-cooper",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/mac-cooper",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 31,
+      "name": "Marco Barone",
+      "slug": "marco-barone",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/marco-barone",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 32,
+      "name": "Melissa Wood",
+      "slug": "melissa-wood",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/melissa-wood",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 33,
+      "name": "Sherman Giles",
+      "slug": "sherman-giles",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/sherman-giles",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 34,
+      "name": "Karen Kennedy",
+      "slug": "karen-kennedy",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/karen-kennedy",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 35,
+      "name": "Elizabeth Homley",
+      "slug": "elizabeth-homley",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/elizabeth-homley",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 36,
+      "name": "Eugene Buckley",
+      "slug": "eugene-buckley",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/eugene-buckley",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 37,
+      "name": "Greg Figgle",
+      "slug": "greg-figgle",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/greg-figgle",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 38,
+      "name": "Jennifer Rivera",
+      "slug": "jennifer-rivera",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/jennifer-rivera",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 39,
+      "name": "Kevin Oakley",
+      "slug": "kevin-oakley",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/kevin-oakley",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 40,
+      "name": "Kim Delaney",
+      "slug": "kim-delaney",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/kim-delaney",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 41,
+      "name": "Louis Fourier",
+      "slug": "louis-fourier",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/louis-fourier",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 42,
+      "name": "Lucy Pennington",
+      "slug": "lucy-pennington",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/lucy-pennington",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 43,
+      "name": "Peggy Myers",
+      "slug": "peggy-myers",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/peggy-myers",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 44,
+      "name": "Peter File",
+      "slug": "peter-file",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/peter-file",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 45,
+      "name": "Philip Wentworth",
+      "slug": "philip-wentworth",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/philip-wentworth",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 46,
+      "name": "Randy Caulfield",
+      "slug": "randy-caulfield",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/randy-caulfield",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 47,
+      "name": "Jessi Waters",
+      "slug": "jessi-waters",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/jessi-waters",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 48,
+      "name": "Javier Perez",
+      "slug": "javier-perez",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/javier-perez",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 49,
+      "name": "Jerry Montero",
+      "slug": "jerry-montero",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/jerry-montero",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 50,
+      "name": "Kyle Cooley",
+      "slug": "kyle-cooley",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/kyle-cooley",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 51,
+      "name": "Austin Steiner",
+      "slug": "austin-steiner",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/austin-steiner",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 52,
+      "name": "Kathy Henderson",
+      "slug": "kathy-henderson",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/kathy-henderson",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 53,
+      "name": "Mick Lubbin",
+      "slug": "mick-lubbin",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/mick-lubbin",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 54,
+      "name": "Charles Rowland",
+      "slug": "charles-rowland",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/charles-rowland",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 55,
+      "name": "Donna Martin",
+      "slug": "donna-martin",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/donna-martin",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 56,
+      "name": "Doris Lubbin",
+      "slug": "doris-lubbin",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/doris-lubbin",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 57,
+      "name": "Jeff Gilmore",
+      "slug": "jeff-gilmore",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/jeff-gilmore",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 58,
+      "name": "Joyce Ball",
+      "slug": "joyce-ball",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/joyce-ball",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 59,
+      "name": "Mrs. Ming",
+      "slug": "mrs-ming",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/mrs-ming",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 60,
+      "name": "Trent Sherman",
+      "slug": "trent-sherman",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/trent-sherman",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 61,
+      "name": "Sam Thompson",
+      "slug": "sam-thompson",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/sam-thompson",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 62,
+      "name": "Beth Penn",
+      "slug": "beth-penn",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/beth-penn",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 63,
+      "name": "Chloe Bowers",
+      "slug": "chloe-bowers",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/chloe-bowers",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 64,
+      "name": "Keith Wagner",
+      "slug": "keith-wagner",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/keith-wagner",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 65,
+      "name": "Ludwig Meyer",
+      "slug": "ludwig-meyer",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/ludwig-meyer",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    },
+    {
+      "id": 66,
+      "name": "Meg Cooley",
+      "slug": "meg-cooley",
+      "portrait": {
+        "status": "pending-direct-asset-verification",
+        "source_page": "https://schedule1.app/customers/meg-cooley",
+        "fallback_source_page": "https://scheduleonemixer.com/customers",
+        "asset_url": null,
+        "local_path": null,
+        "verified": false
+      }
+    }
+  ]
+}
