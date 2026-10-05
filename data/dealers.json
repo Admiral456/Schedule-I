@@ -13,13 +13,14 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "verified-cdn",
+        "status": "verified-image-source",
         "source_page": "https://schedule1.io/wiki/dealers",
-        "icon_url": "https://cdn.schedule1.io/wiki/dealers/benji-coleman.png"
+        "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/c/c5/Benji_Icon.png/revision/latest?cb=20250826170805"
       },
-      "icon_url": "https://cdn.schedule1.io/wiki/dealers/benji-coleman.png",
-      "icon_status": "verified-cdn",
-      "icon_source_page": "https://schedule1.io/wiki/dealers"
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/c/c5/Benji_Icon.png/revision/latest?cb=20250826170805",
+      "icon_status": "verified-image-source",
+      "icon_source_page": "https://schedule1.io/wiki/dealers",
+      "icon_source_type": "Fandom published image index"
     },
     {
       "id": "dealer-2",
@@ -29,13 +30,14 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "verified-cdn",
+        "status": "verified-image-source",
         "source_page": "https://schedule1.io/wiki/dealers",
-        "icon_url": "https://cdn.schedule1.io/wiki/dealers/molly-presley.png"
+        "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/9/94/Molly_Icon.png/revision/latest?cb=20250826171040"
       },
-      "icon_url": "https://cdn.schedule1.io/wiki/dealers/molly-presley.png",
-      "icon_status": "verified-cdn",
-      "icon_source_page": "https://schedule1.io/wiki/dealers"
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/9/94/Molly_Icon.png/revision/latest?cb=20250826171040",
+      "icon_status": "verified-image-source",
+      "icon_source_page": "https://schedule1.io/wiki/dealers",
+      "icon_source_type": "Fandom published image index"
     },
     {
       "id": "dealer-3",
@@ -45,13 +47,14 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "verified-cdn",
+        "status": "verified-image-source",
         "source_page": "https://schedule1.io/wiki/dealers",
-        "icon_url": "https://cdn.schedule1.io/wiki/dealers/brad-crosby.png"
+        "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/9/99/Brad_Icon.png/revision/latest?cb=20250826171007"
       },
-      "icon_url": "https://cdn.schedule1.io/wiki/dealers/brad-crosby.png",
-      "icon_status": "verified-cdn",
-      "icon_source_page": "https://schedule1.io/wiki/dealers"
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/9/99/Brad_Icon.png/revision/latest?cb=20250826171007",
+      "icon_status": "verified-image-source",
+      "icon_source_page": "https://schedule1.io/wiki/dealers",
+      "icon_source_type": "Fandom published image index"
     },
     {
       "id": "dealer-4",
@@ -61,13 +64,14 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "verified-cdn",
+        "status": "verified-image-source",
         "source_page": "https://schedule1.io/wiki/dealers",
-        "icon_url": "https://cdn.schedule1.io/wiki/dealers/jane-lucero.png"
+        "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/b/be/Jane_Icon.png/revision/latest?cb=20250826170850"
       },
-      "icon_url": "https://cdn.schedule1.io/wiki/dealers/jane-lucero.png",
-      "icon_status": "verified-cdn",
-      "icon_source_page": "https://schedule1.io/wiki/dealers"
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/b/be/Jane_Icon.png/revision/latest?cb=20250826170850",
+      "icon_status": "verified-image-source",
+      "icon_source_page": "https://schedule1.io/wiki/dealers",
+      "icon_source_type": "Fandom published image index"
     },
     {
       "id": "dealer-5",
@@ -77,13 +81,14 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "verified-cdn",
+        "status": "verified-image-source",
         "source_page": "https://schedule1.io/wiki/dealers",
-        "icon_url": "https://cdn.schedule1.io/wiki/dealers/wei-long.png"
+        "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/2/27/Wei_Icon.png/revision/latest?cb=20250826170618"
       },
-      "icon_url": "https://cdn.schedule1.io/wiki/dealers/wei-long.png",
-      "icon_status": "verified-cdn",
-      "icon_source_page": "https://schedule1.io/wiki/dealers"
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/2/27/Wei_Icon.png/revision/latest?cb=20250826170618",
+      "icon_status": "verified-image-source",
+      "icon_source_page": "https://schedule1.io/wiki/dealers",
+      "icon_source_type": "Fandom published image index"
     },
     {
       "id": "dealer-6",
@@ -93,13 +98,14 @@
       "cut": 0.2,
       "max_customers": 8,
       "icon": {
-        "status": "verified-cdn",
+        "status": "verified-image-source",
         "source_page": "https://schedule1.io/wiki/dealers",
-        "icon_url": "https://cdn.schedule1.io/wiki/dealers/leo-rivers.png"
+        "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/3/3d/Leo_Icon.png/revision/latest?cb=20250826170931"
       },
-      "icon_url": "https://cdn.schedule1.io/wiki/dealers/leo-rivers.png",
-      "icon_status": "verified-cdn",
-      "icon_source_page": "https://schedule1.io/wiki/dealers"
+      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/3/3d/Leo_Icon.png/revision/latest?cb=20250826170931",
+      "icon_status": "verified-image-source",
+      "icon_source_page": "https://schedule1.io/wiki/dealers",
+      "icon_source_type": "Fandom published image index"
     }
   ]
 }
