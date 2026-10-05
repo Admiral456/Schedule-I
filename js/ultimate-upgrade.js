@@ -49,7 +49,7 @@ function ai(){
 
   const refreshAiState=()=>{
     const logged=Boolean(window.s1Session?.user);
-    note.textContent=logged ? "Přihlášeno · běžný účet má ochranné limity" : "Pro AI je potřeba přihlášení";
+    note.textContent=!logged ? "Pro AI je potřeba přihlášení" : (window.s1Session.user.app_metadata?.role==="admin" ? "Administrátor · AI bez limitu" : "Přihlášeno · běžný účet má ochranné limity");
     input.disabled=!logged;
   };
 
