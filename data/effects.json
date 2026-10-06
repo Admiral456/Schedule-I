@@ -7,25 +7,29 @@
     {
       "id": "shrinking",
       "name": "Shrinking",
-      "price_multiplier": 0.607,
+      "price_multiplier": 0.6,
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/shrinking",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "zombifying",
       "name": "Zombifying",
-      "price_multiplier": 0.582,
+      "price_multiplier": 0.58,
       "rating_band": "S",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/zombifying",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
@@ -37,392 +41,460 @@
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/cyclopean",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "anti-gravity",
       "name": "Anti-Gravity",
-      "price_multiplier": 0.542,
+      "price_multiplier": 0.54,
       "rating_band": "S",
       "type": "Ability",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/anti-gravity",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "long-faced",
       "name": "Long Faced",
-      "price_multiplier": 0.526,
+      "price_multiplier": 0.52,
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/long-faced",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "electrifying",
       "name": "Electrifying",
-      "price_multiplier": 0.504,
+      "price_multiplier": 0.5,
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/electrifying",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "glowing",
       "name": "Glowing",
-      "price_multiplier": 0.484,
+      "price_multiplier": 0.48,
       "rating_band": "A",
       "type": "Ability",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/glowing",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "tropic-thunder",
       "name": "Tropic Thunder",
-      "price_multiplier": 0.466,
+      "price_multiplier": 0.46,
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/tropic-thunder",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "thought-provoking",
       "name": "Thought-Provoking",
-      "price_multiplier": 0.441,
+      "price_multiplier": 0.44,
       "rating_band": "A",
       "type": "Ability",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/thought-provoking",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "jennerising",
       "name": "Jennerising",
-      "price_multiplier": 0.423,
+      "price_multiplier": 0.42,
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/jennerising",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "bright-eyed",
       "name": "Bright-Eyed",
-      "price_multiplier": 0.404,
+      "price_multiplier": 0.4,
       "rating_band": "A",
       "type": "Ability",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/bright-eyed",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "spicy",
       "name": "Spicy",
-      "price_multiplier": 0.387,
+      "price_multiplier": 0.38,
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/spicy",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "foggy",
       "name": "Foggy",
-      "price_multiplier": 0.364,
+      "price_multiplier": 0.36,
       "rating_band": "A",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/foggy",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "slippery",
       "name": "Slippery",
-      "price_multiplier": 0.346,
+      "price_multiplier": 0.34,
       "rating_band": "A",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/slippery",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "athletic",
       "name": "Athletic",
-      "price_multiplier": 0.326,
+      "price_multiplier": 0.32,
       "rating_band": "A",
       "type": "Ability",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/athletic",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "balding",
       "name": "Balding",
-      "price_multiplier": 0.305,
+      "price_multiplier": 0.3,
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/balding",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "calorie-dense",
       "name": "Calorie-Dense",
-      "price_multiplier": 0.285,
+      "price_multiplier": 0.28,
       "rating_band": "B",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/calorie-dense",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "sedating",
       "name": "Sedating",
-      "price_multiplier": 0.265,
+      "price_multiplier": 0.26,
       "rating_band": "B",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/sedating",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "sneaky",
       "name": "Sneaky",
-      "price_multiplier": 0.241,
+      "price_multiplier": 0.24,
       "rating_band": "B",
       "type": "Ability",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/sneaky",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "energizing",
       "name": "Energizing",
-      "price_multiplier": 0.227,
+      "price_multiplier": 0.22,
       "rating_band": "B",
       "type": "Ability",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/energizing",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "gingeritis",
       "name": "Gingeritis",
-      "price_multiplier": 0.204,
+      "price_multiplier": 0.2,
       "rating_band": "B",
       "type": "Cosmetic",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/gingeritis",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "euphoric",
       "name": "Euphoric",
-      "price_multiplier": 0.181,
+      "price_multiplier": 0.18,
       "rating_band": "B",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/euphoric",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "focused",
       "name": "Focused",
-      "price_multiplier": 0.166,
+      "price_multiplier": 0.16,
       "rating_band": "B",
       "type": "Ability",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/focused",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "refreshing",
       "name": "Refreshing",
-      "price_multiplier": 0.148,
+      "price_multiplier": 0.14,
       "rating_band": "C",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/refreshing",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "munchies",
       "name": "Munchies",
-      "price_multiplier": 0.126,
+      "price_multiplier": 0.12,
       "rating_band": "C",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/munchies",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "calming",
       "name": "Calming",
-      "price_multiplier": 0.105,
+      "price_multiplier": 0.1,
       "rating_band": "C",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/calming",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "disorienting",
       "name": "Disorienting",
-      "price_multiplier": 0.004,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/disorienting",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "explosive",
       "name": "Explosive",
-      "price_multiplier": 0.003,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/explosive",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "laxative",
       "name": "Laxative",
-      "price_multiplier": 0.004,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/laxative",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "lethal",
       "name": "Lethal",
-      "price_multiplier": 0.005,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/lethal",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "paranoia",
       "name": "Paranoia",
-      "price_multiplier": 0.004,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/paranoia",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "schizophrenic",
       "name": "Schizophrenic",
-      "price_multiplier": 0.009,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/schizophrenic",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "seizure-inducing",
       "name": "Seizure-Inducing",
-      "price_multiplier": 0.002,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/seizure-inducing",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "smelly",
       "name": "Smelly",
-      "price_multiplier": 0.004,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/smelly",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     },
     {
       "id": "toxic",
       "name": "Toxic",
-      "price_multiplier": 0.008,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
         "status": "pending-exact-icon-verification",
         "source_page": "https://schedule1-lab.com/wiki/effects/toxic",
-        "downloaded_to_repo": false
+        "downloaded_to_repo": false,
+        "game_data_source": "O2theC/Schedule1Data:data/EffectData.json",
+        "source_commit": "latest-public-repo"
       }
     }
-  ]
+  ],
+  "price_multiplier_source": "https://github.com/O2theC/Schedule1Data/blob/master/data/EffectData.json",
+  "price_multiplier_note": "Price multipliers use game-extracted addBaseValueMultiplier values; public presentation pages may show rounded/derived values."
 }
