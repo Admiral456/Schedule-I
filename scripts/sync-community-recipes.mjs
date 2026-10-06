@@ -118,6 +118,8 @@ try {
     !bases.includes(r.base_product)
   );
 
+  console.log("Catalog parser found", recipes.length, "valid candidates.");
+  recipes.forEach((r, i) => console.log(String(i + 1).padStart(2, "0") + " | " + r.name + " | " + r.drug + " | " + r.ingredients.join(" -> ")));
   if (recipes.length !== EXPECTED || invalid.length) {
     console.error("Sync refused: expected " + EXPECTED + " valid recipes, got " + recipes.length + ", invalid " + invalid.length);
     process.exitCode = 2;
