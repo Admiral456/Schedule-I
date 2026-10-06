@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Install parser/image dependencies
         run: python -m pip install --upgrade requests beautifulsoup4 pillow
-      - name: Sync exact effect assets and verified community mix data
+      - name: Sync exact effect assets and live community catalog
         run: python scripts/sync-missing-data.py
       - name: Commit generated data
         run: |
