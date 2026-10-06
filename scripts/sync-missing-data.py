@@ -600,12 +600,9 @@ def sync_community_recipes() -> dict:
             existing_payload = {}
     existing = existing_payload.get("recipes") if isinstance(existing_payload.get("recipes"), list) else []
     if len(candidates) < 70 and len(existing) > len(candidates):
-        return {
-            "expected_count": 77,
-            "stored_count": len(existing),
-            "status": "stale-preserved",
-            "message": "Live community catalog was temporarily unreadable; previous verified snapshot was preserved."
-        }
+        # Merge any newly readable live cards into the previous verified snapshot.
+        # A transient crawler failure must never erase cards already imported.
+        candidates = existing + candidates
 
     normalized = []
     seen = set()
@@ -629,7 +626,7 @@ def sync_community_recipes() -> dict:
     ]
 
     payload = {
-        "schema_version": 4,
+        "schema_version": 5,
         "source": "https://schedule1-lab.com/community/recipes",
         "expected_count": 77,
         "stored_count": len(complete),
