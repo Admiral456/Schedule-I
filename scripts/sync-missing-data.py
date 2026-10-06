@@ -356,7 +356,11 @@ def ordered_ingredients_from_node(node):
             if re.search(r"(?<!\\w)"+re.escape(ingredient)+r"(?!\\w)", text_blob, re.I):
                 found.append(ingredient)
                 break
-    return found
+    # Preserve legitimate repeats, but only up to the card's declared ingredient count.
+    card_text=clean(node.get_text(" ", strip=True))
+    m=re.search(r"Ingredients\\s*\\(\\s*(\\d+)\\s*\\)", card_text, re.I)
+    declared=int(m.group(1)) if m else None
+    return found[:declared] if declared else found
 
 def ordered_effects_from_text(text):
     hits=[]
@@ -368,57 +372,69 @@ def ordered_effects_from_text(text):
     for _,effect in hits:
         if effect not in out:
             out.append(effect)
-    return out
+    m=re.search(r"Effects\\s*\\(\\s*(\\d+)\\s*\\)", text, re.I)
+    return out[:int(m.group(1))] if m else out
+
+def recipe_card_from_open_link(link):
+    current=link
+    best=None
+    while current is not None and getattr(current, "name", None) not in ("body","html"):
+        text_blob=clean(current.get_text(" ", strip=True))
+        if len(text_blob)<=4500 and re.search(r"Ingredients\\s*\\(\\s*\\d+\\s*\\)",text_blob,re.I) and re.search(r"Effects\\s*\\(\\s*\\d+\\s*\\)",text_blob,re.I):
+            heads=current.find_all(["h1","h2","h3","h4"])
+            if heads:
+                best=current
+                break
+        current=current.parent
+    return best
+
+def extract_card_number(text_blob, label):
+    m=re.search(r"(?<![A-Za-z])"+re.escape(label)+r"\\s*\\$?\\s*([0-9]+(?:\\.[0-9]+)?)", text_blob, re.I)
+    if not m:
+        m=re.search(r"(?<![A-Za-z])"+re.escape(label)+r"\\s*([0-9]+(?:\\.[0-9]+)?)", text_blob, re.I)
+    if not m:
+        return None
+    value=float(m.group(1))
+    return int(value) if value.is_integer() else value
 
 def dom_recipes(soup: BeautifulSoup):
     candidates=[]
-    nodes=soup.select("article")
-    if len(nodes)<50:
-        nodes=soup.select('a[href*="/community/recipes"]')
-    for node in nodes:
-        text=clean(node.get_text(" ", strip=True))
-        if len(text)<20 or len(text)>3500:
+    links=[a for a in soup.find_all("a") if clean(a.get_text(" ", strip=True)).casefold()=="open in mixing"]
+    seen_cards=set()
+    for link in links:
+        card=recipe_card_from_open_link(link)
+        if card is None:
             continue
-        heads=[clean(h.get_text(" ", strip=True)) for h in node.find_all(["h1","h2","h3","h4"])]
+        key=id(card)
+        if key in seen_cards:
+            continue
+        seen_cards.add(key)
+        text_blob=clean(card.get_text(" ", strip=True))
+        heads=[clean(h.get_text(" ", strip=True)) for h in card.find_all(["h1","h2","h3","h4"])]
         title=heads[0] if heads else ""
         if not title:
             continue
-        base=next((p for p in BASE_PRODUCTS if re.search(r"(?<!\\w)"+re.escape(p)+r"(?!\\w)", text, re.I)),None)
+        base=next((p for p in BASE_PRODUCTS if re.search(r"(?<!\\w)"+re.escape(p)+r"(?!\\w)", text_blob, re.I)),None)
         if not base:
             continue
-        ins=ordered_ingredients_from_node(node)
-        if not ins:
-            # Conservative text fallback: keep source order of occurrences.
-            occurrences=[]
-            for ingredient in INGREDIENTS:
-                for m in re.finditer(r"(?<!\\w)"+re.escape(ingredient)+r"(?!\\w)", text, re.I):
-                    occurrences.append((m.start(),ingredient))
-            occurrences.sort(key=lambda x:x[0])
-            ins=[x[1] for x in occurrences]
+        ins=ordered_ingredients_from_node(card)
         if not ins:
             continue
-        effects=ordered_effects_from_text(text)
-        def num(pattern):
-            m=re.search(pattern,text,re.I)
-            return float(m.group(1)) if m else None
-        href=""
-        for a in node.find_all("a",href=True):
-            h=a.get("href")
-            if "/community/recipes" in h:
-                href=urljoin("https://schedule1-lab.com/community/recipes",h)
-                break
-        customers=num(r"Customers\\s*\\((\\d+)\\)")
+        effects=ordered_effects_from_text(text_blob)
+        href=link.get("href") or "https://schedule1-lab.com/community/recipes"
+        href=urljoin("https://schedule1-lab.com/community/recipes",href)
+        customers=extract_card_number(text_blob,"Customers")
         candidate={
             "name":title,
             "base_product":base,
             "ingredients":ins,
             "effects":effects,
-            "cost":num(r"Cost\\s*\\$\\s*([0-9]+(?:\\.[0-9]+)?)"),
-            "sell":num(r"Sells\\s+for\\s+\\$\\s*([0-9]+(?:\\.[0-9]+)?)"),
-            "profit":num(r"Profit\\s*\\$\\s*([0-9]+(?:\\.[0-9]+)?)"),
+            "cost":extract_card_number(text_blob,"Cost"),
+            "sell":extract_card_number(text_blob,"Sells for"),
+            "profit":extract_card_number(text_blob,"Profit"),
             "customers":int(customers) if customers is not None else None,
-            "asking":num(r"Asking\\s*\\$\\s*([0-9]+(?:\\.[0-9]+)?)"),
-            "source_url":href or "https://schedule1-lab.com/community/recipes",
+            "asking":extract_card_number(text_blob,"Asking"),
+            "source_url":href,
             "source_type":"community",
         }
         candidates.append(candidate)
