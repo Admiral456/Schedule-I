@@ -1,0 +1,1158 @@
+{
+  "schema_version": 1,
+  "source": "https://schedule1-lab.com/community/recipes",
+  "expected_count": 77,
+  "verified_count": 88,
+  "status": "partial",
+  "snapshot_at": "2026-10-06T06:51:16.174502+00:00",
+  "recipes": [
+    {
+      "name": "Most profitable 4 Ingredient Meth",
+      "base_product": "Meth",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-001-most-profitable-4-ingredient-meth"
+    },
+    {
+      "name": "Thundering Snow",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-002-thundering-snow"
+    },
+    {
+      "name": "Puffer Fish",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-003-puffer-fish"
+    },
+    {
+      "name": "Great First Mix",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-004-great-first-mix"
+    },
+    {
+      "name": "Tropical Glow",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-005-tropical-glow"
+    },
+    {
+      "name": "Second 3 mix for early game",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Mouth Wash"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-006-second-3-mix-for-early-game"
+    },
+    {
+      "name": "Gaand",
+      "base_product": "Meth",
+      "ingredients": [
+        "Banana",
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-007-gaand"
+    },
+    {
+      "name": "Best OG Kush mixes for beginners",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-008-best-og-kush-mixes-for-beginners"
+    },
+    {
+      "name": "Maal",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Banana",
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Horse Semen",
+        "Mega Bean",
+        "Motor Oil",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-009-maal"
+    },
+    {
+      "name": "Lulli",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Banana",
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-010-lulli"
+    },
+    {
+      "name": "Philly Ice - Anti Grav",
+      "base_product": "Meth",
+      "ingredients": [
+        "Cuke",
+        "Iodine",
+        "Mega Bean",
+        "Motor Oil"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-011-philly-ice-anti-grav"
+    },
+    {
+      "name": "KALI kronik (4mx=24c)",
+      "base_product": "Green Crack",
+      "ingredients": [
+        "Banana",
+        "Horse Semen",
+        "Iodine",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-012-kali-kronik-4mx-24c"
+    },
+    {
+      "name": "8 mixes - Cocaine - for 18 customers",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Horse Semen",
+        "Mega Bean",
+        "Motor Oil",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-013-8-mixes-cocaine-for-18-customers"
+    },
+    {
+      "name": "Best 4 mix - Cocaine",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-014-best-4-mix-cocaine"
+    },
+    {
+      "name": "Orange Lightning",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Addy",
+        "Horse Semen",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-015-orange-lightning"
+    },
+    {
+      "name": "Golden Mushroom",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Horse Semen",
+        "Mega Bean",
+        "Motor Oil",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-016-golden-mushroom"
+    },
+    {
+      "name": "Gnome Shroom (shrinking+xtra)",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Addy",
+        "Banana",
+        "Cuke",
+        "Energy Drink",
+        "Gasoline",
+        "Horse Semen"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-017-gnome-shroom-shrinking-xtra"
+    },
+    {
+      "name": "super mario - BOSS LVL (4mx=12c)",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Mega Bean",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-018-super-mario-boss-lvl-4mx-12c"
+    },
+    {
+      "name": "Walter White's special",
+      "base_product": "Meth",
+      "ingredients": [
+        "Addy",
+        "Horse Semen"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-019-walter-white-s-special"
+    },
+    {
+      "name": "HeadBuzzing Cube",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Addy",
+        "Horse Semen"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-020-headbuzzing-cube"
+    },
+    {
+      "name": "Dope Crystal CM100 (for everyone)",
+      "base_product": "Meth",
+      "ingredients": [
+        "Cuke",
+        "Gasoline"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-021-dope-crystal-cm100-for-everyone"
+    },
+    {
+      "name": "Alien Shapeshift 2nd variation",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean",
+        "Mouth Wash"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-022-alien-shapeshift-2nd-variation"
+    },
+    {
+      "name": "Alien Shapeshift 1st variation",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Addy",
+        "Battery",
+        "Cuke",
+        "Mega Bean",
+        "Mouth Wash"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-023-alien-shapeshift-1st-variation"
+    },
+    {
+      "name": "MOLLY IRISH purp (3mx=22c)",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-024-molly-irish-purp-3mx-22c"
+    },
+    {
+      "name": "Focused (+ xtra) for Pickpocketing",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Energy Drink",
+        "Mega Bean",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-025-focused-xtra-for-pickpocketing"
+    },
+    {
+      "name": "SNEAKY SELLING",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Energy Drink",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-026-sneaky-selling"
+    },
+    {
+      "name": "Client sabotage for ez pickpocket",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Mega Bean",
+        "Paracetamol",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-027-client-sabotage-for-ez-pickpocket"
+    },
+    {
+      "name": "Columbian BamBam - Cocaine - for 25 customers",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Addy",
+        "Banana",
+        "Chili",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean",
+        "Mouth Wash",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-028-columbian-bambam-cocaine-for-25-customers"
+    },
+    {
+      "name": "White Girl",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Addy",
+        "Banana",
+        "Chili",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean",
+        "Mouth Wash",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-029-white-girl"
+    },
+    {
+      "name": "28 customers Coke",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Addy",
+        "Chili",
+        "Energy Drink",
+        "Horse Semen",
+        "Iodine",
+        "Motor Oil",
+        "Mouth Wash",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-030-28-customers-coke"
+    },
+    {
+      "name": "5 mixes - Cocaine - for 21 customers- queef rocket",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Iodine",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-031-5-mixes-cocaine-for-21-customers-queef-rocket"
+    },
+    {
+      "name": "Cocaine - Bright-Eyed + Jennerising",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Addy",
+        "Battery",
+        "Horse Semen",
+        "Iodine"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-032-cocaine-bright-eyed-jennerising"
+    },
+    {
+      "name": "Cocaine - Party Bus Setup",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Battery",
+        "Chili",
+        "Energy Drink",
+        "Mega Bean",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-033-cocaine-party-bus-setup"
+    },
+    {
+      "name": "Meth - Anti-Gravity + Glowing",
+      "base_product": "Meth",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Horse Semen",
+        "Mega Bean",
+        "Motor Oil",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-034-meth-anti-gravity-glowing"
+    },
+    {
+      "name": "Megameth",
+      "base_product": "Meth",
+      "ingredients": [
+        "Addy",
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Horse Semen",
+        "Mega Bean",
+        "Mouth Wash",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-035-megameth"
+    },
+    {
+      "name": "High Speed Chicken Feed",
+      "base_product": "Meth",
+      "ingredients": [
+        "Addy",
+        "Banana",
+        "Chili",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean",
+        "Mouth Wash",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-036-high-speed-chicken-feed"
+    },
+    {
+      "name": "Хайзенберг",
+      "base_product": "Meth",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Horse Semen",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-037-"
+    },
+    {
+      "name": "gold. its just gold. its just a gold nugget at this point jesus christ",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Horse Semen"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-038-gold-its-just-gold-its-just-a-gold-nugget-at-this-"
+    },
+    {
+      "name": "Downtown Crank for Brad",
+      "base_product": "Meth",
+      "ingredients": [
+        "Cuke",
+        "Donut",
+        "Gasoline",
+        "Horse Semen",
+        "Mega Bean",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-039-downtown-crank-for-brad"
+    },
+    {
+      "name": "Shroom Hippie Mix",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Donut",
+        "Gasoline",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-040-shroom-hippie-mix"
+    },
+    {
+      "name": "Meth - Kryptonita",
+      "base_product": "Meth",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Mega Bean",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-041-meth-kryptonita"
+    },
+    {
+      "name": "crystal ESCOBAR (4mx=14c)",
+      "base_product": "Meth",
+      "ingredients": [
+        "Addy",
+        "Horse Semen",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-042-crystal-escobar-4mx-14c"
+    },
+    {
+      "name": "Westville meth",
+      "base_product": "Meth",
+      "ingredients": [
+        "Banana",
+        "Chili",
+        "Cuke",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-043-westville-meth"
+    },
+    {
+      "name": "crystal JENNER (3mx=9c)",
+      "base_product": "Meth",
+      "ingredients": [
+        "Banana",
+        "Horse Semen",
+        "Iodine"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-044-crystal-jenner-3mx-9c"
+    },
+    {
+      "name": "Fangayati",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-045-fangayati"
+    },
+    {
+      "name": "OG Kush - Tropic Thunder + Anti-Gravity",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-046-og-kush-tropic-thunder-anti-gravity"
+    },
+    {
+      "name": "Pussy",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-047-pussy"
+    },
+    {
+      "name": "Mega Crystal",
+      "base_product": "Meth",
+      "ingredients": [
+        "Addy",
+        "Horse Semen",
+        "Iodine"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-048-mega-crystal"
+    },
+    {
+      "name": "Wedding Diesel",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Cuke",
+        "Donut",
+        "Energy Drink",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-049-wedding-diesel"
+    },
+    {
+      "name": "B.O.A.T.",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Battery",
+        "Chili",
+        "Cuke",
+        "Energy Drink",
+        "Gasoline",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-050-b-o-a-t"
+    },
+    {
+      "name": "crystal LONGTIME (2mx=7c)",
+      "base_product": "Meth",
+      "ingredients": [
+        "Horse Semen",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-051-crystal-longtime-2mx-7c"
+    },
+    {
+      "name": "2 mixes - Meth",
+      "base_product": "Meth",
+      "ingredients": [
+        "Cuke",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-052-2-mixes-meth"
+    },
+    {
+      "name": "Blue Sky - Walter White Meth",
+      "base_product": "Meth",
+      "ingredients": [
+        "Addy",
+        "Horse Semen"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-053-blue-sky-walter-white-meth"
+    },
+    {
+      "name": "Enlightenment Cube",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Addy",
+        "Banana",
+        "Cuke",
+        "Gasoline",
+        "Horse Semen"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-054-enlightenment-cube"
+    },
+    {
+      "name": "Fruity Assblaster",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Paracetamol",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-055-fruity-assblaster"
+    },
+    {
+      "name": "Стояк Деда",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Energy Drink",
+        "Paracetamol",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-056-"
+    },
+    {
+      "name": "5 mixes - OG Kush - for 21 customers",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Cuke",
+        "Mega Bean",
+        "Mouth Wash",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-057-5-mixes-og-kush-for-21-customers"
+    },
+    {
+      "name": "crystal BONES (1mx=5c)",
+      "base_product": "Meth",
+      "ingredients": [
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-058-crystal-bones-1mx-5c"
+    },
+    {
+      "name": "Chronic-SpIce",
+      "base_product": "Meth",
+      "ingredients": [
+        "Cuke",
+        "Gasoline"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-059-chronic-spice"
+    },
+    {
+      "name": "Potent Cube",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Addy",
+        "Cuke",
+        "Gasoline",
+        "Horse Semen"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-060-potent-cube"
+    },
+    {
+      "name": "黑帮库什",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Mouth Wash",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-061-"
+    },
+    {
+      "name": "Hippies - 4 mixes - Green Crack",
+      "base_product": "Green Crack",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Gasoline",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-062-hippies-4-mixes-green-crack"
+    },
+    {
+      "name": "OG Kush - Anti-Gravity + Balding",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Mouth Wash"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-063-og-kush-anti-gravity-balding"
+    },
+    {
+      "name": "7 mixes - Sour Diesel - for 32 customers",
+      "base_product": "Sour Diesel",
+      "ingredients": [
+        "Addy",
+        "Chili",
+        "Donut",
+        "Flu Medicine",
+        "Iodine",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-064-7-mixes-sour-diesel-for-32-customers"
+    },
+    {
+      "name": "Aspen Dick",
+      "base_product": "Sour Diesel",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Donut",
+        "Mouth Wash",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-065-aspen-dick"
+    },
+    {
+      "name": "NRG kronik (3mx=19c)",
+      "base_product": "Green Crack",
+      "ingredients": [
+        "Banana",
+        "Horse Semen",
+        "Iodine"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-066-nrg-kronik-3mx-19c"
+    },
+    {
+      "name": "OG SuperMan",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Battery",
+        "Energy Drink",
+        "Mega Bean",
+        "Mouth Wash"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-067-og-superman"
+    },
+    {
+      "name": "Hero",
+      "base_product": "Green Crack",
+      "ingredients": [
+        "Battery",
+        "Donut",
+        "Energy Drink",
+        "Flu Medicine",
+        "Mouth Wash"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-068-hero"
+    },
+    {
+      "name": "Sleepy Clap",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Donut",
+        "Horse Semen",
+        "Mega Bean",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-069-sleepy-clap"
+    },
+    {
+      "name": "4 mix og kush",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Energy Drink",
+        "Mouth Wash"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-070-4-mix-og-kush"
+    },
+    {
+      "name": "Dense Quiet Thunder (DQT)",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Addy",
+        "Banana",
+        "Donut",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-071-dense-quiet-thunder-dqt"
+    },
+    {
+      "name": "OG Kush - for 20 customers",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-072-og-kush-for-20-customers"
+    },
+    {
+      "name": "3 mixes - Green Crack - for 22 customers",
+      "base_product": "Green Crack",
+      "ingredients": [
+        "Banana",
+        "Paracetamol",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-073-3-mixes-green-crack-for-22-customers"
+    },
+    {
+      "name": "Amanita Cube (intermediate batch)",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Addy",
+        "Gasoline",
+        "Horse Semen"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-074-amanita-cube-intermediate-batch"
+    },
+    {
+      "name": "Boss",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Battery",
+        "Energy Drink",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-075-boss"
+    },
+    {
+      "name": "gingerHEAD kronik (2mx=18c)",
+      "base_product": "Green Crack",
+      "ingredients": [
+        "Banana",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-076-gingerhead-kronik-2mx-18c"
+    },
+    {
+      "name": "2 mix Granddaddy Purple - Anti-Gravity + Athletic + Sneaky",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Energy Drink",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-077-2-mix-granddaddy-purple-anti-gravity-athletic-snea"
+    },
+    {
+      "name": "Sweet ghost",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Paracetamol",
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-078-sweet-ghost"
+    },
+    {
+      "name": "XTC purp (2mx=20c)",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Banana",
+        "Cuke"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-079-xtc-purp-2mx-20c"
+    },
+    {
+      "name": "Thoughtful Ginger Dount (TGD)",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Addy",
+        "Banana",
+        "Donut"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-080-thoughtful-ginger-dount-tgd"
+    },
+    {
+      "name": "Northtown Supply",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Addy",
+        "Horse Semen",
+        "Mega Bean",
+        "Paracetamol"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-081-northtown-supply"
+    },
+    {
+      "name": "BONUS WORKER EFFICIENCY",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Energy Drink",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-082-bonus-worker-efficiency"
+    },
+    {
+      "name": "NITE purp (1mx=10c)",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Viagor"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-083-nite-purp-1mx-10c"
+    },
+    {
+      "name": "Filling Ginger Thief (FGT)",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Donut"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-084-filling-ginger-thief-fgt"
+    },
+    {
+      "name": "NANABRED kronik (1mx=13c)",
+      "base_product": "Green Crack",
+      "ingredients": [
+        "Banana"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-085-nanabred-kronik-1mx-13c"
+    },
+    {
+      "name": "Grandaddy Biker Mix",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Addy",
+        "Chili",
+        "Donut",
+        "Gasoline",
+        "Horse Semen",
+        "Iodine",
+        "Mega Bean"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-086-grandaddy-biker-mix"
+    },
+    {
+      "name": "Calm Hunger",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Donut"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-087-calm-hunger"
+    },
+    {
+      "name": "Full Explosive Calm (FEC)",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Donut"
+      ],
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "source_type": "community",
+      "id": "community-088-full-explosive-calm-fec"
+    }
+  ],
+  "note": "Community recipes store product/ingredient lists; the Helper may recalculate effects/value through its own mixing engine."
+}

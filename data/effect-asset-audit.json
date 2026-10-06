@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-06T06:50:42.708159+00:00",
+  "expected_count": 35,
+  "verified_count": 35,
+  "missing_count": 0,
+  "verified": [
+    {
+      "id": "shrinking",
+      "name": "Shrinking",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/shrinking.webp"
+    },
+    {
+      "id": "zombifying",
+      "name": "Zombifying",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/zombifying.webp"
+    },
+    {
+      "id": "cyclopean",
+      "name": "Cyclopean",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/cyclopean.webp"
+    },
+    {
+      "id": "anti-gravity",
+      "name": "Anti-Gravity",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/anti-gravity.webp"
+    },
+    {
+      "id": "long-faced",
+      "name": "Long Faced",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/long-faced.webp"
+    },
+    {
+      "id": "electrifying",
+      "name": "Electrifying",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/electrifying.webp"
+    },
+    {
+      "id": "glowing",
+      "name": "Glowing",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/glowing.webp"
+    },
+    {
+      "id": "tropic-thunder",
+      "name": "Tropic Thunder",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/tropic-thunder.webp"
+    },
+    {
+      "id": "thought-provoking",
+      "name": "Thought-Provoking",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/thought-provoking.webp"
+    },
+    {
+      "id": "jennerising",
+      "name": "Jennerising",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/jennerising.webp"
+    },
+    {
+      "id": "bright-eyed",
+      "name": "Bright-Eyed",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/bright-eyed.webp"
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/spicy.webp"
+    },
+    {
+      "id": "foggy",
+      "name": "Foggy",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/foggy.webp"
+    },
+    {
+      "id": "slippery",
+      "name": "Slippery",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/slippery.webp"
+    },
+    {
+      "id": "athletic",
+      "name": "Athletic",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/athletic.webp"
+    },
+    {
+      "id": "balding",
+      "name": "Balding",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/balding.webp"
+    },
+    {
+      "id": "calorie-dense",
+      "name": "Calorie-Dense",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/calorie-dense.webp"
+    },
+    {
+      "id": "sedating",
+      "name": "Sedating",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/sedating.webp"
+    },
+    {
+      "id": "sneaky",
+      "name": "Sneaky",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/sneaky.webp"
+    },
+    {
+      "id": "energizing",
+      "name": "Energizing",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/energizing.webp"
+    },
+    {
+      "id": "gingeritis",
+      "name": "Gingeritis",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/gingeritis.webp"
+    },
+    {
+      "id": "euphoric",
+      "name": "Euphoric",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/euphoric.webp"
+    },
+    {
+      "id": "focused",
+      "name": "Focused",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/focused.webp"
+    },
+    {
+      "id": "refreshing",
+      "name": "Refreshing",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/refreshing.webp"
+    },
+    {
+      "id": "munchies",
+      "name": "Munchies",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/munchies.webp"
+    },
+    {
+      "id": "calming",
+      "name": "Calming",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/calming.webp"
+    },
+    {
+      "id": "disorienting",
+      "name": "Disorienting",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/disorienting.webp"
+    },
+    {
+      "id": "explosive",
+      "name": "Explosive",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/explosive.webp"
+    },
+    {
+      "id": "laxative",
+      "name": "Laxative",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/laxative.webp"
+    },
+    {
+      "id": "lethal",
+      "name": "Lethal",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/lethal.webp"
+    },
+    {
+      "id": "paranoia",
+      "name": "Paranoia",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/paranoia.webp"
+    },
+    {
+      "id": "schizophrenic",
+      "name": "Schizophrenic",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/schizophrenic.webp"
+    },
+    {
+      "id": "seizure-inducing",
+      "name": "Seizure-Inducing",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/seizure-inducing.webp"
+    },
+    {
+      "id": "smelly",
+      "name": "Smelly",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/smelly.webp"
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
+      "local_path": "assets/game/effects/toxic.webp"
+    }
+  ],
+  "missing": [],
+  "sha256": {
+    "shrinking": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "zombifying": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "cyclopean": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "anti-gravity": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "long-faced": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "electrifying": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "glowing": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "tropic-thunder": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "thought-provoking": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "jennerising": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "bright-eyed": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "spicy": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "foggy": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "slippery": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "athletic": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "balding": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "calorie-dense": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "sedating": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "sneaky": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "energizing": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "gingeritis": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "euphoric": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "focused": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "refreshing": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "munchies": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "calming": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "disorienting": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "explosive": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "laxative": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "lethal": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "paranoia": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "schizophrenic": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "seizure-inducing": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "smelly": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
+    "toxic": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4"
+  },
+  "policy": "Only exact image assets discovered from an effect page/direct game-derived source are accepted; no generated or generic icons."
+}
