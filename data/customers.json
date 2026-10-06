@@ -16,9 +16,14 @@
         "Thought-Provoking"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 82,
+        "y": 471,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -34,9 +39,14 @@
         "Explosive"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 404,
+        "y": 413,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -52,10 +62,14 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "not-verified-publicly",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
-        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 311,
+        "y": 85,
+        "size": 24,
+        "wand_public_status": "not-verified-publicly"
       }
     },
     {
@@ -71,9 +85,14 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 319,
+        "y": 383,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -85,9 +104,14 @@
       "orders_per_week": "3-6",
       "preferred_effects": [],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 75,
+        "y": 342,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -103,9 +127,14 @@
         "Schizophrenic"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 596,
+        "y": 212,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -121,9 +150,14 @@
         "Spicy"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 596,
+        "y": 342,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -139,9 +173,14 @@
         "Balding"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 277,
+        "y": 528,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -157,9 +196,14 @@
         "Explosive"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 596,
+        "y": 470,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -175,9 +219,14 @@
         "Glowing"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Uptown",
+        "x": 209,
+        "y": 215,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -193,9 +242,14 @@
         "Euphoric"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 261,
+        "y": 431,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -211,9 +265,14 @@
         "Disorienting"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 387,
+        "y": 429,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -229,9 +288,14 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 65,
+        "y": 303,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -247,9 +311,14 @@
         "Bright-Eyed"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 642,
+        "y": 298,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -265,9 +334,14 @@
         "Toxic"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 261,
+        "y": 38,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -283,9 +357,14 @@
         "Jennerising"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 467,
+        "y": 322,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -301,9 +380,14 @@
         "Lethal"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 585,
+        "y": 488,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -319,9 +403,14 @@
         "Long Faced"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 514,
+        "y": 42,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -337,9 +426,14 @@
         "Calorie-Dense"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 386,
+        "y": 176,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -355,9 +449,14 @@
         "Thought-Provoking"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 723,
+        "y": 190,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -373,9 +472,14 @@
         "Sedating"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 440,
+        "y": 135,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -391,9 +495,14 @@
         "Spicy"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 598,
+        "y": 69,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -409,9 +518,14 @@
         "Thought-Provoking"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 133,
+        "y": 480,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -427,9 +541,14 @@
         "Long Faced"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 623,
+        "y": 210,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -445,10 +564,14 @@
         "Spicy"
       ],
       "map_position": {
-        "status": "not-verified-publicly",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
-        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 777,
+        "y": 218,
+        "size": 24,
+        "wand_public_status": "not-verified-publicly"
       }
     },
     {
@@ -464,9 +587,14 @@
         "Tropic Thunder"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 255,
+        "y": 475,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -482,9 +610,14 @@
         "Athletic"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 255,
+        "y": 214,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -500,10 +633,14 @@
         "Smelly"
       ],
       "map_position": {
-        "status": "not-verified-publicly",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
-        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 456,
+        "y": 34,
+        "size": 24,
+        "wand_public_status": "not-verified-publicly"
       }
     },
     {
@@ -519,9 +656,14 @@
         "Schizophrenic"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 66,
+        "y": 155,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -537,9 +679,14 @@
         "Long Faced"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 550,
+        "y": 232,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -555,9 +702,14 @@
         "Refreshing"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 377,
+        "y": 343,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -573,9 +725,14 @@
         "Slippery"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 379,
+        "y": 454,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -591,10 +748,14 @@
         "Bright-Eyed"
       ],
       "map_position": {
-        "status": "not-verified-publicly",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point",
-        "note": "Customer is in the 66-customer database but not in Wand's current 62-customer map layer."
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 432,
+        "y": 401,
+        "size": 24,
+        "wand_public_status": "not-verified-publicly"
       }
     },
     {
@@ -606,9 +767,14 @@
       "orders_per_week": "3-6",
       "preferred_effects": [],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Suburbia",
+        "x": 205,
+        "y": 191,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -624,9 +790,14 @@
         "Sedating"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 62,
+        "y": 225,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -642,9 +813,14 @@
         "Calming"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 391,
+        "y": 420,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -660,9 +836,14 @@
         "Toxic"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 521,
+        "y": 151,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -678,9 +859,14 @@
         "Shrinking"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 64,
+        "y": 369,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -696,9 +882,14 @@
         "Calming"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 260,
+        "y": 30,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -714,9 +905,14 @@
         "Focused"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 476,
+        "y": 439,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -732,9 +928,14 @@
         "Paranoia"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 257,
+        "y": 300,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -750,9 +951,14 @@
         "Euphoric"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 260,
+        "y": 414,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -768,9 +974,14 @@
         "Energizing"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 565,
+        "y": 68,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -786,9 +997,14 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 267,
+        "y": 485,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -804,9 +1020,14 @@
         "Foggy"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 721,
+        "y": 485,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -818,9 +1039,14 @@
       "orders_per_week": "3-6",
       "preferred_effects": [],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 390,
+        "y": 30,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -836,9 +1062,14 @@
         "Energizing"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 142,
+        "y": 371,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -850,9 +1081,14 @@
       "orders_per_week": "2-5",
       "preferred_effects": [],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Docks",
+        "x": 327,
+        "y": 112,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -868,9 +1104,14 @@
         "Thought-Provoking"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 371,
+        "y": 212,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -886,9 +1127,14 @@
         "Smelly"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 73,
+        "y": 187,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -904,9 +1150,14 @@
         "Euphoric"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 195,
+        "y": 67,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -922,9 +1173,14 @@
         "Focused"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 317,
+        "y": 71,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -940,9 +1196,14 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 320,
+        "y": 194,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -958,9 +1219,14 @@
         "Foggy"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 599,
+        "y": 439,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -976,9 +1242,14 @@
         "Munchies"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 496,
+        "y": 48,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -994,9 +1265,14 @@
         "Balding"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 357,
+        "y": 439,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1012,9 +1288,14 @@
         "Laxative"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Downtown",
+        "x": 719,
+        "y": 100,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1030,9 +1311,14 @@
         "Euphoric"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 169,
+        "y": 439,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1048,9 +1334,14 @@
         "Electrifying"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 686,
+        "y": 419,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1066,9 +1357,14 @@
         "Athletic"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 49,
+        "y": 188,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1084,9 +1380,14 @@
         "Smelly"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 354,
+        "y": 334,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1102,9 +1403,14 @@
         "Seizure-Inducing"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 684,
+        "y": 127,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1120,9 +1426,14 @@
         "Munchies"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 441,
+        "y": 310,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1138,9 +1449,14 @@
         "Tropic Thunder"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 294,
+        "y": 194,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1156,9 +1472,14 @@
         "Energizing"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Northtown",
+        "x": 623,
+        "y": 490,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     },
     {
@@ -1174,9 +1495,14 @@
         "Sneaky"
       ],
       "map_position": {
-        "status": "verified-external-pin",
-        "source": "Wand",
-        "source_url": "https://wand.com/maps/schedule-i/hyland-point"
+        "status": "verified-source-map-coordinate",
+        "source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "source_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+        "district_map": "Westville",
+        "x": 111,
+        "y": 132,
+        "size": 24,
+        "wand_public_status": "verified-external-pin"
       }
     }
   ],
@@ -1192,5 +1518,7 @@
       "Sherman Giles"
     ],
     "note": "Wand's current checklist contains 62 named customer pins. Two local spellings are aliases (Tobas/Tobias and Caufield/Caulfield), leaving four local customers not represented in the public 62-pin layer. Exact local coordinates are not guessed."
-  }
+  },
+  "map_coordinate_source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+  "map_coordinate_count": 66
 }
