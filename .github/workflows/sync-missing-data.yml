@@ -18,7 +18,7 @@ jobs:
         run: python -m pip install --upgrade requests beautifulsoup4 pillow
       - name: Sync exact effect assets and 77 community recipes
         run: python scripts/sync-missing-data.py
-      - name: Commit generated data
+      - name: Validate JavaScript syntax\n        run: |\n          node --check js/seeded-mixing.js\n          node --check js/community-recipes.js\n      - name: Commit generated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
