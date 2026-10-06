@@ -20,7 +20,7 @@
     section.id = "view-community";
     section.innerHTML = `
       <div class="toolbar">
-        <div><div class="label">Community catalog</div><h2>Community recepty</h2><p>Přímo v Helperu. Recepty jsou uloženy s pořadím ingrediencí a zdrojovým mix hashem; výsledky lze ověřit v Mixeru.</p></div>
+        <div><div class="label">Community catalog</div><h2>Community recepty</h2><p>Přímo v Helperu. Recepty jsou uložené s přesným pořadím ingrediencí a zdrojem z veřejného komunitního katalogu.</p></div>
         <div class="filters"><input id="communitySearch" type="search" placeholder="Hledat recept nebo ingredienci…"><select id="communityBase"><option value="">Všechny základy</option></select></div>
       </div>
       <div id="communitySummary" class="catalog-summary"></div>
@@ -59,7 +59,7 @@
         <div class="s1-community-name">${esc(r.name)}</div>
         <div class="s1-community-meta">Základ: ${esc(r.base_product || "neuvedený")}</div>
         <div class="s1-community-ings">${(r.ingredients||[]).map(x=>`<span class="s1-community-ing">${esc(x)}</span>`).join("")}</div>
-        <div class="s1-community-effects">${(r.effects||[]).map(e=>`<span class="s1-community-effect" style="--effect-color:${esc(effectColors[e]||"transparent")}">${esc(e)}</span>`).join("")}</div><div class="s1-community-source">Source: Schedule1 Tools · verified shared mix</div>
+        <div class="s1-community-effects">${(r.effects||[]).map(e=>`<span class="s1-community-effect" style="--effect-color:${esc(effectColors[e]||"transparent")}">${esc(e)}</span>`).join("")}</div><div class="s1-community-source">Source: Schedule 1 Lab · community · ${esc(r.author || "autor neuveden")}</div>
       </article>`).join("") || '<div class="empty">Žádný recept neodpovídá hledání.</div>';
   }
 
