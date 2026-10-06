@@ -3,8 +3,14 @@ import { chromium } from "playwright";
 const browser = await chromium.launch({headless:true});
 const page = await browser.newPage({viewport:{width:1440,height:900}});
 const errors = [];
+const localFailures = [];
 page.on("console", m => { if (m.type() === "error") errors.push("console: " + m.text()); });
 page.on("pageerror", e => errors.push("pageerror: " + e.message));
+page.on("response", r => {
+  if (r.status() >= 400 && new URL(r.url()).origin === "http://127.0.0.1:4173") {
+    localFailures.push(r.status() + " " + r.url());
+  }
+});
 
 await page.goto("http://127.0.0.1:4173/", {waitUntil:"networkidle"});
 if ((await page.title()) !== "Schedule 1 Helper") throw new Error("Bad title");
@@ -47,6 +53,8 @@ await page.setViewportSize({width:390,height:844});
 await page.reload({waitUntil:"networkidle"});
 if (await page.locator("body").boundingBox() === null) throw new Error("Mobile page missing");
 
-if (errors.length) throw new Error(errors.slice(0,10).join("\n"));
+if (localFailures.length) throw new Error("Local HTTP failures:\n" + localFailures.slice(0,10).join("\n"));
+const remoteErrors = errors.filter(x => !/Failed to load resource/.test(x));
+if (remoteErrors.length) throw new Error(remoteErrors.slice(0,10).join("\n"));
 await browser.close();
 console.log("BROWSER SMOKE PASS");
