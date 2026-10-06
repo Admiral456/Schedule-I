@@ -101,7 +101,7 @@ def effect_candidates(effect_name: str) -> list[tuple[str,int,str]]:
 
     reader = get_reader(page)
     if reader:
-        for alt, url in re.findall(r"!\\[([^]]*)\\]\\(([^)]+)\\)", reader):
+        for alt, url in re.findall(r"!\[([^]]*)\]\(([^)]+)\)", reader):
             alt_text=clean(alt).lower()
             low=url.lower()
             if any(x in low for x in ("/wordmark", "/logo", "/favicon", "/og-", "/site-icon")):
