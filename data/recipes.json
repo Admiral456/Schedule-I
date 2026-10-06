@@ -1076,6 +1076,378 @@
       "profit": 301,
       "base_price": 70,
       "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "great-first-mix",
+      "drug": "OG Kush",
+      "name": "Great First Mix",
+      "author": "sgtmorrigahngaming",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Banana"
+      ],
+      "effects": [
+        "Jennerising",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": 6,
+      "sell": 80,
+      "profit": 74,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "best-og-kush-mixes-beginners",
+      "drug": "OG Kush",
+      "name": "Best OG Kush mixes for beginners",
+      "author": "Lyksian",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Banana"
+      ],
+      "effects": [
+        "Jennerising",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": 6,
+      "sell": 80,
+      "profit": 74,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "philly-ice-anti-grav",
+      "drug": "Meth",
+      "name": "Philly Ice - Anti Grav",
+      "author": "MSD",
+      "ingredients": [
+        "Cuke",
+        "Mega Bean",
+        "Iodine",
+        "Motor Oil"
+      ],
+      "effects": [
+        "Cyclopean",
+        "Anti-Gravity",
+        "Jennerising",
+        "Slippery"
+      ],
+      "cost": 23,
+      "sell": 200,
+      "profit": 177,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "molly-irish-purp",
+      "drug": "Granddaddy Purple",
+      "name": "MOLLY IRISH purp (3mx=22c)",
+      "author": "Sangria Kartel",
+      "ingredients": [
+        "Cuke",
+        "Banana",
+        "Viagor"
+      ],
+      "effects": [
+        "Sedating",
+        "Thought-Provoking",
+        "Gingeritis",
+        "Tropic Thunder"
+      ],
+      "cost": 8,
+      "sell": 83,
+      "profit": 75,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "filling-ginger-thief",
+      "drug": "OG Kush",
+      "name": "Filling Ginger Thief (FGT)",
+      "author": "SquareRex13",
+      "ingredients": [
+        "Donut",
+        "Banana"
+      ],
+      "effects": [
+        "Sneaky",
+        "Calorie-Dense",
+        "Gingeritis"
+      ],
+      "cost": 5,
+      "sell": 60,
+      "profit": 55,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "nanabred-kronik",
+      "drug": "Green Crack",
+      "name": "NANABRED kronik (1mx=13c)",
+      "author": "Sangria Kartel",
+      "ingredients": [
+        "Banana"
+      ],
+      "effects": [
+        "Thought-Provoking",
+        "Gingeritis"
+      ],
+      "cost": 2,
+      "sell": 57,
+      "profit": 55,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "fruity-assblaster",
+      "drug": "OG Kush",
+      "name": "Fruity Assblaster",
+      "author": "Elron_MacBong",
+      "ingredients": [
+        "Paracetamol",
+        "Banana",
+        "Cuke",
+        "Paracetamol",
+        "Banana",
+        "Viagor"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Thought-Provoking",
+        "Jennerising",
+        "Sneaky",
+        "Gingeritis",
+        "Tropic Thunder"
+      ],
+      "cost": 16,
+      "sell": 126,
+      "profit": 110,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "5-mixes-og-kush-21",
+      "drug": "OG Kush",
+      "name": "5 mixes - OG Kush - for 21 customers",
+      "author": "User0428951492 & User7677400757",
+      "ingredients": [
+        "Mouth Wash",
+        "Viagor",
+        "Banana",
+        "Cuke"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Tropic Thunder",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "cost": 12,
+      "sell": 104,
+      "profit": 92,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "og-superman",
+      "drug": "OG Kush",
+      "name": "OG SuperMan",
+      "author": "SrPlotter",
+      "ingredients": [
+        "Mouth Wash",
+        "Energy Drink",
+        "Mega Bean",
+        "Energy Drink",
+        "Battery"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Calorie-Dense",
+        "Foggy",
+        "Athletic",
+        "Bright-Eyed"
+      ],
+      "cost": 31,
+      "sell": 112,
+      "profit": 81,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "7-mixes-sour-diesel-32",
+      "drug": "Sour Diesel",
+      "name": "7 mixes - Sour Diesel - for 32 customers",
+      "author": "The_Norseman",
+      "ingredients": [
+        "Mega Bean",
+        "Flu Medicine",
+        "Paracetamol",
+        "Donut",
+        "Addy",
+        "Iodine",
+        "Chili"
+      ],
+      "effects": [
+        "Refreshing",
+        "Balding",
+        "Gingeritis",
+        "Bright-Eyed",
+        "Calorie-Dense",
+        "Thought-Provoking",
+        "Jennerising",
+        "Spicy"
+      ],
+      "cost": 42,
+      "sell": 125,
+      "profit": 83,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "cocaine-party-bus-setup",
+      "drug": "Cocaine",
+      "name": "Cocaine - Party Bus Setup",
+      "author": "Erki",
+      "ingredients": [
+        "Viagor",
+        "Chili",
+        "Energy Drink",
+        "Mega Bean",
+        "Battery"
+      ],
+      "effects": [
+        "Calming",
+        "Zombifying",
+        "Calorie-Dense",
+        "Foggy",
+        "Bright-Eyed"
+      ],
+      "cost": 32,
+      "sell": 408,
+      "profit": 376,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "blue-sky-walter-white-meth",
+      "drug": "Meth",
+      "name": "Blue Sky - Walter White Meth",
+      "author": "JaDoRafT7",
+      "ingredients": [
+        "Addy",
+        "Horse Semen"
+      ],
+      "effects": [
+        "Electrifying",
+        "Long Faced"
+      ],
+      "cost": 18,
+      "sell": 141,
+      "profit": 123,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "chronic-spice",
+      "drug": "Meth",
+      "name": "Chronic-SpIce",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Gasoline",
+        "Cuke",
+        "Gasoline"
+      ],
+      "effects": [
+        "Spicy",
+        "Euphoric",
+        "Toxic"
+      ],
+      "cost": 12,
+      "sell": 109,
+      "profit": 97,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "sleepy-clap",
+      "drug": "Granddaddy Purple",
+      "name": "Sleepy Clap",
+      "author": "Zen",
+      "ingredients": [
+        "Viagor",
+        "Mega Bean",
+        "Donut",
+        "Horse Semen"
+      ],
+      "effects": [
+        "Sedating",
+        "Tropic Thunder",
+        "Foggy",
+        "Calorie-Dense",
+        "Long Faced"
+      ],
+      "cost": 23,
+      "sell": 101,
+      "profit": 78,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "4-mix-og-kush",
+      "drug": "OG Kush",
+      "name": "4 mix og kush",
+      "author": "User6792021435",
+      "ingredients": [
+        "Mouth Wash",
+        "Cuke",
+        "Energy Drink",
+        "Battery"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Energizing",
+        "Athletic",
+        "Bright-Eyed"
+      ],
+      "cost": 20,
+      "sell": 97,
+      "profit": 77,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "og-kush-anti-gravity-balding",
+      "drug": "OG Kush",
+      "name": "OG Kush - Anti-Gravity + Balding",
+      "author": "yobikir",
+      "ingredients": [
+        "Mouth Wash",
+        "Banana",
+        "Cuke",
+        "Banana"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": 10,
+      "sell": 95,
+      "profit": 85,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
     }
   ]
 }
