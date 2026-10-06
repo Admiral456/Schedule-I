@@ -8,7 +8,7 @@
     "Motor Oil":"Slippery","Mouth Wash":"Balding","Paracetamol":"Sneaky","Viagor":"Tropic Thunder"
   };
   const FALLBACK_DRUGS={"OG Kush":["Calming"],"Sour Diesel":["Refreshing"],"Green Crack":["Energizing"],"Granddaddy Purple":["Sedating"],"Meth":[],"Cocaine":[],"Shrooms":[]};
-  const state={payload:loadStored(),ingredients:{...FALLBACK_INGREDIENTS},drugs:{...FALLBACK_DRUGS}};
+  const state={payload:loadStored(),ingredients:{...FALLBACK_INGREDIENTS},drugs:{...FALLBACK_DRUGS},effectAliases:{}};
   const esc=v=>String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const norm=v=>String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
   const effectName=v=>EFFECTS.find(x=>norm(x)===norm(v))||null;
@@ -69,9 +69,56 @@
     await walk(handle);return files;
   }
 
+  function normalizeSaveEffect(value){
+    if(value==null)return null;
+    const direct=effectName(value);
+    if(direct)return direct;
+    const key=norm(value).replace(/[^a-z0-9]/g,"");
+    return state.effectAliases[key]||null;
+  }
+
+  function extractProductManagerData(files){
+    const productsFile=files.find(f=>/^(?:.*\\/)?products\\/products\\.json$/i.test(f.name)||(/products\\.json$/i.test(f.name)&&f.text.includes("MixRecipes")));
+    if(!productsFile)return {rules:[],mixRecords:[],createdCount:0};
+    let products;
+    try{products=JSON.parse(productsFile.text)}catch{return {rules:[],mixRecords:[],createdCount:0}};
+    const created=new Map();
+    for(const f of files){
+      if(!/createdproducts\\/[^/]+\\.json$/i.test(f.name))continue;
+      try{
+        const d=JSON.parse(f.text);
+        const id=d.ID||d.Id||d.id||d.Name||d.name;
+        const props=Array.isArray(d.Properties)?d.Properties:[];
+        if(id&&props.length)created.set(String(id),props.map(normalizeSaveEffect).filter(Boolean));
+      }catch{}
+    }
+    const rules=new Map();
+    const mixRecords=[];
+    for(const m of (Array.isArray(products.MixRecipes)?products.MixRecipes:[])){
+      const ingredient=ingredientName(m.Product)||ingredientName(m.Ingredient)||null;
+      const mixerId=m.Mixer??m.Input??null;
+      const outputId=m.Output??m.Result??null;
+      if(!ingredient||mixerId==null||outputId==null)continue;
+      const before=created.get(String(mixerId))||[];
+      const after=created.get(String(outputId))||[];
+      const removed=before.filter(x=>!after.includes(x));
+      const added=after.filter(x=>!before.includes(x));
+      const rec={ingredient,mixer:String(mixerId),output:String(outputId),before,after,removed,added};
+      mixRecords.push(rec);
+      if(removed.length===1&&added.length===1){
+        const key=norm(ingredient)+"|"+norm(removed[0]);
+        rules.set(key,{from:removed[0],to:added[0],ingredient,path:["Products/Products.json","MixRecipes"],confidence:"product-manager-diff"});
+      }
+    }
+    return {rules:[...rules.values()],mixRecords,createdCount:created.size};
+  }
+
   function analyzeFiles(files){
     const acc={nodes:0,seedCandidates:[],rules:[],products:[]};
     for(const f of files){try{deepWalk(JSON.parse(f.text),[f.name],acc)}catch{}}
+    const pm=extractProductManagerData(files);
+    acc.rules.push(...pm.rules);
+    acc.products.push(...pm.mixRecords);
     const seeds=uniq(acc.seedCandidates.map(x=>JSON.stringify(x))).map(x=>JSON.parse(x));
     const ruleMap=new Map();
     for(const r of acc.rules){
@@ -83,15 +130,16 @@
       schema_version:3,mode:"seeded",imported_at:new Date().toISOString(),
       files:files.map(f=>f.name),detected_seed_candidates:seeds,
       detected_rules:[...ruleMap.values()],detected_product_mix_records:acc.products,
-      scan_nodes:acc.nodes,rule_count:ruleMap.size,product_record_count:acc.products.length
+      scan_nodes:acc.nodes,rule_count:ruleMap.size,product_record_count:acc.products.length,product_manager_created_count:pm.createdCount,product_manager_rule_count:pm.rules.length
     };
   }
 
   async function loadReferenceData(){
     try{
-      const [iRes,dRes]=await Promise.all([fetch("./data/ingredients.json",{cache:"no-store"}),fetch("./data/drugs.json",{cache:"no-store"})]);
+      const [iRes,dRes,eRes]=await Promise.all([fetch("./data/ingredients.json",{cache:"no-store"}),fetch("./data/drugs.json",{cache:"no-store"}),fetch("./data/effects.json",{cache:"no-store"})]);
       if(iRes.ok){const d=await iRes.json();for(const x of(d.items||[]))if(x?.name&&x?.base_effect)state.ingredients[x.name]=x.base_effect;}
       if(dRes.ok){const d=await dRes.json();for(const x of(d.drugs||[]))if(x?.name)state.drugs[x.name]=Array.isArray(x.base_effects)?x.base_effects:[];}
+      if(eRes.ok){const d=await eRes.json();for(const x of(d.effects||[])){if(!x?.name)continue;state.effectAliases[norm(x.name).replace(/[^a-z0-9]/g,"")]=x.name;const id=x.id||x.effect_id||x.key;if(id)state.effectAliases[norm(id).replace(/[^a-z0-9]/g,"")]=x.name;}}
     }catch{}
   }
 
@@ -147,7 +195,7 @@
 
   async function processFileList(files){
     const p=analyzeFiles(files);
-    p.summary=`Načteno ${files.length} JSON souborů · kandidátní seedy: ${p.detected_seed_candidates.length} · save-specific pravidla: ${p.rule_count} · ProductManager záznamy: ${p.product_record_count}`;
+    p.summary=`Načteno ${files.length} JSON souborů · kandidátní seedy: ${p.detected_seed_candidates.length} · save-specific pravidla: ${p.rule_count} · ProductManager mixy: ${p.product_record_count} · automaticky odvozená pravidla: ${p.product_manager_rule_count||0}`;
     if(!saveStored(p)){alert("Save data se nepodařilo uložit do localStorage.");return;}
     state.payload=p;renderStatus();
   }
