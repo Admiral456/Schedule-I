@@ -11,7 +11,7 @@
     const b = document.createElement("button");
     b.className = "tab";
     b.dataset.tab = "community";
-    b.textContent = "Community 77";
+    b.textContent = "Community";
     const target = document.querySelector('.tab[data-tab="recipes"]');
     target ? target.insertAdjacentElement("afterend", b) : nav.appendChild(b);
 
@@ -20,7 +20,7 @@
     section.id = "view-community";
     section.innerHTML = `
       <div class="toolbar">
-        <div><div class="label">Community catalog</div><h2>77 community receptů</h2><p>Přímo v Helperu. Každý záznam obsahuje uložený produkt a pořadí ingrediencí; hodnoty lze dopočítat Mixing Enginem.</p></div>
+        <div><div class="label">Community catalog</div><h2>Community recepty</h2><p>Přímo v Helperu. Recepty jsou uloženy s pořadím ingrediencí a zdrojovým mix hashem; výsledky lze ověřit v Mixeru.</p></div>
         <div class="filters"><input id="communitySearch" type="search" placeholder="Hledat recept nebo ingredienci…"><select id="communityBase"><option value="">Všechny základy</option></select></div>
       </div>
       <div id="communitySummary" class="catalog-summary"></div>
