@@ -28,6 +28,7 @@ INGREDIENTS = [
     "Gasoline","Horse Semen","Iodine","Mega Bean","Motor Oil","Mouth Wash","Paracetamol","Viagor"
 ]
 BASE_PRODUCTS = ["OG Kush","Sour Diesel","Green Crack","Granddaddy Purple","Meth","Cocaine","Shrooms"]
+EFFECTS = ["Shrinking","Zombifying","Cyclopean","Anti-Gravity","Long Faced","Electrifying","Glowing","Tropic Thunder","Thought-Provoking","Jennerising","Bright-Eyed","Spicy","Foggy","Slippery","Athletic","Balding","Calorie-Dense","Sedating","Sneaky","Energizing","Gingeritis","Euphoric","Focused","Refreshing","Munchies","Calming","Disorienting","Explosive","Laxative","Lethal","Paranoia","Schizophrenic","Seizure-Inducing","Smelly","Toxic"]
 
 def slugify(name: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -311,51 +312,113 @@ def extract_recipe_objects(node):
         ing = vals.get("ingredients") or vals.get("mixers") or vals.get("components")
         name = vals.get("name") or vals.get("title") or vals.get("recipe")
         product = vals.get("product") or vals.get("baseproduct") or vals.get("base_product") or vals.get("drug")
-        if isinstance(ing, list) and ing and (name or product):
-            ins=[]
-            for x in ing:
-                if isinstance(x, dict):
-                    x=x.get("name") or x.get("id") or x.get("item")
-                y=normalize_ingredient(str(x))
-                if y: ins.append(y)
-            if ins:
-                pname = clean(name) if name else clean(product)
-                base = normalize_product(str(product)) if product else None
-                results.append((pname, base, ins))
-    return results
-
-def dom_recipes(soup: BeautifulSoup):
-    candidates=[]
-    nodes=soup.select('a[href*="/community/recipes/"], article, [class*="recipe"], [class*="Recipe"], [class*="card"], [class*="Card"]')
-    seen=set()
-    for node in nodes:
-        text=clean(node.get_text(" ", strip=True))
-        if len(text)<10 or len(text)>2500:
+        if not isinstance(ing, list) or not (name or product):
             continue
-        names=[]
-        for ing in INGREDIENTS:
-            if re.search(r"(?<!\w)"+re.escape(ing)+r"(?!\w)", text, re.I):
-                names.append(ing)
-        if not names:
+        ins=[]
+        for x in ing:
+            if isinstance(x, dict):
+                x=x.get("name") or x.get("id") or x.get("item") or x.get("label")
+            y=normalize_ingredient(str(x))
+            if y: ins.append(y)
+        if not ins:
             continue
-        bases=[p for p in BASE_PRODUCTS if re.search(r"(?<!\w)"+re.escape(p)+r"(?!\w)", text, re.I)]
-        heads=[clean(h.get_text(" ", strip=True)) for h in node.find_all(["h1","h2","h3","h4"])]
-        title=heads[0] if heads else ""
-        if not title:
-            href=node.get("href") or ""
-            m=re.search(r"/community/recipes/([^/?#]+)", href)
-            title=m.group(1).replace("-"," ").title() if m else ""
-        if not title:
-            continue
-        key=(title.lower(), tuple(names), (bases[0] if bases else ""))
-        if key in seen: continue
-        seen.add(key)
-        candidates.append({
-            "name": title, "base_product": bases[0] if bases else None,
-            "ingredients": names,
+        effects=[]
+        raw_effects=vals.get("effects") or vals.get("effect")
+        if isinstance(raw_effects,list):
+            for x in raw_effects:
+                y=next((e for e in EFFECTS if norm(e)==norm(x)),None) if isinstance(x,(str,int,float)) else None
+                if y and y not in effects: effects.append(y)
+        base = normalize_product(str(product)) if product else None
+        results.append({
+            "name": clean(name) if name else (base or "Community mix"),
+            "base_product": base,
+            "ingredients": ins,
+            "effects": effects,
+            "cost": float(vals["cost"]) if isinstance(vals.get("cost"),(int,float)) else None,
+            "sell": float(vals["sell"]) if isinstance(vals.get("sell"),(int,float)) else None,
+            "profit": float(vals["profit"]) if isinstance(vals.get("profit"),(int,float)) else None,
+            "customers": int(vals["customers"]) if isinstance(vals.get("customers"),(int,float)) else None,
+            "asking": float(vals["asking"]) if isinstance(vals.get("asking"),(int,float)) else None,
             "source_url": "https://schedule1-lab.com/community/recipes",
             "source_type": "community",
         })
+    return results
+
+def ordered_ingredients_from_node(node):
+    found=[]
+    for img in node.find_all("img"):
+        labels=[img.get("alt") or "", img.get("title") or ""]
+        text_blob=clean(" ".join(labels))
+        for ingredient in INGREDIENTS:
+            if re.search(r"(?<!\\w)"+re.escape(ingredient)+r"(?!\\w)", text_blob, re.I):
+                found.append(ingredient)
+                break
+    return found
+
+def ordered_effects_from_text(text):
+    hits=[]
+    for effect in EFFECTS:
+        for m in re.finditer(r"(?<!\\w)"+re.escape(effect)+r"(?!\\w)", text, re.I):
+            hits.append((m.start(), effect))
+    hits.sort(key=lambda x:x[0])
+    out=[]
+    for _,effect in hits:
+        if effect not in out:
+            out.append(effect)
+    return out
+
+def dom_recipes(soup: BeautifulSoup):
+    candidates=[]
+    nodes=soup.select("article")
+    if len(nodes)<50:
+        nodes=soup.select('a[href*="/community/recipes"]')
+    for node in nodes:
+        text=clean(node.get_text(" ", strip=True))
+        if len(text)<20 or len(text)>3500:
+            continue
+        heads=[clean(h.get_text(" ", strip=True)) for h in node.find_all(["h1","h2","h3","h4"])]
+        title=heads[0] if heads else ""
+        if not title:
+            continue
+        base=next((p for p in BASE_PRODUCTS if re.search(r"(?<!\\w)"+re.escape(p)+r"(?!\\w)", text, re.I)),None)
+        if not base:
+            continue
+        ins=ordered_ingredients_from_node(node)
+        if not ins:
+            # Conservative text fallback: keep source order of occurrences.
+            occurrences=[]
+            for ingredient in INGREDIENTS:
+                for m in re.finditer(r"(?<!\\w)"+re.escape(ingredient)+r"(?!\\w)", text, re.I):
+                    occurrences.append((m.start(),ingredient))
+            occurrences.sort(key=lambda x:x[0])
+            ins=[x[1] for x in occurrences]
+        if not ins:
+            continue
+        effects=ordered_effects_from_text(text)
+        def num(pattern):
+            m=re.search(pattern,text,re.I)
+            return float(m.group(1)) if m else None
+        href=""
+        for a in node.find_all("a",href=True):
+            h=a.get("href")
+            if "/community/recipes" in h:
+                href=urljoin("https://schedule1-lab.com/community/recipes",h)
+                break
+        customers=num(r"Customers\\s*\\((\\d+)\\)")
+        candidate={
+            "name":title,
+            "base_product":base,
+            "ingredients":ins,
+            "effects":effects,
+            "cost":num(r"Cost\\s*\\$\\s*([0-9]+(?:\\.[0-9]+)?)"),
+            "sell":num(r"Sells\\s+for\\s+\\$\\s*([0-9]+(?:\\.[0-9]+)?)"),
+            "profit":num(r"Profit\\s*\\$\\s*([0-9]+(?:\\.[0-9]+)?)"),
+            "customers":int(customers) if customers is not None else None,
+            "asking":num(r"Asking\\s*\\$\\s*([0-9]+(?:\\.[0-9]+)?)"),
+            "source_url":href or "https://schedule1-lab.com/community/recipes",
+            "source_type":"community",
+        }
+        candidates.append(candidate)
     return candidates
 
 def sync_community_recipes() -> dict:
@@ -364,30 +427,43 @@ def sync_community_recipes() -> dict:
     recipes=[]
     if r:
         soup=BeautifulSoup(r.text,"html.parser")
+        embedded=[]
         for blob in parse_embedded_json(soup):
-            for name,base,ins in extract_recipe_objects(blob):
-                recipes.append({"name":name,"base_product":base,"ingredients":ins,"source_url":url,"source_type":"community"})
-        recipes.extend(dom_recipes(soup))
-    uniq=[]
-    seen=set()
-    for x in recipes:
-        key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
-        if key in seen: continue
-        seen.add(key); uniq.append(x)
-    for i,x in enumerate(uniq,1):
-        slug=slugify(x["name"])
-        x["id"]=f"community-{i:03d}-{slug[:50]}"
-        x["ingredients"]=list(dict.fromkeys(x["ingredients"]))
+            embedded.extend(extract_recipe_objects(blob))
+        embedded_unique={}
+        for x in embedded:
+            key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
+            embedded_unique[key]=x
+        dom=dom_recipes(soup)
+        # Prefer the DOM recipe cards because they expose the displayed 77/77 catalog,
+        # including repeated ingredient steps and current economics.
+        source=dom if len(dom)>=70 else list(embedded_unique.values())+dom
+        uniq=[]
+        seen=set()
+        for x in source:
+            key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
+            if key in seen:
+                continue
+            seen.add(key); uniq.append(x)
+        # The public catalog explicitly declares 77 recipes. Do not manufacture or silently
+        # drop entries. A non-77 extraction is marked partial for review.
+        for i,x in enumerate(uniq,1):
+            slug=slugify(x["name"])
+            x["id"]=f"community-{i:03d}-{slug[:50]}"
+            x["ingredients"]=list(x["ingredients"])
+            if x.get("cost") is not None: x["cost"]=int(x["cost"]) if float(x["cost"]).is_integer() else x["cost"]
+            if x.get("sell") is not None: x["sell"]=int(x["sell"]) if float(x["sell"]).is_integer() else x["sell"]
+            if x.get("profit") is not None: x["profit"]=int(x["profit"]) if float(x["profit"]).is_integer() else x["profit"]
     now=datetime.now(timezone.utc).isoformat()
     out={
-        "schema_version":1,
+        "schema_version":2,
         "source":url,
         "expected_count":77,
         "verified_count":len(uniq),
         "status":"complete" if len(uniq)==77 else "partial",
         "snapshot_at":now,
         "recipes":uniq,
-        "note":"Community recipes store product/ingredient lists; the Helper may recalculate effects/value through its own mixing engine."
+        "note":"Community recipes are imported from the public 77/77 catalog. Effects and economics are captured when present on the displayed card; the Helper can recalculate them with its mixing engine."
     }
     COMMUNITY_FILE.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     return {"expected_count":77,"verified_count":len(uniq),"status":out["status"]}
