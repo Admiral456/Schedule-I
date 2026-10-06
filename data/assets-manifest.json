@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-05",
+  "generated_at": "2026-10-06",
   "policy": {
     "official_game_mesh": false,
     "exact_asset_claim_requires_source": true,
@@ -23,10 +23,11 @@
     },
     "effects": {
       "count": 35,
-      "source": "Schedule 1 Lab",
+      "source": "Schedule 1 Lab / Fandom",
       "file": "data/effects.json",
       "verified_icon_count": 0,
-      "pending_icon_count": 35
+      "pending_icon_count": 35,
+      "note": "Public sources expose effect names/data, but no standalone exact icon asset set was located; generic substitute icons are intentionally not used."
     },
     "dealers": {
       "count": 6,
@@ -36,15 +37,15 @@
       "pending_icon_count": 0
     },
     "properties": {
-      "count": 3,
-      "source": "Schedule 1 Wiki",
+      "count": 8,
+      "source": "Schedule 1 Wiki / schedule1.io / Steam",
       "file": "data/properties.json",
-      "verified_icon_count": 3,
+      "verified_icon_count": 8,
       "pending_icon_count": 0
     },
     "businesses": {
       "count": 4,
-      "source": "Schedule 1 Wiki",
+      "source": "Schedule 1 Wiki / schedule1.io",
       "file": "data/businesses.json",
       "verified_icon_count": 4,
       "pending_icon_count": 0
@@ -55,17 +56,22 @@
       "file": "data/vehicles.json",
       "verified_icon_count": 6,
       "pending_icon_count": 0
+    },
+    "customers": {
+      "count": 66,
+      "source": "RazgrizEast schedule-1-poptracker-razgriz",
+      "file": "data/customer-portraits.json",
+      "verified_portrait_count": 66,
+      "verified_map_coordinate_count": 66
     }
   },
   "next_download_targets": [
-    "Find and verify a published standalone exact icon set for the 35 effects before adding effect icons.",
-    "Keep the four customers missing from Wand's current 62-customer layer unverified until a public exact map pin is available."
+    "Find a public standalone exact icon asset set for the 35 effects. Do not substitute generic artwork."
   ],
   "customer_map": {
-    "source": "Wand",
-    "source_url": "https://wand.com/maps/schedule-i/hyland-point",
-    "verified_customer_pins": 62,
+    "source": "RazgrizEast schedule-1-poptracker-razgriz",
+    "verified_customer_coordinates": 66,
     "local_customers": 66,
-    "not_verified": 4
+    "coordinate_file": "data/customer-map-positions.json"
   }
 }
