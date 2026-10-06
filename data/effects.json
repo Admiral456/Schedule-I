@@ -856,5 +856,14 @@
   "effect_visual_source_url": "https://github.com/SFRezx/Schedule-1-Recipe-List-GUI/blob/7c49dd29048a83bbbda67e1748b7ca9ea83cc9d9/RecipeListGui/RecipeListGuiClass.cs",
   "visual_asset_source": "Schedule 1 Wiki published image inventory (kxcsgit/schedule1-wiki)",
   "visual_asset_source_url": "https://github.com/kxcsgit/schedule1-wiki/blob/8999cccc9451d8d7e37731b4bd3653c495e28986/public/images/wiki_images.json",
-  "visual_asset_verified_count": 7
+  "visual_asset_verified_count": 7,
+  "source_audit": {
+    "primary_mixer": "https://schedule1.tools/how-it-works",
+    "community_catalog": "https://schedule1-lab.com/community/recipes",
+    "steam_reference": "https://steamcommunity.com/sharedfiles/filedetails/?id=3648818766",
+    "effect_color_reference": "https://github.com/SFRezx/Schedule-1-Recipe-List-GUI/blob/7c49dd29048a83bbbda67e1748b7ca9ea83cc9d9/RecipeListGui/RecipeListGuiClass.cs",
+    "current_mixing_effect_count": 34,
+    "helper_effect_count": 35,
+    "lethal_note": "Lethal is kept as the Helper's 35th effect; the current Schedule1 Tools mixing reference exposes 34 mixing effects, while Lethal is a separate in-game effect."
+  }
 }
