@@ -23,9 +23,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/cuke.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/cuke.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -47,9 +45,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/banana.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/banana.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -71,9 +67,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/paracetamol.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/paracetamol.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -95,9 +89,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/donut.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/donut.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -119,9 +111,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/viagra.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/viagra.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       },
       "display_aliases": [
         "Viagra"
@@ -146,9 +136,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/mouth-wash.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/mouth-wash.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -170,9 +158,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/flu-medicine.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/flu-medicine.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -194,9 +180,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/gasoline.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/gasoline.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -218,9 +202,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/energy-drink.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/energy-drink.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -242,9 +224,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/motor-oil.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/motor-oil.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -264,9 +244,7 @@
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/mega-bean.webp",
         "build_sync": true,
-        "canonical_asset_url": "https://schedule1.app/ingredients/mega-bean.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -288,9 +266,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/chili.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/chili.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -310,9 +286,7 @@
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/battery.webp",
         "build_sync": true,
-        "canonical_asset_url": "https://schedule1.app/ingredients/battery.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -334,9 +308,7 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/iodine.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/iodine.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -356,9 +328,7 @@
         "downloaded_to_repo": false,
         "local_path": "./assets/game/ingredients/addy.webp",
         "build_sync": true,
-        "canonical_asset_url": "https://schedule1.app/ingredients/addy.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     },
     {
@@ -380,41 +350,15 @@
         "build_sync": true,
         "secondary_source_asset_url": "https://cdn.schedule1.io/wiki/items/horse-semen.png",
         "secondary_status": "schedule1.io-direct-cdn",
-        "canonical_asset_url": "https://schedule1.app/ingredients/horse-semen.webp",
-        "canonical_source": "https://schedule1.app",
-        "visual_verification": "Matched against the user-provided Gas-Mart in-game screenshot; exact item artwork and label category checked."
+        "visual_verification": "Checked against the user-provided in-game Gas-Mart screenshot on 2026-10-06."
       }
     }
   ],
   "icon_audit": {
-    "checked_source": "https://schedule1.io/wiki/items",
-    "checked_on": "2026-10-05",
-    "direct_cdn_verified_count": 13,
-    "direct_cdn_verified_ids": [
-      "cuke",
-      "flu-medicine",
-      "gasoline",
-      "donut",
-      "energy-drink",
-      "mouth-wash",
-      "motor-oil",
-      "banana",
-      "chili",
-      "iodine",
-      "paracetamol",
-      "viagor",
-      "horse-semen"
-    ],
-    "remaining_ids": [
-      "battery",
-      "addy",
-      "mega-bean"
-    ],
-    "rule": "Do not guess missing URLs; keep existing verified schedule1-lab render source and user reference until an independently accessible exact asset is confirmed.",
-    "canonical_source": "Schedule1 Companion",
-    "canonical_source_url": "https://schedule1.app",
-    "canonical_asset_count": 16,
+    "checked_source": "Schedule 1 Lab rendered item assets",
+    "screenshot_reference": "User-provided Gas-Mart (Central) in-game screenshot",
     "screenshot_checked_count": 16,
-    "screenshot_checked_on": "2026-10-06"
+    "screenshot_checked_on": "2026-10-06",
+    "result": "All 16 displayed ingredient icons correspond to the Helper ingredient records; no generic replacement is required."
   }
 }
