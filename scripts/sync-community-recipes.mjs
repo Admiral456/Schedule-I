@@ -133,7 +133,7 @@ try {
     console.error("Live catalog count changed: page reports " + cards.visibleCatalogCount + ", expected " + EXPECTED);
     process.exitCode = 2;
   }
-  const parsed = parsedCards.map(parseCard).filter(Boolean);
+  console.log("Recipe card candidates:", parsedCards.length); parsedCards.forEach((c,i)=>console.log(String(i+1).padStart(2,"0")+" | "+(c.headings?.[0]||"NO HEADING")));\n  const parsed = parsedCards.map(parseCard).filter(Boolean);
   const unique = new Map(parsed.map(r => [r.id,r]));
   const recipes = [...unique.values()];
 
