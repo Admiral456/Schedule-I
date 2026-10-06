@@ -174,12 +174,6 @@ def sync_effect_icons() -> dict:
     missing = []
     hashes = {}
 
-    # Remove any previously generated effect files first. They are rebuilt only after exact-source validation.
-    if ASSETS.exists():
-        for old in ASSETS.glob("*"):
-            if old.is_file():
-                old.unlink()
-
     for item in payload.get("effects", []):
         name = item["name"]
         page = item.get("icon", {}).get("source_page") or f"https://schedule1-lab.com/wiki/effects/{slugify(name)}"
@@ -191,6 +185,11 @@ def sync_effect_icons() -> dict:
                 result = (url, source_kind, content, ext, size)
                 break
         if not result:
+            existing_icon = item.get("icon") or {}
+            if existing_icon.get("status") == "verified-exact-source" and existing_icon.get("local_path"):
+                if (ROOT / existing_icon["local_path"]).exists():
+                    missing.append({"id": item["id"], "name": name, "source_page": page, "reason": "Upstream source unavailable; preserved last verified asset"})
+                    continue
             item["icon"] = {
                 "status": "pending-exact-source",
                 "source_page": page,
@@ -589,6 +588,24 @@ def sync_community_recipes() -> dict:
                     candidates = dom
             except Exception:
                 pass
+
+    # Never replace a known-good snapshot with an empty/partial result caused by
+    # a transient reader/network failure. Existing data is only replaced when the
+    # live catalog yields a substantially complete set.
+    existing_payload = {}
+    if COMMUNITY_FILE.exists():
+        try:
+            existing_payload = json.loads(COMMUNITY_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            existing_payload = {}
+    existing = existing_payload.get("recipes") if isinstance(existing_payload.get("recipes"), list) else []
+    if len(candidates) < 70 and len(existing) > len(candidates):
+        return {
+            "expected_count": 77,
+            "stored_count": len(existing),
+            "status": "stale-preserved",
+            "message": "Live community catalog was temporarily unreadable; previous verified snapshot was preserved."
+        }
 
     normalized = []
     seen = set()
