@@ -2,7 +2,7 @@
   "schema_version": 3,
   "source": "https://schedule1.tools/mixes + individual /mixer?mix= pages",
   "expected_count": 77,
-  "verified_count": 23,
+  "verified_count": 22,
   "status": "partial",
   "extraction_source": "indexed individual Schedule1 Tools mix pages",
   "recipes": [
@@ -17,10 +17,10 @@
         "Battery"
       ],
       "effects": [
-        "Athletic",
-        "Anti-Gravity",
         "Sneaky",
-        "Bright-Eyed"
+        "Athletic",
+        "Bright-Eyed",
+        "Anti-Gravity"
       ],
       "cost": 17,
       "sell": 88,
@@ -37,7 +37,9 @@
         "Be"
       ],
       "addiction": 1.75,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpDQU5QQQ",
@@ -52,15 +54,15 @@
         "Cuke"
       ],
       "effects": [
+        "Foggy",
         "Glowing",
-        "Zombifying",
         "Bright-Eyed",
-        "Cyclopean",
+        "Laxative",
         "Energizing"
       ],
       "cost": 24,
-      "sell": 486,
-      "profit": 462,
+      "sell": 369,
+      "profit": 345,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
@@ -74,7 +76,9 @@
         "En"
       ],
       "addiction": 2.11,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpOQVBFSEVGSw",
@@ -92,13 +96,13 @@
         "Paracetamol"
       ],
       "effects": [
-        "Bright-Eyed",
-        "Athletic",
-        "Thought-Provoking",
         "Gingeritis",
-        "Shrinking",
+        "Sneaky",
+        "Athletic",
         "Balding",
-        "Sneaky"
+        "Bright-Eyed",
+        "Thought-Provoking",
+        "Shrinking"
       ],
       "cost": 38,
       "sell": 525,
@@ -118,7 +122,9 @@
         "Sn"
       ],
       "addiction": 2.24,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpHQUtDTUFOUA",
@@ -136,14 +142,14 @@
         "Battery"
       ],
       "effects": [
-        "Anti-Gravity",
-        "Tropic Thunder",
-        "Long Faced",
-        "Glowing",
-        "Cyclopean",
         "Foggy",
-        "Zombifying",
-        "Bright-Eyed"
+        "Bright-Eyed",
+        "Glowing",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Cyclopean",
+        "Long Faced",
+        "Zombifying"
       ],
       "cost": 42,
       "sell": 735,
@@ -164,7 +170,9 @@
         "Be"
       ],
       "addiction": 3.89,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpMTUlEUEJLTkY",
@@ -183,14 +191,14 @@
         "Mouth Wash"
       ],
       "effects": [
-        "Tropic Thunder",
-        "Long Faced",
+        "Sedating",
+        "Sneaky",
+        "Foggy",
         "Spicy",
         "Bright-Eyed",
-        "Sedating",
-        "Foggy",
+        "Tropic Thunder",
         "Anti-Gravity",
-        "Sneaky"
+        "Long Faced"
       ],
       "cost": 50,
       "sell": 624,
@@ -211,7 +219,9 @@
         "Sn"
       ],
       "addiction": 3.71,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBRU1OTENBTlA",
@@ -230,14 +240,14 @@
         "Battery"
       ],
       "effects": [
-        "Long Faced",
-        "Cyclopean",
-        "Foggy",
-        "Tropic Thunder",
         "Energizing",
+        "Foggy",
+        "Bright-Eyed",
         "Glowing",
-        "Zombifying",
-        "Bright-Eyed"
+        "Tropic Thunder",
+        "Cyclopean",
+        "Long Faced",
+        "Zombifying"
       ],
       "cost": 50,
       "sell": 687,
@@ -258,7 +268,9 @@
         "Be"
       ],
       "addiction": 3.62,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBQ0tIUE1ORkE",
@@ -277,14 +289,14 @@
         "Cuke"
       ],
       "effects": [
-        "Tropic Thunder",
-        "Zombifying",
-        "Bright-Eyed",
         "Refreshing",
-        "Long Faced",
-        "Anti-Gravity",
         "Balding",
-        "Cyclopean"
+        "Bright-Eyed",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Cyclopean",
+        "Long Faced",
+        "Zombifying"
       ],
       "cost": 42,
       "sell": 675,
@@ -305,7 +317,9 @@
         "Cy"
       ],
       "addiction": 3.42,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpHQU1LQ0FQTg",
@@ -323,14 +337,14 @@
         "Mega Bean"
       ],
       "effects": [
-        "Long Faced",
-        "Anti-Gravity",
-        "Tropic Thunder",
-        "Zombifying",
+        "Foggy",
         "Bright-Eyed",
         "Glowing",
+        "Tropic Thunder",
+        "Anti-Gravity",
         "Cyclopean",
-        "Foggy"
+        "Long Faced",
+        "Zombifying"
       ],
       "cost": 42,
       "sell": 735,
@@ -351,7 +365,9 @@
         "Fo"
       ],
       "addiction": 3.89,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBS0RIQUJFTQ",
@@ -369,13 +385,13 @@
         "Horse Semen"
       ],
       "effects": [
-        "Calorie-Dense",
-        "Jennerising",
-        "Paranoia",
-        "Energizing",
         "Munchies",
-        "Athletic",
+        "Paranoia",
         "Refreshing",
+        "Calorie-Dense",
+        "Energizing",
+        "Athletic",
+        "Jennerising",
         "Long Faced"
       ],
       "cost": 32,
@@ -397,7 +413,9 @@
         "Lf"
       ],
       "addiction": 2.6,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBSExEQlBJTQ",
@@ -415,12 +433,12 @@
         "Horse Semen"
       ],
       "effects": [
-        "Tropic Thunder",
+        "Refreshing",
         "Calorie-Dense",
         "Sedating",
-        "Bright-Eyed",
         "Spicy",
-        "Refreshing",
+        "Bright-Eyed",
+        "Tropic Thunder",
         "Electrifying",
         "Long Faced"
       ],
@@ -443,7 +461,9 @@
         "Lf"
       ],
       "addiction": 3.11,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpLTktIQUdBTA",
@@ -461,17 +481,18 @@
         "Viagor"
       ],
       "effects": [
-        "Cyclopean",
-        "Thought-Provoking",
-        "Energizing",
-        "Schizophrenia",
-        "Anti-Gravity",
+        "Calming",
         "Munchies",
-        "Tropic Thunder"
+        "Energizing",
+        "Sneaky",
+        "Schizophrenia",
+        "Thought-Provoking",
+        "Tropic Thunder",
+        "Anti-Gravity"
       ],
       "cost": 29,
-      "sell": 501,
-      "profit": 472,
+      "sell": 468,
+      "profit": 439,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
@@ -487,7 +508,9 @@
         "Tt"
       ],
       "addiction": 2.72,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpFSUFKQ0pOTUFQRUVORw",
@@ -511,14 +534,14 @@
         "Motor Oil"
       ],
       "effects": [
-        "Jennerising",
-        "Long Faced",
-        "Zombifying",
-        "Shrinking",
-        "Electrifying",
         "Glowing",
+        "Jennerising",
+        "Anti-Gravity",
         "Cyclopean",
-        "Anti-Gravity"
+        "Electrifying",
+        "Long Faced",
+        "Shrinking",
+        "Zombifying"
       ],
       "cost": 87,
       "sell": 780,
@@ -539,7 +562,9 @@
         "Ag"
       ],
       "addiction": 3.7,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpCSUVLUA",
@@ -554,15 +579,15 @@
         "Battery"
       ],
       "effects": [
+        "Spicy",
         "Athletic",
         "Anti-Gravity",
         "Sneaky",
-        "Zombifying",
         "Bright-Eyed"
       ],
       "cost": 29,
-      "sell": 462,
-      "profit": 433,
+      "sell": 432,
+      "profit": 403,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
@@ -576,7 +601,9 @@
         "Be"
       ],
       "addiction": 2.74,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpCSUVLRVA",
@@ -592,11 +619,11 @@
         "Battery"
       ],
       "effects": [
-        "Athletic",
-        "Anti-Gravity",
-        "Sneaky",
         "Energizing",
-        "Bright-Eyed"
+        "Sneaky",
+        "Athletic",
+        "Bright-Eyed",
+        "Anti-Gravity"
       ],
       "cost": 35,
       "sell": 408,
@@ -614,7 +641,9 @@
         "Be"
       ],
       "addiction": 2.49,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBTUNBTE4",
@@ -632,14 +661,14 @@
       "effects": [
         "Long Faced",
         "Toxic",
+        "Energizing",
         "Tropic Thunder",
         "Glowing",
-        "Cyclopean",
         "Foggy"
       ],
       "cost": 29,
-      "sell": 507,
-      "profit": 478,
+      "sell": 456,
+      "profit": 427,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
@@ -654,7 +683,9 @@
         "Fo"
       ],
       "addiction": 2.48,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpPTUNOT0NNSg",
@@ -672,17 +703,17 @@
         "Iodine"
       ],
       "effects": [
-        "Electrifying",
-        "Thought-Provoking",
-        "Glowing",
-        "Long Faced",
-        "Seizure-Inducing",
+        "Disorienting",
         "Sneaky",
-        "Jennerising"
+        "Seizure-Inducing",
+        "Glowing",
+        "Jennerising",
+        "Electrifying",
+        "Long Faced"
       ],
       "cost": 61,
-      "sell": 540,
-      "profit": 479,
+      "sell": 474,
+      "profit": 413,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
@@ -698,7 +729,9 @@
         "Je"
       ],
       "addiction": 2.75,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpOT05DQVBNQQ",
@@ -716,17 +749,17 @@
         "Cuke"
       ],
       "effects": [
+        "Calorie-Dense",
         "Energizing",
-        "Glowing",
-        "Zombifying",
         "Bright-Eyed",
-        "Electrifying",
+        "Glowing",
+        "Cyclopean",
         "Long Faced",
-        "Cyclopean"
+        "Zombifying"
       ],
       "cost": 49,
-      "sell": 639,
-      "profit": 590,
+      "sell": 606,
+      "profit": 557,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
@@ -742,7 +775,9 @@
         "Cy"
       ],
       "addiction": 2.95,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-TWV0aDpPQUNBRERQT0Q",
@@ -761,18 +796,18 @@
         "Donut"
       ],
       "effects": [
-        "Thought-Provoking",
-        "Toxic",
-        "Laxative",
-        "Energizing",
-        "Bright-Eyed",
         "Euphoric",
+        "Calorie-Dense",
+        "Energizing",
+        "Laxative",
+        "Bright-Eyed",
+        "Thought-Provoking",
         "Explosive",
-        "Calorie-Dense"
+        "Zombifying"
       ],
       "cost": 44,
-      "sell": 176,
-      "profit": 132,
+      "sell": 217,
+      "profit": 173,
       "base_price": 70,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
@@ -789,7 +824,9 @@
         "Cd"
       ],
       "addiction": 1.95,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-TWV0aDpIR0FLQ0FQTU4",
@@ -808,14 +845,14 @@
         "Mega Bean"
       ],
       "effects": [
-        "Anti-Gravity",
-        "Tropic Thunder",
-        "Zombifying",
         "Bright-Eyed",
+        "Glowing",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Cyclopean",
         "Electrifying",
         "Long Faced",
-        "Glowing",
-        "Cyclopean"
+        "Zombifying"
       ],
       "cost": 44,
       "sell": 353,
@@ -836,7 +873,9 @@
         "Cy"
       ],
       "addiction": 4.23,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-TWV0aDpCSUVLUA",
@@ -851,11 +890,11 @@
         "Battery"
       ],
       "effects": [
-        "Athletic",
-        "Anti-Gravity",
         "Sneaky",
-        "Zombifying",
-        "Bright-Eyed"
+        "Athletic",
+        "Bright-Eyed",
+        "Anti-Gravity",
+        "Zombifying"
       ],
       "cost": 29,
       "sell": 216,
@@ -873,7 +912,9 @@
         "Be"
       ],
       "addiction": 2.94,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-R3JhbmRhZGR5IFB1cnBsZTpERUtMSU8",
@@ -889,13 +930,13 @@
         "Addy"
       ],
       "effects": [
-        "Calorie-Dense",
-        "Anti-Gravity",
-        "Tropic Thunder",
         "Euphoric",
-        "Bright-Eyed",
+        "Calorie-Dense",
         "Spicy",
-        "Thought-Provoking"
+        "Bright-Eyed",
+        "Thought-Provoking",
+        "Tropic Thunder",
+        "Anti-Gravity"
       ],
       "cost": 32,
       "sell": 129,
@@ -915,7 +956,9 @@
         "Tp"
       ],
       "addiction": 2.98,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-R3JhbmRhZGR5IFB1cnBsZTpJRUtQ",
@@ -929,11 +972,11 @@
         "Battery"
       ],
       "effects": [
-        "Athletic",
-        "Anti-Gravity",
         "Sneaky",
-        "Zombifying",
-        "Bright-Eyed"
+        "Athletic",
+        "Bright-Eyed",
+        "Anti-Gravity",
+        "Zombifying"
       ],
       "cost": 24,
       "sell": 108,
@@ -951,7 +994,9 @@
         "Be"
       ],
       "addiction": 2.34,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "live Schedule1.tools mixer page",
+      "live_verified_at": "2026-10-06"
     },
     {
       "id": "schedule1tools-R3JlZW4gQ3JhY2s6S0hDQU5",
@@ -990,9 +1035,12 @@
         "Fo"
       ],
       "addiction": 1.24,
-      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
+      "result_verification": "not independently crawled in this pass"
     }
   ],
   "note": "23/77 community mix hashes are individually verifiable in the current snapshot. Missing records are intentionally not fabricated.",
-  "updated_at": "2026-10-06T07:22:24.214922+00:00"
+  "updated_at": "2026-10-06T07:22:24.214922+00:00",
+  "live_verified_count": 22,
+  "verification_note": "22/77 stored community mixes have live result fields verified from individual Schedule1.tools mixer pages in this audit."
 }
