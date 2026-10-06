@@ -203,7 +203,7 @@
     const p=state.payload;
     if(!p){s.textContent="Žádný save není načten.";r.innerHTML="";populateCalc();return;}
     const seeds=(p.detected_seed_candidates||[]).map(x=>esc(x.value)).slice(0,8);
-    s.innerHTML=esc(p.summary||"Save načten.")+`<br><span class="meta">Seed kandidáti: ${seeds.length?seeds.join(", "):"nenalezeny"}</span>`;
+    s.innerHTML=esc(p.summary||"Save načten. Seeded pravidla jsou vázaná na konkrétní save.")+`<br><span class="meta">Seed kandidáti: ${seeds.length?seeds.join(", "):"nenalezeny"}</span>`;
     const rules=(p.detected_rules||[]).slice(0,30);
     r.innerHTML=rules.map(x=>`<div class="s1-new-item"><b>${esc(x.ingredient)}</b> · ${esc(x.from)} → ${esc(x.to)}<div class="meta">${esc((x.path||[]).join(" / "))} · ${esc(x.confidence||"")}</div></div>`).join("")||'<div class="s1-new-item">Žádné save-specific transformační pravidlo nebylo rozpoznáno.</div>';
     populateCalc();
