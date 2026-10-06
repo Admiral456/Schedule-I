@@ -1,14 +1,16 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "sources": [
-    "https://schedule1-lab.com/community/recipes",
-    "user-provided recipe screenshot"
+    "https://schedule1-lab.com/community/recipes"
   ],
+  "community_count_reported": 77,
+  "note": "Community Recipes are player-published mixes. Metrics are retained only when explicitly visible in the source snapshot; the source recalculates price/effects live.",
   "recipes": [
     {
-      "id": "meth-4-max",
+      "id": "most-profitable-4-ingredient-meth-maximus",
       "drug": "Meth",
-      "name": "4 Ingredient Meth — Most Profitable",
+      "name": "Most profitable 4 Ingredient Meth",
+      "author": "Maximus",
       "ingredients": [
         "Banana",
         "Cuke",
@@ -25,13 +27,59 @@
       "sell": 206,
       "profit": 186,
       "base_price": 70,
-      "customers": 7,
-      "source": "Schedule 1 Lab community recipes"
+      "source": "https://schedule1-lab.com/community/recipes"
     },
     {
-      "id": "og-kush-3",
-      "drug": "Weed",
-      "name": "OG Kush — Early Game 3 Mix",
+      "id": "thundering-snow",
+      "drug": "Cocaine",
+      "name": "Thundering Snow",
+      "author": "sgtmorrigahngaming",
+      "ingredients": [
+        "Viagor",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Tropic Thunder",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": 22,
+      "sell": 435,
+      "profit": 413,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "puffer-fish",
+      "drug": "Shrooms",
+      "name": "Puffer Fish",
+      "author": "sgtmorrigahngaming",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": 20,
+      "sell": 191,
+      "profit": 171,
+      "base_price": 65,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "second-3-mix-early-game",
+      "drug": "OG Kush",
+      "name": "Second 3 mix for early game",
+      "author": "sgtmorrigahngaming",
       "ingredients": [
         "Mouth Wash",
         "Banana",
@@ -47,39 +95,987 @@
       "sell": 88,
       "profit": 80,
       "base_price": 35,
-      "customers": 19,
-      "source": "Schedule 1 Lab community recipes"
+      "source": "https://schedule1-lab.com/community/recipes"
     },
     {
-      "id": "meth-8-user",
+      "id": "gaand",
       "drug": "Meth",
-      "name": "Meth — Donut / Battery / Cuke / Mega Bean / Addy / Energy Drink / Viagra / Horse Semen",
+      "name": "Gaand",
+      "author": "maougoku",
       "ingredients": [
-        "Donut",
-        "Battery",
+        "Cuke",
+        "Paracetamol",
+        "Banana",
+        "Gasoline",
         "Cuke",
         "Mega Bean",
+        "Battery",
+        "Banana",
+        "Cuke"
+      ],
+      "effects": [
+        "Jennerising",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "cost": 33,
+      "sell": 342,
+      "profit": 309,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "lulli",
+      "drug": "Shrooms",
+      "name": "Lulli",
+      "author": "maougoku",
+      "ingredients": [
+        "Cuke",
+        "Paracetamol",
+        "Banana",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery",
+        "Banana",
+        "Cuke"
+      ],
+      "effects": [
+        "Jennerising",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "cost": 33,
+      "sell": 317,
+      "profit": 284,
+      "base_price": 65,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "maal",
+      "drug": "Cocaine",
+      "name": "Maal",
+      "author": "maougoku",
+      "ingredients": [
+        "Banana",
+        "Motor Oil",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Electrifying",
+        "Anti-Gravity",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Long Faced"
+      ],
+      "cost": 44,
+      "sell": 756,
+      "profit": 712,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "cocaine-8-mixes-18-customers",
+      "drug": "Cocaine",
+      "name": "8 mixes - Cocaine - for 18 customers",
+      "author": "User1759609875",
+      "ingredients": [
+        "Motor Oil",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Horse Semen",
+        "Battery",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Long Faced",
+        "Bright-Eyed",
+        "Foggy"
+      ],
+      "cost": 42,
+      "sell": 735,
+      "profit": 693,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "best-4-mix-cocaine",
+      "drug": "Cocaine",
+      "name": "Best 4 mix - Cocaine",
+      "author": "RxSEbed",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": 20,
+      "sell": 441,
+      "profit": 421,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "white-lightning",
+      "drug": "Cocaine",
+      "name": "White Lightning",
+      "author": "JaDoRafT7",
+      "ingredients": [
         "Addy",
-        "Energy Drink",
-        "Viagra",
+        "Horse Semen",
+        "Viagor"
+      ],
+      "effects": [
+        "Electrifying",
+        "Long Faced",
+        "Tropic Thunder"
+      ],
+      "cost": 22,
+      "sell": 372,
+      "profit": 350,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "queef-rocket",
+      "drug": "Cocaine",
+      "name": "5 mixes - Cocaine - for 21 customers- queef rocket",
+      "author": "User7934670302",
+      "ingredients": [
+        "Cuke",
+        "Banana",
+        "Horse Semen",
+        "Iodine",
+        "Viagor"
+      ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking",
+        "Long Faced",
+        "Jennerising",
+        "Tropic Thunder"
+      ],
+      "cost": 25,
+      "sell": 501,
+      "profit": 476,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "cocaine-bright-eyed-jennerising",
+      "drug": "Cocaine",
+      "name": "Cocaine - Bright-Eyed + Jennerising",
+      "author": "willysir",
+      "ingredients": [
+        "Battery",
+        "Iodine",
+        "Addy",
         "Horse Semen"
       ],
       "effects": [
-        "Calorie-Dense",
-        "Energizing",
-        "Sneaky",
         "Bright-Eyed",
-        "Tropic Thunder",
-        "Cyclopean",
+        "Jennerising",
         "Electrifying",
         "Long Faced"
       ],
-      "cost": 48,
-      "sell": 293,
-      "profit": 245,
-      "base_price": null,
-      "customers": null,
-      "source": "User-provided recipe screenshot"
+      "cost": 34,
+      "sell": 426,
+      "profit": 392,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "gold-just-gold",
+      "drug": "Cocaine",
+      "name": "gold. its just gold. its just a gold nugget at this point jesus christ",
+      "author": "cheese is life",
+      "ingredients": [
+        "Horse Semen"
+      ],
+      "effects": [
+        "Long Faced"
+      ],
+      "cost": 9,
+      "sell": 228,
+      "profit": 219,
+      "base_price": 150,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "walter-white-special",
+      "drug": "Meth",
+      "name": "Walter White's special",
+      "author": "cheese is life",
+      "ingredients": [
+        "Addy",
+        "Horse Semen"
+      ],
+      "effects": [
+        "Electrifying",
+        "Long Faced"
+      ],
+      "cost": 18,
+      "sell": 141,
+      "profit": 123,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "crystal-bones",
+      "drug": "Meth",
+      "name": "crystal BONES (1mx=5c)",
+      "author": "Sangria Kartel",
+      "ingredients": [
+        "Viagor"
+      ],
+      "effects": [
+        "Tropic Thunder"
+      ],
+      "cost": 4,
+      "sell": 102,
+      "profit": 98,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "crystal-jenner",
+      "drug": "Meth",
+      "name": "crystal JENNER (3mx=9c)",
+      "author": "Sangria Kartel",
+      "ingredients": [
+        "Banana",
+        "Horse Semen",
+        "Iodine"
+      ],
+      "effects": [
+        "Thought-Provoking",
+        "Long Faced",
+        "Jennerising"
+      ],
+      "cost": 19,
+      "sell": 167,
+      "profit": 148,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "fangayati",
+      "drug": "Shrooms",
+      "name": "Fangayati",
+      "ingredients": [
+        "Horse Semen",
+        "Addy",
+        "Iodine"
+      ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking",
+        "Jennerising"
+      ],
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "wedding-diesel",
+      "drug": "Shrooms",
+      "name": "Wedding Diesel",
+      "author": "User4173267187",
+      "ingredients": [
+        "Cuke",
+        "Mega Bean",
+        "Energy Drink",
+        "Paracetamol",
+        "Donut"
+      ],
+      "effects": [
+        "Cyclopean",
+        "Laxative",
+        "Athletic",
+        "Sneaky",
+        "Calorie-Dense"
+      ],
+      "cost": 21,
+      "sell": 156,
+      "profit": 135,
+      "base_price": 65,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "boat",
+      "drug": "Granddaddy Purple",
+      "name": "B.O.A.T.",
+      "author": "EvMa",
+      "ingredients": [
+        "Mega Bean",
+        "Energy Drink",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Mega Bean",
+        "Chili"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Long Faced",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Foggy"
+      ],
+      "cost": 45,
+      "sell": 172,
+      "profit": 127,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "hero-green-crack",
+      "drug": "Green Crack",
+      "name": "Hero",
+      "author": "maougoku",
+      "ingredients": [
+        "Flu Medicine",
+        "Energy Drink",
+        "Donut",
+        "Mouth Wash",
+        "Battery"
+      ],
+      "effects": [
+        "Energizing",
+        "Anti-Gravity",
+        "Athletic",
+        "Sneaky",
+        "Balding",
+        "Bright-Eyed"
+      ],
+      "cost": 26,
+      "sell": 106,
+      "profit": 80,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "boss",
+      "drug": "Granddaddy Purple",
+      "name": "Boss",
+      "author": "EvMa",
+      "ingredients": [
+        "Energy Drink",
+        "Paracetamol",
+        "Battery"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Athletic",
+        "Sneaky",
+        "Bright-Eyed"
+      ],
+      "cost": 17,
+      "sell": 88,
+      "profit": 71,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "xtc-purp",
+      "drug": "Granddaddy Purple",
+      "name": "XTC purp (2mx=20c)",
+      "author": "Sangria Kartel",
+      "ingredients": [
+        "Banana",
+        "Cuke"
+      ],
+      "effects": [
+        "Sedating",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "cost": 4,
+      "sell": 67,
+      "profit": 63,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "bonus-worker-efficiency",
+      "drug": "OG Kush",
+      "name": "BONUS WORKER EFFICIENCY",
+      "author": "Goob",
+      "ingredients": [
+        "Mega Bean",
+        "Energy Drink",
+        "Banana",
+        "Cuke"
+      ],
+      "effects": [
+        "Focused",
+        "Laxative",
+        "Athletic",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "cost": 17,
+      "sell": 75,
+      "profit": 58,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "nite-purp",
+      "drug": "Granddaddy Purple",
+      "name": "NITE purp (1mx=10c)",
+      "author": "Sangria Kartel",
+      "ingredients": [
+        "Viagor"
+      ],
+      "effects": [
+        "Sedating",
+        "Tropic Thunder"
+      ],
+      "cost": 4,
+      "sell": 60,
+      "profit": 56,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "calm-hunger",
+      "drug": "OG Kush",
+      "name": "Calm Hunger",
+      "author": "SquareRex13",
+      "ingredients": [
+        "Donut"
+      ],
+      "effects": [
+        "Calming",
+        "Calorie-Dense"
+      ],
+      "cost": 3,
+      "sell": 48,
+      "profit": 45,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "full-explosive-calm",
+      "drug": "OG Kush",
+      "name": "Full Explosive Calm (FEC)",
+      "author": "SquareRex13",
+      "ingredients": [
+        "Donut",
+        "Donut"
+      ],
+      "effects": [
+        "Calming",
+        "Explosive",
+        "Calorie-Dense"
+      ],
+      "cost": 6,
+      "sell": 48,
+      "profit": 42,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "sweet-ghost",
+      "drug": "OG Kush",
+      "name": "Sweet ghost",
+      "author": "User6467465796",
+      "ingredients": [
+        "Paracetamol",
+        "Viagor"
+      ],
+      "effects": [
+        "Slippery",
+        "Sneaky",
+        "Tropic Thunder"
+      ],
+      "cost": 7,
+      "sell": 71,
+      "profit": 64,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "focused-extra-pickpocketing",
+      "drug": "OG Kush",
+      "name": "Focused (+ xtra) for Pickpocketing",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Viagor",
+        "Mega Bean",
+        "Cuke",
+        "Energy Drink",
+        "Banana"
+      ],
+      "effects": [
+        "Focused",
+        "Sneaky",
+        "Energizing",
+        "Thought-Provoking",
+        "Athletic",
+        "Gingeritis"
+      ],
+      "cost": 21,
+      "sell": 90,
+      "profit": 69,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "dense-quiet-thunder",
+      "drug": "OG Kush",
+      "name": "Dense Quiet Thunder (DQT)",
+      "author": "SquareRex13",
+      "ingredients": [
+        "Donut",
+        "Banana",
+        "Addy",
+        "Viagor"
+      ],
+      "effects": [
+        "Sneaky",
+        "Calorie-Dense",
+        "Gingeritis",
+        "Thought-Provoking",
+        "Tropic Thunder"
+      ],
+      "cost": 18,
+      "sell": 92,
+      "profit": 74,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "thoughtful-ginger-dount",
+      "drug": "OG Kush",
+      "name": "Thoughtful Ginger Dount (TGD)",
+      "author": "SquareRex13",
+      "ingredients": [
+        "Donut",
+        "Banana",
+        "Addy"
+      ],
+      "effects": [
+        "Sneaky",
+        "Calorie-Dense",
+        "Gingeritis",
+        "Thought-Provoking"
+      ],
+      "cost": 14,
+      "sell": 76,
+      "profit": 62,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "3-mixes-green-crack",
+      "drug": "Green Crack",
+      "name": "3 mixes - Green Crack - for 22 customers",
+      "author": "User5793457901",
+      "ingredients": [
+        "Banana",
+        "Viagor",
+        "Paracetamol"
+      ],
+      "effects": [
+        "Thought-Provoking",
+        "Gingeritis",
+        "Tropic Thunder",
+        "Sneaky"
+      ],
+      "cost": 9,
+      "sell": 82,
+      "profit": 73,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "aspen-dick",
+      "drug": "Sour Diesel",
+      "name": "Aspen Dick",
+      "author": "Elron_MacBong",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Viagor",
+        "Donut",
+        "Mouth Wash"
+      ],
+      "effects": [
+        "Refreshing",
+        "Thought-Provoking",
+        "Energizing",
+        "Tropic Thunder",
+        "Sneaky",
+        "Balding"
+      ],
+      "cost": 15,
+      "sell": 98,
+      "profit": 83,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "tropical-glow",
+      "drug": "OG Kush",
+      "name": "Tropical Glow",
+      "author": "sgtmorrigahngaming",
+      "ingredients": [
+        "Viagor",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Glowing",
+        "Tropic Thunder",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": 22,
+      "sell": 118,
+      "profit": 96,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "gnome-shroom",
+      "drug": "Shrooms",
+      "name": "Gnome Shroom (shrinking+xtra)",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Horse Semen",
+        "Addy",
+        "Gasoline",
+        "Cuke",
+        "Banana",
+        "Energy Drink"
+      ],
+      "effects": [
+        "Shrinking",
+        "Thought-Provoking",
+        "Euphoric",
+        "Energizing",
+        "Gingeritis",
+        "Athletic"
+      ],
+      "cost": 33,
+      "sell": 192,
+      "profit": 159,
+      "base_price": 65,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "headbuzzing-cube",
+      "drug": "Shrooms",
+      "name": "HeadBuzzing Cube",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Horse Semen",
+        "Addy"
+      ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking"
+      ],
+      "cost": 18,
+      "sell": 126,
+      "profit": 108,
+      "base_price": 65,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "dope-crystal-cm100",
+      "drug": "Meth",
+      "name": "Dope Crystal CM100 (for everyone)",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Gasoline",
+        "Cuke"
+      ],
+      "effects": [
+        "Euphoric",
+        "Energizing"
+      ],
+      "cost": 7,
+      "sell": 98,
+      "profit": 91,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "enlightenment-cube",
+      "drug": "Shrooms",
+      "name": "Enlightenment Cube",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Horse Semen",
+        "Addy",
+        "Gasoline",
+        "Cuke",
+        "Banana"
+      ],
+      "effects": [
+        "Focused",
+        "Thought-Provoking",
+        "Euphoric",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": 27,
+      "sell": 143,
+      "profit": 116,
+      "base_price": 65,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "potent-cube",
+      "drug": "Shrooms",
+      "name": "Potent Cube",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Horse Semen",
+        "Addy",
+        "Gasoline",
+        "Cuke"
+      ],
+      "effects": [
+        "Disorienting",
+        "Thought-Provoking",
+        "Euphoric",
+        "Energizing"
+      ],
+      "cost": 25,
+      "sell": 120,
+      "profit": 95,
+      "base_price": 65,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "amanita-cube",
+      "drug": "Shrooms",
+      "name": "Amanita Cube (intermediate batch)",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Horse Semen",
+        "Addy",
+        "Gasoline"
+      ],
+      "effects": [
+        "Disorienting",
+        "Thought-Provoking",
+        "Toxic"
+      ],
+      "cost": 23,
+      "sell": 94,
+      "profit": 71,
+      "base_price": 65,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "alien-shapeshift-2nd",
+      "drug": "OG Kush",
+      "name": "Alien Shapeshift 2nd variation",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Horse Semen",
+        "Mouth Wash",
+        "Mega Bean",
+        "Cuke",
+        "Battery"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Long Faced",
+        "Balding",
+        "Glowing",
+        "Energizing",
+        "Bright-Eyed"
+      ],
+      "cost": 30,
+      "sell": 121,
+      "profit": 91,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "alien-shapeshift-1st",
+      "drug": "OG Kush",
+      "name": "Alien Shapeshift 1st variation",
+      "author": "PsyckoNutz",
+      "ingredients": [
+        "Cuke",
+        "Mouth Wash",
+        "Mega Bean",
+        "Addy",
+        "Battery"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Balding",
+        "Energizing",
+        "Thought-Provoking",
+        "Bright-Eyed"
+      ],
+      "cost": 30,
+      "sell": 118,
+      "profit": 88,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "pussy",
+      "drug": "OG Kush",
+      "name": "Pussy",
+      "author": "maougoku",
+      "ingredients": [
+        "Banana",
+        "Gasoline",
+        "Paracetamol",
+        "Cuke",
+        "Mega Bean",
+        "Battery",
+        "Banana",
+        "Cuke"
+      ],
+      "effects": [
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Jennerising",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "cost": 31,
+      "sell": 171,
+      "profit": 140,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "sto-yak-deda",
+      "drug": "Granddaddy Purple",
+      "name": "Стояк Деда",
+      "author": "User2428487299",
+      "ingredients": [
+        "Paracetamol",
+        "Energy Drink",
+        "Viagor",
+        "Cuke",
+        "Banana",
+        "Paracetamol"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Jennerising",
+        "Athletic",
+        "Tropic Thunder",
+        "Thought-Provoking",
+        "Gingeritis",
+        "Sneaky"
+      ],
+      "cost": 20,
+      "sell": 127,
+      "profit": 107,
+      "base_price": 35,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "хайзенберг",
+      "drug": "Meth",
+      "name": "Хайзенберг",
+      "author": "User2428487299",
+      "ingredients": [
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Mega Bean",
+        "Horse Semen"
+      ],
+      "effects": [
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Foggy",
+        "Long Faced"
+      ],
+      "cost": 34,
+      "sell": 272,
+      "profit": 238,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
+    },
+    {
+      "id": "meth-anti-gravity-glowing",
+      "drug": "Meth",
+      "name": "Meth - Anti-Gravity + Glowing",
+      "author": "User1787877428",
+      "ingredients": [
+        "Motor Oil",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": 42,
+      "sell": 343,
+      "profit": 301,
+      "base_price": 70,
+      "source": "https://schedule1-lab.com/community/recipes"
     }
   ]
 }
