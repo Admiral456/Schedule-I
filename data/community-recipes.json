@@ -29,7 +29,15 @@
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=R3JhbmRhZGR5IFB1cnBsZTpFS1A",
-      "mix_hash": "R3JhbmRhZGR5IFB1cnBsZTpFS1A"
+      "mix_hash": "R3JhbmRhZGR5IFB1cnBsZTpFS1A",
+      "effect_codes": [
+        "At",
+        "Ag",
+        "Sn",
+        "Be"
+      ],
+      "addiction": 1.75,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpDQU5QQQ",
@@ -44,20 +52,29 @@
         "Cuke"
       ],
       "effects": [
-        "Foggy",
         "Glowing",
+        "Zombifying",
         "Bright-Eyed",
-        "Laxative",
+        "Cyclopean",
         "Energizing"
       ],
       "cost": 24,
-      "sell": 369,
-      "profit": 345,
+      "sell": 486,
+      "profit": 462,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpDQU5QQQ",
-      "mix_hash": "Q29jYWluZTpDQU5QQQ"
+      "mix_hash": "Q29jYWluZTpDQU5QQQ",
+      "effect_codes": [
+        "Gl",
+        "Zo",
+        "Be",
+        "Cy",
+        "En"
+      ],
+      "addiction": 2.11,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpOQVBFSEVGSw",
@@ -77,20 +94,31 @@
       "effects": [
         "Bright-Eyed",
         "Athletic",
+        "Thought-Provoking",
         "Gingeritis",
         "Shrinking",
         "Balding",
-        "Paranoia",
         "Sneaky"
       ],
       "cost": 38,
-      "sell": 459,
-      "profit": 421,
+      "sell": 525,
+      "profit": 487,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpOQVBFSEVGSw",
-      "mix_hash": "Q29jYWluZTpOQVBFSEVGSw"
+      "mix_hash": "Q29jYWluZTpOQVBFSEVGSw",
+      "effect_codes": [
+        "Be",
+        "At",
+        "Tp",
+        "Gi",
+        "Sh",
+        "Ba",
+        "Sn"
+      ],
+      "addiction": 2.24,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpHQUtDTUFOUA",
@@ -108,23 +136,35 @@
         "Battery"
       ],
       "effects": [
-        "Paranoia",
-        "Sneaky",
-        "Sedating",
+        "Anti-Gravity",
+        "Tropic Thunder",
         "Long Faced",
-        "Euphoric",
-        "Foggy",
         "Glowing",
+        "Cyclopean",
+        "Foggy",
+        "Zombifying",
         "Bright-Eyed"
       ],
       "cost": 42,
-      "sell": 516,
-      "profit": 474,
+      "sell": 735,
+      "profit": 693,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpHQUtDTUFOUA",
-      "mix_hash": "Q29jYWluZTpHQUtDTUFOUA"
+      "mix_hash": "Q29jYWluZTpHQUtDTUFOUA",
+      "effect_codes": [
+        "Ag",
+        "Tt",
+        "Lf",
+        "Gl",
+        "Cy",
+        "Fo",
+        "Zo",
+        "Be"
+      ],
+      "addiction": 3.89,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpMTUlEUEJLTkY",
@@ -146,20 +186,32 @@
         "Tropic Thunder",
         "Long Faced",
         "Spicy",
-        "Calorie-Dense",
         "Bright-Eyed",
         "Sedating",
         "Foggy",
-        "Anti-Gravity"
+        "Anti-Gravity",
+        "Sneaky"
       ],
       "cost": 50,
-      "sell": 630,
-      "profit": 580,
+      "sell": 624,
+      "profit": 574,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpMTUlEUEJLTkY",
-      "mix_hash": "Q29jYWluZTpMTUlEUEJLTkY"
+      "mix_hash": "Q29jYWluZTpMTUlEUEJLTkY",
+      "effect_codes": [
+        "Tt",
+        "Lf",
+        "Sp",
+        "Be",
+        "Se",
+        "Fo",
+        "Ag",
+        "Sn"
+      ],
+      "addiction": 3.71,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBRU1OTENBTlA",
@@ -179,22 +231,34 @@
       ],
       "effects": [
         "Long Faced",
+        "Cyclopean",
         "Foggy",
         "Tropic Thunder",
-        "Toxic",
         "Energizing",
         "Glowing",
-        "Calorie-Dense",
+        "Zombifying",
         "Bright-Eyed"
       ],
       "cost": 50,
-      "sell": 558,
-      "profit": 508,
+      "sell": 687,
+      "profit": 637,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBRU1OTENBTlA",
-      "mix_hash": "Q29jYWluZTpBRU1OTENBTlA"
+      "mix_hash": "Q29jYWluZTpBRU1OTENBTlA",
+      "effect_codes": [
+        "Lf",
+        "Cy",
+        "Fo",
+        "Tt",
+        "En",
+        "Gl",
+        "Zo",
+        "Be"
+      ],
+      "addiction": 3.62,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBQ0tIUE1ORkE",
@@ -229,7 +293,19 @@
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBQ0tIUE1ORkE",
-      "mix_hash": "Q29jYWluZTpBQ0tIUE1ORkE"
+      "mix_hash": "Q29jYWluZTpBQ0tIUE1ORkE",
+      "effect_codes": [
+        "Tt",
+        "Zo",
+        "Be",
+        "Re",
+        "Lf",
+        "Ag",
+        "Ba",
+        "Cy"
+      ],
+      "addiction": 3.42,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpHQU1LQ0FQTg",
@@ -248,22 +324,34 @@
       ],
       "effects": [
         "Long Faced",
-        "Paranoia",
-        "Sneaky",
-        "Sedating",
+        "Anti-Gravity",
+        "Tropic Thunder",
         "Zombifying",
         "Bright-Eyed",
+        "Glowing",
         "Cyclopean",
         "Foggy"
       ],
       "cost": 42,
-      "sell": 588,
-      "profit": 546,
+      "sell": 735,
+      "profit": 693,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpHQU1LQ0FQTg",
-      "mix_hash": "Q29jYWluZTpHQU1LQ0FQTg"
+      "mix_hash": "Q29jYWluZTpHQU1LQ0FQTg",
+      "effect_codes": [
+        "Lf",
+        "Ag",
+        "Tt",
+        "Zo",
+        "Be",
+        "Gl",
+        "Cy",
+        "Fo"
+      ],
+      "addiction": 3.89,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBS0RIQUJFTQ",
@@ -281,9 +369,9 @@
         "Horse Semen"
       ],
       "effects": [
-        "Sneaky",
         "Calorie-Dense",
         "Jennerising",
+        "Paranoia",
         "Energizing",
         "Munchies",
         "Athletic",
@@ -291,13 +379,25 @@
         "Long Faced"
       ],
       "cost": 32,
-      "sell": 489,
-      "profit": 457,
+      "sell": 453,
+      "profit": 421,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBS0RIQUJFTQ",
-      "mix_hash": "Q29jYWluZTpBS0RIQUJFTQ"
+      "mix_hash": "Q29jYWluZTpBS0RIQUJFTQ",
+      "effect_codes": [
+        "Cd",
+        "Je",
+        "Pa",
+        "En",
+        "Mu",
+        "At",
+        "Re",
+        "Lf"
+      ],
+      "addiction": 2.6,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBSExEQlBJTQ",
@@ -315,23 +415,35 @@
         "Horse Semen"
       ],
       "effects": [
-        "Thought-Provoking",
         "Tropic Thunder",
         "Calorie-Dense",
         "Sedating",
         "Bright-Eyed",
         "Spicy",
         "Refreshing",
+        "Electrifying",
         "Long Faced"
       ],
       "cost": 40,
-      "sell": 582,
-      "profit": 542,
+      "sell": 591,
+      "profit": 551,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBSExEQlBJTQ",
-      "mix_hash": "Q29jYWluZTpBSExEQlBJTQ"
+      "mix_hash": "Q29jYWluZTpBSExEQlBJTQ",
+      "effect_codes": [
+        "Tt",
+        "Cd",
+        "Se",
+        "Be",
+        "Sp",
+        "Re",
+        "El",
+        "Lf"
+      ],
+      "addiction": 3.11,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpLTktIQUdBTA",
@@ -349,22 +461,33 @@
         "Viagor"
       ],
       "effects": [
-        "Slippery",
-        "Sneaky",
         "Cyclopean",
-        "Munchies",
         "Thought-Provoking",
         "Energizing",
+        "Schizophrenia",
+        "Anti-Gravity",
+        "Munchies",
         "Tropic Thunder"
       ],
       "cost": 29,
-      "sell": 507,
-      "profit": 478,
+      "sell": 501,
+      "profit": 472,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpLTktIQUdBTA",
-      "mix_hash": "Q29jYWluZTpLTktIQUdBTA"
+      "mix_hash": "Q29jYWluZTpLTktIQUdBTA",
+      "effect_codes": [
+        "Cy",
+        "Tp",
+        "En",
+        "Sc",
+        "Ag",
+        "Mu",
+        "Tt"
+      ],
+      "addiction": 2.72,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpFSUFKQ0pOTUFQRUVORw",
@@ -388,23 +511,35 @@
         "Motor Oil"
       ],
       "effects": [
-        "Spicy",
-        "Laxative",
-        "Toxic",
+        "Jennerising",
         "Long Faced",
-        "Bright-Eyed",
+        "Zombifying",
+        "Shrinking",
         "Electrifying",
+        "Glowing",
         "Cyclopean",
         "Anti-Gravity"
       ],
       "cost": 87,
-      "sell": 585,
-      "profit": 498,
+      "sell": 780,
+      "profit": 693,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpFSUFKQ0pOTUFQRUVORw",
-      "mix_hash": "Q29jYWluZTpFSUFKQ0pOTUFQRUVORw"
+      "mix_hash": "Q29jYWluZTpFSUFKQ0pOTUFQRUVORw",
+      "effect_codes": [
+        "Je",
+        "Lf",
+        "Zo",
+        "Sh",
+        "El",
+        "Gl",
+        "Cy",
+        "Ag"
+      ],
+      "addiction": 3.7,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpCSUVLUA",
@@ -419,20 +554,29 @@
         "Battery"
       ],
       "effects": [
-        "Spicy",
         "Athletic",
         "Anti-Gravity",
         "Sneaky",
+        "Zombifying",
         "Bright-Eyed"
       ],
       "cost": 29,
-      "sell": 432,
-      "profit": 403,
+      "sell": 462,
+      "profit": 433,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpCSUVLUA",
-      "mix_hash": "Q29jYWluZTpCSUVLUA"
+      "mix_hash": "Q29jYWluZTpCSUVLUA",
+      "effect_codes": [
+        "At",
+        "Ag",
+        "Sn",
+        "Zo",
+        "Be"
+      ],
+      "addiction": 2.74,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpCSUVLRVA",
@@ -451,17 +595,26 @@
         "Athletic",
         "Anti-Gravity",
         "Sneaky",
-        "Zombifying",
+        "Energizing",
         "Bright-Eyed"
       ],
       "cost": 35,
-      "sell": 462,
-      "profit": 427,
+      "sell": 408,
+      "profit": 373,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpCSUVLRVA",
-      "mix_hash": "Q29jYWluZTpCSUVLRVA"
+      "mix_hash": "Q29jYWluZTpCSUVLRVA",
+      "effect_codes": [
+        "At",
+        "Ag",
+        "Sn",
+        "En",
+        "Be"
+      ],
+      "addiction": 2.49,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpBTUNBTE4",
@@ -479,19 +632,29 @@
       "effects": [
         "Long Faced",
         "Toxic",
-        "Energizing",
         "Tropic Thunder",
         "Glowing",
+        "Cyclopean",
         "Foggy"
       ],
       "cost": 29,
-      "sell": 456,
-      "profit": 427,
+      "sell": 507,
+      "profit": 478,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBTUNBTE4",
-      "mix_hash": "Q29jYWluZTpBTUNBTE4"
+      "mix_hash": "Q29jYWluZTpBTUNBTE4",
+      "effect_codes": [
+        "Lf",
+        "To",
+        "Tt",
+        "Gl",
+        "Cy",
+        "Fo"
+      ],
+      "addiction": 2.48,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpPTUNOT0NNSg",
@@ -509,21 +672,33 @@
         "Iodine"
       ],
       "effects": [
-        "Long Faced",
-        "Energizing",
-        "Glowing",
         "Electrifying",
+        "Thought-Provoking",
+        "Glowing",
+        "Long Faced",
+        "Seizure-Inducing",
         "Sneaky",
         "Jennerising"
       ],
       "cost": 61,
-      "sell": 507,
-      "profit": 446,
+      "sell": 540,
+      "profit": 479,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpPTUNOT0NNSg",
-      "mix_hash": "Q29jYWluZTpPTUNOT0NNSg"
+      "mix_hash": "Q29jYWluZTpPTUNOT0NNSg",
+      "effect_codes": [
+        "El",
+        "Tp",
+        "Gl",
+        "Lf",
+        "Si",
+        "Sn",
+        "Je"
+      ],
+      "addiction": 2.75,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-Q29jYWluZTpOT05DQVBNQQ",
@@ -541,22 +716,33 @@
         "Cuke"
       ],
       "effects": [
-        "Foggy",
         "Energizing",
         "Glowing",
+        "Zombifying",
         "Bright-Eyed",
         "Electrifying",
         "Long Faced",
-        "Laxative"
+        "Cyclopean"
       ],
       "cost": 49,
-      "sell": 522,
-      "profit": 473,
+      "sell": 639,
+      "profit": 590,
       "base_price": 150,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpOT05DQVBNQQ",
-      "mix_hash": "Q29jYWluZTpOT05DQVBNQQ"
+      "mix_hash": "Q29jYWluZTpOT05DQVBNQQ",
+      "effect_codes": [
+        "En",
+        "Gl",
+        "Zo",
+        "Be",
+        "El",
+        "Lf",
+        "Cy"
+      ],
+      "addiction": 2.95,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-TWV0aDpPQUNBRERQT0Q",
@@ -591,7 +777,19 @@
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=TWV0aDpPQUNBRERQT0Q",
-      "mix_hash": "TWV0aDpPQUNBRERQT0Q"
+      "mix_hash": "TWV0aDpPQUNBRERQT0Q",
+      "effect_codes": [
+        "Tp",
+        "To",
+        "La",
+        "En",
+        "Be",
+        "Eu",
+        "Ex",
+        "Cd"
+      ],
+      "addiction": 1.95,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-TWV0aDpIR0FLQ0FQTU4",
@@ -610,23 +808,35 @@
         "Mega Bean"
       ],
       "effects": [
-        "Sneaky",
-        "Toxic",
-        "Energizing",
+        "Anti-Gravity",
         "Tropic Thunder",
+        "Zombifying",
         "Bright-Eyed",
         "Electrifying",
         "Long Faced",
-        "Glowing"
+        "Glowing",
+        "Cyclopean"
       ],
       "cost": 44,
-      "sell": 267,
-      "profit": 223,
+      "sell": 353,
+      "profit": 309,
       "base_price": 70,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=TWV0aDpIR0FLQ0FQTU4",
-      "mix_hash": "TWV0aDpIR0FLQ0FQTU4"
+      "mix_hash": "TWV0aDpIR0FLQ0FQTU4",
+      "effect_codes": [
+        "Ag",
+        "Tt",
+        "Zo",
+        "Be",
+        "El",
+        "Lf",
+        "Gl",
+        "Cy"
+      ],
+      "addiction": 4.23,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-TWV0aDpCSUVLUA",
@@ -641,20 +851,29 @@
         "Battery"
       ],
       "effects": [
-        "Spicy",
         "Athletic",
         "Anti-Gravity",
         "Sneaky",
+        "Zombifying",
         "Bright-Eyed"
       ],
       "cost": 29,
-      "sell": 202,
-      "profit": 173,
+      "sell": 216,
+      "profit": 187,
       "base_price": 70,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=TWV0aDpCSUVLUA",
-      "mix_hash": "TWV0aDpCSUVLUA"
+      "mix_hash": "TWV0aDpCSUVLUA",
+      "effect_codes": [
+        "At",
+        "Ag",
+        "Sn",
+        "Zo",
+        "Be"
+      ],
+      "addiction": 2.94,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-R3JhbmRhZGR5IFB1cnBsZTpERUtMSU8",
@@ -672,20 +891,31 @@
       "effects": [
         "Calorie-Dense",
         "Anti-Gravity",
-        "Sneaky",
         "Tropic Thunder",
         "Euphoric",
+        "Bright-Eyed",
         "Spicy",
         "Thought-Provoking"
       ],
       "cost": 32,
-      "sell": 123,
-      "profit": 91,
+      "sell": 129,
+      "profit": 97,
       "base_price": 35,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=R3JhbmRhZGR5IFB1cnBsZTpERUtMSU8",
-      "mix_hash": "R3JhbmRhZGR5IFB1cnBsZTpERUtMSU8"
+      "mix_hash": "R3JhbmRhZGR5IFB1cnBsZTpERUtMSU8",
+      "effect_codes": [
+        "Cd",
+        "Ag",
+        "Tt",
+        "Eu",
+        "Be",
+        "Sp",
+        "Tp"
+      ],
+      "addiction": 2.98,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-R3JhbmRhZGR5IFB1cnBsZTpJRUtQ",
@@ -699,20 +929,29 @@
         "Battery"
       ],
       "effects": [
-        "Spicy",
         "Athletic",
         "Anti-Gravity",
         "Sneaky",
+        "Zombifying",
         "Bright-Eyed"
       ],
       "cost": 24,
-      "sell": 101,
-      "profit": 77,
+      "sell": 108,
+      "profit": 84,
       "base_price": 35,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=R3JhbmRhZGR5IFB1cnBsZTpJRUtQ",
-      "mix_hash": "R3JhbmRhZGR5IFB1cnBsZTpJRUtQ"
+      "mix_hash": "R3JhbmRhZGR5IFB1cnBsZTpJRUtQ",
+      "effect_codes": [
+        "At",
+        "Ag",
+        "Sn",
+        "Zo",
+        "Be"
+      ],
+      "addiction": 2.34,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     },
     {
       "id": "schedule1tools-R3JlZW4gQ3JhY2s6S0hDQU5",
@@ -727,23 +966,33 @@
         "Mega Bean"
       ],
       "effects": [
-        "Jennerising",
         "Smelly",
-        "Toxic",
-        "Paranoia",
+        "Tropic Thunder",
+        "Euphoric",
         "Cyclopean",
+        "Paranoia",
         "Foggy"
       ],
       "cost": 19,
-      "sell": 82,
-      "profit": 63,
+      "sell": 90,
+      "profit": 71,
       "base_price": 35,
       "source": "Schedule1 Tools · verifiable shared mix",
       "source_type": "community",
       "source_url": "https://schedule1.tools/mixer?mix=R3JlZW4gQ3JhY2s6S0hDQU5",
-      "mix_hash": "R3JlZW4gQ3JhY2s6S0hDQU5"
+      "mix_hash": "R3JlZW4gQ3JhY2s6S0hDQU5",
+      "effect_codes": [
+        "Sm",
+        "Tt",
+        "Eu",
+        "Cy",
+        "Pa",
+        "Fo"
+      ],
+      "addiction": 1.24,
+      "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)"
     }
   ],
-  "note": "23/77 community mix hashes are individually verifiable in the current snapshot. Missing records are intentionally not fabricated because the public /mixes catalog is client-side.",
+  "note": "23/77 community mix hashes are individually verifiable in the current snapshot. Missing records are intentionally not fabricated.",
   "updated_at": "2026-10-06T07:22:24.214922+00:00"
-}\n
+}
