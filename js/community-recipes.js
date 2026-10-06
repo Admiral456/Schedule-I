@@ -59,7 +59,7 @@
         <div class="s1-community-name">${esc(r.name)}</div>
         <div class="s1-community-meta">Základ: ${esc(r.base_product || "neuvedený")}</div>
         <div class="s1-community-ings">${(r.ingredients||[]).map(x=>`<span class="s1-community-ing">${esc(x)}</span>`).join("")}</div>
-        <div class="s1-community-source">Source: Schedule 1 Lab · community catalog</div>
+        <div class="s1-community-source">Source: Schedule1 Tools · verified shared mix</div>
       </article>`).join("") || '<div class="empty">Žádný recept neodpovídá hledání.</div>';
   }
 
