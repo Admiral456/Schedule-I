@@ -2,7 +2,7 @@
   "schema_version": 5,
   "source": "https://schedule1-lab.com/community/recipes",
   "expected_count": 77,
-  "stored_count": 69,
+  "stored_count": 73,
   "recipes": [
     {
       "id": "schedule1lab-most-profitable-4-ingredient-meth-meth",
@@ -1845,10 +1845,110 @@
       "mix_hash": "T0cgS3VzaDpESA",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpESA",
       "synced_at": "2026-10-06T08:39:57.432965+00:00"
+    },
+    {
+      "id": "schedule1lab-best-og-kush-mixes-for-beginners-og-kush",
+      "name": "Best OG Kush mixes for beginners",
+      "drug": "OG Kush",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Banana"
+      ],
+      "effects": [
+        "Jennerising",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "Lyksian",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab--granddaddy-purple",
+      "name": "Стояк Деда",
+      "drug": "Granddaddy Purple",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Paracetamol",
+        "Energy Drink",
+        "Viagor",
+        "Cuke",
+        "Banana",
+        "Paracetamol"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Jennerising",
+        "Athletic",
+        "Tropic Thunder",
+        "Thought-Provoking",
+        "Gingeritis",
+        "Sneaky"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "User2428487299",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-og-superman-og-kush",
+      "name": "OG SuperMan",
+      "drug": "OG Kush",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Mouth Wash",
+        "Energy Drink",
+        "Mega Bean",
+        "Energy Drink",
+        "Battery"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Calorie-Dense",
+        "Foggy",
+        "Athletic",
+        "Bright-Eyed"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "SrPlotter",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab--og-kush",
+      "name": "黑帮库什",
+      "drug": "OG Kush",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Mouth Wash",
+        "Viagor",
+        "Banana",
+        "Cuke"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Tropic Thunder",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "User7677400757",
+      "verification": "Rendered public catalog snapshot"
     }
   ],
   "status": "partial",
-  "updated_at": "2026-10-06T08:39:57.432994+00:00",
-  "note": "69/77 live community cards were readable in this sync. Missing cards are intentionally not fabricated.",
+  "updated_at": "2026-10-06",
+  "note": "73/77 live community cards are verified/transcribed in this snapshot. Missing cards are intentionally not fabricated.",
   "policy": "Only cards read from the public rendered community catalog are imported. Effects/prices are current-page snapshots and mix_hash is deterministically derived from product + ingredient order."
-}\n
+}
