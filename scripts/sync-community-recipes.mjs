@@ -88,27 +88,52 @@ try {
   }
 
   const cards = await page.evaluate(() => {
-    const selectors = ["article","[class*='recipe-card']","[data-testid*='recipe']","[data-recipe]"];
-    let all = [...new Set(selectors.flatMap(s => [...document.querySelectorAll(s)]))];
+    const bodyText = document.body.innerText || "";
+    const countMatch = bodyText.match(/(\d+)\s+of\s+(\d+)\s+recipes/i);
+    const visibleCatalogCount = countMatch ? Number(countMatch[2]) : null;
 
-    let candidates = all.map(el => ({el,text:(el.innerText || "").trim()}))
-      .filter(x => /profit/i.test(x.text) && /cost/i.test(x.text) && x.text.length > 50 && x.text.length < 3000);
+    const headings = [...document.querySelectorAll("h1,h2,h3,h4,h5")];
+    const cards = [];
+    const seen = new Set();
 
-    if (candidates.length < 77) {
-      candidates = [...document.querySelectorAll("body *")].map(el => ({el,text:(el.innerText || "").trim()}))
-        .filter(x => /profit/i.test(x.text) && /cost/i.test(x.text) && x.text.length > 80 && x.text.length < 3000);
+    for (const heading of headings) {
+      const name = (heading.innerText || "").replace(/\s+/g, " ").trim();
+      if (!name || /^(community recipes|most profitable|profit|cost|ingredients|effects|price breakdown|customers|community)$/i.test(name)) continue;
+
+      const rect = heading.getBoundingClientRect();
+      const style = getComputedStyle(heading);
+      if (rect.width <= 0 || rect.height <= 0 || style.display === "none" || style.visibility === "hidden") continue;
+
+      let el = heading;
+      for (let depth = 0; depth < 7 && el; depth++, el = el.parentElement) {
+        const text = (el.innerText || "").trim();
+        if (/profit/i.test(text) && /cost/i.test(text) && /ingredients\s*\(\d+\)/i.test(text) && /effects\s*\(\d+\)/i.test(text) && /open in mixing/i.test(text)) {
+          const key = el;
+          if (seen.has(key)) break;
+          seen.add(key);
+          const cardText = el.innerText || "";
+          const cardRect = el.getBoundingClientRect();
+          const cardStyle = getComputedStyle(el);
+          if (cardRect.width <= 0 || cardRect.height <= 0 || cardStyle.display === "none" || cardStyle.visibility === "hidden") break;
+          cards.push({
+            text:cardText,
+            headings:[name],
+            links:[...el.querySelectorAll("a[href]")].map(a => ({href:a.href,text:a.innerText || ""}))
+          });
+          break;
+        }
+      }
     }
 
-    const set = new Set(candidates.map(x => x.el));
-    return candidates.filter(x => ![...x.el.querySelectorAll(":scope *")].some(ch => set.has(ch.el || ch)))
-      .map(x => ({
-        text:x.el.innerText || "",
-        headings:[...x.el.querySelectorAll("h1,h2,h3,h4,h5,[class*='title'],[class*='name']")].map(n => n.innerText || ""),
-        links:[...x.el.querySelectorAll("a[href]")].map(a => ({href:a.href,text:a.innerText || ""}))
-      }));
+    return {visibleCatalogCount, cards};
   });
 
-  const parsed = cards.map(parseCard).filter(Boolean);
+  const parsedCards = cards.cards || [];
+  if (cards.visibleCatalogCount != null && cards.visibleCatalogCount !== EXPECTED) {
+    console.error("Live catalog count changed: page reports " + cards.visibleCatalogCount + ", expected " + EXPECTED);
+    process.exitCode = 2;
+  }
+  const parsed = parsedCards.map(parseCard).filter(Boolean);
   const unique = new Map(parsed.map(r => [r.id,r]));
   const recipes = [...unique.values()];
 
@@ -118,8 +143,7 @@ try {
     !bases.includes(r.base_product)
   );
 
-  console.log("Catalog parser found", recipes.length, "valid candidates.");
-  recipes.forEach((r, i) => console.log(String(i + 1).padStart(2, "0") + " | " + r.name + " | " + r.drug + " | " + r.ingredients.join(" -> ")));
+  console.log("Catalog parser found", recipes.length, "valid candidates from", parsedCards.length, "recipe cards.");
   if (recipes.length !== EXPECTED || invalid.length) {
     console.error("Sync refused: expected " + EXPECTED + " valid recipes, got " + recipes.length + ", invalid " + invalid.length);
     process.exitCode = 2;
