@@ -8,7 +8,7 @@
     "Motor Oil":"Slippery","Mouth Wash":"Balding","Paracetamol":"Sneaky","Viagor":"Tropic Thunder"
   };
   const FALLBACK_DRUGS={"OG Kush":["Calming"],"Sour Diesel":["Refreshing"],"Green Crack":["Energizing"],"Granddaddy Purple":["Sedating"],"Meth":[],"Cocaine":[],"Shrooms":[]};
-  const state={payload:loadStored(),ingredients:{...FALLBACK_INGREDIENTS},drugs:{...FALLBACK_DRUGS},effectAliases:{}};
+  const state={payload:loadStored(),ingredients:{...FALLBACK_INGREDIENTS},drugs:{...FALLBACK_DRUGS},effectAliases:{},officialCore:null,officialRules:null};
   const esc=v=>String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const norm=v=>String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
   const effectName=v=>EFFECTS.find(x=>norm(x)===norm(v))||null;
@@ -132,6 +132,22 @@
       detected_rules:[...ruleMap.values()],detected_product_mix_records:acc.products,
       scan_nodes:acc.nodes,rule_count:ruleMap.size,product_record_count:acc.products.length,product_manager_created_count:pm.createdCount,product_manager_rule_count:pm.rules.length
     };
+  }
+
+
+  async function loadOfficialMixerCore(){
+    try{
+      const res=await fetch("./data/schedule1-tools-core.json?ts="+Date.now(),{cache:"no-store"});
+      if(!res.ok)throw new Error("HTTP "+res.status);
+      const core=await res.json();
+      state.officialCore=core;
+      state.officialRules=core.rules||{};
+      for(const [name,v] of Object.entries(core.substances||{})){ if(v?.effect?.[0]) state.ingredients[name]=(core.effects?.[v.effect[0]]?.name)||state.ingredients[name]||v.effect[0]; }
+      for(const [name,v] of Object.entries(core.products||{})){ state.drugs[name]=(v.effects||[]).map(code=>core.effects?.[code]?.name||code); }
+      for(const [code,v] of Object.entries(core.effects||{})){ if(v?.name) state.effectAliases[norm(code).replace(/[^a-z0-9]/g,"")]=v.name; }
+      state.effectAliases.schizophrenic="Schizophrenia";
+      state.effectAliases.schizophrenia="Schizophrenia";
+    }catch(e){ console.warn("Official mixer core unavailable:",e); }
   }
 
   async function loadReferenceData(){
@@ -269,6 +285,7 @@
   };
 
   async function init(){
+    await loadOfficialMixerCore();
     await loadReferenceData();
     const observer=new MutationObserver(ui);
     observer.observe(document.body,{childList:true,subtree:true});
