@@ -5,7 +5,7 @@
   "stored_count": 0,
   "recipes": [],
   "status": "partial",
-  "updated_at": "2026-10-06T08:28:16.611155+00:00",
+  "updated_at": "2026-10-06T08:29:19.345447+00:00",
   "note": "0/77 live community cards were readable in this sync. Missing cards are intentionally not fabricated.",
   "policy": "Only cards read from the public rendered community catalog are imported. Effects/prices are current-page snapshots and mix_hash is deterministically derived from product + ingredient order."
 }\n
