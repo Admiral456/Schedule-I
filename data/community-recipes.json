@@ -2,7 +2,7 @@
   "schema_version": 5,
   "source": "https://schedule1-lab.com/community/recipes",
   "expected_count": 77,
-  "stored_count": 71,
+  "stored_count": 72,
   "recipes": [
     {
       "id": "schedule1lab-most-profitable-4-ingredient-meth-meth",
@@ -1905,10 +1905,32 @@
       "mix_hash": "T0cgS3VzaDpGRU5FUA",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpGRU5FUA",
       "synced_at": "2026-10-06T08:43:30.362837+00:00"
+    },
+    {
+      "id": "schedule1lab-nrg-kronik-green-crack",
+      "name": "NRG kronik (3mx=19c)",
+      "drug": "Green Crack",
+      "base_product": "Green Crack",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Banana"
+      ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking",
+        "Long Faced",
+        "Jennerising"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "Sangria Kartel",
+      "verification": "Rendered public catalog snapshot"
     }
   ],
   "status": "partial",
-  "updated_at": "2026-10-06T08:43:30.362870+00:00",
-  "note": "71/77 live community cards were readable in this sync. Missing cards are intentionally not fabricated.",
+  "updated_at": "2026-10-06",
+  "note": "72/77 live community cards are verified/transcribed in this snapshot. Missing cards are intentionally not fabricated.",
   "policy": "Only cards read from the public rendered community catalog are imported. Effects/prices are current-page snapshots and mix_hash is deterministically derived from product + ingredient order."
-}\n
+}
