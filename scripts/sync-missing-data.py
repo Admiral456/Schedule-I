@@ -86,47 +86,53 @@ def effect_candidates(effect_name: str) -> list[tuple[str,int,str]]:
     r = get(page)
     if r:
         soup = BeautifulSoup(r.text, "html.parser")
-        for meta in soup.find_all("meta"):
-            prop = (meta.get("property") or meta.get("name") or "").lower()
-            val = meta.get("content") or ""
-            if "image" in prop and val:
-                u = urljoin(page, unwrap_next_image(val))
-                path = urlparse(u).path.lower()
-                score = 60 + (35 if "/effects/" in path else 0) + (10 if slug in path else 0)
-                out.append((u, score, "meta"))
+        target = norm(effect_name)
         for img in soup.find_all("img"):
-            src = img.get("src") or img.get("data-src") or ""
+            src = img.get("src") or img.get("data-src") or img.get("data-lazy-src") or ""
             if not src:
                 continue
             u = urljoin(page, unwrap_next_image(src))
             path = urlparse(u).path.lower()
             alt = clean(img.get("alt") or "").lower()
-            score = 25
-            if "/effects/" in path: score += 45
-            if slug in path: score += 20
-            if effect_name.lower() in alt: score += 30
-            if effect_name.replace("-", " ").lower() in alt: score += 20
-            out.append((u, score, "img"))
-        srcset = []
+            title = clean(img.get("title") or "").lower()
+            if any(x in path for x in ("/wordmark", "/logo", "/favicon", "/og-", "/site-icon")):
+                continue
+            score = 0
+            if target in alt:
+                score += 140
+            if target in title:
+                score += 60
+            if slug in path:
+                score += 80
+            if "/effects/" in path:
+                score += 30
+            # A generic page image without an effect-specific alt/title/path is never accepted.
+            if score < 140:
+                continue
+            out.append((u, score, "effect-specific-img"))
+
         for img in soup.find_all("img"):
             raw = img.get("srcset") or ""
             for part in raw.split(","):
                 candidate = part.strip().split(" ")[0]
-                if candidate:
-                    srcset.append(candidate)
-        for candidate in srcset:
-            u = urljoin(page, unwrap_next_image(candidate))
-            path = urlparse(u).path.lower()
-            score = 20 + (45 if "/effects/" in path else 0) + (20 if slug in path else 0)
-            out.append((u, score, "srcset"))
+                if not candidate:
+                    continue
+                u = urljoin(page, unwrap_next_image(candidate))
+                path = urlparse(u).path.lower()
+                if any(x in path for x in ("/wordmark", "/logo", "/favicon", "/og-", "/site-icon")):
+                    continue
+                if slug in path and "/effects/" in path:
+                    out.append((u, 90, "effect-specific-srcset"))
 
+    # Direct paths are only considered when the URL itself names the exact effect.
     for ext in ("webp","png","jpg","jpeg"):
         for base, score in [
-            (f"https://schedule1-lab.com/img/effects/{slug}.{ext}", 105),
-            (f"https://cdn.schedule1.io/wiki/effects/{slug}.{ext}", 100),
-            (f"https://schedule1.io/img/effects/{slug}.{ext}", 90),
+            (f"https://schedule1-lab.com/img/effects/{slug}.{ext}", 120),
+            (f"https://cdn.schedule1.io/wiki/effects/{slug}.{ext}", 115),
+            (f"https://schedule1.io/img/effects/{slug}.{ext}", 110),
         ]:
-            out.append((base, score, "direct"))
+            out.append((base, score, "effect-specific-direct"))
+
     seen=set(); dedup=[]
     for item in sorted(out, key=lambda x:x[1], reverse=True):
         if item[0] not in seen:
@@ -139,6 +145,13 @@ def sync_effect_icons() -> dict:
     verified = []
     missing = []
     hashes = {}
+
+    # Remove any previously generated effect files first. They are rebuilt only after exact-source validation.
+    if ASSETS.exists():
+        for old in ASSETS.glob("*"):
+            if old.is_file():
+                old.unlink()
+
     for item in payload.get("effects", []):
         name = item["name"]
         page = item.get("icon", {}).get("source_page") or f"https://schedule1-lab.com/wiki/effects/{slugify(name)}"
@@ -150,32 +163,71 @@ def sync_effect_icons() -> dict:
                 result = (url, source_kind, content, ext, size)
                 break
         if not result:
-            missing.append({"id": item["id"], "name": name, "source_page": page})
+            item["icon"] = {
+                "status": "pending-exact-source",
+                "source_page": page,
+                "source_asset": None,
+                "local_path": None,
+                "downloaded_to_repo": False,
+                "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+                "synced_at": now,
+            }
+            missing.append({"id": item["id"], "name": name, "source_page": page, "reason": "No effect-specific asset candidate passed validation"})
             continue
+
         url, source_kind, content, ext, size = result
+        digest = hashlib.sha256(content).hexdigest()
         path = ASSETS / f"{slugify(name)}.{ext}"
         path.write_bytes(content)
-        digest = hashlib.sha256(content).hexdigest()
-        hashes[item["id"]] = digest
         item["icon"] = {
             "status": "verified-exact-source",
             "source_page": page,
             "source_asset": url,
             "local_path": f"./assets/game/effects/{path.name}",
             "downloaded_to_repo": True,
-            "verification": "Decoded successfully as an image with Pillow",
+            "verification": "Decoded successfully as an image with Pillow and matched an effect-specific source candidate.",
             "width": size[0],
             "height": size[1],
             "sha256": digest,
             "synced_at": now,
             "source_kind": source_kind,
         }
-        verified.append({"id": item["id"], "name": name, "source_asset": url, "local_path": str(path.relative_to(ROOT))})
+        verified.append({"id": item["id"], "name": name, "source_asset": url, "local_path": str(path.relative_to(ROOT)), "sha256": digest})
+        hashes[item["id"]] = digest
+
+    # Identical bytes across different effects are treated as a generic/shared placeholder and rejected.
+    by_hash: dict[str,list[dict]] = {}
+    for row in verified:
+        by_hash.setdefault(row["sha256"], []).append(row)
+    duplicate_groups=[group for group in by_hash.values() if len(group)>1]
+    if duplicate_groups:
+        duplicate_ids={row["id"] for group in duplicate_groups for row in group}
+        for group in duplicate_groups:
+            for row in group:
+                p=ROOT / row["local_path"]
+                if p.exists():
+                    p.unlink()
+                item=next(x for x in payload.get("effects",[]) if x["id"]==row["id"])
+                page=item.get("icon",{}).get("source_page")
+                item["icon"]={
+                    "status":"pending-exact-source",
+                    "source_page":page,
+                    "source_asset":None,
+                    "local_path":None,
+                    "downloaded_to_repo":False,
+                    "verification":"Rejected because the downloaded bytes were identical to another effect asset; no shared placeholder is accepted.",
+                    "synced_at":now,
+                }
+                missing.append({"id":row["id"],"name":row["name"],"source_page":page,"reason":"Duplicate image bytes across effects"})
+        verified=[row for row in verified if row["id"] not in duplicate_ids]
+        hashes={row["id"]:row["sha256"] for row in verified}
+
     payload["verified_count"] = len(verified)
+    payload["pending_count"] = len(missing)
     payload["updated_at"] = now
     EFFECTS_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     audit = {
-        "schema_version": 1,
+        "schema_version": 2,
         "checked_at": now,
         "expected_count": len(payload.get("effects", [])),
         "verified_count": len(verified),
@@ -183,7 +235,7 @@ def sync_effect_icons() -> dict:
         "verified": verified,
         "missing": missing,
         "sha256": hashes,
-        "policy": "Only exact image assets discovered from an effect page/direct game-derived source are accepted; no generated or generic icons."
+        "policy": "Exact effect-specific asset only. Generic page images, logos, wordmarks, shared placeholders and duplicate bytes are rejected."
     }
     AUDIT_FILE.write_text(json.dumps(audit, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     try:
@@ -197,7 +249,7 @@ def sync_effect_icons() -> dict:
         "pending_count": audit["missing_count"],
         "last_sync": now,
         "source": "https://schedule1-lab.com/wiki/effects",
-        "policy": "exact-source-only",
+        "policy": "exact-effect-specific-asset-only",
     })
     MANIFEST_FILE.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     return audit
