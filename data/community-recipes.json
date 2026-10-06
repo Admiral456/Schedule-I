@@ -2,7 +2,7 @@
   "schema_version": 3,
   "source": "https://schedule1.tools/mixes + individual /mixer?mix= pages",
   "expected_count": 77,
-  "verified_count": 22,
+  "verified_count": 23,
   "status": "partial",
   "extraction_source": "indexed individual Schedule1 Tools mix pages",
   "recipes": [
@@ -1039,8 +1039,8 @@
       "result_verification": "not independently crawled in this pass"
     }
   ],
-  "note": "23/77 community mix hashes are individually verifiable in the current snapshot. Missing records are intentionally not fabricated.",
-  "updated_at": "2026-10-06T07:22:24.214922+00:00",
+  "note": "23/77 community mix hashes are individually verifiable in the current snapshot. Missing records are intentionally not fabricated because the public /mixes catalog is client-side.",
+  "updated_at": "2026-10-06T08:22:45.868527+00:00",
   "live_verified_count": 22,
   "verification_note": "22/77 stored community mixes have live result fields verified from individual Schedule1.tools mixer pages in this audit."
-}
+}\n
