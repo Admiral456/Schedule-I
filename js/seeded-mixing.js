@@ -191,7 +191,7 @@
 
   function populateCalc(){
     const p=document.querySelector("#s1SeededProduct");
-    if(p&&p.options.length===1)Object.keys(state.drugs).forEach(x=>p.insertAdjacentHTML("beforeend",`<option value="${esc(x)}">${esc(x)}</option>`);
+    if(p&&p.options.length===1)Object.keys(state.drugs).forEach(x=>p.insertAdjacentHTML("beforeend",`<option value="${esc(x)}">${esc(x)}</option>`));
     const btn=document.querySelector("#s1RunSeededCalc");
     if(btn&&!btn.dataset.bound){btn.dataset.bound="1";btn.addEventListener("click",renderCalc);}
     renderCalc();
