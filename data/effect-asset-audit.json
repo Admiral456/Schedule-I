@@ -1,258 +1,222 @@
 {
-  "schema_version": 1,
-  "checked_at": "2026-10-06T06:50:42.708159+00:00",
+  "schema_version": 2,
+  "checked_at": "2026-10-06T06:53:55.274816+00:00",
   "expected_count": 35,
-  "verified_count": 35,
-  "missing_count": 0,
-  "verified": [
+  "verified_count": 0,
+  "missing_count": 35,
+  "verified": [],
+  "missing": [
     {
       "id": "shrinking",
       "name": "Shrinking",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/shrinking.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/shrinking",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "zombifying",
       "name": "Zombifying",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/zombifying.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/zombifying",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "cyclopean",
       "name": "Cyclopean",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/cyclopean.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/cyclopean",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "anti-gravity",
       "name": "Anti-Gravity",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/anti-gravity.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/anti-gravity",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "long-faced",
       "name": "Long Faced",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/long-faced.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/long-faced",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "electrifying",
       "name": "Electrifying",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/electrifying.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/electrifying",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "glowing",
       "name": "Glowing",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/glowing.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/glowing",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "tropic-thunder",
       "name": "Tropic Thunder",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/tropic-thunder.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/tropic-thunder",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "thought-provoking",
       "name": "Thought-Provoking",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/thought-provoking.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/thought-provoking",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "jennerising",
       "name": "Jennerising",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/jennerising.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/jennerising",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "bright-eyed",
       "name": "Bright-Eyed",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/bright-eyed.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/bright-eyed",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "spicy",
       "name": "Spicy",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/spicy.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/spicy",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "foggy",
       "name": "Foggy",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/foggy.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/foggy",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "slippery",
       "name": "Slippery",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/slippery.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/slippery",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "athletic",
       "name": "Athletic",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/athletic.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/athletic",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "balding",
       "name": "Balding",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/balding.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/balding",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "calorie-dense",
       "name": "Calorie-Dense",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/calorie-dense.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/calorie-dense",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "sedating",
       "name": "Sedating",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/sedating.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/sedating",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "sneaky",
       "name": "Sneaky",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/sneaky.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/sneaky",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "energizing",
       "name": "Energizing",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/energizing.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/energizing",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "gingeritis",
       "name": "Gingeritis",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/gingeritis.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/gingeritis",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "euphoric",
       "name": "Euphoric",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/euphoric.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/euphoric",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "focused",
       "name": "Focused",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/focused.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/focused",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "refreshing",
       "name": "Refreshing",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/refreshing.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/refreshing",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "munchies",
       "name": "Munchies",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/munchies.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/munchies",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "calming",
       "name": "Calming",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/calming.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/calming",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "disorienting",
       "name": "Disorienting",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/disorienting.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/disorienting",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "explosive",
       "name": "Explosive",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/explosive.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/explosive",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "laxative",
       "name": "Laxative",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/laxative.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/laxative",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "lethal",
       "name": "Lethal",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/lethal.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/lethal",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "paranoia",
       "name": "Paranoia",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/paranoia.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/paranoia",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "schizophrenic",
       "name": "Schizophrenic",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/schizophrenic.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/schizophrenic",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "seizure-inducing",
       "name": "Seizure-Inducing",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/seizure-inducing.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/seizure-inducing",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "smelly",
       "name": "Smelly",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/smelly.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/smelly",
+      "reason": "No effect-specific asset candidate passed validation"
     },
     {
       "id": "toxic",
       "name": "Toxic",
-      "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-      "local_path": "assets/game/effects/toxic.webp"
+      "source_page": "https://schedule1-lab.com/wiki/effects/toxic",
+      "reason": "No effect-specific asset candidate passed validation"
     }
   ],
-  "missing": [],
-  "sha256": {
-    "shrinking": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "zombifying": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "cyclopean": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "anti-gravity": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "long-faced": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "electrifying": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "glowing": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "tropic-thunder": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "thought-provoking": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "jennerising": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "bright-eyed": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "spicy": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "foggy": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "slippery": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "athletic": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "balding": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "calorie-dense": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "sedating": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "sneaky": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "energizing": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "gingeritis": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "euphoric": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "focused": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "refreshing": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "munchies": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "calming": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "disorienting": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "explosive": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "laxative": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "lethal": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "paranoia": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "schizophrenic": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "seizure-inducing": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "smelly": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-    "toxic": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4"
-  },
-  "policy": "Only exact image assets discovered from an effect page/direct game-derived source are accepted; no generated or generic icons."
+  "sha256": {},
+  "policy": "Exact effect-specific asset only. Generic page images, logos, wordmarks, shared placeholders and duplicate bytes are rejected."
 }

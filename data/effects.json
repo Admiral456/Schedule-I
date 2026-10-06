@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "https://schedule1-lab.com/wiki/effects",
-  "verified_count": 35,
+  "verified_count": 0,
   "total_count": 35,
   "effects": [
     {
@@ -11,17 +11,13 @@
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/shrinking",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/shrinking.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -31,17 +27,13 @@
       "rating_band": "S",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/zombifying",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/zombifying.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -51,17 +43,13 @@
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/cyclopean",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/cyclopean.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -71,17 +59,13 @@
       "rating_band": "S",
       "type": "Ability",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/anti-gravity",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/anti-gravity.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -91,17 +75,13 @@
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/long-faced",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/long-faced.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -111,17 +91,13 @@
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/electrifying",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/electrifying.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -131,17 +107,13 @@
       "rating_band": "A",
       "type": "Ability",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/glowing",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/glowing.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -151,17 +123,13 @@
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/tropic-thunder",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/tropic-thunder.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -171,17 +139,13 @@
       "rating_band": "A",
       "type": "Ability",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/thought-provoking",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/thought-provoking.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -191,17 +155,13 @@
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/jennerising",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/jennerising.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -211,17 +171,13 @@
       "rating_band": "A",
       "type": "Ability",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/bright-eyed",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/bright-eyed.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -231,17 +187,13 @@
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/spicy",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/spicy.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -251,17 +203,13 @@
       "rating_band": "A",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/foggy",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/foggy.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -271,17 +219,13 @@
       "rating_band": "A",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/slippery",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/slippery.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -291,17 +235,13 @@
       "rating_band": "A",
       "type": "Ability",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/athletic",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/athletic.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -311,17 +251,13 @@
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/balding",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/balding.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -331,17 +267,13 @@
       "rating_band": "B",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/calorie-dense",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/calorie-dense.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -351,17 +283,13 @@
       "rating_band": "B",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/sedating",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/sedating.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -371,17 +299,13 @@
       "rating_band": "B",
       "type": "Ability",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/sneaky",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/sneaky.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -391,17 +315,13 @@
       "rating_band": "B",
       "type": "Ability",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/energizing",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/energizing.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -411,17 +331,13 @@
       "rating_band": "B",
       "type": "Cosmetic",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/gingeritis",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/gingeritis.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -431,17 +347,13 @@
       "rating_band": "B",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/euphoric",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/euphoric.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -451,17 +363,13 @@
       "rating_band": "B",
       "type": "Ability",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/focused",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/focused.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -471,17 +379,13 @@
       "rating_band": "C",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/refreshing",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/refreshing.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -491,17 +395,13 @@
       "rating_band": "C",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/munchies",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/munchies.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -511,17 +411,13 @@
       "rating_band": "C",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/calming",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/calming.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -531,17 +427,13 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/disorienting",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/disorienting.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -551,17 +443,13 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/explosive",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/explosive.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -571,17 +459,13 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/laxative",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/laxative.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -591,17 +475,13 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/lethal",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/lethal.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -611,17 +491,13 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/paranoia",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/paranoia.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -631,17 +507,13 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/schizophrenic",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/schizophrenic.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -651,17 +523,13 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/seizure-inducing",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/seizure-inducing.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -671,17 +539,13 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/smelly",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/smelly.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     },
     {
@@ -691,19 +555,16 @@
       "rating_band": "D",
       "type": "State",
       "icon": {
-        "status": "verified-exact-source",
+        "status": "pending-exact-source",
         "source_page": "https://schedule1-lab.com/wiki/effects/toxic",
-        "source_asset": "https://schedule1-lab.com/assets/WebP/wordmark_crop_HD.webp",
-        "local_path": "./assets/game/effects/toxic.webp",
-        "downloaded_to_repo": true,
-        "verification": "Decoded successfully as an image with Pillow",
-        "width": 3932,
-        "height": 1312,
-        "sha256": "a91d9f3bc4d5eec72ff00b9e3141ff063e8e549589b5dbec03283fc64c5ef1f4",
-        "synced_at": "2026-10-06T06:50:42.708159+00:00",
-        "source_kind": "img"
+        "source_asset": null,
+        "local_path": null,
+        "downloaded_to_repo": false,
+        "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
+        "synced_at": "2026-10-06T06:53:55.274816+00:00"
       }
     }
   ],
-  "updated_at": "2026-10-06T06:50:42.708159+00:00"
+  "updated_at": "2026-10-06T06:53:55.274816+00:00",
+  "pending_count": 35
 }

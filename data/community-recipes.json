@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "source": "https://schedule1-lab.com/community/recipes",
   "expected_count": 77,
   "verified_count": 88,
   "status": "partial",
-  "snapshot_at": "2026-10-06T06:51:16.174502+00:00",
+  "snapshot_at": "2026-10-06T06:54:23.178446+00:00",
   "recipes": [
     {
       "name": "Most profitable 4 Ingredient Meth",
@@ -15,6 +15,17 @@
         "Horse Semen",
         "Mega Bean"
       ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-001-most-profitable-4-ingredient-meth"
@@ -23,11 +34,22 @@
       "name": "Thundering Snow",
       "base_product": "Cocaine",
       "ingredients": [
+        "Viagor",
         "Cuke",
         "Horse Semen",
-        "Mega Bean",
-        "Viagor"
+        "Mega Bean"
       ],
+      "effects": [
+        "Tropic Thunder",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-002-thundering-snow"
@@ -41,6 +63,17 @@
         "Horse Semen",
         "Mega Bean"
       ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-003-puffer-fish"
@@ -50,8 +83,20 @@
       "base_product": "OG Kush",
       "ingredients": [
         "Banana",
-        "Cuke"
+        "Cuke",
+        "Banana"
       ],
+      "effects": [
+        "Jennerising",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-004-great-first-mix"
@@ -60,11 +105,23 @@
       "name": "Tropical Glow",
       "base_product": "OG Kush",
       "ingredients": [
+        "Viagor",
         "Cuke",
         "Horse Semen",
-        "Mega Bean",
-        "Viagor"
+        "Mega Bean"
       ],
+      "effects": [
+        "Glowing",
+        "Tropic Thunder",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-005-tropical-glow"
@@ -73,10 +130,21 @@
       "name": "Second 3 mix for early game",
       "base_product": "OG Kush",
       "ingredients": [
+        "Mouth Wash",
         "Banana",
-        "Cuke",
-        "Mouth Wash"
+        "Cuke"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-006-second-3-mix-for-early-game"
@@ -85,13 +153,31 @@
       "name": "Gaand",
       "base_product": "Meth",
       "ingredients": [
-        "Banana",
-        "Battery",
         "Cuke",
+        "Paracetamol",
+        "Banana",
         "Gasoline",
+        "Cuke",
         "Mega Bean",
-        "Paracetamol"
+        "Battery",
+        "Banana",
+        "Cuke"
       ],
+      "effects": [
+        "Jennerising",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-007-gaand"
@@ -101,8 +187,20 @@
       "base_product": "OG Kush",
       "ingredients": [
         "Banana",
-        "Cuke"
+        "Cuke",
+        "Banana"
       ],
+      "effects": [
+        "Jennerising",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-008-best-og-kush-mixes-for-beginners"
@@ -112,14 +210,30 @@
       "base_product": "Cocaine",
       "ingredients": [
         "Banana",
-        "Battery",
-        "Cuke",
-        "Gasoline",
-        "Horse Semen",
-        "Mega Bean",
         "Motor Oil",
-        "Paracetamol"
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Horse Semen",
+        "Mega Bean"
       ],
+      "effects": [
+        "Electrifying",
+        "Anti-Gravity",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-009-maal"
@@ -128,13 +242,31 @@
       "name": "Lulli",
       "base_product": "Shrooms",
       "ingredients": [
-        "Banana",
-        "Battery",
         "Cuke",
+        "Paracetamol",
+        "Banana",
         "Gasoline",
+        "Cuke",
         "Mega Bean",
-        "Paracetamol"
+        "Battery",
+        "Banana",
+        "Cuke"
       ],
+      "effects": [
+        "Jennerising",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-010-lulli"
@@ -144,10 +276,21 @@
       "base_product": "Meth",
       "ingredients": [
         "Cuke",
-        "Iodine",
         "Mega Bean",
+        "Iodine",
         "Motor Oil"
       ],
+      "effects": [
+        "Cyclopean",
+        "Anti-Gravity",
+        "Jennerising",
+        "Slippery"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-011-philly-ice-anti-grav"
@@ -161,6 +304,18 @@
         "Iodine",
         "Viagor"
       ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking",
+        "Long Faced",
+        "Jennerising",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-012-kali-kronik-4mx-24c"
@@ -169,14 +324,30 @@
       "name": "8 mixes - Cocaine - for 18 customers",
       "base_product": "Cocaine",
       "ingredients": [
-        "Battery",
-        "Cuke",
-        "Gasoline",
-        "Horse Semen",
-        "Mega Bean",
         "Motor Oil",
-        "Paracetamol"
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Horse Semen",
+        "Battery",
+        "Mega Bean"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Long Faced",
+        "Bright-Eyed",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-013-8-mixes-cocaine-for-18-customers"
@@ -190,6 +361,17 @@
         "Horse Semen",
         "Mega Bean"
       ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-014-best-4-mix-cocaine"
@@ -202,6 +384,16 @@
         "Horse Semen",
         "Viagor"
       ],
+      "effects": [
+        "Electrifying",
+        "Long Faced",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-015-orange-lightning"
@@ -210,14 +402,30 @@
       "name": "Golden Mushroom",
       "base_product": "Shrooms",
       "ingredients": [
-        "Battery",
-        "Cuke",
-        "Gasoline",
         "Horse Semen",
-        "Mega Bean",
         "Motor Oil",
-        "Paracetamol"
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
       ],
+      "effects": [
+        "Long Faced",
+        "Anti-Gravity",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Foggy",
+        "Bright-Eyed"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-016-golden-mushroom"
@@ -226,13 +434,26 @@
       "name": "Gnome Shroom (shrinking+xtra)",
       "base_product": "Shrooms",
       "ingredients": [
+        "Horse Semen",
         "Addy",
-        "Banana",
-        "Cuke",
-        "Energy Drink",
         "Gasoline",
-        "Horse Semen"
+        "Cuke",
+        "Banana",
+        "Energy Drink"
       ],
+      "effects": [
+        "Shrinking",
+        "Thought-Provoking",
+        "Euphoric",
+        "Energizing",
+        "Gingeritis",
+        "Athletic"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-017-gnome-shroom-shrinking-xtra"
@@ -241,11 +462,22 @@
       "name": "super mario - BOSS LVL (4mx=12c)",
       "base_product": "Shrooms",
       "ingredients": [
+        "Mega Bean",
         "Banana",
         "Cuke",
-        "Mega Bean",
         "Viagor"
       ],
+      "effects": [
+        "Cyclopean",
+        "Thought-Provoking",
+        "Energizing",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-018-super-mario-boss-lvl-4mx-12c"
@@ -257,6 +489,15 @@
         "Addy",
         "Horse Semen"
       ],
+      "effects": [
+        "Electrifying",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-019-walter-white-s-special"
@@ -265,9 +506,18 @@
       "name": "HeadBuzzing Cube",
       "base_product": "Shrooms",
       "ingredients": [
-        "Addy",
-        "Horse Semen"
+        "Horse Semen",
+        "Addy"
       ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-020-headbuzzing-cube"
@@ -276,9 +526,18 @@
       "name": "Dope Crystal CM100 (for everyone)",
       "base_product": "Meth",
       "ingredients": [
-        "Cuke",
-        "Gasoline"
+        "Gasoline",
+        "Cuke"
       ],
+      "effects": [
+        "Euphoric",
+        "Energizing"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-021-dope-crystal-cm100-for-everyone"
@@ -287,12 +546,25 @@
       "name": "Alien Shapeshift 2nd variation",
       "base_product": "OG Kush",
       "ingredients": [
-        "Battery",
-        "Cuke",
         "Horse Semen",
+        "Mouth Wash",
         "Mega Bean",
-        "Mouth Wash"
+        "Cuke",
+        "Battery"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Long Faced",
+        "Balding",
+        "Glowing",
+        "Energizing",
+        "Bright-Eyed"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-022-alien-shapeshift-2nd-variation"
@@ -301,12 +573,25 @@
       "name": "Alien Shapeshift 1st variation",
       "base_product": "OG Kush",
       "ingredients": [
-        "Addy",
-        "Battery",
         "Cuke",
+        "Mouth Wash",
         "Mega Bean",
-        "Mouth Wash"
+        "Addy",
+        "Battery"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Balding",
+        "Energizing",
+        "Thought-Provoking",
+        "Bright-Eyed"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-023-alien-shapeshift-1st-variation"
@@ -315,10 +600,21 @@
       "name": "MOLLY IRISH purp (3mx=22c)",
       "base_product": "Granddaddy Purple",
       "ingredients": [
-        "Banana",
         "Cuke",
+        "Banana",
         "Viagor"
       ],
+      "effects": [
+        "Sedating",
+        "Thought-Provoking",
+        "Gingeritis",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-024-molly-irish-purp-3mx-22c"
@@ -327,12 +623,25 @@
       "name": "Focused (+ xtra) for Pickpocketing",
       "base_product": "OG Kush",
       "ingredients": [
-        "Banana",
+        "Viagor",
+        "Mega Bean",
         "Cuke",
         "Energy Drink",
-        "Mega Bean",
-        "Viagor"
+        "Banana"
       ],
+      "effects": [
+        "Focused",
+        "Sneaky",
+        "Energizing",
+        "Thought-Provoking",
+        "Athletic",
+        "Gingeritis"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-025-focused-xtra-for-pickpocketing"
@@ -344,6 +653,16 @@
         "Energy Drink",
         "Paracetamol"
       ],
+      "effects": [
+        "Sneaky",
+        "Anti-Gravity",
+        "Athletic"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-026-sneaky-selling"
@@ -352,10 +671,21 @@
       "name": "Client sabotage for ez pickpocket",
       "base_product": "Granddaddy Purple",
       "ingredients": [
-        "Mega Bean",
         "Paracetamol",
-        "Viagor"
+        "Viagor",
+        "Mega Bean"
       ],
+      "effects": [
+        "Sedating",
+        "Calming",
+        "Tropic Thunder",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-027-client-sabotage-for-ez-pickpocket"
@@ -364,15 +694,30 @@
       "name": "Columbian BamBam - Cocaine - for 25 customers",
       "base_product": "Cocaine",
       "ingredients": [
-        "Addy",
         "Banana",
-        "Chili",
         "Cuke",
         "Horse Semen",
         "Mega Bean",
-        "Mouth Wash",
-        "Viagor"
+        "Chili",
+        "Viagor",
+        "Addy",
+        "Mouth Wash"
       ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Energizing",
+        "Spicy",
+        "Tropic Thunder",
+        "Thought-Provoking",
+        "Balding"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-028-columbian-bambam-cocaine-for-25-customers"
@@ -381,15 +726,30 @@
       "name": "White Girl",
       "base_product": "Cocaine",
       "ingredients": [
-        "Addy",
         "Banana",
-        "Chili",
         "Cuke",
-        "Horse Semen",
         "Mega Bean",
+        "Chili",
+        "Viagor",
+        "Addy",
         "Mouth Wash",
-        "Viagor"
+        "Horse Semen"
       ],
+      "effects": [
+        "Energizing",
+        "Cyclopean",
+        "Foggy",
+        "Spicy",
+        "Tropic Thunder",
+        "Electrifying",
+        "Balding",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-029-white-girl"
@@ -398,15 +758,30 @@
       "name": "28 customers Coke",
       "base_product": "Cocaine",
       "ingredients": [
-        "Addy",
-        "Chili",
-        "Energy Drink",
-        "Horse Semen",
+        "Mouth Wash",
         "Iodine",
         "Motor Oil",
-        "Mouth Wash",
-        "Viagor"
+        "Energy Drink",
+        "Viagor",
+        "Chili",
+        "Horse Semen",
+        "Addy"
       ],
+      "effects": [
+        "Balding",
+        "Jennerising",
+        "Slippery",
+        "Bright-Eyed",
+        "Tropic Thunder",
+        "Spicy",
+        "Electrifying",
+        "Thought-Provoking"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-030-28-customers-coke"
@@ -415,12 +790,24 @@
       "name": "5 mixes - Cocaine - for 21 customers- queef rocket",
       "base_product": "Cocaine",
       "ingredients": [
-        "Banana",
         "Cuke",
+        "Banana",
         "Horse Semen",
         "Iodine",
         "Viagor"
       ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking",
+        "Long Faced",
+        "Jennerising",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-031-5-mixes-cocaine-for-21-customers-queef-rocket"
@@ -429,11 +816,22 @@
       "name": "Cocaine - Bright-Eyed + Jennerising",
       "base_product": "Cocaine",
       "ingredients": [
-        "Addy",
         "Battery",
-        "Horse Semen",
-        "Iodine"
+        "Iodine",
+        "Addy",
+        "Horse Semen"
       ],
+      "effects": [
+        "Bright-Eyed",
+        "Jennerising",
+        "Electrifying",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-032-cocaine-bright-eyed-jennerising"
@@ -442,12 +840,24 @@
       "name": "Cocaine - Party Bus Setup",
       "base_product": "Cocaine",
       "ingredients": [
-        "Battery",
+        "Viagor",
         "Chili",
         "Energy Drink",
         "Mega Bean",
-        "Viagor"
+        "Battery"
       ],
+      "effects": [
+        "Calming",
+        "Zombifying",
+        "Calorie-Dense",
+        "Foggy",
+        "Bright-Eyed"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-033-cocaine-party-bus-setup"
@@ -456,14 +866,30 @@
       "name": "Meth - Anti-Gravity + Glowing",
       "base_product": "Meth",
       "ingredients": [
-        "Battery",
-        "Cuke",
-        "Gasoline",
-        "Horse Semen",
-        "Mega Bean",
         "Motor Oil",
-        "Paracetamol"
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Horse Semen",
+        "Mega Bean"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-034-meth-anti-gravity-glowing"
@@ -472,15 +898,32 @@
       "name": "Megameth",
       "base_product": "Meth",
       "ingredients": [
-        "Addy",
-        "Battery",
+        "Mega Bean",
         "Cuke",
         "Gasoline",
+        "Paracetamol",
+        "Addy",
+        "Battery",
         "Horse Semen",
         "Mega Bean",
         "Mouth Wash",
-        "Paracetamol"
+        "Cuke"
       ],
+      "effects": [
+        "Glowing",
+        "Zombifying",
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Electrifying",
+        "Bright-Eyed",
+        "Long Faced",
+        "Cyclopean"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-035-megameth"
@@ -489,15 +932,30 @@
       "name": "High Speed Chicken Feed",
       "base_product": "Meth",
       "ingredients": [
-        "Addy",
         "Banana",
-        "Chili",
         "Cuke",
         "Horse Semen",
         "Mega Bean",
-        "Mouth Wash",
-        "Viagor"
+        "Chili",
+        "Viagor",
+        "Addy",
+        "Mouth Wash"
       ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Energizing",
+        "Spicy",
+        "Tropic Thunder",
+        "Thought-Provoking",
+        "Balding"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-036-high-speed-chicken-feed"
@@ -506,13 +964,26 @@
       "name": "Хайзенберг",
       "base_product": "Meth",
       "ingredients": [
-        "Battery",
-        "Cuke",
+        "Paracetamol",
         "Gasoline",
-        "Horse Semen",
+        "Cuke",
+        "Battery",
         "Mega Bean",
-        "Paracetamol"
+        "Horse Semen"
       ],
+      "effects": [
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Foggy",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-037-"
@@ -523,6 +994,14 @@
       "ingredients": [
         "Horse Semen"
       ],
+      "effects": [
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-038-gold-its-just-gold-its-just-a-gold-nugget-at-this-"
@@ -533,11 +1012,24 @@
       "ingredients": [
         "Cuke",
         "Donut",
-        "Gasoline",
-        "Horse Semen",
+        "Viagor",
         "Mega Bean",
-        "Viagor"
+        "Gasoline",
+        "Horse Semen"
       ],
+      "effects": [
+        "Cyclopean",
+        "Calorie-Dense",
+        "Tropic Thunder",
+        "Foggy",
+        "Toxic",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-039-downtown-crank-for-brad"
@@ -546,12 +1038,24 @@
       "name": "Shroom Hippie Mix",
       "base_product": "Shrooms",
       "ingredients": [
-        "Battery",
-        "Cuke",
-        "Donut",
         "Gasoline",
-        "Mega Bean"
+        "Cuke",
+        "Battery",
+        "Mega Bean",
+        "Donut"
       ],
+      "effects": [
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Foggy",
+        "Calorie-Dense"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-040-shroom-hippie-mix"
@@ -560,11 +1064,22 @@
       "name": "Meth - Kryptonita",
       "base_product": "Meth",
       "ingredients": [
+        "Mega Bean",
         "Banana",
         "Cuke",
-        "Mega Bean",
         "Viagor"
       ],
+      "effects": [
+        "Cyclopean",
+        "Thought-Provoking",
+        "Energizing",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-041-meth-kryptonita"
@@ -575,8 +1090,20 @@
       "ingredients": [
         "Addy",
         "Horse Semen",
-        "Viagor"
+        "Viagor",
+        "Addy"
       ],
+      "effects": [
+        "Electrifying",
+        "Long Faced",
+        "Tropic Thunder",
+        "Thought-Provoking"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-042-crystal-escobar-4mx-14c"
@@ -586,10 +1113,21 @@
       "base_product": "Meth",
       "ingredients": [
         "Banana",
-        "Chili",
         "Cuke",
-        "Viagor"
+        "Viagor",
+        "Chili"
       ],
+      "effects": [
+        "Thought-Provoking",
+        "Energizing",
+        "Tropic Thunder",
+        "Spicy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-043-westville-meth"
@@ -602,6 +1140,16 @@
         "Horse Semen",
         "Iodine"
       ],
+      "effects": [
+        "Thought-Provoking",
+        "Long Faced",
+        "Jennerising"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-044-crystal-jenner-3mx-9c"
@@ -614,6 +1162,16 @@
         "Horse Semen",
         "Mega Bean"
       ],
+      "effects": [
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-045-fangayati"
@@ -623,12 +1181,29 @@
       "base_product": "OG Kush",
       "ingredients": [
         "Banana",
-        "Battery",
-        "Cuke",
         "Gasoline",
+        "Paracetamol",
+        "Cuke",
         "Mega Bean",
-        "Paracetamol"
+        "Battery",
+        "Banana",
+        "Cuke"
       ],
+      "effects": [
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Jennerising",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-046-og-kush-tropic-thunder-anti-gravity"
@@ -638,12 +1213,29 @@
       "base_product": "OG Kush",
       "ingredients": [
         "Banana",
-        "Battery",
-        "Cuke",
         "Gasoline",
+        "Paracetamol",
+        "Cuke",
         "Mega Bean",
-        "Paracetamol"
+        "Battery",
+        "Banana",
+        "Cuke"
       ],
+      "effects": [
+        "Tropic Thunder",
+        "Anti-Gravity",
+        "Zombifying",
+        "Jennerising",
+        "Glowing",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Thought-Provoking"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-047-pussy"
@@ -652,10 +1244,20 @@
       "name": "Mega Crystal",
       "base_product": "Meth",
       "ingredients": [
-        "Addy",
         "Horse Semen",
+        "Addy",
         "Iodine"
       ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking",
+        "Jennerising"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-048-mega-crystal"
@@ -665,11 +1267,23 @@
       "base_product": "Shrooms",
       "ingredients": [
         "Cuke",
-        "Donut",
-        "Energy Drink",
         "Mega Bean",
-        "Paracetamol"
+        "Energy Drink",
+        "Paracetamol",
+        "Donut"
       ],
+      "effects": [
+        "Cyclopean",
+        "Laxative",
+        "Athletic",
+        "Sneaky",
+        "Calorie-Dense"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-049-wedding-diesel"
@@ -678,14 +1292,30 @@
       "name": "B.O.A.T.",
       "base_product": "Granddaddy Purple",
       "ingredients": [
-        "Battery",
-        "Chili",
-        "Cuke",
-        "Energy Drink",
-        "Gasoline",
         "Mega Bean",
-        "Paracetamol"
+        "Energy Drink",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Mega Bean",
+        "Chili"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Long Faced",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-050-b-o-a-t"
@@ -694,9 +1324,18 @@
       "name": "crystal LONGTIME (2mx=7c)",
       "base_product": "Meth",
       "ingredients": [
-        "Horse Semen",
-        "Viagor"
+        "Viagor",
+        "Horse Semen"
       ],
+      "effects": [
+        "Tropic Thunder",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-051-crystal-longtime-2mx-7c"
@@ -708,6 +1347,15 @@
         "Cuke",
         "Mega Bean"
       ],
+      "effects": [
+        "Cyclopean",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-052-2-mixes-meth"
@@ -719,6 +1367,15 @@
         "Addy",
         "Horse Semen"
       ],
+      "effects": [
+        "Electrifying",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-053-blue-sky-walter-white-meth"
@@ -727,12 +1384,24 @@
       "name": "Enlightenment Cube",
       "base_product": "Shrooms",
       "ingredients": [
+        "Horse Semen",
         "Addy",
-        "Banana",
-        "Cuke",
         "Gasoline",
-        "Horse Semen"
+        "Cuke",
+        "Banana"
       ],
+      "effects": [
+        "Focused",
+        "Thought-Provoking",
+        "Euphoric",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-054-enlightenment-cube"
@@ -741,11 +1410,27 @@
       "name": "Fruity Assblaster",
       "base_product": "OG Kush",
       "ingredients": [
+        "Paracetamol",
         "Banana",
         "Cuke",
         "Paracetamol",
+        "Banana",
         "Viagor"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Thought-Provoking",
+        "Jennerising",
+        "Sneaky",
+        "Gingeritis",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-055-fruity-assblaster"
@@ -754,12 +1439,27 @@
       "name": "Стояк Деда",
       "base_product": "Granddaddy Purple",
       "ingredients": [
-        "Banana",
-        "Cuke",
-        "Energy Drink",
         "Paracetamol",
-        "Viagor"
+        "Energy Drink",
+        "Viagor",
+        "Cuke",
+        "Banana",
+        "Paracetamol"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Jennerising",
+        "Athletic",
+        "Tropic Thunder",
+        "Thought-Provoking",
+        "Gingeritis",
+        "Sneaky"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-056-"
@@ -770,9 +1470,23 @@
       "ingredients": [
         "Cuke",
         "Mega Bean",
+        "Viagor",
         "Mouth Wash",
-        "Viagor"
+        "Cuke"
       ],
+      "effects": [
+        "Glowing",
+        "Cyclopean",
+        "Foggy",
+        "Tropic Thunder",
+        "Balding",
+        "Energizing"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-057-5-mixes-og-kush-for-21-customers"
@@ -783,6 +1497,14 @@
       "ingredients": [
         "Viagor"
       ],
+      "effects": [
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-058-crystal-bones-1mx-5c"
@@ -791,9 +1513,20 @@
       "name": "Chronic-SpIce",
       "base_product": "Meth",
       "ingredients": [
+        "Gasoline",
         "Cuke",
         "Gasoline"
       ],
+      "effects": [
+        "Spicy",
+        "Euphoric",
+        "Toxic"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-059-chronic-spice"
@@ -802,11 +1535,22 @@
       "name": "Potent Cube",
       "base_product": "Shrooms",
       "ingredients": [
+        "Horse Semen",
         "Addy",
-        "Cuke",
         "Gasoline",
-        "Horse Semen"
+        "Cuke"
       ],
+      "effects": [
+        "Disorienting",
+        "Thought-Provoking",
+        "Euphoric",
+        "Energizing"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-060-potent-cube"
@@ -815,11 +1559,23 @@
       "name": "黑帮库什",
       "base_product": "OG Kush",
       "ingredients": [
-        "Banana",
-        "Cuke",
         "Mouth Wash",
-        "Viagor"
+        "Viagor",
+        "Banana",
+        "Cuke"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Tropic Thunder",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-061-"
@@ -828,11 +1584,23 @@
       "name": "Hippies - 4 mixes - Green Crack",
       "base_product": "Green Crack",
       "ingredients": [
-        "Battery",
-        "Cuke",
         "Gasoline",
+        "Cuke",
+        "Battery",
         "Mega Bean"
       ],
+      "effects": [
+        "Calorie-Dense",
+        "Zombifying",
+        "Cyclopean",
+        "Bright-Eyed",
+        "Foggy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-062-hippies-4-mixes-green-crack"
@@ -841,10 +1609,23 @@
       "name": "OG Kush - Anti-Gravity + Balding",
       "base_product": "OG Kush",
       "ingredients": [
+        "Mouth Wash",
         "Banana",
         "Cuke",
-        "Mouth Wash"
+        "Banana"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-063-og-kush-anti-gravity-balding"
@@ -853,14 +1634,29 @@
       "name": "7 mixes - Sour Diesel - for 32 customers",
       "base_product": "Sour Diesel",
       "ingredients": [
-        "Addy",
-        "Chili",
-        "Donut",
-        "Flu Medicine",
-        "Iodine",
         "Mega Bean",
-        "Paracetamol"
+        "Flu Medicine",
+        "Paracetamol",
+        "Donut",
+        "Addy",
+        "Iodine",
+        "Chili"
       ],
+      "effects": [
+        "Refreshing",
+        "Balding",
+        "Gingeritis",
+        "Bright-Eyed",
+        "Calorie-Dense",
+        "Thought-Provoking",
+        "Jennerising",
+        "Spicy"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-064-7-mixes-sour-diesel-for-32-customers"
@@ -871,10 +1667,23 @@
       "ingredients": [
         "Banana",
         "Cuke",
+        "Viagor",
         "Donut",
-        "Mouth Wash",
-        "Viagor"
+        "Mouth Wash"
       ],
+      "effects": [
+        "Refreshing",
+        "Thought-Provoking",
+        "Energizing",
+        "Tropic Thunder",
+        "Sneaky",
+        "Balding"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-065-aspen-dick"
@@ -887,6 +1696,17 @@
         "Horse Semen",
         "Iodine"
       ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking",
+        "Long Faced",
+        "Jennerising"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-066-nrg-kronik-3mx-19c"
@@ -895,11 +1715,25 @@
       "name": "OG SuperMan",
       "base_product": "OG Kush",
       "ingredients": [
-        "Battery",
+        "Mouth Wash",
         "Energy Drink",
         "Mega Bean",
-        "Mouth Wash"
+        "Energy Drink",
+        "Battery"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Calorie-Dense",
+        "Foggy",
+        "Athletic",
+        "Bright-Eyed"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-067-og-superman"
@@ -908,12 +1742,25 @@
       "name": "Hero",
       "base_product": "Green Crack",
       "ingredients": [
-        "Battery",
-        "Donut",
-        "Energy Drink",
         "Flu Medicine",
-        "Mouth Wash"
+        "Energy Drink",
+        "Donut",
+        "Mouth Wash",
+        "Battery"
       ],
+      "effects": [
+        "Energizing",
+        "Anti-Gravity",
+        "Athletic",
+        "Sneaky",
+        "Balding",
+        "Bright-Eyed"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-068-hero"
@@ -922,11 +1769,23 @@
       "name": "Sleepy Clap",
       "base_product": "Granddaddy Purple",
       "ingredients": [
-        "Donut",
-        "Horse Semen",
+        "Viagor",
         "Mega Bean",
-        "Viagor"
+        "Donut",
+        "Horse Semen"
       ],
+      "effects": [
+        "Sedating",
+        "Tropic Thunder",
+        "Foggy",
+        "Calorie-Dense",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-069-sleepy-clap"
@@ -935,11 +1794,23 @@
       "name": "4 mix og kush",
       "base_product": "OG Kush",
       "ingredients": [
-        "Battery",
+        "Mouth Wash",
         "Cuke",
         "Energy Drink",
-        "Mouth Wash"
+        "Battery"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Balding",
+        "Energizing",
+        "Athletic",
+        "Bright-Eyed"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-070-4-mix-og-kush"
@@ -948,11 +1819,23 @@
       "name": "Dense Quiet Thunder (DQT)",
       "base_product": "OG Kush",
       "ingredients": [
-        "Addy",
-        "Banana",
         "Donut",
+        "Banana",
+        "Addy",
         "Viagor"
       ],
+      "effects": [
+        "Sneaky",
+        "Calorie-Dense",
+        "Gingeritis",
+        "Thought-Provoking",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-071-dense-quiet-thunder-dqt"
@@ -962,8 +1845,20 @@
       "base_product": "OG Kush",
       "ingredients": [
         "Banana",
-        "Cuke"
+        "Cuke",
+        "Banana"
       ],
+      "effects": [
+        "Jennerising",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-072-og-kush-for-20-customers"
@@ -973,9 +1868,20 @@
       "base_product": "Green Crack",
       "ingredients": [
         "Banana",
-        "Paracetamol",
-        "Viagor"
+        "Viagor",
+        "Paracetamol"
       ],
+      "effects": [
+        "Thought-Provoking",
+        "Gingeritis",
+        "Tropic Thunder",
+        "Sneaky"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-073-3-mixes-green-crack-for-22-customers"
@@ -984,10 +1890,20 @@
       "name": "Amanita Cube (intermediate batch)",
       "base_product": "Shrooms",
       "ingredients": [
+        "Horse Semen",
         "Addy",
-        "Gasoline",
-        "Horse Semen"
+        "Gasoline"
       ],
+      "effects": [
+        "Disorienting",
+        "Thought-Provoking",
+        "Toxic"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-074-amanita-cube-intermediate-batch"
@@ -996,10 +1912,21 @@
       "name": "Boss",
       "base_product": "Granddaddy Purple",
       "ingredients": [
-        "Battery",
         "Energy Drink",
-        "Paracetamol"
+        "Paracetamol",
+        "Battery"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Athletic",
+        "Sneaky",
+        "Bright-Eyed"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-075-boss"
@@ -1011,6 +1938,16 @@
         "Banana",
         "Viagor"
       ],
+      "effects": [
+        "Thought-Provoking",
+        "Gingeritis",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-076-gingerhead-kronik-2mx-18c"
@@ -1022,6 +1959,16 @@
         "Energy Drink",
         "Paracetamol"
       ],
+      "effects": [
+        "Anti-Gravity",
+        "Athletic",
+        "Sneaky"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-077-2-mix-granddaddy-purple-anti-gravity-athletic-snea"
@@ -1033,6 +1980,16 @@
         "Paracetamol",
         "Viagor"
       ],
+      "effects": [
+        "Slippery",
+        "Sneaky",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-078-sweet-ghost"
@@ -1044,6 +2001,16 @@
         "Banana",
         "Cuke"
       ],
+      "effects": [
+        "Sedating",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-079-xtc-purp-2mx-20c"
@@ -1052,10 +2019,21 @@
       "name": "Thoughtful Ginger Dount (TGD)",
       "base_product": "OG Kush",
       "ingredients": [
-        "Addy",
+        "Donut",
         "Banana",
-        "Donut"
+        "Addy"
       ],
+      "effects": [
+        "Sneaky",
+        "Calorie-Dense",
+        "Gingeritis",
+        "Thought-Provoking"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-080-thoughtful-ginger-dount-tgd"
@@ -1064,11 +2042,23 @@
       "name": "Northtown Supply",
       "base_product": "Granddaddy Purple",
       "ingredients": [
-        "Addy",
-        "Horse Semen",
+        "Paracetamol",
         "Mega Bean",
-        "Paracetamol"
+        "Addy",
+        "Horse Semen"
       ],
+      "effects": [
+        "Refreshing",
+        "Calming",
+        "Energizing",
+        "Electrifying",
+        "Long Faced"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-081-northtown-supply"
@@ -1077,11 +2067,23 @@
       "name": "BONUS WORKER EFFICIENCY",
       "base_product": "OG Kush",
       "ingredients": [
-        "Banana",
-        "Cuke",
+        "Mega Bean",
         "Energy Drink",
-        "Mega Bean"
+        "Banana",
+        "Cuke"
       ],
+      "effects": [
+        "Focused",
+        "Laxative",
+        "Athletic",
+        "Thought-Provoking",
+        "Energizing"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-082-bonus-worker-efficiency"
@@ -1092,6 +2094,15 @@
       "ingredients": [
         "Viagor"
       ],
+      "effects": [
+        "Sedating",
+        "Tropic Thunder"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-083-nite-purp-1mx-10c"
@@ -1100,9 +2111,19 @@
       "name": "Filling Ginger Thief (FGT)",
       "base_product": "OG Kush",
       "ingredients": [
-        "Banana",
-        "Donut"
+        "Donut",
+        "Banana"
       ],
+      "effects": [
+        "Sneaky",
+        "Calorie-Dense",
+        "Gingeritis"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-084-filling-ginger-thief-fgt"
@@ -1113,6 +2134,15 @@
       "ingredients": [
         "Banana"
       ],
+      "effects": [
+        "Thought-Provoking",
+        "Gingeritis"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-085-nanabred-kronik-1mx-13c"
@@ -1121,14 +2151,30 @@
       "name": "Grandaddy Biker Mix",
       "base_product": "Granddaddy Purple",
       "ingredients": [
-        "Addy",
         "Chili",
         "Donut",
-        "Gasoline",
+        "Donut",
+        "Addy",
         "Horse Semen",
-        "Iodine",
-        "Mega Bean"
+        "Gasoline",
+        "Mega Bean",
+        "Iodine"
       ],
+      "effects": [
+        "Thought-Provoking",
+        "Spicy",
+        "Seizure-Inducing",
+        "Gingeritis",
+        "Disorienting",
+        "Long Faced",
+        "Sneaky",
+        "Paranoia"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-086-grandaddy-biker-mix"
@@ -1139,6 +2185,15 @@
       "ingredients": [
         "Donut"
       ],
+      "effects": [
+        "Calming",
+        "Calorie-Dense"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-087-calm-hunger"
@@ -1147,12 +2202,23 @@
       "name": "Full Explosive Calm (FEC)",
       "base_product": "OG Kush",
       "ingredients": [
+        "Donut",
         "Donut"
       ],
+      "effects": [
+        "Explosive",
+        "Calming",
+        "Calorie-Dense"
+      ],
+      "cost": null,
+      "sell": null,
+      "profit": null,
+      "customers": null,
+      "asking": null,
       "source_url": "https://schedule1-lab.com/community/recipes",
       "source_type": "community",
       "id": "community-088-full-explosive-calm-fec"
     }
   ],
-  "note": "Community recipes store product/ingredient lists; the Helper may recalculate effects/value through its own mixing engine."
+  "note": "Community recipes are imported from the public 77/77 catalog. Effects and economics are captured when present on the displayed card; the Helper can recalculate them with its mixing engine."
 }
