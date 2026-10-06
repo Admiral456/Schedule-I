@@ -2,7 +2,7 @@
   "schema_version": 5,
   "source": "https://schedule1-lab.com/community/recipes",
   "expected_count": 77,
-  "stored_count": 73,
+  "stored_count": 71,
   "recipes": [
     {
       "id": "schedule1lab-most-profitable-4-ingredient-meth-meth",
@@ -28,7 +28,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpIQU1O",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpIQU1O",
-      "synced_at": "2026-10-06T08:39:57.431740+00:00"
+      "synced_at": "2026-10-06T08:43:30.361503+00:00"
     },
     {
       "id": "schedule1lab-second-3-mix-for-early-game-og-kush",
@@ -53,7 +53,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpGSEE",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpGSEE",
-      "synced_at": "2026-10-06T08:39:57.431774+00:00"
+      "synced_at": "2026-10-06T08:43:30.361538+00:00"
     },
     {
       "id": "schedule1lab-gaand-meth",
@@ -88,7 +88,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpBS0hDQU5QSEE",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpBS0hDQU5QSEE",
-      "synced_at": "2026-10-06T08:39:57.431809+00:00"
+      "synced_at": "2026-10-06T08:43:30.361574+00:00"
     },
     {
       "id": "schedule1lab-philly-ice---anti-grav-meth",
@@ -114,7 +114,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpBTkpH",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpBTkpH",
-      "synced_at": "2026-10-06T08:39:57.431829+00:00"
+      "synced_at": "2026-10-06T08:43:30.361595+00:00"
     },
     {
       "id": "schedule1lab-maal-cocaine",
@@ -146,7 +146,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpIR0FLTU4",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpIR0FLTU4",
-      "synced_at": "2026-10-06T08:39:57.431854+00:00"
+      "synced_at": "2026-10-06T08:43:30.361620+00:00"
     },
     {
       "id": "schedule1lab-white-lightning-cocaine",
@@ -170,7 +170,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpPTUw",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpPTUw",
-      "synced_at": "2026-10-06T08:39:57.431870+00:00"
+      "synced_at": "2026-10-06T08:43:30.361636+00:00"
     },
     {
       "id": "schedule1lab-gnome-shroom-shrinkingxtra-shrooms",
@@ -200,7 +200,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpNT0NBSEU",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpNT0NBSEU",
-      "synced_at": "2026-10-06T08:39:57.431891+00:00"
+      "synced_at": "2026-10-06T08:43:30.361660+00:00"
     },
     {
       "id": "schedule1lab-walter-whites-special-meth",
@@ -222,7 +222,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpPTQ",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpPTQ",
-      "synced_at": "2026-10-06T08:39:57.431903+00:00"
+      "synced_at": "2026-10-06T08:43:30.361672+00:00"
     },
     {
       "id": "schedule1lab-headbuzzing-cube-shrooms",
@@ -244,7 +244,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpNTw",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpNTw",
-      "synced_at": "2026-10-06T08:39:57.431915+00:00"
+      "synced_at": "2026-10-06T08:43:30.361685+00:00"
     },
     {
       "id": "schedule1lab-dope-crystal-cm100-for-everyone-meth",
@@ -266,7 +266,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpDQQ",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpDQQ",
-      "synced_at": "2026-10-06T08:39:57.431927+00:00"
+      "synced_at": "2026-10-06T08:43:30.361698+00:00"
     },
     {
       "id": "schedule1lab-focused-xtra-for-pickpocketing-og-kush",
@@ -295,7 +295,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpMTkFFSA",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpMTkFFSA",
-      "synced_at": "2026-10-06T08:39:57.431947+00:00"
+      "synced_at": "2026-10-06T08:43:30.361721+00:00"
     },
     {
       "id": "schedule1lab-meth---anti-gravity-glowing-meth",
@@ -329,7 +329,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpHQUtDQVBNTg",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpHQUtDQVBNTg",
-      "synced_at": "2026-10-06T08:39:57.431997+00:00"
+      "synced_at": "2026-10-06T08:43:30.361751+00:00"
     },
     {
       "id": "schedule1lab-fruity-assblaster-og-kush",
@@ -360,7 +360,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpLSEFLSEw",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpLSEFLSEw",
-      "synced_at": "2026-10-06T08:39:57.432021+00:00"
+      "synced_at": "2026-10-06T08:43:30.361774+00:00"
     },
     {
       "id": "schedule1lab-7-mixes---sour-diesel---for-32-customers-sour-diesel",
@@ -393,7 +393,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U291ciBEaWVzZWw6TkJLRE9KSQ",
       "mix_url": "https://schedule1.tools/mixer?mix=U291ciBEaWVzZWw6TkJLRE9KSQ",
-      "synced_at": "2026-10-06T08:39:57.432047+00:00"
+      "synced_at": "2026-10-06T08:43:30.361801+00:00"
     },
     {
       "id": "schedule1lab-aspen-dick-sour-diesel",
@@ -422,7 +422,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U291ciBEaWVzZWw6SEFMREY",
       "mix_url": "https://schedule1.tools/mixer?mix=U291ciBEaWVzZWw6SEFMREY",
-      "synced_at": "2026-10-06T08:39:57.432067+00:00"
+      "synced_at": "2026-10-06T08:43:30.361822+00:00"
     },
     {
       "id": "schedule1lab-hero-green-crack",
@@ -451,7 +451,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JlZW4gQ3JhY2s6QkVERlA",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JlZW4gQ3JhY2s6QkVERlA",
-      "synced_at": "2026-10-06T08:39:57.432088+00:00"
+      "synced_at": "2026-10-06T08:43:30.361843+00:00"
     },
     {
       "id": "schedule1lab-amanita-cube-intermediate-batch-shrooms",
@@ -475,7 +475,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpNT0M",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpNT0M",
-      "synced_at": "2026-10-06T08:39:57.432102+00:00"
+      "synced_at": "2026-10-06T08:43:30.361858+00:00"
     },
     {
       "id": "schedule1lab-boss-granddaddy-purple",
@@ -500,7 +500,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6RUtQ",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6RUtQ",
-      "synced_at": "2026-10-06T08:39:57.432117+00:00"
+      "synced_at": "2026-10-06T08:43:30.361873+00:00"
     },
     {
       "id": "schedule1lab-sweet-ghost-og-kush",
@@ -523,7 +523,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpLTA",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpLTA",
-      "synced_at": "2026-10-06T08:39:57.432130+00:00"
+      "synced_at": "2026-10-06T08:43:30.361886+00:00"
     },
     {
       "id": "schedule1lab-bonus-worker-efficiency-og-kush",
@@ -550,7 +550,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpORUhB",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpORUhB",
-      "synced_at": "2026-10-06T08:39:57.432147+00:00"
+      "synced_at": "2026-10-06T08:43:30.361904+00:00"
     },
     {
       "id": "schedule1lab-nite-purp-1mx10c-granddaddy-purple",
@@ -571,7 +571,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6TA",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6TA",
-      "synced_at": "2026-10-06T08:39:57.432157+00:00"
+      "synced_at": "2026-10-06T08:43:30.361914+00:00"
     },
     {
       "id": "schedule1lab-nanabred-kronik-1mx13c-green-crack",
@@ -592,7 +592,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JlZW4gQ3JhY2s6SA",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JlZW4gQ3JhY2s6SA",
-      "synced_at": "2026-10-06T08:39:57.432166+00:00"
+      "synced_at": "2026-10-06T08:43:30.361923+00:00"
     },
     {
       "id": "schedule1lab-calm-hunger-og-kush",
@@ -613,7 +613,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpE",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpE",
-      "synced_at": "2026-10-06T08:39:57.432174+00:00"
+      "synced_at": "2026-10-06T08:43:30.361932+00:00"
     },
     {
       "id": "schedule1lab-full-explosive-calm-fec-og-kush",
@@ -636,7 +636,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpERA",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpERA",
-      "synced_at": "2026-10-06T08:39:57.432185+00:00"
+      "synced_at": "2026-10-06T08:43:30.361943+00:00"
     },
     {
       "id": "schedule1lab-boat-granddaddy-purple",
@@ -670,7 +670,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6TkVLQ0FQTkk",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6TkVLQ0FQTkk",
-      "synced_at": "2026-10-06T08:39:57.432213+00:00"
+      "synced_at": "2026-10-06T08:43:30.361974+00:00"
     },
     {
       "id": "schedule1lab-black-gang-kush-og-kush",
@@ -697,7 +697,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpGTEhB",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpGTEhB",
-      "synced_at": "2026-10-06T08:39:57.432229+00:00"
+      "synced_at": "2026-10-06T08:43:30.361992+00:00"
     },
     {
       "id": "schedule1lab-og-kush---for-20-customers-og-kush",
@@ -722,7 +722,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpIQUg",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpIQUg",
-      "synced_at": "2026-10-06T08:39:57.432241+00:00"
+      "synced_at": "2026-10-06T08:43:30.362005+00:00"
     },
     {
       "id": "schedule1lab-sleepy-clap-granddaddy-purple",
@@ -749,7 +749,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6TE5ETQ",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6TE5ETQ",
-      "synced_at": "2026-10-06T08:39:57.432259+00:00"
+      "synced_at": "2026-10-06T08:43:30.362024+00:00"
     },
     {
       "id": "schedule1lab-thundering-snow-cocaine",
@@ -775,7 +775,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpMQU1O",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpMQU1O",
-      "synced_at": "2026-10-06T08:39:57.432277+00:00"
+      "synced_at": "2026-10-06T08:43:30.362043+00:00"
     },
     {
       "id": "schedule1lab-tropical-glow-og-kush",
@@ -802,7 +802,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpMQU1O",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpMQU1O",
-      "synced_at": "2026-10-06T08:39:57.432294+00:00"
+      "synced_at": "2026-10-06T08:43:30.362063+00:00"
     },
     {
       "id": "schedule1lab-alien-shapeshift-1st-variation-og-kush",
@@ -831,7 +831,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpBRk5PUA",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpBRk5PUA",
-      "synced_at": "2026-10-06T08:39:57.432314+00:00"
+      "synced_at": "2026-10-06T08:43:30.362083+00:00"
     },
     {
       "id": "schedule1lab-5-mixes-og-kush-for-21-customers-og-kush",
@@ -860,7 +860,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpBTkxGQQ",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpBTkxGQQ",
-      "synced_at": "2026-10-06T08:39:57.432334+00:00"
+      "synced_at": "2026-10-06T08:43:30.362105+00:00"
     },
     {
       "id": "schedule1lab-og-kush-anti-gravity-balding-og-kush",
@@ -887,7 +887,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpGSEFI",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpGSEFI",
-      "synced_at": "2026-10-06T08:39:57.432350+00:00"
+      "synced_at": "2026-10-06T08:43:30.362121+00:00"
     },
     {
       "id": "schedule1lab-4-mix-og-kush-og-kush",
@@ -914,7 +914,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpGQUVQ",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpGQUVQ",
-      "synced_at": "2026-10-06T08:39:57.432367+00:00"
+      "synced_at": "2026-10-06T08:43:30.362138+00:00"
     },
     {
       "id": "schedule1lab-dense-quiet-thunder-dqt-og-kush",
@@ -941,7 +941,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpESE9M",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpESE9M",
-      "synced_at": "2026-10-06T08:39:57.432382+00:00"
+      "synced_at": "2026-10-06T08:43:30.362155+00:00"
     },
     {
       "id": "schedule1lab-wedding-diesel-shrooms",
@@ -969,7 +969,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpBTkVLRA",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpBTkVLRA",
-      "synced_at": "2026-10-06T08:39:57.432401+00:00"
+      "synced_at": "2026-10-06T08:43:30.362175+00:00"
     },
     {
       "id": "schedule1lab-golden-mushroom-shrooms",
@@ -1003,7 +1003,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpNR0FLQ0FOUA",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpNR0FLQ0FOUA",
-      "synced_at": "2026-10-06T08:39:57.432429+00:00"
+      "synced_at": "2026-10-06T08:43:30.362223+00:00"
     },
     {
       "id": "schedule1lab-super-mario-boss-lvl-4mx-12c-shrooms",
@@ -1029,7 +1029,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpOSEFM",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpOSEFM",
-      "synced_at": "2026-10-06T08:39:57.432446+00:00"
+      "synced_at": "2026-10-06T08:43:30.362242+00:00"
     },
     {
       "id": "schedule1lab-crystal-escobar-4mx-14c-meth",
@@ -1055,7 +1055,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpPTUxP",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpPTUxP",
-      "synced_at": "2026-10-06T08:39:57.432462+00:00"
+      "synced_at": "2026-10-06T08:43:30.362259+00:00"
     },
     {
       "id": "schedule1lab-crystal-longtime-2mx-7c-meth",
@@ -1077,7 +1077,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpMTQ",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpMTQ",
-      "synced_at": "2026-10-06T08:39:57.432473+00:00"
+      "synced_at": "2026-10-06T08:43:30.362273+00:00"
     },
     {
       "id": "schedule1lab-crystal-bones-1mx-5c-meth",
@@ -1097,7 +1097,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpM",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpM",
-      "synced_at": "2026-10-06T08:39:57.432482+00:00"
+      "synced_at": "2026-10-06T08:43:30.362283+00:00"
     },
     {
       "id": "schedule1lab-chronic-spice-meth",
@@ -1121,7 +1121,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpDQUM",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpDQUM",
-      "synced_at": "2026-10-06T08:39:57.432496+00:00"
+      "synced_at": "2026-10-06T08:43:30.362297+00:00"
     },
     {
       "id": "schedule1lab-kali-kronik-4mx-24c-green-crack",
@@ -1148,7 +1148,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JlZW4gQ3JhY2s6SE1KTA",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JlZW4gQ3JhY2s6SE1KTA",
-      "synced_at": "2026-10-06T08:39:57.432513+00:00"
+      "synced_at": "2026-10-06T08:43:30.362315+00:00"
     },
     {
       "id": "schedule1lab-molly-irish-purp-3mx-22c-granddaddy-purple",
@@ -1173,7 +1173,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6QUhM",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6QUhM",
-      "synced_at": "2026-10-06T08:39:57.432526+00:00"
+      "synced_at": "2026-10-06T08:43:30.362329+00:00"
     },
     {
       "id": "schedule1lab-gingerhead-kronik-2mx-18c-green-crack",
@@ -1196,7 +1196,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JlZW4gQ3JhY2s6SEw",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JlZW4gQ3JhY2s6SEw",
-      "synced_at": "2026-10-06T08:39:57.432537+00:00"
+      "synced_at": "2026-10-06T08:43:30.362341+00:00"
     },
     {
       "id": "schedule1lab-xtc-purp-2mx-20c-granddaddy-purple",
@@ -1219,7 +1219,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6SEE",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6SEE",
-      "synced_at": "2026-10-06T08:39:57.432547+00:00"
+      "synced_at": "2026-10-06T08:43:30.362351+00:00"
     },
     {
       "id": "schedule1lab-3-mixes-green-crack-for-22-customers-green-crack",
@@ -1244,7 +1244,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JlZW4gQ3JhY2s6SExL",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JlZW4gQ3JhY2s6SExL",
-      "synced_at": "2026-10-06T08:39:57.432560+00:00"
+      "synced_at": "2026-10-06T08:43:30.362366+00:00"
     },
     {
       "id": "schedule1lab-5-mixes-cocaine-for-21-customers-queef-rocket-cocaine",
@@ -1272,7 +1272,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpBSE1KTA",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBSE1KTA",
-      "synced_at": "2026-10-06T08:39:57.432579+00:00"
+      "synced_at": "2026-10-06T08:43:30.362386+00:00"
     },
     {
       "id": "schedule1lab-cocaine-bright-eyed-jennerising-cocaine",
@@ -1298,7 +1298,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpQSk9N",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpQSk9N",
-      "synced_at": "2026-10-06T08:39:57.432594+00:00"
+      "synced_at": "2026-10-06T08:43:30.362402+00:00"
     },
     {
       "id": "schedule1lab-cocaine-party-bus-setup-cocaine",
@@ -1326,7 +1326,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpMSUVOUA",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpMSUVOUA",
-      "synced_at": "2026-10-06T08:39:57.432614+00:00"
+      "synced_at": "2026-10-06T08:43:30.362423+00:00"
     },
     {
       "id": "schedule1lab-gold-its-just-gold-its-just-a-gold-nugget-at-this-point-jesus-christ-cocaine",
@@ -1346,7 +1346,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpN",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpN",
-      "synced_at": "2026-10-06T08:39:57.432623+00:00"
+      "synced_at": "2026-10-06T08:43:30.362433+00:00"
     },
     {
       "id": "schedule1lab-meth-kryptonita-meth",
@@ -1372,7 +1372,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpOSEFM",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpOSEFM",
-      "synced_at": "2026-10-06T08:39:57.432640+00:00"
+      "synced_at": "2026-10-06T08:43:30.362450+00:00"
     },
     {
       "id": "schedule1lab-megameth-meth",
@@ -1408,7 +1408,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpOQUNLT1BNTkZB",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpOQUNLT1BNTkZB",
-      "synced_at": "2026-10-06T08:39:57.432673+00:00"
+      "synced_at": "2026-10-06T08:43:30.362485+00:00"
     },
     {
       "id": "schedule1lab--meth",
@@ -1438,7 +1438,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpLQ0FQTk0",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpLQ0FQTk0",
-      "synced_at": "2026-10-06T08:39:57.432696+00:00"
+      "synced_at": "2026-10-06T08:43:30.362509+00:00"
     },
     {
       "id": "schedule1lab-og-kush-tropic-thunder-anti-gravity-og-kush",
@@ -1472,7 +1472,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpIQ0tBTlBIQQ",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpIQ0tBTlBIQQ",
-      "synced_at": "2026-10-06T08:39:57.432721+00:00"
+      "synced_at": "2026-10-06T08:43:30.362536+00:00"
     },
     {
       "id": "schedule1lab-enlightenment-cube-shrooms",
@@ -1500,7 +1500,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpNT0NBSA",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpNT0NBSA",
-      "synced_at": "2026-10-06T08:39:57.432739+00:00"
+      "synced_at": "2026-10-06T08:43:30.362554+00:00"
     },
     {
       "id": "schedule1lab-potent-cube-shrooms",
@@ -1526,7 +1526,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpNT0NB",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpNT0NB",
-      "synced_at": "2026-10-06T08:39:57.432754+00:00"
+      "synced_at": "2026-10-06T08:43:30.362570+00:00"
     },
     {
       "id": "schedule1lab-puffer-fish-shrooms",
@@ -1552,7 +1552,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpIQU1O",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpIQU1O",
-      "synced_at": "2026-10-06T08:39:57.432770+00:00"
+      "synced_at": "2026-10-06T08:43:30.362587+00:00"
     },
     {
       "id": "schedule1lab-lulli-shrooms",
@@ -1587,7 +1587,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpBS0hDQU5QSEE",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpBS0hDQU5QSEE",
-      "synced_at": "2026-10-06T08:39:57.432797+00:00"
+      "synced_at": "2026-10-06T08:43:30.362616+00:00"
     },
     {
       "id": "schedule1lab-alien-shapeshift-2nd-variation-og-kush",
@@ -1616,7 +1616,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpNRk5BUA",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpNRk5BUA",
-      "synced_at": "2026-10-06T08:39:57.432829+00:00"
+      "synced_at": "2026-10-06T08:43:30.362637+00:00"
     },
     {
       "id": "schedule1lab-8-mixes-cocaine-for-18-customers-cocaine",
@@ -1650,7 +1650,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpHQUtDQU1QTg",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpHQUtDQU1QTg",
-      "synced_at": "2026-10-06T08:39:57.432856+00:00"
+      "synced_at": "2026-10-06T08:43:30.362666+00:00"
     },
     {
       "id": "schedule1lab-best-4-mix-cocaine-cocaine",
@@ -1676,7 +1676,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "Q29jYWluZTpIQU1O",
       "mix_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpIQU1O",
-      "synced_at": "2026-10-06T08:39:57.432872+00:00"
+      "synced_at": "2026-10-06T08:43:30.362683+00:00"
     },
     {
       "id": "schedule1lab-sneaky-selling-granddaddy-purple",
@@ -1699,7 +1699,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6RUs",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6RUs",
-      "synced_at": "2026-10-06T08:39:57.432884+00:00"
+      "synced_at": "2026-10-06T08:43:30.362696+00:00"
     },
     {
       "id": "schedule1lab-client-sabotage-for-ez-pickpocket-granddaddy-purple",
@@ -1724,7 +1724,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6S0xO",
       "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6S0xO",
-      "synced_at": "2026-10-06T08:39:57.432900+00:00"
+      "synced_at": "2026-10-06T08:43:30.362712+00:00"
     },
     {
       "id": "schedule1lab-crystal-jenner-3mx-9c-meth",
@@ -1748,7 +1748,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpITUo",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpITUo",
-      "synced_at": "2026-10-06T08:39:57.432913+00:00"
+      "synced_at": "2026-10-06T08:43:30.362727+00:00"
     },
     {
       "id": "schedule1lab-fangayati-shrooms",
@@ -1772,7 +1772,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "U2hyb29tczpBTU4",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpBTU4",
-      "synced_at": "2026-10-06T08:39:57.432928+00:00"
+      "synced_at": "2026-10-06T08:43:30.362742+00:00"
     },
     {
       "id": "schedule1lab-mega-crystal-meth",
@@ -1796,7 +1796,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "TWV0aDpNT0o",
       "mix_url": "https://schedule1.tools/mixer?mix=TWV0aDpNT0o",
-      "synced_at": "2026-10-06T08:39:57.432943+00:00"
+      "synced_at": "2026-10-06T08:43:30.362756+00:00"
     },
     {
       "id": "schedule1lab-thoughtful-ginger-dount-tgd-og-kush",
@@ -1821,7 +1821,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpESE8",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpESE8",
-      "synced_at": "2026-10-06T08:39:57.432955+00:00"
+      "synced_at": "2026-10-06T08:43:30.362769+00:00"
     },
     {
       "id": "schedule1lab-filling-ginger-thief-fgt-og-kush",
@@ -1844,29 +1844,7 @@
       "verification": "Rendered public catalog snapshot",
       "mix_hash": "T0cgS3VzaDpESA",
       "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpESA",
-      "synced_at": "2026-10-06T08:39:57.432965+00:00"
-    },
-    {
-      "id": "schedule1lab-best-og-kush-mixes-for-beginners-og-kush",
-      "name": "Best OG Kush mixes for beginners",
-      "drug": "OG Kush",
-      "base_product": "OG Kush",
-      "ingredients": [
-        "Banana",
-        "Cuke",
-        "Banana"
-      ],
-      "effects": [
-        "Jennerising",
-        "Thought-Provoking",
-        "Energizing",
-        "Gingeritis"
-      ],
-      "source": "Schedule 1 Lab · community",
-      "source_type": "community",
-      "source_url": "https://schedule1-lab.com/community/recipes",
-      "author": "Lyksian",
-      "verification": "Rendered public catalog snapshot"
+      "synced_at": "2026-10-06T08:43:30.362779+00:00"
     },
     {
       "id": "schedule1lab--granddaddy-purple",
@@ -1894,7 +1872,10 @@
       "source_type": "community",
       "source_url": "https://schedule1-lab.com/community/recipes",
       "author": "User2428487299",
-      "verification": "Rendered public catalog snapshot"
+      "verification": "Rendered public catalog snapshot",
+      "mix_hash": "R3JhbmRkYWRkeSBQdXJwbGU6S0VMQUhL",
+      "mix_url": "https://schedule1.tools/mixer?mix=R3JhbmRkYWRkeSBQdXJwbGU6S0VMQUhL",
+      "synced_at": "2026-10-06T08:43:30.362815+00:00"
     },
     {
       "id": "schedule1lab-og-superman-og-kush",
@@ -1920,35 +1901,14 @@
       "source_type": "community",
       "source_url": "https://schedule1-lab.com/community/recipes",
       "author": "SrPlotter",
-      "verification": "Rendered public catalog snapshot"
-    },
-    {
-      "id": "schedule1lab--og-kush",
-      "name": "黑帮库什",
-      "drug": "OG Kush",
-      "base_product": "OG Kush",
-      "ingredients": [
-        "Mouth Wash",
-        "Viagor",
-        "Banana",
-        "Cuke"
-      ],
-      "effects": [
-        "Anti-Gravity",
-        "Balding",
-        "Tropic Thunder",
-        "Thought-Provoking",
-        "Energizing"
-      ],
-      "source": "Schedule 1 Lab · community",
-      "source_type": "community",
-      "source_url": "https://schedule1-lab.com/community/recipes",
-      "author": "User7677400757",
-      "verification": "Rendered public catalog snapshot"
+      "verification": "Rendered public catalog snapshot",
+      "mix_hash": "T0cgS3VzaDpGRU5FUA",
+      "mix_url": "https://schedule1.tools/mixer?mix=T0cgS3VzaDpGRU5FUA",
+      "synced_at": "2026-10-06T08:43:30.362837+00:00"
     }
   ],
   "status": "partial",
-  "updated_at": "2026-10-06",
-  "note": "73/77 live community cards are verified/transcribed in this snapshot. Missing cards are intentionally not fabricated.",
+  "updated_at": "2026-10-06T08:43:30.362870+00:00",
+  "note": "71/77 live community cards were readable in this sync. Missing cards are intentionally not fabricated.",
   "policy": "Only cards read from the public rendered community catalog are imported. Effects/prices are current-page snapshots and mix_hash is deterministically derived from product + ingredient order."
-}
+}\n
