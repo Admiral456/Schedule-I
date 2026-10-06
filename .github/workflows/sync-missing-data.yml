@@ -1,6 +1,8 @@
 name: Sync Schedule 1 exact assets and community recipes
 
 on:
+  schedule:
+    - cron: '17 3 * * *'
   workflow_dispatch:
   push:
     branches: ["complete-missing-data"]
