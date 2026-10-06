@@ -2,7 +2,7 @@
   "schema_version": 3,
   "source": "https://schedule1.tools/mixes + individual /mixer?mix= pages",
   "expected_count": 77,
-  "verified_count": 23,
+  "verified_count": 27,
   "status": "partial",
   "extraction_source": "indexed individual Schedule1 Tools mix pages",
   "recipes": [
@@ -1037,10 +1037,161 @@
       "addiction": 1.24,
       "calculation_source": "Schedule1 Tools mixer algorithm (phase 1 + phase 2)",
       "result_verification": "not independently crawled in this pass"
+    },
+    {
+      "id": "schedule1tools-Q29jYWluZTpBTU5PUE0",
+      "name": "Community Mix — Cocaine #PUE0",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean",
+        "Addy",
+        "Battery",
+        "Horse Semen"
+      ],
+      "effects": [
+        "Euphoric",
+        "Energizing",
+        "Bright-Eyed",
+        "Glowing",
+        "Electrifying",
+        "Long Faced"
+      ],
+      "cost": 44,
+      "sell": 495,
+      "profit": 451,
+      "base_price": 150,
+      "source": "Schedule1 Tools · verifiable shared mix",
+      "source_type": "community",
+      "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBTU5PUE0",
+      "mix_hash": "Q29jYWluZTpBTU5PUE0",
+      "result_verification": "live Schedule1.tools mixer page (web crawl)",
+      "live_verified_at": "2026-10-06"
+    },
+    {
+      "id": "schedule1tools-Q29jYWluZTpBQ1BISE1BTg",
+      "name": "Community Mix — Cocaine #1BTg",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Cuke",
+        "Gasoline",
+        "Battery",
+        "Banana",
+        "Banana",
+        "Horse Semen",
+        "Viagor",
+        "Cuke",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Refreshing",
+        "Foggy",
+        "Bright-Eyed",
+        "Glowing",
+        "Tropic Thunder",
+        "Cyclopean",
+        "Long Faced",
+        "Zombifying"
+      ],
+      "cost": 41,
+      "sell": 675,
+      "profit": 634,
+      "base_price": 150,
+      "source": "Schedule1 Tools · verifiable shared mix",
+      "source_type": "community",
+      "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBQ1BISE1BTg",
+      "mix_hash": "Q29jYWluZTpBQ1BISE1BTg",
+      "result_verification": "live Schedule1.tools mixer page (web crawl)",
+      "live_verified_at": "2026-10-06"
+    },
+    {
+      "id": "schedule1tools-Q29jYWluZTpJQU0",
+      "name": "Community Mix — Cocaine #JQU0",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Iodine",
+        "Cuke",
+        "Horse Semen"
+      ],
+      "effects": [
+        "Energizing",
+        "Jennerising",
+        "Long Faced"
+      ],
+      "cost": 19,
+      "sell": 324,
+      "profit": 305,
+      "base_price": 150,
+      "source": "Schedule1 Tools · verifiable shared mix",
+      "source_type": "community",
+      "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpJQU0",
+      "mix_hash": "Q29jYWluZTpJQU0",
+      "result_verification": "live Schedule1.tools mixer page (web crawl)",
+      "live_verified_at": "2026-10-06"
+    },
+    {
+      "id": "schedule1tools-Q29jYWluZTpQQUpF",
+      "name": "Community Mix — Cocaine #QUpF",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Battery",
+        "Cuke",
+        "Iodine",
+        "Energy Drink"
+      ],
+      "effects": [
+        "Energizing",
+        "Athletic",
+        "Bright-Eyed",
+        "Jennerising"
+      ],
+      "cost": 24,
+      "sell": 354,
+      "profit": 330,
+      "base_price": 150,
+      "source": "Schedule1 Tools · verifiable shared mix",
+      "source_type": "community",
+      "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpQQUpF",
+      "mix_hash": "Q29jYWluZTpQQUpF",
+      "result_verification": "live Schedule1.tools mixer page (web crawl)",
+      "live_verified_at": "2026-10-06"
+    },
+    {
+      "id": "schedule1tools-Q29jYWluZTpBSU5Q",
+      "name": "Community Mix — Cocaine #SU5Q",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Cuke",
+        "Chili",
+        "Mega Bean",
+        "Battery"
+      ],
+      "effects": [
+        "Foggy",
+        "Spicy",
+        "Bright-Eyed",
+        "Glowing"
+      ],
+      "cost": 24,
+      "sell": 393,
+      "profit": 369,
+      "base_price": 150,
+      "source": "Schedule1 Tools · verifiable shared mix",
+      "source_type": "community",
+      "source_url": "https://schedule1.tools/mixer?mix=Q29jYWluZTpBSU5Q",
+      "mix_hash": "Q29jYWluZTpBSU5Q",
+      "result_verification": "live Schedule1.tools mixer page (web crawl)",
+      "live_verified_at": "2026-10-06"
     }
   ],
-  "note": "23/77 community mix hashes are individually verifiable in the current snapshot. Missing records are intentionally not fabricated because the public /mixes catalog is client-side.",
-  "updated_at": "2026-10-06T08:22:45.868527+00:00",
-  "live_verified_count": 22,
+  "note": "28/77 community mix hashes are individually stored. 27/77 have live result-field verification recorded; missing records are not fabricated.",
+  "updated_at": "2026-10-06",
+  "live_verified_count": 27,
   "verification_note": "22/77 stored community mixes have live result fields verified from individual Schedule1.tools mixer pages in this audit."
-}\n
+}
