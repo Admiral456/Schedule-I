@@ -136,7 +136,7 @@ Deno.serve(async (req: Request) => {
         "Authorization": "Bearer " + OPENAI_API_KEY,
       },
       body: JSON.stringify({
-        model: "gpt-6-luna",
+        model: "gpt-5.6-luna",
         reasoning: { effort: "none" },
         store: false,
         input: [
