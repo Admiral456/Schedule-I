@@ -27,6 +27,7 @@ await page.locator('[data-tab="recipes"]').first().click();
 await page.waitForFunction(() => document.querySelectorAll("#recipeList .recipe-card").length >= 52);
 if (await page.locator("#recipeList .recipe-card").count() < 52) throw new Error("Recipe Finder did not include products");
 await page.waitForSelector("#s1MixTools");
+await page.locator("#s1MixBase").selectOption({value:"Meth"});
 const mixSelects = page.locator("#s1MixSlots select");
 const mixOrder = ["Banana","Cuke","Horse Semen","Mega Bean"];
 await page.waitForFunction(() => document.querySelectorAll("#s1MixSlots option[value]").length >= 16);
