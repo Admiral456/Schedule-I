@@ -29,7 +29,8 @@ if (await page.locator("#recipeList .recipe-card").count() < 52) throw new Error
 await page.waitForSelector("#s1MixTools");
 const mixSelects = page.locator("#s1MixSlots select");
 const mixOrder = ["Banana","Cuke","Horse Semen","Mega Bean"];
-for (let i = 0; i < mixOrder.length; i++) await mixSelects.nth(i).selectOption({label: mixOrder[i]});
+await page.waitForFunction(() => document.querySelectorAll("#s1MixSlots option[value]").length >= 16);
+for (let i = 0; i < mixOrder.length; i++) await mixSelects.nth(i).selectOption({value: mixOrder[i]});
 await page.waitForFunction(() => /\$206/.test(document.querySelector("#s1MixCalcResult")?.innerText||"") && /\$20/.test(document.querySelector("#s1MixCalcResult")?.innerText||"") && /\$186/.test(document.querySelector("#s1MixCalcResult")?.innerText||""));
 const mixText = await page.locator("#s1MixCalcResult").innerText();
 for (const effect of ["Electrifying","Cyclopean","Long Faced","Foggy"]) if (!mixText.includes(effect)) throw new Error("Mix engine missing expected effect: " + effect);
