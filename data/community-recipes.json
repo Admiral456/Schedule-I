@@ -2,7 +2,7 @@
   "schema_version": 5,
   "source": "https://schedule1-lab.com/community/recipes",
   "expected_count": 77,
-  "stored_count": 59,
+  "stored_count": 70,
   "recipes": [
     {
       "id": "schedule1lab-most-profitable-4-ingredient-meth-meth",
@@ -1588,10 +1588,259 @@
       "mix_hash": "U2hyb29tczpBS0hDQU5QSEE",
       "mix_url": "https://schedule1.tools/mixer?mix=U2hyb29tczpBS0hDQU5QSEE",
       "synced_at": "2026-10-06T08:36:36.874817+00:00"
+    },
+    {
+      "id": "schedule1lab-great-first-mix-og-kush",
+      "name": "Great First Mix",
+      "drug": "OG Kush",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Banana"
+      ],
+      "effects": [
+        "Jennerising",
+        "Thought-Provoking",
+        "Energizing",
+        "Gingeritis"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "sgtmorrigahngaming",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-alien-shapeshift-2nd-variation-og-kush",
+      "name": "Alien Shapeshift 2nd variation",
+      "drug": "OG Kush",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Horse Semen",
+        "Mouth Wash",
+        "Mega Bean",
+        "Cuke",
+        "Battery"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Long Faced",
+        "Balding",
+        "Glowing",
+        "Energizing",
+        "Bright-Eyed"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "PsyckoNutz",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-8-mixes-cocaine-for-18-customers-cocaine",
+      "name": "8 mixes - Cocaine - for 18 customers",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Motor Oil",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Horse Semen",
+        "Battery",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Glowing",
+        "Tropic Thunder",
+        "Zombifying",
+        "Cyclopean",
+        "Long Faced",
+        "Bright-Eyed",
+        "Foggy"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "User1759609875",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-best-4-mix-cocaine-cocaine",
+      "name": "Best 4 mix - Cocaine",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Electrifying",
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "RxSEbed",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-sneaky-selling-granddaddy-purple",
+      "name": "SNEAKY SELLING",
+      "drug": "Granddaddy Purple",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Energy Drink",
+        "Paracetamol"
+      ],
+      "effects": [
+        "Anti-Gravity",
+        "Athletic",
+        "Sneaky"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "Goob",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-client-sabotage-for-ez-pickpocket-granddaddy-purple",
+      "name": "Client sabotage for ez pickpocket",
+      "drug": "Granddaddy Purple",
+      "base_product": "Granddaddy Purple",
+      "ingredients": [
+        "Paracetamol",
+        "Viagor",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Sedating",
+        "Calming",
+        "Tropic Thunder",
+        "Foggy"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "PsyckoNutz",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-crystal-jenner-3mx-9c-meth",
+      "name": "crystal JENNER (3mx=9c)",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "ingredients": [
+        "Banana",
+        "Horse Semen",
+        "Iodine"
+      ],
+      "effects": [
+        "Thought-Provoking",
+        "Long Faced",
+        "Jennerising"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "Sangria Kartel",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-fangayati-shrooms",
+      "name": "Fangayati",
+      "drug": "Shrooms",
+      "base_product": "Shrooms",
+      "ingredients": [
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "effects": [
+        "Cyclopean",
+        "Long Faced",
+        "Foggy"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "JaDoRafT7",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-mega-crystal-meth",
+      "name": "Mega Crystal",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "ingredients": [
+        "Horse Semen",
+        "Addy",
+        "Iodine"
+      ],
+      "effects": [
+        "Electrifying",
+        "Thought-Provoking",
+        "Jennerising"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "petrichogirl",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-thoughtful-ginger-dount-tgd-og-kush",
+      "name": "Thoughtful Ginger Dount (TGD)",
+      "drug": "OG Kush",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Donut",
+        "Banana",
+        "Addy"
+      ],
+      "effects": [
+        "Sneaky",
+        "Calorie-Dense",
+        "Gingeritis",
+        "Thought-Provoking"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "SquareRex13",
+      "verification": "Rendered public catalog snapshot"
+    },
+    {
+      "id": "schedule1lab-filling-ginger-thief-fgt-og-kush",
+      "name": "Filling Ginger Thief (FGT)",
+      "drug": "OG Kush",
+      "base_product": "OG Kush",
+      "ingredients": [
+        "Donut",
+        "Banana"
+      ],
+      "effects": [
+        "Sneaky",
+        "Calorie-Dense",
+        "Gingeritis"
+      ],
+      "source": "Schedule 1 Lab · community",
+      "source_type": "community",
+      "source_url": "https://schedule1-lab.com/community/recipes",
+      "author": "SquareRex13",
+      "verification": "Rendered public catalog snapshot"
     }
   ],
   "status": "partial",
-  "updated_at": "2026-10-06T08:36:36.874829+00:00",
-  "note": "59/77 live community cards were readable in this sync. Missing cards are intentionally not fabricated.",
+  "updated_at": "2026-10-06",
+  "note": "70/77 live community cards are verified/transcribed in this snapshot.",
   "policy": "Only cards read from the public rendered community catalog are imported. Effects/prices are current-page snapshots and mix_hash is deterministically derived from product + ingredient order."
-}\n
+}
