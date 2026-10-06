@@ -36,13 +36,13 @@
   "categories": {
     "ingredients": {
       "count": 16,
-      "verified_icon_count": 13,
-      "pending_icon_count": 3
+      "verified_icon_count": 16,
+      "pending_icon_count": 0
     },
     "drugs": {
       "count": 7,
-      "verified_icon_count": 6,
-      "pending_icon_count": 1
+      "verified_icon_count": 7,
+      "pending_icon_count": 0
     },
     "effects": {
       "count": 35,
