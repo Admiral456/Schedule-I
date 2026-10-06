@@ -1,0 +1,1767 @@
+{
+  "schema_version": 1,
+  "source": "Schedule1 Tools open-source Mixer",
+  "source_repository": "https://github.com/Schedule1-Tools/mixer",
+  "source_commits": {
+    "effects.ts": "c8c8e98e4225a64e1e425db597104188f646a3e3",
+    "products.ts": "298495466276965721c3e97dc85ac18f6a26bca9",
+    "substances.ts": "6d0ab132bd326dea109a20989bcd1064bac94017",
+    "rules.ts": "bfd04d2caa653a1d3d2e336e07c07692c85fe724"
+  },
+  "counts": {
+    "products": 7,
+    "substances": 16,
+    "effects": 34,
+    "transformations": 114
+  },
+  "products": {
+    "OG Kush": {
+      "price": 35,
+      "rank": "1",
+      "abbreviation": "OH",
+      "effects": [
+        "Ca"
+      ]
+    },
+    "Sour Diesel": {
+      "price": 35,
+      "rank": "4",
+      "abbreviation": "SL",
+      "effects": [
+        "Re"
+      ]
+    },
+    "Green Crack": {
+      "price": 35,
+      "rank": "7",
+      "abbreviation": "GK",
+      "effects": [
+        "En"
+      ]
+    },
+    "Grandaddy Purple": {
+      "price": 35,
+      "rank": "9",
+      "abbreviation": "GE",
+      "effects": [
+        "Se"
+      ]
+    },
+    "Meth": {
+      "price": 70,
+      "rank": "6",
+      "abbreviation": "MH",
+      "effects": [],
+      "addiction": 0.6
+    },
+    "Cocaine": {
+      "price": 150,
+      "rank": "26",
+      "abbreviation": "CE",
+      "effects": [],
+      "addiction": 0.4
+    },
+    "Shrooms": {
+      "price": 65,
+      "rank": "10",
+      "abbreviation": "SR",
+      "effects": [],
+      "addiction": 0.05
+    }
+  },
+  "substances": {
+    "Cuke": {
+      "abbreviation": "A",
+      "rank": "1",
+      "price": 2,
+      "effect": [
+        "En"
+      ]
+    },
+    "Flu Medicine": {
+      "abbreviation": "B",
+      "rank": "4",
+      "price": 5,
+      "effect": [
+        "Se"
+      ]
+    },
+    "Gasoline": {
+      "abbreviation": "C",
+      "rank": "5",
+      "price": 5,
+      "effect": [
+        "To"
+      ]
+    },
+    "Donut": {
+      "abbreviation": "D",
+      "rank": "1",
+      "price": 3,
+      "effect": [
+        "Cd"
+      ]
+    },
+    "Energy Drink": {
+      "abbreviation": "E",
+      "rank": "6",
+      "price": 6,
+      "effect": [
+        "At"
+      ]
+    },
+    "Mouth Wash": {
+      "abbreviation": "F",
+      "rank": "3",
+      "price": 4,
+      "effect": [
+        "Ba"
+      ]
+    },
+    "Motor Oil": {
+      "abbreviation": "G",
+      "rank": "7",
+      "price": 6,
+      "effect": [
+        "Sl"
+      ]
+    },
+    "Banana": {
+      "abbreviation": "H",
+      "rank": "1",
+      "price": 2,
+      "effect": [
+        "Gi"
+      ]
+    },
+    "Chili": {
+      "abbreviation": "I",
+      "rank": "9",
+      "price": 7,
+      "effect": [
+        "Sp"
+      ]
+    },
+    "Iodine": {
+      "abbreviation": "J",
+      "rank": "11",
+      "price": 8,
+      "effect": [
+        "Je"
+      ]
+    },
+    "Paracetamol": {
+      "abbreviation": "K",
+      "rank": "1",
+      "price": 3,
+      "effect": [
+        "Sn"
+      ]
+    },
+    "Viagor": {
+      "abbreviation": "L",
+      "rank": "2",
+      "price": 4,
+      "effect": [
+        "Tt"
+      ]
+    },
+    "Horse Semen": {
+      "abbreviation": "M",
+      "rank": "18",
+      "price": 9,
+      "effect": [
+        "Lf"
+      ]
+    },
+    "Mega Bean": {
+      "abbreviation": "N",
+      "rank": "8",
+      "price": 7,
+      "effect": [
+        "Fo"
+      ]
+    },
+    "Addy": {
+      "abbreviation": "O",
+      "rank": "17",
+      "price": 9,
+      "effect": [
+        "Tp"
+      ]
+    },
+    "Battery": {
+      "abbreviation": "P",
+      "rank": "10",
+      "price": 8,
+      "effect": [
+        "Be"
+      ]
+    }
+  },
+  "effects": {
+    "Pa": {
+      "name": "Paranoia",
+      "description": "Induces paranoia in the user.",
+      "tier": 1,
+      "price": 0,
+      "addiction": 0,
+      "color": "#f87171"
+    },
+    "Sm": {
+      "name": "Smelly",
+      "description": "Makes the user unbearably smelly.",
+      "tier": 1,
+      "price": 0,
+      "addiction": 0,
+      "color": "#84cc16"
+    },
+    "Ca": {
+      "name": "Calming",
+      "description": "Induces a slight calmness in the user.",
+      "tier": 1,
+      "price": 0.1,
+      "addiction": 0,
+      "color": "#fdba74"
+    },
+    "Mu": {
+      "name": "Munchies",
+      "description": "Makes the user hungry.",
+      "tier": 1,
+      "price": 0.12,
+      "addiction": 0.096,
+      "color": "#C96E57"
+    },
+    "Re": {
+      "name": "Refreshing",
+      "description": "Slightly energizes the user.",
+      "tier": 1,
+      "price": 0.14,
+      "addiction": 0.104,
+      "color": "#bef264"
+    },
+    "Fc": {
+      "name": "Focused",
+      "description": "",
+      "tier": 1,
+      "price": 0.16,
+      "addiction": 0.104,
+      "color": "#75F1FD"
+    },
+    "Eu": {
+      "name": "Euphoric",
+      "description": "Induces mild euphoria in the user.",
+      "tier": 1,
+      "price": 0.18,
+      "addiction": 0.235,
+      "color": "#fde68a"
+    },
+    "To": {
+      "name": "Toxic",
+      "description": "",
+      "tier": 2,
+      "price": 0,
+      "addiction": 0,
+      "color": "#a3e635"
+    },
+    "Di": {
+      "name": "Disorienting",
+      "description": "Causes unpredictable movement and slight visual impairment in the user.",
+      "tier": 2,
+      "price": 0,
+      "addiction": 0,
+      "color": "#FE7551"
+    },
+    "Gi": {
+      "name": "Gingeritis",
+      "description": "After consumption, the user will become a ginger.",
+      "tier": 2,
+      "price": 0.2,
+      "addiction": 0,
+      "color": "#fb923c"
+    },
+    "En": {
+      "name": "Energizing",
+      "description": "Increases the users energy.",
+      "tier": 2,
+      "price": 0.22,
+      "addiction": 0.34,
+      "color": "#a3e635"
+    },
+    "Sn": {
+      "name": "Sneaky",
+      "description": "Silences the users foot steps.",
+      "tier": 2,
+      "price": 0.24,
+      "addiction": 0.327,
+      "color": "#a8a29e"
+    },
+    "Se": {
+      "name": "Sedating",
+      "description": "Induces heavy sleepiness in the user.",
+      "tier": 2,
+      "price": 0.26,
+      "addiction": 0,
+      "color": "#818cf8"
+    },
+    "Cd": {
+      "name": "Calorie-Dense",
+      "description": "Results in immediate weight gain.",
+      "tier": 2,
+      "price": 0.28,
+      "addiction": 0.1,
+      "color": "#e879f9"
+    },
+    "La": {
+      "name": "Laxative",
+      "description": "Causes the user to fart and shit uncontrollably.",
+      "tier": 3,
+      "price": 0,
+      "addiction": 0.1,
+      "color": "#a16207"
+    },
+    "Si": {
+      "name": "Seizure-Inducing",
+      "description": "Consumption results in an instant seizure.",
+      "tier": 3,
+      "price": 0,
+      "addiction": 0,
+      "color": "#FEE900"
+    },
+    "Ba": {
+      "name": "Balding",
+      "description": "Causes balding in the user.",
+      "tier": 3,
+      "price": 0.3,
+      "addiction": 0,
+      "color": "#c79232"
+    },
+    "At": {
+      "name": "Athletic",
+      "description": "After consumption, the user is only able to run.",
+      "tier": 3,
+      "price": 0.32,
+      "addiction": 0.607,
+      "color": "#7dd3fc"
+    },
+    "Sl": {
+      "name": "Slippery",
+      "description": "",
+      "tier": 3,
+      "price": 0.34,
+      "addiction": 0.309,
+      "color": "#7dd3fc"
+    },
+    "Fo": {
+      "name": "Foggy",
+      "description": "Causes a cloud of fog to form around the user.",
+      "tier": 3,
+      "price": 0.36,
+      "addiction": 0.1,
+      "color": "#94a3b8"
+    },
+    "Sp": {
+      "name": "Spicy",
+      "description": "",
+      "tier": 3,
+      "price": 0.38,
+      "addiction": 0.665,
+      "color": "#f87171"
+    },
+    "Sc": {
+      "name": "Schizophrenia",
+      "description": "Induces hallucinations and unpredictable behaviour in the user.",
+      "tier": 4,
+      "price": 0,
+      "addiction": 0,
+      "color": "#645AFD"
+    },
+    "Be": {
+      "name": "Bright-Eyed",
+      "description": "",
+      "tier": 4,
+      "price": 0.4,
+      "addiction": 0.2,
+      "color": "#67e8f9"
+    },
+    "Je": {
+      "name": "Jennerising",
+      "description": "",
+      "tier": 4,
+      "price": 0.42,
+      "addiction": 0.343,
+      "color": "#e879f9"
+    },
+    "Tp": {
+      "name": "Thought-Provoking",
+      "description": "",
+      "tier": 4,
+      "price": 0.44,
+      "addiction": 0.37,
+      "color": "#f9a8d4"
+    },
+    "Tt": {
+      "name": "Tropic Thunder",
+      "description": "",
+      "tier": 4,
+      "price": 0.46,
+      "addiction": 0.803,
+      "color": "#fdba74"
+    },
+    "Gl": {
+      "name": "Glowing",
+      "description": "Imbues a bioluminescence on the user.",
+      "tier": 4,
+      "price": 0.48,
+      "addiction": 0.472,
+      "color": "#85E459"
+    },
+    "Ex": {
+      "name": "Explosive",
+      "description": "Causes the user to explode shortly after consumption.",
+      "tier": 5,
+      "price": 0,
+      "addiction": 0,
+      "color": "#ef4444"
+    },
+    "El": {
+      "name": "Electrifying",
+      "description": "Electrifies the user, causing arcs of electricity to be emitted, zapping anyone nearby.",
+      "tier": 5,
+      "price": 0.5,
+      "addiction": 0.235,
+      "color": "#22d3ee"
+    },
+    "Lf": {
+      "name": "Long Faced",
+      "description": "",
+      "tier": 5,
+      "price": 0.52,
+      "addiction": 0.607,
+      "color": "#fde047"
+    },
+    "Ag": {
+      "name": "Anti-Gravity",
+      "description": "Weakens the effects of gravity on the user.",
+      "tier": 5,
+      "price": 0.54,
+      "addiction": 0.611,
+      "color": "#3b82f6"
+    },
+    "Cy": {
+      "name": "Cyclopean",
+      "description": "Causes the user to see with a single eye in the center of their forehead.",
+      "tier": 5,
+      "price": 0.56,
+      "addiction": 0.1,
+      "color": "#FEC174"
+    },
+    "Zo": {
+      "name": "Zombifying",
+      "description": "Transforms the user into a zombie, causing them to walk with a limp and seek brains.",
+      "tier": 5,
+      "price": 0.58,
+      "addiction": 0.598,
+      "color": "#71AB5D"
+    },
+    "Sh": {
+      "name": "Shrinking",
+      "description": "Shrinks the user.",
+      "tier": 5,
+      "price": 0.6,
+      "addiction": 0.336,
+      "color": "#B6FEDA"
+    }
+  },
+  "rules": {
+    "Cuke": [
+      {
+        "ifPresent": [
+          "Eu"
+        ],
+        "ifNotPresent": [
+          "La"
+        ],
+        "replace": {
+          "Eu": "La"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fo"
+        ],
+        "ifNotPresent": [
+          "Cy"
+        ],
+        "replace": {
+          "Fo": "Cy"
+        }
+      },
+      {
+        "ifPresent": [
+          "Gi"
+        ],
+        "ifNotPresent": [
+          "Tp"
+        ],
+        "replace": {
+          "Gi": "Tp"
+        }
+      },
+      {
+        "ifPresent": [
+          "Mu"
+        ],
+        "ifNotPresent": [
+          "At"
+        ],
+        "replace": {
+          "Mu": "At"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sl"
+        ],
+        "ifNotPresent": [
+          "Mu"
+        ],
+        "replace": {
+          "Sl": "Mu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sn"
+        ],
+        "ifNotPresent": [
+          "Pa"
+        ],
+        "replace": {
+          "Sn": "Pa"
+        }
+      },
+      {
+        "ifPresent": [
+          "To"
+        ],
+        "ifNotPresent": [
+          "Eu"
+        ],
+        "replace": {
+          "To": "Eu"
+        }
+      }
+    ],
+    "Flu Medicine": [
+      {
+        "ifPresent": [
+          "At"
+        ],
+        "ifNotPresent": [
+          "Mu"
+        ],
+        "replace": {
+          "At": "Mu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Ca"
+        ],
+        "ifNotPresent": [
+          "Be"
+        ],
+        "replace": {
+          "Ca": "Be"
+        }
+      },
+      {
+        "ifPresent": [
+          "Cy"
+        ],
+        "ifNotPresent": [
+          "Fo"
+        ],
+        "replace": {
+          "Cy": "Fo"
+        }
+      },
+      {
+        "ifPresent": [
+          "El"
+        ],
+        "ifNotPresent": [
+          "Re"
+        ],
+        "replace": {
+          "El": "Re"
+        }
+      },
+      {
+        "ifPresent": [
+          "Eu"
+        ],
+        "ifNotPresent": [
+          "To"
+        ],
+        "replace": {
+          "Eu": "To"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fc"
+        ],
+        "ifNotPresent": [
+          "Ca"
+        ],
+        "replace": {
+          "Fc": "Ca"
+        }
+      },
+      {
+        "ifPresent": [
+          "La"
+        ],
+        "ifNotPresent": [
+          "Eu"
+        ],
+        "replace": {
+          "La": "Eu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Mu"
+        ],
+        "ifNotPresent": [
+          "Sl"
+        ],
+        "replace": {
+          "Mu": "Sl"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sh"
+        ],
+        "ifNotPresent": [
+          "Pa"
+        ],
+        "replace": {
+          "Sh": "Pa"
+        }
+      },
+      {
+        "ifPresent": [
+          "Tp"
+        ],
+        "ifNotPresent": [
+          "Gi"
+        ],
+        "replace": {
+          "Tp": "Gi"
+        }
+      }
+    ],
+    "Gasoline": [
+      {
+        "ifPresent": [
+          "Di"
+        ],
+        "ifNotPresent": [
+          "Gl"
+        ],
+        "replace": {
+          "Di": "Gl"
+        }
+      },
+      {
+        "ifPresent": [
+          "El"
+        ],
+        "ifNotPresent": [
+          "Di"
+        ],
+        "replace": {
+          "El": "Di"
+        }
+      },
+      {
+        "ifPresent": [
+          "En"
+        ],
+        "ifNotPresent": [
+          "Eu"
+        ],
+        "replace": {
+          "En": "Eu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Eu"
+        ],
+        "ifNotPresent": [
+          "Sp"
+        ],
+        "replace": {
+          "Eu": "Sp"
+        }
+      },
+      {
+        "ifPresent": [
+          "Gi"
+        ],
+        "ifNotPresent": [
+          "Sm"
+        ],
+        "replace": {
+          "Gi": "Sm"
+        }
+      },
+      {
+        "ifPresent": [
+          "Je"
+        ],
+        "ifNotPresent": [
+          "Sn"
+        ],
+        "replace": {
+          "Je": "Sn"
+        }
+      },
+      {
+        "ifPresent": [
+          "La"
+        ],
+        "ifNotPresent": [
+          "Fo"
+        ],
+        "replace": {
+          "La": "Fo"
+        }
+      },
+      {
+        "ifPresent": [
+          "Mu"
+        ],
+        "ifNotPresent": [
+          "Se"
+        ],
+        "replace": {
+          "Mu": "Se"
+        }
+      },
+      {
+        "ifPresent": [
+          "Pa"
+        ],
+        "ifNotPresent": [
+          "Ca"
+        ],
+        "replace": {
+          "Pa": "Ca"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sh"
+        ],
+        "ifNotPresent": [
+          "Fc"
+        ],
+        "replace": {
+          "Sh": "Fc"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sn"
+        ],
+        "ifNotPresent": [
+          "Tt"
+        ],
+        "replace": {
+          "Sn": "Tt"
+        }
+      }
+    ],
+    "Donut": [
+      {
+        "ifPresent": [
+          "Ag"
+        ],
+        "ifNotPresent": [
+          "Sl"
+        ],
+        "replace": {
+          "Ag": "Sl"
+        }
+      },
+      {
+        "ifPresent": [
+          "Ba"
+        ],
+        "ifNotPresent": [
+          "Sn"
+        ],
+        "replace": {
+          "Ba": "Sn"
+        }
+      },
+      {
+        "ifPresent": [
+          "Cd"
+        ],
+        "ifNotPresent": [
+          "Ex"
+        ],
+        "replace": {
+          "Cd": "Ex"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fc"
+        ],
+        "ifNotPresent": [
+          "Eu"
+        ],
+        "replace": {
+          "Fc": "Eu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Je"
+        ],
+        "ifNotPresent": [
+          "Gi"
+        ],
+        "replace": {
+          "Je": "Gi"
+        }
+      },
+      {
+        "ifPresent": [
+          "Mu"
+        ],
+        "ifNotPresent": [
+          "Ca"
+        ],
+        "replace": {
+          "Mu": "Ca"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sh"
+        ],
+        "ifNotPresent": [
+          "En"
+        ],
+        "replace": {
+          "Sh": "En"
+        }
+      }
+    ],
+    "Energy Drink": [
+      {
+        "ifPresent": [
+          "Di"
+        ],
+        "ifNotPresent": [
+          "El"
+        ],
+        "replace": {
+          "Di": "El"
+        }
+      },
+      {
+        "ifPresent": [
+          "Eu"
+        ],
+        "ifNotPresent": [
+          "En"
+        ],
+        "replace": {
+          "Eu": "En"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fc"
+        ],
+        "ifNotPresent": [
+          "Sh"
+        ],
+        "replace": {
+          "Fc": "Sh"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fo"
+        ],
+        "ifNotPresent": [
+          "La"
+        ],
+        "replace": {
+          "Fo": "La"
+        }
+      },
+      {
+        "ifPresent": [
+          "Gl"
+        ],
+        "ifNotPresent": [
+          "Di"
+        ],
+        "replace": {
+          "Gl": "Di"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sc"
+        ],
+        "ifNotPresent": [
+          "Ba"
+        ],
+        "replace": {
+          "Sc": "Ba"
+        }
+      },
+      {
+        "ifPresent": [
+          "Se"
+        ],
+        "ifNotPresent": [
+          "Mu"
+        ],
+        "replace": {
+          "Se": "Mu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sp"
+        ],
+        "ifNotPresent": [
+          "Eu"
+        ],
+        "replace": {
+          "Sp": "Eu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Tt"
+        ],
+        "ifNotPresent": [
+          "Sn"
+        ],
+        "replace": {
+          "Tt": "Sn"
+        }
+      }
+    ],
+    "Mouth Wash": [
+      {
+        "ifPresent": [
+          "Ca"
+        ],
+        "ifNotPresent": [
+          "Ag"
+        ],
+        "replace": {
+          "Ca": "Ag"
+        }
+      },
+      {
+        "ifPresent": [
+          "Cd"
+        ],
+        "ifNotPresent": [
+          "Sn"
+        ],
+        "replace": {
+          "Cd": "Sn"
+        }
+      },
+      {
+        "ifPresent": [
+          "Ex"
+        ],
+        "ifNotPresent": [
+          "Se"
+        ],
+        "replace": {
+          "Ex": "Se"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fc"
+        ],
+        "ifNotPresent": [
+          "Je"
+        ],
+        "replace": {
+          "Fc": "Je"
+        }
+      }
+    ],
+    "Motor Oil": [
+      {
+        "ifPresent": [
+          "En"
+        ],
+        "ifNotPresent": [
+          "Mu"
+        ],
+        "replace": {
+          "En": "Mu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Eu"
+        ],
+        "ifNotPresent": [
+          "Se"
+        ],
+        "replace": {
+          "Eu": "Se"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fo"
+        ],
+        "ifNotPresent": [
+          "To"
+        ],
+        "replace": {
+          "Fo": "To"
+        }
+      },
+      {
+        "ifPresent": [
+          "Mu"
+        ],
+        "ifNotPresent": [
+          "Sc"
+        ],
+        "replace": {
+          "Mu": "Sc"
+        }
+      },
+      {
+        "ifPresent": [
+          "Pa"
+        ],
+        "ifNotPresent": [
+          "Ag"
+        ],
+        "replace": {
+          "Pa": "Ag"
+        }
+      }
+    ],
+    "Banana": [
+      {
+        "ifPresent": [
+          "Ca"
+        ],
+        "ifNotPresent": [
+          "Sn"
+        ],
+        "replace": {
+          "Ca": "Sn"
+        }
+      },
+      {
+        "ifPresent": [
+          "Cy"
+        ],
+        "ifNotPresent": [
+          "En"
+        ],
+        "replace": {
+          "Cy": "En"
+        }
+      },
+      {
+        "ifPresent": [
+          "Di"
+        ],
+        "ifNotPresent": [
+          "Fc"
+        ],
+        "replace": {
+          "Di": "Fc"
+        }
+      },
+      {
+        "ifPresent": [
+          "En"
+        ],
+        "ifNotPresent": [
+          "Tp"
+        ],
+        "replace": {
+          "En": "Tp"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fc"
+        ],
+        "ifNotPresent": [
+          "Si"
+        ],
+        "replace": {
+          "Fc": "Si"
+        }
+      },
+      {
+        "ifPresent": [
+          "Lf"
+        ],
+        "ifNotPresent": [
+          "Re"
+        ],
+        "replace": {
+          "Lf": "Re"
+        }
+      },
+      {
+        "ifPresent": [
+          "Pa"
+        ],
+        "ifNotPresent": [
+          "Je"
+        ],
+        "replace": {
+          "Pa": "Je"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sm"
+        ],
+        "ifNotPresent": [
+          "Ag"
+        ],
+        "replace": {
+          "Sm": "Ag"
+        }
+      },
+      {
+        "ifPresent": [
+          "To"
+        ],
+        "ifNotPresent": [
+          "Sm"
+        ],
+        "replace": {
+          "To": "Sm"
+        }
+      }
+    ],
+    "Chili": [
+      {
+        "ifPresent": [
+          "Ag"
+        ],
+        "ifNotPresent": [
+          "Tt"
+        ],
+        "replace": {
+          "Ag": "Tt"
+        }
+      },
+      {
+        "ifPresent": [
+          "At"
+        ],
+        "ifNotPresent": [
+          "Eu"
+        ],
+        "replace": {
+          "At": "Eu"
+        }
+      },
+      {
+        "ifPresent": [
+          "La"
+        ],
+        "ifNotPresent": [
+          "Lf"
+        ],
+        "replace": {
+          "La": "Lf"
+        }
+      },
+      {
+        "ifPresent": [
+          "Mu"
+        ],
+        "ifNotPresent": [
+          "To"
+        ],
+        "replace": {
+          "Mu": "To"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sh"
+        ],
+        "ifNotPresent": [
+          "Re"
+        ],
+        "replace": {
+          "Sh": "Re"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sn"
+        ],
+        "ifNotPresent": [
+          "Be"
+        ],
+        "replace": {
+          "Sn": "Be"
+        }
+      }
+    ],
+    "Iodine": [
+      {
+        "ifPresent": [
+          "Ca"
+        ],
+        "ifNotPresent": [
+          "Ba"
+        ],
+        "replace": {
+          "Ca": "Ba"
+        }
+      },
+      {
+        "ifPresent": [
+          "Cd"
+        ],
+        "ifNotPresent": [
+          "Gi"
+        ],
+        "replace": {
+          "Cd": "Gi"
+        }
+      },
+      {
+        "ifPresent": [
+          "Eu"
+        ],
+        "ifNotPresent": [
+          "Si"
+        ],
+        "replace": {
+          "Eu": "Si"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fo"
+        ],
+        "ifNotPresent": [
+          "Pa"
+        ],
+        "replace": {
+          "Fo": "Pa"
+        }
+      },
+      {
+        "ifPresent": [
+          "Re"
+        ],
+        "ifNotPresent": [
+          "Tp"
+        ],
+        "replace": {
+          "Re": "Tp"
+        }
+      },
+      {
+        "ifPresent": [
+          "To"
+        ],
+        "ifNotPresent": [
+          "Sn"
+        ],
+        "replace": {
+          "To": "Sn"
+        }
+      }
+    ],
+    "Paracetamol": [
+      {
+        "ifPresent": [
+          "Ca"
+        ],
+        "ifNotPresent": [
+          "Sl"
+        ],
+        "replace": {
+          "Ca": "Sl"
+        }
+      },
+      {
+        "ifPresent": [
+          "El"
+        ],
+        "ifNotPresent": [
+          "At"
+        ],
+        "replace": {
+          "El": "At"
+        }
+      },
+      {
+        "ifPresent": [
+          "En"
+        ],
+        "ifNotPresent": [
+          "Pa"
+        ],
+        "replace": {
+          "En": "Pa"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fc"
+        ],
+        "ifNotPresent": [
+          "Gi"
+        ],
+        "replace": {
+          "Fc": "Gi"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fo"
+        ],
+        "ifNotPresent": [
+          "Ca"
+        ],
+        "replace": {
+          "Fo": "Ca"
+        }
+      },
+      {
+        "ifPresent": [
+          "Gl"
+        ],
+        "ifNotPresent": [
+          "To"
+        ],
+        "replace": {
+          "Gl": "To"
+        }
+      },
+      {
+        "ifPresent": [
+          "Mu"
+        ],
+        "ifNotPresent": [
+          "Ag"
+        ],
+        "replace": {
+          "Mu": "Ag"
+        }
+      },
+      {
+        "ifPresent": [
+          "Pa"
+        ],
+        "ifNotPresent": [
+          "Ba"
+        ],
+        "replace": {
+          "Pa": "Ba"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sp"
+        ],
+        "ifNotPresent": [
+          "Be"
+        ],
+        "replace": {
+          "Sp": "Be"
+        }
+      },
+      {
+        "ifPresent": [
+          "To"
+        ],
+        "ifNotPresent": [
+          "Tt"
+        ],
+        "replace": {
+          "To": "Tt"
+        }
+      }
+    ],
+    "Viagor": [
+      {
+        "ifPresent": [
+          "At"
+        ],
+        "ifNotPresent": [
+          "Sn"
+        ],
+        "replace": {
+          "At": "Sn"
+        }
+      },
+      {
+        "ifPresent": [
+          "Di"
+        ],
+        "ifNotPresent": [
+          "To"
+        ],
+        "replace": {
+          "Di": "To"
+        }
+      },
+      {
+        "ifPresent": [
+          "Eu"
+        ],
+        "ifNotPresent": [
+          "Be"
+        ],
+        "replace": {
+          "Eu": "Be"
+        }
+      },
+      {
+        "ifPresent": [
+          "La"
+        ],
+        "ifNotPresent": [
+          "Ca"
+        ],
+        "replace": {
+          "La": "Ca"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sh"
+        ],
+        "ifNotPresent": [
+          "Gi"
+        ],
+        "replace": {
+          "Sh": "Gi"
+        }
+      }
+    ],
+    "Horse Semen": [
+      {
+        "ifPresent": [
+          "Ag"
+        ],
+        "ifNotPresent": [
+          "Ca"
+        ],
+        "replace": {
+          "Ag": "Ca"
+        }
+      },
+      {
+        "ifPresent": [
+          "Gi"
+        ],
+        "ifNotPresent": [
+          "Re"
+        ],
+        "replace": {
+          "Gi": "Re"
+        }
+      },
+      {
+        "ifPresent": [
+          "Si"
+        ],
+        "ifNotPresent": [
+          "En"
+        ],
+        "replace": {
+          "Si": "En"
+        }
+      },
+      {
+        "ifPresent": [
+          "Tp"
+        ],
+        "ifNotPresent": [
+          "El"
+        ],
+        "replace": {
+          "Tp": "El"
+        }
+      }
+    ],
+    "Mega Bean": [
+      {
+        "ifPresent": [
+          "At"
+        ],
+        "ifNotPresent": [
+          "La"
+        ],
+        "replace": {
+          "At": "La"
+        }
+      },
+      {
+        "ifPresent": [
+          "Ca"
+        ],
+        "ifNotPresent": [
+          "Gl"
+        ],
+        "replace": {
+          "Ca": "Gl"
+        }
+      },
+      {
+        "ifPresent": [
+          "En"
+        ],
+        "ifNotPresent": [
+          "Cy"
+        ],
+        "replace": {
+          "En": "Cy"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fc"
+        ],
+        "ifNotPresent": [
+          "Di"
+        ],
+        "replace": {
+          "Fc": "Di"
+        }
+      },
+      {
+        "ifPresent": [
+          "Je"
+        ],
+        "ifNotPresent": [
+          "Pa"
+        ],
+        "replace": {
+          "Je": "Pa"
+        }
+      },
+      {
+        "ifPresent": [
+          "Si"
+        ],
+        "ifNotPresent": [
+          "Fc"
+        ],
+        "replace": {
+          "Si": "Fc"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sh"
+        ],
+        "ifNotPresent": [
+          "El"
+        ],
+        "replace": {
+          "Sh": "El"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sl"
+        ],
+        "ifNotPresent": [
+          "To"
+        ],
+        "replace": {
+          "Sl": "To"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sn"
+        ],
+        "ifNotPresent": [
+          "Ca"
+        ],
+        "replace": {
+          "Sn": "Ca"
+        }
+      },
+      {
+        "ifPresent": [
+          "Tp"
+        ],
+        "ifNotPresent": [
+          "En"
+        ],
+        "replace": {
+          "Tp": "En"
+        }
+      }
+    ],
+    "Addy": [
+      {
+        "ifPresent": [
+          "Ex"
+        ],
+        "ifNotPresent": [
+          "Eu"
+        ],
+        "replace": {
+          "Ex": "Eu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Fo"
+        ],
+        "ifNotPresent": [
+          "En"
+        ],
+        "replace": {
+          "Fo": "En"
+        }
+      },
+      {
+        "ifPresent": [
+          "Gl"
+        ],
+        "ifNotPresent": [
+          "Re"
+        ],
+        "replace": {
+          "Gl": "Re"
+        }
+      },
+      {
+        "ifPresent": [
+          "Lf"
+        ],
+        "ifNotPresent": [
+          "El"
+        ],
+        "replace": {
+          "Lf": "El"
+        }
+      },
+      {
+        "ifPresent": [
+          "Se"
+        ],
+        "ifNotPresent": [
+          "Gi"
+        ],
+        "replace": {
+          "Se": "Gi"
+        }
+      }
+    ],
+    "Battery": [
+      {
+        "ifPresent": [
+          "Cy"
+        ],
+        "ifNotPresent": [
+          "Gl"
+        ],
+        "replace": {
+          "Cy": "Gl"
+        }
+      },
+      {
+        "ifPresent": [
+          "El"
+        ],
+        "ifNotPresent": [
+          "Eu"
+        ],
+        "replace": {
+          "El": "Eu"
+        }
+      },
+      {
+        "ifPresent": [
+          "Eu"
+        ],
+        "ifNotPresent": [
+          "Zo"
+        ],
+        "replace": {
+          "Eu": "Zo"
+        }
+      },
+      {
+        "ifPresent": [
+          "La"
+        ],
+        "ifNotPresent": [
+          "Cd"
+        ],
+        "replace": {
+          "La": "Cd"
+        }
+      },
+      {
+        "ifPresent": [
+          "Mu"
+        ],
+        "ifNotPresent": [
+          "Tt"
+        ],
+        "replace": {
+          "Mu": "Tt"
+        }
+      },
+      {
+        "ifPresent": [
+          "Sh"
+        ],
+        "ifNotPresent": [
+          "Mu"
+        ],
+        "replace": {
+          "Sh": "Mu"
+        }
+      }
+    ]
+  },
+  "notes": [
+    "This official mixer source currently defines 34 effect codes. Helper retains its additional legacy Lethal entry separately because it is not exported by this mixer package."
+  ]
+}

@@ -53,8 +53,8 @@ function renderCatalog(){
   }
   if(kind==="effects"){
     $c("#catalogList").innerHTML=list.map(x=>{
-      const src=x.icon_url||x.icon?.url||"";
-      return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-effect'><span>Price ×</span><b>"+Number(x.price_multiplier||0).toFixed(3)+"</b></div><div class='catalog-meta'>"+esc(x.customer_count||0)+" zákazníků · tier "+esc(x.rating_band||x.tier||"—")+"</div><div class='catalog-tags'><span class='catalog-tag "+(src?"ok":"pending")+"'>"+esc(src?"ověřená ikona":"ikona se ověřuje")+"</span></div><div class='catalog-source'>"+esc(x.source_page||"")+"</div></div></article>";
+      const src=x.icon_url||x.icon?.local_path||x.icon?.url||"";
+      return "<article class='catalog-card'><div class='catalog-icon'><span class='effect-color-dot' style='--effect-color:"+esc(x.display_color||"transparent")+"'></span></div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-effect'><span>Price ×</span><b>"+Number(x.price_multiplier||0).toFixed(3)+"</b></div><div class='catalog-meta'>"+esc(x.customer_count||0)+" zákazníků · tier "+esc(x.rating_band||x.tier||"—")+"</div><div class='catalog-tags'><span class='catalog-tag ok'>IN-GAME COLOR VERIFIED</span><span class='catalog-tag pending'>SAMOSTATNÁ IKONA NENÍ VE ZDROJÍCH</span></div><div class='catalog-source'>"+esc(x.source_page||"")+"</div></div></article>";
     }).join("")||"<div class='empty'>Žádný efekt neodpovídá hledání.</div>";
     return;
   }

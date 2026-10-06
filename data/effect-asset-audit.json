@@ -1,0 +1,222 @@
+{
+  "schema_version": 2,
+  "checked_at": "2026-10-06T08:48:32.259379+00:00",
+  "expected_count": 35,
+  "verified_count": 0,
+  "missing_count": 35,
+  "verified": [],
+  "missing": [
+    {
+      "id": "shrinking",
+      "name": "Shrinking",
+      "source_page": "https://schedule1-lab.com/wiki/effects/shrinking",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "zombifying",
+      "name": "Zombifying",
+      "source_page": "https://schedule1-lab.com/wiki/effects/zombifying",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "cyclopean",
+      "name": "Cyclopean",
+      "source_page": "https://schedule1-lab.com/wiki/effects/cyclopean",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "anti-gravity",
+      "name": "Anti-Gravity",
+      "source_page": "https://schedule1-lab.com/wiki/effects/anti-gravity",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "long-faced",
+      "name": "Long Faced",
+      "source_page": "https://schedule1-lab.com/wiki/effects/long-faced",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "electrifying",
+      "name": "Electrifying",
+      "source_page": "https://schedule1-lab.com/wiki/effects/electrifying",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "glowing",
+      "name": "Glowing",
+      "source_page": "https://schedule1-lab.com/wiki/effects/glowing",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "tropic-thunder",
+      "name": "Tropic Thunder",
+      "source_page": "https://schedule1-lab.com/wiki/effects/tropic-thunder",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "thought-provoking",
+      "name": "Thought-Provoking",
+      "source_page": "https://schedule1-lab.com/wiki/effects/thought-provoking",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "jennerising",
+      "name": "Jennerising",
+      "source_page": "https://schedule1-lab.com/wiki/effects/jennerising",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "bright-eyed",
+      "name": "Bright-Eyed",
+      "source_page": "https://schedule1-lab.com/wiki/effects/bright-eyed",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy",
+      "source_page": "https://schedule1-lab.com/wiki/effects/spicy",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "foggy",
+      "name": "Foggy",
+      "source_page": "https://schedule1-lab.com/wiki/effects/foggy",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "slippery",
+      "name": "Slippery",
+      "source_page": "https://schedule1-lab.com/wiki/effects/slippery",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "athletic",
+      "name": "Athletic",
+      "source_page": "https://schedule1-lab.com/wiki/effects/athletic",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "balding",
+      "name": "Balding",
+      "source_page": "https://schedule1-lab.com/wiki/effects/balding",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "calorie-dense",
+      "name": "Calorie-Dense",
+      "source_page": "https://schedule1-lab.com/wiki/effects/calorie-dense",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "sedating",
+      "name": "Sedating",
+      "source_page": "https://schedule1-lab.com/wiki/effects/sedating",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "sneaky",
+      "name": "Sneaky",
+      "source_page": "https://schedule1-lab.com/wiki/effects/sneaky",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "energizing",
+      "name": "Energizing",
+      "source_page": "https://schedule1-lab.com/wiki/effects/energizing",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "gingeritis",
+      "name": "Gingeritis",
+      "source_page": "https://schedule1-lab.com/wiki/effects/gingeritis",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "euphoric",
+      "name": "Euphoric",
+      "source_page": "https://schedule1-lab.com/wiki/effects/euphoric",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "focused",
+      "name": "Focused",
+      "source_page": "https://schedule1-lab.com/wiki/effects/focused",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "refreshing",
+      "name": "Refreshing",
+      "source_page": "https://schedule1-lab.com/wiki/effects/refreshing",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "munchies",
+      "name": "Munchies",
+      "source_page": "https://schedule1-lab.com/wiki/effects/munchies",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "calming",
+      "name": "Calming",
+      "source_page": "https://schedule1-lab.com/wiki/effects/calming",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "disorienting",
+      "name": "Disorienting",
+      "source_page": "https://schedule1-lab.com/wiki/effects/disorienting",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "explosive",
+      "name": "Explosive",
+      "source_page": "https://schedule1-lab.com/wiki/effects/explosive",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "laxative",
+      "name": "Laxative",
+      "source_page": "https://schedule1-lab.com/wiki/effects/laxative",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "lethal",
+      "name": "Lethal",
+      "source_page": "https://schedule1-lab.com/wiki/effects/lethal",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "paranoia",
+      "name": "Paranoia",
+      "source_page": "https://schedule1-lab.com/wiki/effects/paranoia",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "schizophrenic",
+      "name": "Schizophrenia",
+      "source_page": "https://schedule1-lab.com/wiki/effects/schizophrenic",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "seizure-inducing",
+      "name": "Seizure-Inducing",
+      "source_page": "https://schedule1-lab.com/wiki/effects/seizure-inducing",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "smelly",
+      "name": "Smelly",
+      "source_page": "https://schedule1-lab.com/wiki/effects/smelly",
+      "reason": "No effect-specific asset candidate passed validation"
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "source_page": "https://schedule1-lab.com/wiki/effects/toxic",
+      "reason": "No effect-specific asset candidate passed validation"
+    }
+  ],
+  "sha256": {},
+  "policy": "Exact effect-specific asset only. Generic page images, logos, wordmarks, shared placeholders and duplicate bytes are rejected."
+}

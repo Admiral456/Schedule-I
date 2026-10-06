@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-10-06",
+  "sources": [
+    {
+      "name": "Schedule1 Tools Mixer",
+      "url": "https://schedule1.tools/mixer",
+      "role": "live mix output and share hashes",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule1 Tools How It Works",
+      "url": "https://schedule1.tools/how-it-works",
+      "role": "algorithm, 16 ingredients, 34 mixing effects, 114 rules",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule1 Tools open-source Mixer",
+      "url": "https://github.com/Schedule1-Tools/mixer",
+      "role": "published code/data baseline",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule1 Lab",
+      "url": "https://schedule1-lab.com/wiki/effects",
+      "role": "35-effect catalog and current customer-effect information",
+      "status": "verified"
+    },
+    {
+      "name": "Steam community mixing guide",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3648818766",
+      "role": "cross-check for ingredients, effects, mixing rules, seeded mixing",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule1game.net calculator",
+      "url": "https://www.schedule1game.net/schedule-1-calculator",
+      "role": "independent transformation-rule cross-check",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule 1 Wiki image inventory",
+      "url": "https://github.com/kxcsgit/schedule1-wiki/blob/8999cccc9451d8d7e37731b4bd3653c495e28986/public/images/wiki_images.json",
+      "role": "public exact visual assets where individually named",
+      "status": "verified"
+    },
+    {
+      "name": "User in-game Gas-Mart screenshot",
+      "url": null,
+      "role": "visual verification of all 16 ingredient icons",
+      "status": "verified"
+    }
+  ],
+  "findings": [
+    "16/16 mixing ingredients confirmed against the supplied in-game Gas-Mart screenshot and current Schedule1 Tools ingredient list.",
+    "35/35 effect names are represented in Helper; Schedule1 Tools open-source Mixer currently exports 34 effect codes, while Helper keeps Lethal separately.",
+    "114 standard transformation rules are documented by Schedule1 Tools.",
+    "Schedule1 Tools /mixes is client-rendered and currently exposes 0 mix records to the crawler, so the full 77-record catalog cannot be safely bulk-extracted from that page in this environment.",
+    "Individual Schedule1 Tools mixer pages can be verified and are treated as the authority for stored community mix outputs.",
+    "Some community mix outputs differ from the older open-source Mixer snapshot; Helper therefore records live-page verification separately from derived standard calculations.",
+    "Seeded Mixing is save-specific. The tool can import save JSON and infer recorded rules, but a seed value alone does not reconstruct the already-recorded per-save interaction table."
+  ],
+  "asset_policy": "Never invent an exact icon. Use a named public asset only when its source identifies the effect/item; otherwise use the verified in-game color/name treatment.",
+  "coverage": {
+    "ingredients": {
+      "total": 16,
+      "verified_against_user_screenshot": 16
+    },
+    "effects": {
+      "total": 35,
+      "known_in_helper": 35,
+      "standalone_exact_visual_assets_verified": 7
+    },
+    "community_mixes": {
+      "target": 77,
+      "stored": 28,
+      "live_verified": 27,
+      "pending": 49
+    },
+    "standard_mixing": {
+      "products": 7,
+      "ingredients": 16,
+      "effects": 34,
+      "rules": 114,
+      "max_effects": 8
+    },
+    "seeded_mixing": {
+      "mode": "save-specific",
+      "save_import_supported": true,
+      "automatic_from_seed_alone": false,
+      "reason": "The public research source documents per-save rule generation and persistence; previously triggered rules must be read from the actual save or observed in-game."
+    }
+  }
+}
