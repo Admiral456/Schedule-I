@@ -26,6 +26,18 @@ if (await page.locator("#productList .s1-product-card").count() !== 49) throw ne
 await page.locator('[data-tab="recipes"]').first().click();
 await page.waitForFunction(() => document.querySelectorAll("#recipeList .recipe-card").length >= 52);
 if (await page.locator("#recipeList .recipe-card").count() < 52) throw new Error("Recipe Finder did not include products");
+await page.waitForSelector("#s1MixTools");
+const mixSelects = page.locator("#s1MixSlots select");
+const mixOrder = ["Banana","Cuke","Horse Semen","Mega Bean"];
+for (let i = 0; i < mixOrder.length; i++) await mixSelects.nth(i).selectOption({label: mixOrder[i]});
+await page.waitForFunction(() => /\$206/.test(document.querySelector("#s1MixCalcResult")?.innerText||"") && /\$20/.test(document.querySelector("#s1MixCalcResult")?.innerText||"") && /\$186/.test(document.querySelector("#s1MixCalcResult")?.innerText||""));
+const mixText = await page.locator("#s1MixCalcResult").innerText();
+for (const effect of ["Electrifying","Cyclopean","Long Faced","Foggy"]) if (!mixText.includes(effect)) throw new Error("Mix engine missing expected effect: " + effect);
+const seededMode = page.locator("#s1SeededMode");
+await seededMode.selectOption("seeded");
+if (!(await page.locator("#s1RunReverse").isDisabled())) throw new Error("Reverse Finder should be disabled in Seeded mode");
+await seededMode.selectOption("standard");
+if (await page.locator("#s1RunReverse").isDisabled()) throw new Error("Reverse Finder did not return in Standard mode");
 
 await page.locator("#recipeSearch").fill("fiona");
 if (await page.locator("#recipeList .recipe-card").count() === 0) {
