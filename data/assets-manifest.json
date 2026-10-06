@@ -72,8 +72,8 @@
     "expected_count": 35,
     "verified_count": 0,
     "pending_count": 35,
-    "last_sync": "2026-10-06T06:56:38.800003+00:00",
-    "source": "https://github.com/Schedule1-Tools/mixer",
+    "last_sync": "2026-10-06T07:21:51.842484+00:00",
+    "source": "https://schedule1-lab.com/wiki/effects",
     "policy": "exact-effect-specific-asset-only",
     "official_mixer_effect_count": 34,
     "helper_legacy_effect_count": 1
