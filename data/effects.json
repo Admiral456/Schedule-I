@@ -24,7 +24,8 @@
       "addiction": 0.336,
       "description": "Shrinks the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#B6FEDA"
     },
     {
       "id": "zombifying",
@@ -46,7 +47,8 @@
       "addiction": 0.598,
       "description": "Transforms the user into a zombie, causing them to walk with a limp and seek brains.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#71AB5D"
     },
     {
       "id": "cyclopean",
@@ -68,7 +70,8 @@
       "addiction": 0.1,
       "description": "Causes the user to see with a single eye in the center of their forehead.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FEC174"
     },
     {
       "id": "anti-gravity",
@@ -90,7 +93,8 @@
       "addiction": 0.611,
       "description": "Weakens the effects of gravity on the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#235BCD"
     },
     {
       "id": "long-faced",
@@ -112,7 +116,8 @@
       "addiction": 0.607,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FED961"
     },
     {
       "id": "electrifying",
@@ -134,7 +139,8 @@
       "addiction": 0.235,
       "description": "Electrifies the user, causing arcs of electricity to be emitted, zapping anyone nearby.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#55C8FD"
     },
     {
       "id": "glowing",
@@ -156,7 +162,8 @@
       "addiction": 0.472,
       "description": "Imbues a bioluminescence on the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#85E459"
     },
     {
       "id": "tropic-thunder",
@@ -178,7 +185,8 @@
       "addiction": 0.803,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FE9F47"
     },
     {
       "id": "thought-provoking",
@@ -200,7 +208,8 @@
       "addiction": 0.37,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FEA0CB"
     },
     {
       "id": "jennerising",
@@ -222,7 +231,8 @@
       "addiction": 0.343,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FE8DF8"
     },
     {
       "id": "bright-eyed",
@@ -244,7 +254,8 @@
       "addiction": 0.2,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#BEF7FD"
     },
     {
       "id": "spicy",
@@ -266,7 +277,8 @@
       "addiction": 0.665,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FE6B4C"
     },
     {
       "id": "foggy",
@@ -288,7 +300,8 @@
       "addiction": 0.1,
       "description": "Causes a cloud of fog to form around the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#B0B0AF"
     },
     {
       "id": "slippery",
@@ -310,7 +323,8 @@
       "addiction": 0.309,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#A2DFFD"
     },
     {
       "id": "athletic",
@@ -332,7 +346,8 @@
       "addiction": 0.607,
       "description": "After consumption, the user is only able to run.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#75C8FD"
     },
     {
       "id": "balding",
@@ -354,7 +369,8 @@
       "addiction": 0,
       "description": "Causes balding in the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#C79232"
     },
     {
       "id": "calorie-dense",
@@ -376,7 +392,8 @@
       "addiction": 0.1,
       "description": "Results in immediate weight gain.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FE84F4"
     },
     {
       "id": "sedating",
@@ -398,7 +415,8 @@
       "addiction": 0,
       "description": "Induces heavy sleepiness in the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#6B5FD8"
     },
     {
       "id": "sneaky",
@@ -420,7 +438,8 @@
       "addiction": 0.327,
       "description": "Silences the users foot steps.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#7B7B7B"
     },
     {
       "id": "energizing",
@@ -442,7 +461,8 @@
       "addiction": 0.34,
       "description": "Increases the users energy.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#9AFE6D"
     },
     {
       "id": "gingeritis",
@@ -464,7 +484,8 @@
       "addiction": 0,
       "description": "After consumption, the user will become a ginger.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FE8829"
     },
     {
       "id": "euphoric",
@@ -486,7 +507,8 @@
       "addiction": 0.235,
       "description": "Induces mild euphoria in the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FEEA74"
     },
     {
       "id": "focused",
@@ -508,7 +530,8 @@
       "addiction": 0.104,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#75F1FD"
     },
     {
       "id": "refreshing",
@@ -530,7 +553,8 @@
       "addiction": 0.104,
       "description": "Slightly energizes the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#B2FE98"
     },
     {
       "id": "munchies",
@@ -552,7 +576,8 @@
       "addiction": 0.096,
       "description": "Makes the user hungry.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#C96E57"
     },
     {
       "id": "calming",
@@ -574,7 +599,8 @@
       "addiction": 0,
       "description": "Induces a slight calmness in the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FED09B"
     },
     {
       "id": "disorienting",
@@ -596,7 +622,8 @@
       "addiction": 0,
       "description": "Causes unpredictable movement and slight visual impairment in the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#D16546"
     },
     {
       "id": "explosive",
@@ -618,7 +645,8 @@
       "addiction": 0,
       "description": "Causes the user to explode shortly after consumption.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FE4B40"
     },
     {
       "id": "laxative",
@@ -640,7 +668,8 @@
       "addiction": 0.1,
       "description": "Causes the user to fart and shit uncontrollably.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#763C25"
     },
     {
       "id": "lethal",
@@ -658,7 +687,8 @@
         "synced_at": "2026-10-06T07:21:51.842484+00:00"
       },
       "official_mixer_code": null,
-      "source": "Helper legacy effect; not exported by current Schedule1 Tools mixer package"
+      "source": "Helper legacy effect; not exported by current Schedule1 Tools mixer package",
+      "display_color": "#AB2232"
     },
     {
       "id": "paranoia",
@@ -680,7 +710,8 @@
       "addiction": 0,
       "description": "Induces paranoia in the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#C46762"
     },
     {
       "id": "schizophrenic",
@@ -702,7 +733,8 @@
       "addiction": 0,
       "description": "Induces hallucinations and unpredictable behaviour in the user.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#645AFD"
     },
     {
       "id": "seizure-inducing",
@@ -724,7 +756,8 @@
       "addiction": 0,
       "description": "Consumption results in an instant seizure.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#FEE900"
     },
     {
       "id": "smelly",
@@ -746,7 +779,8 @@
       "addiction": 0,
       "description": "Makes the user unbearably smelly.",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#7DBC31"
     },
     {
       "id": "toxic",
@@ -768,11 +802,14 @@
       "addiction": 0,
       "description": "",
       "source": "Schedule1 Tools open-source Mixer",
-      "source_repository": "https://github.com/Schedule1-Tools/mixer"
+      "source_repository": "https://github.com/Schedule1-Tools/mixer",
+      "display_color": "#5F9A31"
     }
   ],
   "updated_at": "2026-10-06T07:21:51.842484+00:00",
   "pending_count": 35,
   "official_source": "https://github.com/Schedule1-Tools/mixer",
-  "official_effect_count": 34
+  "official_effect_count": 34,
+  "effect_visual_source": "SFRezx/Schedule-1-Recipe-List-GUI effectColors, cross-checked against Steam in-game color rendering guides",
+  "effect_visual_source_url": "https://github.com/SFRezx/Schedule-1-Recipe-List-GUI/blob/7c49dd29048a83bbbda67e1748b7ca9ea83cc9d9/RecipeListGui/RecipeListGuiClass.cs"
 }
