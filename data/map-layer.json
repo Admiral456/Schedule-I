@@ -162,7 +162,9 @@
       "local_count": 66,
       "verified_external_pins": 62,
       "unverified_local": 4,
-      "source_url": "https://wand.com/hi/maps/schedule-i/hyland-point/checklist/npcs/customers"
+      "source_url": "https://wand.com/hi/maps/schedule-i/hyland-point/checklist/npcs/customers",
+      "coordinate_source": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+      "coordinate_count": 66
     },
     "dealers": {
       "local_count": 6,
@@ -173,7 +175,7 @@
       "source_url": "https://wand.com/maps/schedule-i/hyland-point"
     },
     "properties": {
-      "local_count": 3,
+      "local_count": 8,
       "source_url": "https://schedule1.io/wiki/properties"
     },
     "businesses": {
