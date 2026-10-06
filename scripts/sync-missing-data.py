@@ -4,7 +4,7 @@ import json, re, sys, hashlib
 from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
-from urllib.parse import urljoin, urlparse, parse_qs, unquote
+from urllib.parse import urljoin, urlparse, parse_qs, unquote, quote
 
 import requests
 from bs4 import BeautifulSoup
