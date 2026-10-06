@@ -39,7 +39,7 @@ function renderCatalog(){
   $c("#catalogSummary").textContent=list.length+" / "+all.length+" položek · ověřené ikony používají publikovaný zdroj; neověřené zůstávají označené";
   if(kind==="ingredients"){
     $c("#catalogList").innerHTML=list.map(x=>{
-      const src=x.icon?.canonical_asset_url||x.icon?.rendered_asset_url||x.icon?.secondary_source_asset_url||"";
+      const src=x.icon?.rendered_asset_url||x.icon?.secondary_source_asset_url||"";
       return "<article class='catalog-card'><div class='catalog-icon'>"+imageMarkup(src,x.name)+"</div><div><div class='catalog-name'>"+esc(x.name)+"</div><div class='catalog-meta'>$"+esc(x.cost)+" · od "+esc(x.unlock_rank)+" · base effect "+esc(x.base_effect||"—")+"</div><div class='catalog-tags'><span class='catalog-tag ok'>"+esc(x.icon?.status||"unknown")+"</span><span class='catalog-tag'>"+esc(x.transformation_count||0)+" transformací</span></div><div class='catalog-source'>"+esc(x.icon?.source_page||"")+"</div></div></article>";
     }).join("")||"<div class='empty'>Žádná surovina neodpovídá hledání.</div>";
     return;
