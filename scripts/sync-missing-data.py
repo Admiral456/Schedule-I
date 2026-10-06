@@ -535,45 +535,37 @@ def parse_jina_community(reader: str) -> list[dict]:
     return recipes
 
 def sync_community_recipes() -> dict:
-    url="https://schedule1-lab.com/community/recipes"
-    reader=get_reader(url)
-    if not reader:
-        raise RuntimeError("Community Recipes reader source could not be fetched")
-    recipes=parse_jina_community(reader)
-    uniq=[]
-    seen=set()
-    for x in recipes:
-        key=(clean(x["name"]).lower(),x["base_product"],tuple(x["ingredients"]))
-        if key in seen: continue
-        seen.add(key); uniq.append(x)
+    """Validate the locally stored Schedule1 Tools mix-hash snapshot.
 
-    print(f"community reader extraction: {len(uniq)} unique recipe cards")
-    if len(uniq)!=77:
-        raise RuntimeError(f"Expected exactly 77 community recipes from reader, got {len(uniq)}")
-
-    for i,x in enumerate(uniq,1):
-        slug=slugify(x["name"])
-        x["id"]=f"community-{i:03d}-{slug[:50]}"
-        x["ingredients"]=list(x["ingredients"])
-        for k in ("cost","sell","profit","asking"):
-            if x.get(k) is not None:
-                x[k]=int(x[k]) if float(x[k]).is_integer() else x[k]
-        if x.get("customers") is not None: x["customers"]=int(x["customers"])
-
-    now=datetime.now(timezone.utc).isoformat()
-    out={
-        "schema_version":4,
-        "source":url,
-        "expected_count":77,
-        "verified_count":77,
-        "status":"complete",
-        "extraction_source":"jina-reader",
-        "snapshot_at":now,
-        "recipes":uniq,
-        "note":"Exactly 77 recipe cards were imported from the published Community Recipes catalog. Card-level ingredients, effects and economics are captured when published."
-    }
-    COMMUNITY_FILE.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
-    return {"expected_count":77,"verified_count":77,"status":"complete","extraction_source":"jina-reader"}
+    The public /mixes page is rendered client-side and the crawler does not expose
+    the complete community collection. Never fabricate the missing records here.
+    """
+    if not COMMUNITY_FILE.exists():
+        raise RuntimeError("Community recipe snapshot file is missing")
+    payload = json.loads(COMMUNITY_FILE.read_text(encoding="utf-8"))
+    recipes = payload.get("recipes") if isinstance(payload.get("recipes"), list) else []
+    unique = []
+    seen = set()
+    for item in recipes:
+        if not isinstance(item, dict):
+            continue
+        h = clean(item.get("mix_hash"))
+        if not h or h in seen:
+            continue
+        seen.add(h)
+        item["source"] = "Schedule1 Tools · verifiable shared mix"
+        item["source_type"] = "community"
+        item["source_url"] = item.get("source_url") or f"https://schedule1.tools/mixer?mix={h}"
+        unique.append(item)
+    payload["recipes"] = unique
+    payload["expected_count"] = 77
+    payload["verified_count"] = len(unique)
+    payload["status"] = "complete" if len(unique) == 77 else "partial"
+    payload["updated_at"] = datetime.now(timezone.utc).isoformat()
+    payload["note"] = ("77/77 community mixes are present." if len(unique) == 77 else
+                        f"{len(unique)}/77 community mix hashes are individually verifiable in the current snapshot. Missing records are intentionally not fabricated because the public /mixes catalog is client-side.")
+    COMMUNITY_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    return {"expected_count":77,"verified_count":len(unique),"status":payload["status"]}
 
 def main():
     effect_audit=sync_effect_icons()
