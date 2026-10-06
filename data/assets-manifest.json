@@ -80,8 +80,9 @@
   },
   "community_recipes": {
     "expected_count": 77,
-    "verified_count": 23,
-    "pending_count": 54,
+    "stored_count": 28,
+    "live_verified_count": 27,
+    "pending_count": 49,
     "source": "https://schedule1.tools/mixes",
     "policy": "Only individually verifiable public mix hashes are imported; pending records are not fabricated."
   }
