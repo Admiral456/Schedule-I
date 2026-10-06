@@ -15,19 +15,17 @@ function applyIngredient(effects,ingredient){
   const original=[...new Set(effects)], originalSet=new Set(original), rules=rule.rules||{};
   let current=[...original], blocked=[];
   for(const source of original){
-    const target=rules[source];
-    if(!target)continue;
+    const target=rules[source]; if(!target)continue;
     if(originalSet.has(target)) blocked.push([source,target]);
     else {
-      const i=current.indexOf(source);
-      if(i>=0)current.splice(i,1);
+      const i=current.indexOf(source); if(i>=0)current.splice(i,1);
       if(!current.includes(target))current.push(target);
     }
   }
-  for(const [source,target] of blocked){
+  for(const pair of blocked){
+    const source=pair[0], target=pair[1];
     if(!current.includes(source)||current.includes(target))continue;
-    const i=current.indexOf(source);
-    if(i>=0)current.splice(i,1);
+    const i=current.indexOf(source); if(i>=0)current.splice(i,1);
     if(!current.includes(target))current.push(target);
   }
   const baseEffect=rule.base_effect;
