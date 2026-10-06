@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "source_page": "https://schedule1.io/wiki/businesses",
-  "source_checked": "2026-10-05",
+  "source_checked": "2026-10-06",
   "verified_count": 4,
   "total_count": 4,
   "businesses": [
@@ -13,7 +13,8 @@
       "icon_status": "verified-image-source",
       "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/d/d8/Laundromat.png/revision/latest?cb=20250403191629",
       "icon_source_page": "https://schedule1.io/wiki/businesses",
-      "icon_source_type": "Fandom published image index"
+      "icon_source_type": "Fandom published image index",
+      "employee_limit": 0
     },
     {
       "id": "business-post-office",
@@ -23,7 +24,8 @@
       "icon_status": "verified-image-source",
       "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/1/1b/Post_Office.png/revision/latest?cb=20250403191618",
       "icon_source_page": "https://schedule1.io/wiki/businesses",
-      "icon_source_type": "Fandom published image index"
+      "icon_source_type": "Fandom published image index",
+      "employee_limit": 0
     },
     {
       "id": "business-car-wash",
@@ -33,7 +35,8 @@
       "icon_status": "verified-image-source",
       "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/e/e2/Car_Wash.png/revision/latest?cb=20250403191640",
       "icon_source_page": "https://schedule1.io/wiki/businesses",
-      "icon_source_type": "Fandom published image index"
+      "icon_source_type": "Fandom published image index",
+      "employee_limit": 0
     },
     {
       "id": "business-taco-ticklers",
@@ -43,7 +46,14 @@
       "icon_status": "verified-image-source",
       "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/f/fc/Taco_Ticklers.png/revision/latest?cb=20250403191654",
       "icon_source_page": "https://schedule1.io/wiki/businesses",
-      "icon_source_type": "Fandom published image index"
+      "icon_source_type": "Fandom published image index",
+      "employee_limit": 0
     }
-  ]
+  ],
+  "sources": [
+    "https://schedule-1.fandom.com/wiki/Ray%27s_Realty",
+    "https://schedule1.io/wiki/businesses",
+    "https://schedule1-lab.com/empire/map"
+  ],
+  "note": "Cross-checked current sources. Four laundering businesses are explicitly identified by name: Laundromat, Post Office, Car Wash and Taco Ticklers. The Lab map page currently shows a business count of 5, but no fifth identifiable business was found in the detailed business sources, so none is invented."
 }
