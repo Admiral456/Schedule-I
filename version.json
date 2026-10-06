@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.20",
+  "version": "2026.10.05.21",
   "updated_at": "2026-10-06",
-  "message": "Audit fixes: real mixing engine, reference recipes, map/entity focus and Supabase security cleanup",
+  "message": "Audit hardening: exact 114-rule mixing engine and clickable map/entity layer",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -75,6 +75,13 @@
     "Globální zákaznický souhrn mapových pinů se počítá dynamicky z aktuálních dat.",
     "Propojení zaměstnanec → místnost → mapa používá společný mapový event; externí cross-origin iframe nelze programově ovládat.",
     "Supabase: odebráno veřejné EXECUTE na interní SECURITY DEFINER trigger/event funkce.",
-    "Supabase: přidány covering indexy na foreign keys shared_notifications."
+    "Supabase: přidány covering indexy na foreign keys shared_notifications.",
+    "Transformační pravidla sjednocena na 114/114 podle aktuální veřejné referenční tabulky.",
+    "Mix engine používá dvě fáze transformací a dovoluje více pravidel aktivovaných jednou ingrediencí.",
+    "Map Data Layer nyní skutečně reaguje na kliknutí na zákazníka, dealera, nemovitost a podnik.",
+    "Vyhledání zaměstnanecké místnosti se pokouší najít odpovídající lokální mapový záznam bez vymýšlení souřadnic.",
+    "Product Book umí dohledat ikonu i přes řetězec navazujících produktových variant.",
+    "Produktové varianty lze uložit a sdílet stejně jako běžné recepty.",
+    "Reverse Finder podporuje až 12 kroků."
   ]
 }
