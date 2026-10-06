@@ -1,42 +1,22 @@
 {
-  "schema_version": 1,
-  "source_page": "https://schedule1.io/wiki/properties",
-  "source_checked": "2026-10-05",
-  "verified_count": 3,
-  "total_count": 3,
+  "schema_version": 2,
+  "source_checked": "2026-10-06",
+  "sources": [
+    "https://schedule-1.fandom.com/wiki/Properties",
+    "https://schedule1.io/wiki/properties",
+    "https://steamcommunity.com/sharedfiles/filedetails/?id=3672513712"
+  ],
+  "verified_count": 8,
+  "total_count": 8,
+  "note": "Eight normal player properties are catalogued here. The hidden Maintenance Office / Throne Room is a sewer location and is not counted among the eight standard player properties.",
   "properties": [
-    {
-      "id": "property-bungalow",
-      "name": "Bungalow",
-      "price": 6000,
-      "loading_bays": 1,
-      "employee_limit": 5,
-      "icon_status": "verified-image-source",
-      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/3/3e/Bungalow.png/revision/latest?cb=20250403012848",
-      "icon_source_page": "https://schedule1.io/wiki/properties",
-      "icon_source_type": "Fandom published image index"
-    },
-    {
-      "id": "property-barn",
-      "name": "The Barn",
-      "price": 25000,
-      "loading_bays": 2,
-      "employee_limit": 10,
-      "icon_status": "verified-image-source",
-      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/f/f8/Barn.png/revision/latest?cb=20250403013220",
-      "icon_source_page": "https://schedule1.io/wiki/properties",
-      "icon_source_type": "Fandom published image index"
-    },
-    {
-      "id": "property-docks-warehouse",
-      "name": "The Docks Warehouse",
-      "price": 50000,
-      "loading_bays": 2,
-      "employee_limit": 10,
-      "icon_status": "verified-image-source",
-      "icon_url": "https://static.wikia.nocookie.net/schedule-1/images/3/39/Docks_Warehouse.jpeg/revision/latest?cb=20250327114351",
-      "icon_source_page": "https://schedule1.io/wiki/properties",
-      "icon_source_type": "Fandom published image index"
-    }
+    {"id":"property-rv","name":"RV","price":0,"currency":"Cash","purchase_method":"Free / temporary","location":"Woods, South-West","size_tiles":32,"loading_bays":0,"employee_limit":0,"note":"Temporary starting property; becomes inaccessible after the opening cash dead drops.","icon_status":"verified-image-source","icon_url":"https://static.wikia.nocookie.net/schedule-1/images/b/b7/RV.png/revision/latest/scale-to-width-down/512?cb=20250425062507","icon_source_page":"https://schedule-1.fandom.com/wiki/Properties"},
+    {"id":"property-motel-room","name":"Motel Room","price":75,"currency":"Cash","purchase_method":"Cash","location":"Northtown","size_tiles":94,"loading_bays":0,"employee_limit":0,"note":"One-time $75 purchase from Donna Martin.","icon_status":"verified-image-source","icon_url":"https://static.wikia.nocookie.net/schedule-1/images/3/3a/Motel%20Room.png/revision/latest/scale-to-width-down/512","icon_source_page":"https://schedule-1.fandom.com/wiki/Motel_Room"},
+    {"id":"property-sweatshop","name":"Sweatshop","price":800,"currency":"Cash","purchase_method":"Cash","location":"Northtown","size_tiles":148,"loading_bays":0,"employee_limit":1,"note":"Purchased from Mrs. Ming above Fat Dragon Chinese Restaurant.","icon_status":"verified-image-source","icon_url":"https://static.wikia.nocookie.net/schedule-1/images/3/3e/Sweatshop.png/revision/latest/scale-to-width-down/512","icon_source_page":"https://schedule-1.fandom.com/wiki/Sweatshop"},
+    {"id":"property-storage-unit","name":"Storage Unit","price":4000,"currency":"Online Balance","purchase_method":"Ray's Realty","location":"Northtown","size_tiles":178,"loading_bays":1,"employee_limit":3,"note":"Also known as Stash & Dash.","icon_status":"verified-image-source","icon_url":"https://static.wikia.nocookie.net/schedule-1/images/7/7c/Storage%20Unit.png/revision/latest/scale-to-width-down/512","icon_source_page":"https://schedule-1.fandom.com/wiki/Storage_Unit"},
+    {"id":"property-bungalow","name":"Bungalow","price":6000,"currency":"Online Balance","purchase_method":"Ray's Realty","location":"Westville","size_tiles":398,"loading_bays":1,"employee_limit":5,"icon_status":"verified-image-source","icon_url":"https://static.wikia.nocookie.net/schedule-1/images/3/3e/Bungalow.png/revision/latest?cb=20250403012848","icon_source_page":"https://schedule1.io/wiki/properties"},
+    {"id":"property-barn","name":"The Barn","price":25000,"currency":"Online Balance","purchase_method":"Ray's Realty","location":"Woods, East","size_tiles":1211,"loading_bays":2,"employee_limit":10,"icon_status":"verified-image-source","icon_url":"https://static.wikia.nocookie.net/schedule-1/images/f/f8/Barn.png/revision/latest?cb=20250403013220","icon_source_page":"https://schedule1.io/wiki/properties"},
+    {"id":"property-docks-warehouse","name":"The Docks Warehouse","price":50000,"currency":"Online Balance","purchase_method":"Ray's Realty","location":"Docks","size_tiles":1429,"loading_bays":2,"employee_limit":12,"note":"Fandom's current property table lists 12 employee slots; schedule1.io's older page lists 10.","icon_status":"verified-image-source","icon_url":"https://static.wikia.nocookie.net/schedule-1/images/3/39/Docks_Warehouse.jpeg/revision/latest?cb=20250327114351","icon_source_page":"https://schedule-1.fandom.com/wiki/Properties"},
+    {"id":"property-hyland-manor","name":"Hyland Manor","price":250000,"currency":"Online Balance","purchase_method":"Ray's Realty","location":"Suburbia","size_tiles":1753,"loading_bays":3,"employee_limit":12,"note":"Available after Finishing the Job.","icon_status":"verified-image-source","icon_url":"https://static.wikia.nocookie.net/schedule-1/images/8/88/Hyland%20Manor.png/revision/latest/scale-to-width-down/512","icon_source_page":"https://schedule-1.fandom.com/wiki/Hyland_Manor"}
   ]
 }
