@@ -1,0 +1,31 @@
+name: Sync Schedule 1 exact assets and community recipes
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["complete-missing-data"]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install parser/image dependencies
+        run: python -m pip install --upgrade requests beautifulsoup4 pillow
+      - name: Sync exact effect assets and 77 community recipes
+        run: python scripts/sync-missing-data.py
+      - name: Commit generated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/effects.json data/assets-manifest.json data/effect-asset-audit.json data/community-recipes.json assets/game/effects
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "data: sync exact effect assets and community recipes"
+          git push
