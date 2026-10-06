@@ -37,6 +37,9 @@ def slugify(name: str) -> str:
 def clean(s: object) -> str:
     return re.sub(r"\s+", " ", str(s or "")).strip()
 
+def norm(s: object) -> str:
+    return clean(s).casefold()
+
 def get(url: str) -> requests.Response | None:
     try:
         r = SESSION.get(url, timeout=25)
