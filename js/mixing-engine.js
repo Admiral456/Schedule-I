@@ -11,15 +11,28 @@ function drugIcon(v){const x=S1_MIX.drugs.find(d=>nm(d.name)===nm(v));return x&&
 function money(v){return '$'+Math.round(Number(v)||0);}
 function uniq(a){return [...new Set(a)];}
 function applyIngredient(effects,ingredient){
-  const rule=ingByName(ingredient); if(!rule)return uniq(effects);
-  const cur=[...effects], rs=rule.rules||{}; let remove=null, add=null;
-  if(rule.name==='Paracetamol'&&cur.includes('Energizing')){remove='Energizing';add=cur.includes('Paranoia')?'Balding':'Paranoia';}
-  else if(rule.name==='Banana'&&cur.includes('Cyclopean')){remove='Cyclopean';add='Thought-Provoking';}
-  else{for(const k of Object.keys(rs)){if(cur.includes(k)){remove=k;add=rs[k];break;}}}
-  if(remove){const i=cur.indexOf(remove);if(i>=0)cur.splice(i,1);if(add&&!cur.includes(add))cur.push(add);}
-  if(rule.name==='Donut'&&cur.includes('Calorie-Dense')){if(!cur.includes('Explosive'))cur.push('Explosive');}
-  else if(rule.base_effect&&!cur.includes(rule.base_effect)&&cur.length<8)cur.push(rule.base_effect);
-  return uniq(cur).slice(0,8);
+  const rule=ingByName(ingredient); if(!rule)return [...new Set(effects)];
+  const original=[...new Set(effects)], originalSet=new Set(original), rules=rule.rules||{};
+  let current=[...original], blocked=[];
+  for(const source of original){
+    const target=rules[source];
+    if(!target)continue;
+    if(originalSet.has(target)) blocked.push([source,target]);
+    else {
+      const i=current.indexOf(source);
+      if(i>=0)current.splice(i,1);
+      if(!current.includes(target))current.push(target);
+    }
+  }
+  for(const [source,target] of blocked){
+    if(!current.includes(source)||current.includes(target))continue;
+    const i=current.indexOf(source);
+    if(i>=0)current.splice(i,1);
+    if(!current.includes(target))current.push(target);
+  }
+  const baseEffect=rule.base_effect;
+  if(baseEffect&&!current.includes(baseEffect)&&current.length<8)current.push(baseEffect);
+  return [...new Set(current)].slice(0,8);
 }
 function calculateMix(baseName,sequence){
   const base=S1_MIX.drugs.find(d=>nm(d.name)===nm(baseName))||S1_MIX.drugs[0]; let effects=uniq(Array.isArray(base&&base.base_effects)?base.base_effects:[]),cost=0,steps=[];
@@ -52,7 +65,7 @@ function runReverse(){const base=qm('#s1MixBase').value||S1_MIX.drugs[0].name,ma
 function bindMixButtons(){qms('.s1-load-mix').forEach(b=>b.onclick=()=>{try{loadCalc(JSON.parse(b.dataset.mix))}catch{}});qms('.s1-save-mix').forEach(b=>b.onclick=()=>{try{const r=JSON.parse(b.dataset.saveMix),x=JSON.parse(localStorage.getItem('schedule1-helper-saved-v2')||'{}');x.recipes=Array.isArray(x.recipes)?x.recipes:[];x.recipes.unshift({key:'recipe:generated:'+Date.now(),name:r.base+' — generated mix',note:r.sequence.join(' → ')+' · '+r.effects.join(', ')+' · profit '+money(r.profit)});localStorage.setItem('schedule1-helper-saved-v2',JSON.stringify(x));document.dispatchEvent(new CustomEvent('s1-saved-updated'));b.textContent='Uloženo';}catch{b.textContent='Chyba';}});}
 function effectChip(e,disabled){return '<label class="s1-effect-chip'+(disabled?' is-disabled':'')+'"><input type="checkbox" value="'+em(e)+'"'+(disabled?' disabled':'')+'><span>'+em(e)+'</span></label>';}
 function setupUI(){const v=qm('#view-recipes');if(!v||qm('#s1MixTools'))return;const bases=S1_MIX.drugs.map(d=>'<option value="'+em(d.name)+'">'+em(d.name)+'</option>').join(''),opts='<option value="">— prázdný slot —</option>'+S1_MIX.ingredients.map(i=>'<option value="'+em(i.name)+'">'+em(i.name)+' · $'+em(i.cost)+'</option>').join(''),slots=Array.from({length:8},(_,i)=>'<label class="s1-slot"><span>'+(i+1)+'</span><select>'+opts+'</select></label>').join(''),fx=S1_MIX.effects.map(e=>effectChip(e.name,e.name==='Lethal')).join('');
- const w=document.createElement('section');w.id='s1MixTools';w.className='s1-mix-tools';w.innerHTML='<div class="s1-mix-tools-head"><div><div class="label">Mix engine</div><h3>Kalkulačka + Reverse Finder</h3><p>16 ingrediencí, pořadí, transformace, 8-effect cap, cena, hodnota a profit.</p></div><span class="s1-mix-source-badge">16 ingrediencí · 35 efektů · 7 základů</span></div><div class="s1-mix-calculator"><div class="s1-panel-title">Ruční kalkulačka</div><div class="s1-mix-base-row"><label><span>Základ</span><select id="s1MixBase">'+bases+'</select></label><span class="s1-mini-note">Opakování ingrediencí je povoleno.</span></div><div id="s1MixSlots" class="s1-slots">'+slots+'</div><div id="s1MixCalcResult"></div></div><div class="s1-mix-reverse"><div class="s1-panel-title">Reverse Finder</div><div class="s1-target-title">Požadované nebo nechtěné efekty</div><div id="s1DesiredEffects" class="s1-effects-picker">'+fx+'</div><div class="s1-mini-note">Zaškrtni efekty, které chceš. Druhý seznam se aktivuje jako zakázané efekty.</div><div id="s1AvoidEffects" class="s1-effects-picker">'+S1_MIX.effects.filter(e=>e.name!=='Lethal').map(e=>effectChip(e.name,false)).join('')+'</div><div class="s1-reverse-controls"><label><span>Produkt</span><select id="s1ReverseBase">'+bases+'</select></label><label><span>Max. kroků</span><input id="s1MixMax" type="number" min="0" max="8" value="8"></label><button class="btn primary" id="s1RunReverse" type="button">Najít nejlepší mixy</button></div><div id="s1ReverseResults"></div></div><div class="s1-reference"><div class="s1-panel-title">Zdrojové referenční mixy</div><div class="s1-mini-note">Veřejné best-mix příklady ze Schedule1.dev; tlačítkem je můžeš načíst do kalkulačky.</div><div id="s1ReferenceList" class="s1-reference-list"></div></div>';
+ const w=document.createElement('section');w.id='s1MixTools';w.className='s1-mix-tools';w.innerHTML='<div class="s1-mix-tools-head"><div><div class="label">Mix engine</div><h3>Kalkulačka + Reverse Finder</h3><p>16 ingrediencí, pořadí, transformace, 8-effect cap, cena, hodnota a profit.</p></div><span class="s1-mix-source-badge">16 ingrediencí · 35 efektů · 7 základů</span></div><div class="s1-mix-calculator"><div class="s1-panel-title">Ruční kalkulačka</div><div class="s1-mix-base-row"><label><span>Základ</span><select id="s1MixBase">'+bases+'</select></label><span class="s1-mini-note">Opakování ingrediencí je povoleno.</span></div><div id="s1MixSlots" class="s1-slots">'+slots+'</div><div id="s1MixCalcResult"></div></div><div class="s1-mix-reverse"><div class="s1-panel-title">Reverse Finder</div><div class="s1-target-title">Požadované nebo nechtěné efekty</div><div id="s1DesiredEffects" class="s1-effects-picker">'+fx+'</div><div class="s1-mini-note">Zaškrtni efekty, které chceš. Druhý seznam se aktivuje jako zakázané efekty.</div><div id="s1AvoidEffects" class="s1-effects-picker">'+S1_MIX.effects.filter(e=>e.name!=='Lethal').map(e=>effectChip(e.name,false)).join('')+'</div><div class="s1-reverse-controls"><label><span>Produkt</span><select id="s1ReverseBase">'+bases+'</select></label><label><span>Max. kroků</span><input id="s1MixMax" type="number" min="0" max="8" value="12"></label><button class="btn primary" id="s1RunReverse" type="button">Najít nejlepší mixy</button></div><div id="s1ReverseResults"></div></div><div class="s1-reference"><div class="s1-panel-title">Zdrojové referenční mixy</div><div class="s1-mini-note">Veřejné best-mix příklady ze Schedule1.dev; tlačítkem je můžeš načíst do kalkulačky.</div><div id="s1ReferenceList" class="s1-reference-list"></div></div>';
  const tb=v.querySelector('.toolbar');if(tb)tb.insertAdjacentElement('afterend',w);
  qm('#s1MixBase').addEventListener('change',e=>{qm('#s1ReverseBase').value=e.target.value;renderCalc()});qm('#s1ReverseBase').addEventListener('change',e=>{qm('#s1MixBase').value=e.target.value;renderCalc()});qm('#s1MixSlots').addEventListener('change',renderCalc);qm('#s1RunReverse').addEventListener('click',runReverse);qm('#s1MixMax').addEventListener('change',e=>e.target.value=Math.max(0,Math.min(8,Number(e.target.value)||8)));renderCalc();renderRefs();
 }
