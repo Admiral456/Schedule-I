@@ -534,38 +534,101 @@ def parse_jina_community(reader: str) -> list[dict]:
         })
     return recipes
 
-def sync_community_recipes() -> dict:
-    """Validate the locally stored Schedule1 Tools mix-hash snapshot.
+def build_mix_hash(base_product: str, ingredients: list[str]) -> str | None:
+    """Build the public Schedule1 Tools share hash from a product + ingredient path."""
+    abbreviations = {
+        "Cuke":"A","Flu Medicine":"B","Gasoline":"C","Donut":"D","Energy Drink":"E",
+        "Mouth Wash":"F","Motor Oil":"G","Banana":"H","Chili":"I","Iodine":"J",
+        "Paracetamol":"K","Viagor":"L","Horse Semen":"M","Mega Bean":"N","Addy":"O","Battery":"P",
+    }
+    if not base_product or any(x not in abbreviations for x in ingredients):
+        return None
+    raw = base_product + ":" + "".join(abbreviations[x] for x in ingredients)
+    import base64
+    return base64.urlsafe_b64encode(raw.encode("utf-8")).decode("ascii").rstrip("=")
 
-    The public /mixes page is rendered client-side and the crawler does not expose
-    the complete community collection. Never fabricate the missing records here.
+def normalize_recipe_snapshot(recipe: dict) -> dict:
+    base = normalize_product(recipe.get("base_product"))
+    ingredients = [x for x in (recipe.get("ingredients") or []) if normalize_ingredient(x)]
+    ingredients = [normalize_ingredient(x) for x in ingredients]
+    ingredients = [x for x in ingredients if x]
+    mix_hash = build_mix_hash(base or "", ingredients)
+    recipe["base_product"] = base
+    recipe["ingredients"] = ingredients
+    recipe["mix_hash"] = mix_hash
+    recipe["source"] = "Schedule 1 Lab · community"
+    recipe["source_type"] = "community"
+    recipe["source_url"] = recipe.get("source_url") or "https://schedule1-lab.com/community/recipes"
+    recipe["mix_url"] = f"https://schedule1.tools/mixer?mix={mix_hash}" if mix_hash else None
+    recipe["synced_at"] = datetime.now(timezone.utc).isoformat()
+    return recipe
+
+def sync_community_recipes() -> dict:
+    """Import the live 77-record community catalog when the rendered page is readable.
+
+    Schedule 1 Lab explicitly says community cards store the product + ingredient path
+    and recalculate effects/prices live. The Jina Reader fallback turns the client-rendered
+    page into Markdown that our parser can consume in CI. We never invent missing cards.
     """
-    if not COMMUNITY_FILE.exists():
-        raise RuntimeError("Community recipe snapshot file is missing")
-    payload = json.loads(COMMUNITY_FILE.read_text(encoding="utf-8"))
-    recipes = payload.get("recipes") if isinstance(payload.get("recipes"), list) else []
-    unique = []
+    candidates: list[dict] = []
+
+    # Primary: Jina Reader, which can see the rendered public page even when direct HTML
+    # delivery is client-rendered.
+    reader = get_reader("https://schedule1-lab.com/community/recipes")
+    if reader:
+        candidates = parse_jina_community(reader)
+
+    # Secondary: direct DOM parse for environments where the HTML is server-rendered.
+    if len(candidates) < 70:
+        r = get("https://schedule1-lab.com/community/recipes")
+        if r:
+            try:
+                soup = BeautifulSoup(r.text, "html.parser")
+                dom = dom_recipes(soup)
+                if len(dom) > len(candidates):
+                    candidates = dom
+            except Exception:
+                pass
+
+    normalized = []
     seen = set()
-    for item in recipes:
-        if not isinstance(item, dict):
+    for item in candidates:
+        try:
+            item = normalize_recipe_snapshot(item)
+        except Exception:
             continue
-        h = clean(item.get("mix_hash"))
-        if not h or h in seen:
+        # A recipe is uniquely identified by its public mix path. Fall back to name +
+        # ingredient order for malformed/missing hashes.
+        key = item.get("mix_hash") or (clean(item.get("name")), item.get("base_product"), tuple(item.get("ingredients", [])))
+        if key in seen:
             continue
-        seen.add(h)
-        item["source"] = "Schedule1 Tools · verifiable shared mix"
-        item["source_type"] = "community"
-        item["source_url"] = item.get("source_url") or f"https://schedule1.tools/mixer?mix={h}"
-        unique.append(item)
-    payload["recipes"] = unique
-    payload["expected_count"] = 77
-    payload["verified_count"] = len(unique)
-    payload["status"] = "complete" if len(unique) == 77 else "partial"
-    payload["updated_at"] = datetime.now(timezone.utc).isoformat()
-    payload["note"] = ("77/77 community mixes are present." if len(unique) == 77 else
-                        f"{len(unique)}/77 community mix hashes are individually verifiable in the current snapshot. Missing records are intentionally not fabricated because the public /mixes catalog is client-side.")
+        seen.add(key)
+        normalized.append(item)
+
+    # Prefer the live page's current values. Keep only complete cards.
+    complete = [
+        x for x in normalized
+        if x.get("base_product") and x.get("ingredients") and len(x.get("ingredients", [])) >= 1
+    ]
+
+    payload = {
+        "schema_version": 4,
+        "source": "https://schedule1-lab.com/community/recipes",
+        "expected_count": 77,
+        "stored_count": len(complete),
+        "recipes": complete,
+        "status": "complete" if len(complete) == 77 else "partial",
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "note": (
+            "77/77 live community cards imported from the rendered public catalog."
+            if len(complete) == 77
+            else f"{len(complete)}/77 live community cards were readable in this sync. Missing cards are intentionally not fabricated."
+        ),
+        "policy": "Only cards read from the public rendered community catalog are imported. Effects/prices are current-page snapshots and mix_hash is deterministically derived from product + ingredient order."
+    }
     COMMUNITY_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
-    return {"expected_count":77,"verified_count":len(unique),"status":payload["status"]}
+    return {"expected_count":77,"stored_count":len(complete),"status":payload["status"]}
+
 
 def main():
     effect_audit=sync_effect_icons()
