@@ -443,49 +443,73 @@ def dom_recipes(soup: BeautifulSoup):
 def sync_community_recipes() -> dict:
     url="https://schedule1-lab.com/community/recipes"
     r=get(url)
-    recipes=[]
-    if r:
-        soup=BeautifulSoup(r.text,"html.parser")
-        embedded=[]
-        for blob in parse_embedded_json(soup):
-            embedded.extend(extract_recipe_objects(blob))
-        embedded_unique={}
-        for x in embedded:
-            key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
-            embedded_unique[key]=x
-        dom=dom_recipes(soup)
-        # Prefer the DOM recipe cards because they expose the displayed 77/77 catalog,
-        # including repeated ingredient steps and current economics.
-        source=dom if len(dom)>=70 else list(embedded_unique.values())+dom
-        uniq=[]
-        seen=set()
-        for x in source:
-            key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
-            if key in seen:
-                continue
-            seen.add(key); uniq.append(x)
-        # The public catalog explicitly declares 77 recipes. Do not manufacture or silently
-        # drop entries. A non-77 extraction is marked partial for review.
-        for i,x in enumerate(uniq,1):
-            slug=slugify(x["name"])
-            x["id"]=f"community-{i:03d}-{slug[:50]}"
-            x["ingredients"]=list(x["ingredients"])
-            if x.get("cost") is not None: x["cost"]=int(x["cost"]) if float(x["cost"]).is_integer() else x["cost"]
-            if x.get("sell") is not None: x["sell"]=int(x["sell"]) if float(x["sell"]).is_integer() else x["sell"]
-            if x.get("profit") is not None: x["profit"]=int(x["profit"]) if float(x["profit"]).is_integer() else x["profit"]
+    if not r:
+        raise RuntimeError("Community Recipes page could not be fetched")
+
+    soup=BeautifulSoup(r.text,"html.parser")
+    embedded=[]
+    for blob in parse_embedded_json(soup):
+        embedded.extend(extract_recipe_objects(blob))
+
+    embedded_unique=[]
+    seen=set()
+    for x in embedded:
+        key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
+        if key in seen:
+            continue
+        seen.add(key)
+        embedded_unique.append(x)
+
+    dom=dom_recipes(soup)
+    print(f"community recipe extraction: embedded={len(embedded_unique)} dom={len(dom)}")
+
+    # The public page itself reports 77/77. Accept exactly 77 unique recipe cards;
+    # otherwise fail rather than silently importing an incorrect catalog.
+    if len(embedded_unique)==77:
+        source=embedded_unique
+        extraction_source="embedded"
+    elif len(dom)==77:
+        source=dom
+        extraction_source="dom"
+    else:
+        raise RuntimeError(f"Expected exactly 77 community recipes, got embedded={len(embedded_unique)} dom={len(dom)}")
+
+    uniq=[]
+    seen=set()
+    for x in source:
+        key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq.append(x)
+
+    if len(uniq)!=77:
+        raise RuntimeError(f"Expected exactly 77 unique community recipes after deduplication, got {len(uniq)}")
+
+    for i,x in enumerate(uniq,1):
+        slug=slugify(x["name"])
+        x["id"]=f"community-{i:03d}-{slug[:50]}"
+        x["ingredients"]=list(x["ingredients"])
+        for k in ("cost","sell","profit","asking"):
+            if x.get(k) is not None:
+                x[k]=int(x[k]) if float(x[k]).is_integer() else x[k]
+        if x.get("customers") is not None:
+            x["customers"]=int(x["customers"])
+
     now=datetime.now(timezone.utc).isoformat()
     out={
-        "schema_version":2,
+        "schema_version":3,
         "source":url,
         "expected_count":77,
-        "verified_count":len(uniq),
-        "status":"complete" if len(uniq)==77 else "partial",
+        "verified_count":77,
+        "status":"complete",
+        "extraction_source":extraction_source,
         "snapshot_at":now,
         "recipes":uniq,
-        "note":"Community recipes are imported from the public 77/77 catalog. Effects and economics are captured when present on the displayed card; the Helper can recalculate them with its mixing engine."
+        "note":"Exactly 77 recipes were imported from the public Community Recipes catalog. Effects/economics are captured when present in the published recipe data."
     }
     COMMUNITY_FILE.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    return {"expected_count":77,"verified_count":len(uniq),"status":out["status"]}
+    return {"expected_count":77,"verified_count":77,"status":"complete","extraction_source":extraction_source}
 
 def main():
     effect_audit=sync_effect_icons()
