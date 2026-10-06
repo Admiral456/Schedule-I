@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-10-06",
+  "sources": [
+    {
+      "name": "Schedule1 Tools Mixer",
+      "url": "https://schedule1.tools/mixer",
+      "role": "live mix output and share hashes",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule1 Tools How It Works",
+      "url": "https://schedule1.tools/how-it-works",
+      "role": "algorithm, 16 ingredients, 34 mixing effects, 114 rules",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule1 Tools open-source Mixer",
+      "url": "https://github.com/Schedule1-Tools/mixer",
+      "role": "published code/data baseline",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule1 Lab",
+      "url": "https://schedule1-lab.com/wiki/effects",
+      "role": "35-effect catalog and current customer-effect information",
+      "status": "verified"
+    },
+    {
+      "name": "Steam community mixing guide",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3648818766",
+      "role": "cross-check for ingredients, effects, mixing rules, seeded mixing",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule1game.net calculator",
+      "url": "https://www.schedule1game.net/schedule-1-calculator",
+      "role": "independent transformation-rule cross-check",
+      "status": "verified"
+    },
+    {
+      "name": "Schedule 1 Wiki image inventory",
+      "url": "https://github.com/kxcsgit/schedule1-wiki/blob/8999cccc9451d8d7e37731b4bd3653c495e28986/public/images/wiki_images.json",
+      "role": "public exact visual assets where individually named",
+      "status": "verified"
+    },
+    {
+      "name": "User in-game Gas-Mart screenshot",
+      "url": null,
+      "role": "visual verification of all 16 ingredient icons",
+      "status": "verified"
+    }
+  ],
+  "findings": [
+    "16/16 mixing ingredients confirmed.",
+    "35/35 effect names confirmed in Helper; current Schedule1 Tools mixer package exports 34 effect codes.",
+    "114 transformation rules are documented by Schedule1 Tools.",
+    "Community /mixes page is client-rendered and currently exposes 0 results to the crawler, so missing community records must not be fabricated.",
+    "Individual schedule1.tools/mixer share pages are crawlable and are treated as the authority for a stored community mix's exact ingredients/effects/price.",
+    "Some live community mix results differ from results produced by the older open-source mixer snapshot; the Helper therefore stores live-page verification separately from derived calculations."
+  ],
+  "asset_policy": "Never invent an exact icon. Use a named public asset only when its source identifies the effect/item; otherwise use the verified in-game color/name treatment."
+}
