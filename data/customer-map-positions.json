@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "source_repo": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz",
+  "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
+  "source_note": "Exact customer coordinates from the PopTracker district maps.",
+  "maps": {
+    "Uptown": {
+      "width": 670,
+      "height": 570,
+      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/uptown.png"
+    },
+    "Northtown": {
+      "width": 770,
+      "height": 560,
+      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/northtown.png"
+    },
+    "Westville": {
+      "width": 770,
+      "height": 500,
+      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/westville.png"
+    },
+    "Downtown": {
+      "width": 850,
+      "height": 580,
+      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/downtown.png"
+    },
+    "Docks": {
+      "width": 750,
+      "height": 600,
+      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/docks.png"
+    },
+    "Suburbia": {
+      "width": 730,
+      "height": 560,
+      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/suburbia.png"
+    }
+  },
+  "coordinates": [
+    {
+      "id": 1,
+      "name": "Fiona Hancock",
+      "district": "Uptown",
+      "x": 82,
+      "y": 471,
+      "size": 24
+    },
+    {
+      "id": 2,
+      "name": "Herbert Bleuball",
+      "district": "Uptown",
+      "x": 404,
+      "y": 413,
+      "size": 24
+    },
+    {
+      "id": 3,
+      "name": "Irene Meadows",
+      "district": "Uptown",
+      "x": 311,
+      "y": 85,
+      "size": 24
+    },
+    {
+      "id": 4,
+      "name": "Jen Heard",
+      "district": "Uptown",
+      "x": 319,
+      "y": 383,
+      "size": 24
+    },
+    {
+      "id": 5,
+      "name": "Lily Turner",
+      "district": "Uptown",
+      "x": 75,
+      "y": 342,
+      "size": 24
+    },
+    {
+      "id": 6,
+      "name": "Michael Boog",
+      "district": "Uptown",
+      "x": 596,
+      "y": 212,
+      "size": 24
+    },
+    {
+      "id": 7,
+      "name": "Tobias Wentworth",
+      "district": "Uptown",
+      "x": 596,
+      "y": 342,
+      "size": 24
+    },
+    {
+      "id": 8,
+      "name": "Walter Cussler",
+      "district": "Uptown",
+      "x": 277,
+      "y": 528,
+      "size": 24
+    },
+    {
+      "id": 9,
+      "name": "Pearl Moore",
+      "district": "Uptown",
+      "x": 596,
+      "y": 470,
+      "size": 24
+    },
+    {
+      "id": 10,
+      "name": "Ray Hoffman",
+      "district": "Uptown",
+      "x": 209,
+      "y": 215,
+      "size": 24
+    },
+    {
+      "id": 11,
+      "name": "Alison Knight",
+      "district": "Suburbia",
+      "x": 261,
+      "y": 431,
+      "size": 24
+    },
+    {
+      "id": 12,
+      "name": "Carl Bundy",
+      "district": "Suburbia",
+      "x": 387,
+      "y": 429,
+      "size": 24
+    },
+    {
+      "id": 13,
+      "name": "Chris Sullivan",
+      "district": "Suburbia",
+      "x": 65,
+      "y": 303,
+      "size": 24
+    },
+    {
+      "id": 14,
+      "name": "Dennis Kennedy",
+      "district": "Suburbia",
+      "x": 642,
+      "y": 298,
+      "size": 24
+    },
+    {
+      "id": 15,
+      "name": "Hank Stevenson",
+      "district": "Suburbia",
+      "x": 261,
+      "y": 38,
+      "size": 24
+    },
+    {
+      "id": 16,
+      "name": "Harold Colt",
+      "district": "Suburbia",
+      "x": 467,
+      "y": 322,
+      "size": 24
+    },
+    {
+      "id": 17,
+      "name": "Jack Knight",
+      "district": "Suburbia",
+      "x": 585,
+      "y": 488,
+      "size": 24
+    },
+    {
+      "id": 18,
+      "name": "Jackie Stevenson",
+      "district": "Suburbia",
+      "x": 514,
+      "y": 42,
+      "size": 24
+    },
+    {
+      "id": 19,
+      "name": "Jeremy Wilkinson",
+      "district": "Suburbia",
+      "x": 386,
+      "y": 176,
+      "size": 24
+    },
+    {
+      "id": 20,
+      "name": "George Greene",
+      "district": "Westville",
+      "x": 723,
+      "y": 190,
+      "size": 24
+    },
+    {
+      "id": 21,
+      "name": "Geraldine Poon",
+      "district": "Northtown",
+      "x": 440,
+      "y": 135,
+      "size": 24
+    },
+    {
+      "id": 22,
+      "name": "Dean Webster",
+      "district": "Westville",
+      "x": 598,
+      "y": 69,
+      "size": 24
+    },
+    {
+      "id": 23,
+      "name": "Anna Chesterfield",
+      "district": "Docks",
+      "x": 133,
+      "y": 480,
+      "size": 24
+    },
+    {
+      "id": 24,
+      "name": "Billy Kramer",
+      "district": "Docks",
+      "x": 623,
+      "y": 210,
+      "size": 24
+    },
+    {
+      "id": 25,
+      "name": "Bruce Norton",
+      "district": "Downtown",
+      "x": 777,
+      "y": 218,
+      "size": 24
+    },
+    {
+      "id": 26,
+      "name": "Cranky Frank",
+      "district": "Docks",
+      "x": 255,
+      "y": 475,
+      "size": 24
+    },
+    {
+      "id": 27,
+      "name": "Genghis Barn",
+      "district": "Docks",
+      "x": 255,
+      "y": 214,
+      "size": 24
+    },
+    {
+      "id": 28,
+      "name": "Kelly Reynolds",
+      "district": "Docks",
+      "x": 456,
+      "y": 34,
+      "size": 24
+    },
+    {
+      "id": 29,
+      "name": "Lisa Gardener",
+      "district": "Docks",
+      "x": 66,
+      "y": 155,
+      "size": 24
+    },
+    {
+      "id": 30,
+      "name": "Mac Cooper",
+      "district": "Docks",
+      "x": 550,
+      "y": 232,
+      "size": 24
+    },
+    {
+      "id": 31,
+      "name": "Marco Barone",
+      "district": "Docks",
+      "x": 377,
+      "y": 343,
+      "size": 24
+    },
+    {
+      "id": 32,
+      "name": "Melissa Wood",
+      "district": "Docks",
+      "x": 379,
+      "y": 454,
+      "size": 24
+    },
+    {
+      "id": 33,
+      "name": "Sherman Giles",
+      "district": "Docks",
+      "x": 432,
+      "y": 401,
+      "size": 24
+    },
+    {
+      "id": 34,
+      "name": "Karen Kennedy",
+      "district": "Suburbia",
+      "x": 205,
+      "y": 191,
+      "size": 24
+    },
+    {
+      "id": 35,
+      "name": "Elizabeth Homley",
+      "district": "Downtown",
+      "x": 62,
+      "y": 225,
+      "size": 24
+    },
+    {
+      "id": 36,
+      "name": "Eugene Buckley",
+      "district": "Downtown",
+      "x": 391,
+      "y": 420,
+      "size": 24
+    },
+    {
+      "id": 37,
+      "name": "Greg Figgle",
+      "district": "Downtown",
+      "x": 521,
+      "y": 151,
+      "size": 24
+    },
+    {
+      "id": 38,
+      "name": "Jennifer Rivera",
+      "district": "Downtown",
+      "x": 64,
+      "y": 369,
+      "size": 24
+    },
+    {
+      "id": 39,
+      "name": "Kevin Oakley",
+      "district": "Downtown",
+      "x": 260,
+      "y": 30,
+      "size": 24
+    },
+    {
+      "id": 40,
+      "name": "Kim Delaney",
+      "district": "Westville",
+      "x": 476,
+      "y": 439,
+      "size": 24
+    },
+    {
+      "id": 41,
+      "name": "Louis Fourier",
+      "district": "Downtown",
+      "x": 257,
+      "y": 300,
+      "size": 24
+    },
+    {
+      "id": 42,
+      "name": "Lucy Pennington",
+      "district": "Downtown",
+      "x": 260,
+      "y": 414,
+      "size": 24
+    },
+    {
+      "id": 43,
+      "name": "Peggy Myers",
+      "district": "Northtown",
+      "x": 565,
+      "y": 68,
+      "size": 24
+    },
+    {
+      "id": 44,
+      "name": "Peter File",
+      "district": "Northtown",
+      "x": 267,
+      "y": 485,
+      "size": 24
+    },
+    {
+      "id": 45,
+      "name": "Philip Wentworth",
+      "district": "Downtown",
+      "x": 721,
+      "y": 485,
+      "size": 24
+    },
+    {
+      "id": 46,
+      "name": "Randy Caulfield",
+      "district": "Downtown",
+      "x": 390,
+      "y": 30,
+      "size": 24
+    },
+    {
+      "id": 47,
+      "name": "Jessi Waters",
+      "district": "Northtown",
+      "x": 142,
+      "y": 371,
+      "size": 24
+    },
+    {
+      "id": 48,
+      "name": "Javier Perez",
+      "district": "Docks",
+      "x": 327,
+      "y": 112,
+      "size": 24
+    },
+    {
+      "id": 49,
+      "name": "Jerry Montero",
+      "district": "Westville",
+      "x": 371,
+      "y": 212,
+      "size": 24
+    },
+    {
+      "id": 50,
+      "name": "Kyle Cooley",
+      "district": "Northtown",
+      "x": 73,
+      "y": 187,
+      "size": 24
+    },
+    {
+      "id": 51,
+      "name": "Austin Steiner",
+      "district": "Northtown",
+      "x": 195,
+      "y": 67,
+      "size": 24
+    },
+    {
+      "id": 52,
+      "name": "Kathy Henderson",
+      "district": "Northtown",
+      "x": 317,
+      "y": 71,
+      "size": 24
+    },
+    {
+      "id": 53,
+      "name": "Mick Lubbin",
+      "district": "Northtown",
+      "x": 320,
+      "y": 194,
+      "size": 24
+    },
+    {
+      "id": 54,
+      "name": "Charles Rowland",
+      "district": "Westville",
+      "x": 599,
+      "y": 439,
+      "size": 24
+    },
+    {
+      "id": 55,
+      "name": "Donna Martin",
+      "district": "Northtown",
+      "x": 496,
+      "y": 48,
+      "size": 24
+    },
+    {
+      "id": 56,
+      "name": "Doris Lubbin",
+      "district": "Westville",
+      "x": 357,
+      "y": 439,
+      "size": 24
+    },
+    {
+      "id": 57,
+      "name": "Jeff Gilmore",
+      "district": "Downtown",
+      "x": 719,
+      "y": 100,
+      "size": 24
+    },
+    {
+      "id": 58,
+      "name": "Joyce Ball",
+      "district": "Westville",
+      "x": 169,
+      "y": 439,
+      "size": 24
+    },
+    {
+      "id": 59,
+      "name": "Mrs. Ming",
+      "district": "Northtown",
+      "x": 686,
+      "y": 419,
+      "size": 24
+    },
+    {
+      "id": 60,
+      "name": "Trent Sherman",
+      "district": "Westville",
+      "x": 49,
+      "y": 188,
+      "size": 24
+    },
+    {
+      "id": 61,
+      "name": "Sam Thompson",
+      "district": "Northtown",
+      "x": 354,
+      "y": 334,
+      "size": 24
+    },
+    {
+      "id": 62,
+      "name": "Beth Penn",
+      "district": "Northtown",
+      "x": 684,
+      "y": 127,
+      "size": 24
+    },
+    {
+      "id": 63,
+      "name": "Chloe Bowers",
+      "district": "Northtown",
+      "x": 441,
+      "y": 310,
+      "size": 24
+    },
+    {
+      "id": 64,
+      "name": "Keith Wagner",
+      "district": "Westville",
+      "x": 294,
+      "y": 194,
+      "size": 24
+    },
+    {
+      "id": 65,
+      "name": "Ludwig Meyer",
+      "district": "Northtown",
+      "x": 623,
+      "y": 490,
+      "size": 24
+    },
+    {
+      "id": 66,
+      "name": "Meg Cooley",
+      "district": "Westville",
+      "x": 111,
+      "y": 132,
+      "size": 24
+    }
+  ]
+}
