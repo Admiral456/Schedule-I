@@ -1,0 +1,733 @@
+{
+  "schema_version": 1,
+  "source": "https://schedule1.dev/mixes",
+  "checked_on": "2026-10-06",
+  "note": "Reference mixes are source-derived examples. Values are kept as source_profit; the Helper calculator recalculates price/profit from its own mixing rules so patches cannot silently make stored economics stale.",
+  "recipes": [
+    {
+      "id": "schedule1dev:og-kush:1:mouth-wash",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 1 ingredient reference",
+      "ingredients": [
+        "Mouth Wash"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 60
+    },
+    {
+      "id": "schedule1dev:og-kush:2:cuke-mega-bean",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 2 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 75
+    },
+    {
+      "id": "schedule1dev:og-kush:2:mouth-wash-energy-drink",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 2 ingredient best reference",
+      "ingredients": [
+        "Mouth Wash",
+        "Energy Drink"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 66
+    },
+    {
+      "id": "schedule1dev:og-kush:3:cuke-viagor-mega-bean",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 3 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Viagor",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 87
+    },
+    {
+      "id": "schedule1dev:og-kush:4:cuke-viagor-horse-semen-mega-bean",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 4 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Viagor",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 96
+    },
+    {
+      "id": "schedule1dev:og-kush:5:gasoline-cuke-mega-bean-battery-viagor",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 5 ingredient best reference",
+      "ingredients": [
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery",
+        "Viagor"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 108
+    },
+    {
+      "id": "schedule1dev:og-kush:6:mouth-wash-cuke-gasoline-cuke-viagor-mega-bean",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 6 ingredient best reference",
+      "ingredients": [
+        "Mouth Wash",
+        "Cuke",
+        "Gasoline",
+        "Cuke",
+        "Viagor",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 120
+    },
+    {
+      "id": "schedule1dev:og-kush:7:banana-gasoline-cuke-mega-bean-battery-banana-cuke",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 7 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery",
+        "Banana",
+        "Cuke"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 136
+    },
+    {
+      "id": "schedule1dev:og-kush:8:banana-gasoline-paracetamol-cuke-mega-bean-battery-banana-cuke",
+      "drug": "Weed",
+      "base_product": "OG Kush",
+      "name": "OG Kush — 8 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Gasoline",
+        "Paracetamol",
+        "Cuke",
+        "Mega Bean",
+        "Battery",
+        "Banana",
+        "Cuke"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 140
+    },
+    {
+      "id": "schedule1dev:sour-diesel:1:iodine",
+      "drug": "Weed",
+      "base_product": "Sour Diesel",
+      "name": "Sour Diesel — 1 ingredient reference",
+      "ingredients": [
+        "Iodine"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 57
+    },
+    {
+      "id": "schedule1dev:sour-diesel:2:iodine-viagor",
+      "drug": "Weed",
+      "base_product": "Sour Diesel",
+      "name": "Sour Diesel — 2 ingredient best reference",
+      "ingredients": [
+        "Iodine",
+        "Viagor"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 69
+    },
+    {
+      "id": "schedule1dev:sour-diesel:3:iodine-viagor-horse-semen",
+      "drug": "Weed",
+      "base_product": "Sour Diesel",
+      "name": "Sour Diesel — 3 ingredient best reference",
+      "ingredients": [
+        "Iodine",
+        "Viagor",
+        "Horse Semen"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 81
+    },
+    {
+      "id": "schedule1dev:sour-diesel:4:cuke-mega-bean-iodine-motor-oil",
+      "drug": "Weed",
+      "base_product": "Sour Diesel",
+      "name": "Sour Diesel — 4 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Mega Bean",
+        "Iodine",
+        "Motor Oil"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 93
+    },
+    {
+      "id": "schedule1dev:sour-diesel:5:cuke-viagor-mega-bean-iodine-motor-oil",
+      "drug": "Weed",
+      "base_product": "Sour Diesel",
+      "name": "Sour Diesel — 5 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Viagor",
+        "Mega Bean",
+        "Iodine",
+        "Motor Oil"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 105
+    },
+    {
+      "id": "schedule1dev:sour-diesel:6:banana-cuke-horse-semen-mega-bean-iodine-motor-oil",
+      "drug": "Weed",
+      "base_product": "Sour Diesel",
+      "name": "Sour Diesel — 6 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean",
+        "Iodine",
+        "Motor Oil"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 117
+    },
+    {
+      "id": "schedule1dev:sour-diesel:7:banana-cuke-viagor-horse-semen-mega-bean-iodine-motor-oil",
+      "drug": "Weed",
+      "base_product": "Sour Diesel",
+      "name": "Sour Diesel — 7 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Viagor",
+        "Horse Semen",
+        "Mega Bean",
+        "Iodine",
+        "Motor Oil"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 129
+    },
+    {
+      "id": "schedule1dev:green-crack:1:mega-bean",
+      "drug": "Weed",
+      "base_product": "Green Crack",
+      "name": "Green Crack — 1 ingredient reference",
+      "ingredients": [
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 60
+    },
+    {
+      "id": "schedule1dev:green-crack:1:viagor",
+      "drug": "Weed",
+      "base_product": "Green Crack",
+      "name": "Green Crack — 1 ingredient reference",
+      "ingredients": [
+        "Viagor"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 55
+    },
+    {
+      "id": "schedule1dev:green-crack:2:viagor-mega-bean",
+      "drug": "Weed",
+      "base_product": "Green Crack",
+      "name": "Green Crack — 2 ingredient best reference",
+      "ingredients": [
+        "Viagor",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 72
+    },
+    {
+      "id": "schedule1dev:green-crack:3:banana-horse-semen-iodine",
+      "drug": "Weed",
+      "base_product": "Green Crack",
+      "name": "Green Crack — 3 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Horse Semen",
+        "Iodine"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 82
+    },
+    {
+      "id": "schedule1dev:green-crack:4:gasoline-cuke-viagor-mega-bean",
+      "drug": "Weed",
+      "base_product": "Green Crack",
+      "name": "Green Crack — 4 ingredient best reference",
+      "ingredients": [
+        "Gasoline",
+        "Cuke",
+        "Viagor",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 96
+    },
+    {
+      "id": "schedule1dev:green-crack:5:paracetamol-gasoline-cuke-mega-bean-battery",
+      "drug": "Weed",
+      "base_product": "Green Crack",
+      "name": "Green Crack — 5 ingredient best reference",
+      "ingredients": [
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 109
+    },
+    {
+      "id": "schedule1dev:green-crack:6:paracetamol-mega-bean-motor-oil-cuke-mega-bean-battery",
+      "drug": "Weed",
+      "base_product": "Green Crack",
+      "name": "Green Crack — 6 ingredient best reference",
+      "ingredients": [
+        "Paracetamol",
+        "Mega Bean",
+        "Motor Oil",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 120
+    },
+    {
+      "id": "schedule1dev:green-crack:7:paracetamol-cuke-gasoline-cuke-chili-mega-bean-battery",
+      "drug": "Weed",
+      "base_product": "Green Crack",
+      "name": "Green Crack — 7 ingredient best reference",
+      "ingredients": [
+        "Paracetamol",
+        "Cuke",
+        "Gasoline",
+        "Cuke",
+        "Chili",
+        "Mega Bean",
+        "Battery"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 132
+    },
+    {
+      "id": "schedule1dev:granddaddy-purple:1:viagor",
+      "drug": "Weed",
+      "base_product": "Granddaddy Purple",
+      "name": "Granddaddy Purple — 1 ingredient reference",
+      "ingredients": [
+        "Viagor"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 56
+    },
+    {
+      "id": "schedule1dev:granddaddy-purple:2:cuke-mega-bean",
+      "drug": "Weed",
+      "base_product": "Granddaddy Purple",
+      "name": "Granddaddy Purple — 2 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 67
+    },
+    {
+      "id": "schedule1dev:granddaddy-purple:2:energy-drink-paracetamol",
+      "drug": "Weed",
+      "base_product": "Granddaddy Purple",
+      "name": "Granddaddy Purple — 2 ingredient best reference",
+      "ingredients": [
+        "Energy Drink",
+        "Paracetamol"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 65
+    },
+    {
+      "id": "schedule1dev:granddaddy-purple:3:cuke-viagor-mega-bean",
+      "drug": "Weed",
+      "base_product": "Granddaddy Purple",
+      "name": "Granddaddy Purple — 3 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Viagor",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 79
+    },
+    {
+      "id": "schedule1dev:granddaddy-purple:4:banana-cuke-horse-semen-mega-bean",
+      "drug": "Weed",
+      "base_product": "Granddaddy Purple",
+      "name": "Granddaddy Purple — 4 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 92
+    },
+    {
+      "id": "schedule1dev:granddaddy-purple:5:banana-cuke-viagor-horse-semen-mega-bean",
+      "drug": "Weed",
+      "base_product": "Granddaddy Purple",
+      "name": "Granddaddy Purple — 5 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Viagor",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 104
+    },
+    {
+      "id": "schedule1dev:granddaddy-purple:6:cuke-energy-drink-mega-bean-paracetamol-chili-mouth-wash",
+      "drug": "Weed",
+      "base_product": "Granddaddy Purple",
+      "name": "Granddaddy Purple — 6 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Energy Drink",
+        "Mega Bean",
+        "Paracetamol",
+        "Chili",
+        "Mouth Wash"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 117
+    },
+    {
+      "id": "schedule1dev:granddaddy-purple:7:cuke-energy-drink-paracetamol-gasoline-cuke-mega-bean-battery",
+      "drug": "Weed",
+      "base_product": "Granddaddy Purple",
+      "name": "Granddaddy Purple — 7 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Energy Drink",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 130
+    },
+    {
+      "id": "schedule1dev:meth:1:viagor",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "name": "Meth — 1 ingredient reference",
+      "ingredients": [
+        "Viagor"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 98
+    },
+    {
+      "id": "schedule1dev:meth:2:viagor-horse-semen",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "name": "Meth — 2 ingredient best reference",
+      "ingredients": [
+        "Viagor",
+        "Horse Semen"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 126
+    },
+    {
+      "id": "schedule1dev:meth:3:cuke-viagor-mega-bean",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "name": "Meth — 3 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Viagor",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 154
+    },
+    {
+      "id": "schedule1dev:meth:4:banana-cuke-horse-semen-mega-bean",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "name": "Meth — 4 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 186
+    },
+    {
+      "id": "schedule1dev:meth:5:banana-cuke-viagor-horse-semen-mega-bean",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "name": "Meth — 5 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Viagor",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 214
+    },
+    {
+      "id": "schedule1dev:meth:6:cuke-paracetamol-gasoline-cuke-mega-bean-battery",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "name": "Meth — 6 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 242
+    },
+    {
+      "id": "schedule1dev:meth:7:motor-oil-cuke-paracetamol-gasoline-cuke-mega-bean-battery",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "name": "Meth — 7 ingredient best reference",
+      "ingredients": [
+        "Motor Oil",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 274
+    },
+    {
+      "id": "schedule1dev:meth:8:banana-cuke-paracetamol-gasoline-cuke-battery-horse-semen-mega-bean",
+      "drug": "Meth",
+      "base_product": "Meth",
+      "name": "Meth — 8 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 302
+    },
+    {
+      "id": "schedule1dev:cocaine:1:horse-semen",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "name": "Cocaine — 1 ingredient reference",
+      "ingredients": [
+        "Horse Semen"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 219
+    },
+    {
+      "id": "schedule1dev:cocaine:2:addy-horse-semen",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "name": "Cocaine — 2 ingredient best reference",
+      "ingredients": [
+        "Addy",
+        "Horse Semen"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 285
+    },
+    {
+      "id": "schedule1dev:cocaine:3:viagor-addy-horse-semen",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "name": "Cocaine — 3 ingredient best reference",
+      "ingredients": [
+        "Viagor",
+        "Addy",
+        "Horse Semen"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 350
+    },
+    {
+      "id": "schedule1dev:cocaine:4:banana-cuke-horse-semen-mega-bean",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "name": "Cocaine — 4 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 421
+    },
+    {
+      "id": "schedule1dev:cocaine:5:banana-cuke-viagor-horse-semen-mega-bean",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "name": "Cocaine — 5 ingredient best reference",
+      "ingredients": [
+        "Banana",
+        "Cuke",
+        "Viagor",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 486
+    },
+    {
+      "id": "schedule1dev:cocaine:6:cuke-paracetamol-gasoline-cuke-mega-bean-battery",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "name": "Cocaine — 6 ingredient best reference",
+      "ingredients": [
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 549
+    },
+    {
+      "id": "schedule1dev:cocaine:7:motor-oil-cuke-paracetamol-gasoline-cuke-mega-bean-battery",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "name": "Cocaine — 7 ingredient best reference",
+      "ingredients": [
+        "Motor Oil",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Mega Bean",
+        "Battery"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 624
+    },
+    {
+      "id": "schedule1dev:cocaine:8:motor-oil-cuke-paracetamol-gasoline-cuke-battery-horse-semen-mega-bean",
+      "drug": "Cocaine",
+      "base_product": "Cocaine",
+      "name": "Cocaine — 8 ingredient best reference",
+      "ingredients": [
+        "Motor Oil",
+        "Cuke",
+        "Paracetamol",
+        "Gasoline",
+        "Cuke",
+        "Battery",
+        "Horse Semen",
+        "Mega Bean"
+      ],
+      "source_type": "reference",
+      "source": "https://schedule1.dev/mixes",
+      "source_profit": 693
+    }
+  ]
+}

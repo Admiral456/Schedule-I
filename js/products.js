@@ -26,14 +26,7 @@
         </div>
         <div class="filters">
           <input id="productSearch" type="search" placeholder="Hledat produkt, ingredienci nebo efekt…">
-          <select id="productFamily">
-            <option value="">Všechny skupiny</option>
-            <option value="Weed">Weed</option>
-            <option value="Meth · Low Quality">Meth · Low Quality</option>
-            <option value="Meth · Blue Star">Meth · Blue Star</option>
-            <option value="Cocaine">Cocaine</option>
-            <option value="Shrooms">Shrooms</option>
-          </select>
+          <select id="productFamily"><option value="">Všechny skupiny</option></select>
         </div>
       </div>
       <div class="s1-products-note">
@@ -76,12 +69,16 @@
   let drugs = [];
   let ingredients = [];
 
-  function baseIcon(name) {
+  function baseIcon(name,seen=new Set()) {
     const n = norm(name);
     const aliases = { viagra:"Viagor", "granddaddy-purple":"Granddaddy Purple" };
     const target = aliases[n] || name;
     const d = drugs.find(x => norm(x.name) === norm(target) || norm(x.id) === norm(target));
-    return d?.icon_url || "";
+    if (d?.icon_url) return d.icon_url;
+    const p = products.find(x => norm(x.name) === norm(target) || norm(x.id) === norm(target));
+    if (!p || seen.has(p.id)) return "";
+    seen.add(p.id);
+    return baseIcon(p.base_product,seen);
   }
 
   function ingredient(name) {
@@ -101,7 +98,7 @@
     list.innerHTML = filtered.map(p => {
       const icon = baseIcon(p.base_product);
       const steps = p.ingredients?.length
-        ? '<div class="s1-product-recipe"><div class="s1-product-recipe-title">Recept / cesta</div><div class="s1-product-chain"><span class="s1-product-step">'+esc(p.base_product)+'</span><span class="s1-product-arrow">＋</span>'+p.ingredients.map((name,i)=>{
+        ? '<div class="s1-product-recipe"><div class="s1-product-recipe-title">Recept / cesta</div><div class="s1-product-chain"><span class="s1-product-step">'+(baseIcon(p.base_product)?'<img src="'+esc(baseIcon(p.base_product))+'" alt="'+esc(p.base_product)+'">':'')+esc(p.base_product)+'</span><span class="s1-product-arrow">＋</span>'+p.ingredients.map((name,i)=>{
             const x = ingredient(name);
             return '<span class="s1-product-step">'+(x?.icon?.secondary_source_asset_url || x?.icon?.rendered_asset_url ? '<img src="'+esc(x.icon.secondary_source_asset_url || x.icon.rendered_asset_url)+'" alt="'+esc(name)+'">' : '')+esc(name)+'</span>';
           }).join('<span class="s1-product-arrow">＋</span>')+'<span class="s1-product-arrow">→</span><strong>'+esc(p.name)+'</strong></div></div>'
@@ -121,7 +118,10 @@
       drugs = d.drugs || [];
       ingredients = i.items || [];
       window.__s1Products = products;
+      const familySelect = document.querySelector("#productFamily");
+      if (familySelect) familySelect.innerHTML = "<option value=''>Všechny skupiny</option>" + [...new Set(products.map(x=>x.family).filter(Boolean))].sort().map(x=>"<option value='"+esc(x)+"'>"+esc(x)+"</option>").join("");
       render();
+      document.dispatchEvent(new CustomEvent("s1-products-loaded"));
     } catch {
       const root=document.querySelector("#productList");
       if(root)root.innerHTML='<div class="empty">Databázi produktů se nepodařilo načíst.</div>';

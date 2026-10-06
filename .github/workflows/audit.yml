@@ -1,0 +1,53 @@
+name: Project audit
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Check JavaScript syntax
+        run: |
+          set -e
+          find . -type f -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -n1 node --check
+      - name: Check JSON
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          for p in pathlib.Path('.').rglob('*.json'):
+              if any(part in {'.git','node_modules'} for part in p.parts):
+                  continue
+              with p.open(encoding='utf-8') as f:
+                  json.load(f)
+              print('PASS', p)
+          PY
+      - name: Check required data counts
+        run: |
+          python - <<'PY'
+          import json
+          assert len(json.load(open('data/products.json'))['products']) == 49
+          assert len(json.load(open('data/effects.json'))['effects']) == 35
+          assert len(json.load(open('data/customers.json'))['customers']) == 66
+          assert len(json.load(open('data/recipes.json'))['recipes']) >= 3
+          print('PASS required data counts')
+          PY
+      - name: Browser smoke test
+        run: |
+          set -e
+          npm init -y >/dev/null 2>&1
+          npm install --no-save playwright@1.55.0 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+          python3 -m http.server 4173 >/tmp/s1-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid || true' EXIT
+          sleep 2
+          node scripts/browser-smoke.mjs
