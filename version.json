@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "2026.10.05.22",
+  "version": "2026.10.05.23",
   "updated_at": "2026-10-06",
-  "message": "Final audit pass: 114 rules, exact game-derived multipliers and functional map/entity links",
+  "message": "UI UX Designer redesign: dark premium workspace, responsive system and accessible interaction states",
   "changes": [
     "Supabase backend pro sdílené složky, profily a serverová data.",
     "Skutečné sdílené složky už nejsou jen snapshot v URL; data se ukládají do PostgreSQL.",
@@ -85,6 +85,9 @@
     "Reverse Finder podporuje až 12 kroků.",
     "Cenové multiplikátory efektů sjednoceny s herně extrahovanými addBaseValueMultiplier hodnotami.",
     "Ověřen známý 4-ingredient Meth mix: $206 sell price a $186 profit při ceně ingrediencí $20.",
-    "Recipe Finder a Product Book používají stejné kanonické effect multipliers."
+    "Recipe Finder a Product Book používají stejné kanonické effect multipliers.",
+    "Kompletní vizuální refresh podle UI/UX design systému: surfaces, spacing, typography, controls, cards, navigation a responsive breakpoints.",
+    "Hover/focus/active states a reduced-motion preference pro klíčové interaktivní prvky.",
+    "Zvýrazněná vizuální hierarchie Home, Map, Customers, Recipe Finder, Saved, Shared a Settings."
   ]
 }
