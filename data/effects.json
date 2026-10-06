@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "source": "https://schedule1-lab.com/wiki/effects",
+  "source": "Schedule1 Tools open-source Mixer + Helper legacy Lethal",
   "verified_count": 0,
   "total_count": 35,
   "effects": [
     {
       "id": "shrinking",
       "name": "Shrinking",
-      "price_multiplier": 0.607,
+      "price_multiplier": 0.6,
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
@@ -18,12 +18,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 5,
+      "official_mixer_code": "Sh",
+      "addiction": 0.336,
+      "description": "Shrinks the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "zombifying",
       "name": "Zombifying",
-      "price_multiplier": 0.582,
+      "price_multiplier": 0.58,
       "rating_band": "S",
       "type": "State",
       "icon": {
@@ -34,7 +40,13 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 5,
+      "official_mixer_code": "Zo",
+      "addiction": 0.598,
+      "description": "Transforms the user into a zombie, causing them to walk with a limp and seek brains.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "cyclopean",
@@ -50,12 +62,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 5,
+      "official_mixer_code": "Cy",
+      "addiction": 0.1,
+      "description": "Causes the user to see with a single eye in the center of their forehead.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "anti-gravity",
       "name": "Anti-Gravity",
-      "price_multiplier": 0.542,
+      "price_multiplier": 0.54,
       "rating_band": "S",
       "type": "Ability",
       "icon": {
@@ -66,12 +84,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 5,
+      "official_mixer_code": "Ag",
+      "addiction": 0.611,
+      "description": "Weakens the effects of gravity on the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "long-faced",
       "name": "Long Faced",
-      "price_multiplier": 0.526,
+      "price_multiplier": 0.52,
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
@@ -82,12 +106,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 5,
+      "official_mixer_code": "Lf",
+      "addiction": 0.607,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "electrifying",
       "name": "Electrifying",
-      "price_multiplier": 0.504,
+      "price_multiplier": 0.5,
       "rating_band": "S",
       "type": "Cosmetic",
       "icon": {
@@ -98,12 +128,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 5,
+      "official_mixer_code": "El",
+      "addiction": 0.235,
+      "description": "Electrifies the user, causing arcs of electricity to be emitted, zapping anyone nearby.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "glowing",
       "name": "Glowing",
-      "price_multiplier": 0.484,
+      "price_multiplier": 0.48,
       "rating_band": "A",
       "type": "Ability",
       "icon": {
@@ -114,12 +150,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 4,
+      "official_mixer_code": "Gl",
+      "addiction": 0.472,
+      "description": "Imbues a bioluminescence on the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "tropic-thunder",
       "name": "Tropic Thunder",
-      "price_multiplier": 0.466,
+      "price_multiplier": 0.46,
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
@@ -130,12 +172,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 4,
+      "official_mixer_code": "Tt",
+      "addiction": 0.803,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "thought-provoking",
       "name": "Thought-Provoking",
-      "price_multiplier": 0.441,
+      "price_multiplier": 0.44,
       "rating_band": "A",
       "type": "Ability",
       "icon": {
@@ -146,12 +194,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 4,
+      "official_mixer_code": "Tp",
+      "addiction": 0.37,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "jennerising",
       "name": "Jennerising",
-      "price_multiplier": 0.423,
+      "price_multiplier": 0.42,
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
@@ -162,12 +216,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 4,
+      "official_mixer_code": "Je",
+      "addiction": 0.343,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "bright-eyed",
       "name": "Bright-Eyed",
-      "price_multiplier": 0.404,
+      "price_multiplier": 0.4,
       "rating_band": "A",
       "type": "Ability",
       "icon": {
@@ -178,12 +238,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 4,
+      "official_mixer_code": "Be",
+      "addiction": 0.2,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "spicy",
       "name": "Spicy",
-      "price_multiplier": 0.387,
+      "price_multiplier": 0.38,
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
@@ -194,12 +260,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 3,
+      "official_mixer_code": "Sp",
+      "addiction": 0.665,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "foggy",
       "name": "Foggy",
-      "price_multiplier": 0.364,
+      "price_multiplier": 0.36,
       "rating_band": "A",
       "type": "State",
       "icon": {
@@ -210,12 +282,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 3,
+      "official_mixer_code": "Fo",
+      "addiction": 0.1,
+      "description": "Causes a cloud of fog to form around the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "slippery",
       "name": "Slippery",
-      "price_multiplier": 0.346,
+      "price_multiplier": 0.34,
       "rating_band": "A",
       "type": "State",
       "icon": {
@@ -226,12 +304,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 3,
+      "official_mixer_code": "Sl",
+      "addiction": 0.309,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "athletic",
       "name": "Athletic",
-      "price_multiplier": 0.326,
+      "price_multiplier": 0.32,
       "rating_band": "A",
       "type": "Ability",
       "icon": {
@@ -242,12 +326,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 3,
+      "official_mixer_code": "At",
+      "addiction": 0.607,
+      "description": "After consumption, the user is only able to run.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "balding",
       "name": "Balding",
-      "price_multiplier": 0.305,
+      "price_multiplier": 0.3,
       "rating_band": "A",
       "type": "Cosmetic",
       "icon": {
@@ -258,12 +348,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 3,
+      "official_mixer_code": "Ba",
+      "addiction": 0,
+      "description": "Causes balding in the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "calorie-dense",
       "name": "Calorie-Dense",
-      "price_multiplier": 0.285,
+      "price_multiplier": 0.28,
       "rating_band": "B",
       "type": "Cosmetic",
       "icon": {
@@ -274,12 +370,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 2,
+      "official_mixer_code": "Cd",
+      "addiction": 0.1,
+      "description": "Results in immediate weight gain.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "sedating",
       "name": "Sedating",
-      "price_multiplier": 0.265,
+      "price_multiplier": 0.26,
       "rating_band": "B",
       "type": "State",
       "icon": {
@@ -290,12 +392,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 2,
+      "official_mixer_code": "Se",
+      "addiction": 0,
+      "description": "Induces heavy sleepiness in the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "sneaky",
       "name": "Sneaky",
-      "price_multiplier": 0.241,
+      "price_multiplier": 0.24,
       "rating_band": "B",
       "type": "Ability",
       "icon": {
@@ -306,12 +414,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 2,
+      "official_mixer_code": "Sn",
+      "addiction": 0.327,
+      "description": "Silences the users foot steps.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "energizing",
       "name": "Energizing",
-      "price_multiplier": 0.227,
+      "price_multiplier": 0.22,
       "rating_band": "B",
       "type": "Ability",
       "icon": {
@@ -322,12 +436,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 2,
+      "official_mixer_code": "En",
+      "addiction": 0.34,
+      "description": "Increases the users energy.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "gingeritis",
       "name": "Gingeritis",
-      "price_multiplier": 0.204,
+      "price_multiplier": 0.2,
       "rating_band": "B",
       "type": "Cosmetic",
       "icon": {
@@ -338,12 +458,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 2,
+      "official_mixer_code": "Gi",
+      "addiction": 0,
+      "description": "After consumption, the user will become a ginger.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "euphoric",
       "name": "Euphoric",
-      "price_multiplier": 0.181,
+      "price_multiplier": 0.18,
       "rating_band": "B",
       "type": "State",
       "icon": {
@@ -354,12 +480,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 1,
+      "official_mixer_code": "Eu",
+      "addiction": 0.235,
+      "description": "Induces mild euphoria in the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "focused",
       "name": "Focused",
-      "price_multiplier": 0.166,
+      "price_multiplier": 0.16,
       "rating_band": "B",
       "type": "Ability",
       "icon": {
@@ -370,12 +502,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 1,
+      "official_mixer_code": "Fc",
+      "addiction": 0.104,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "refreshing",
       "name": "Refreshing",
-      "price_multiplier": 0.148,
+      "price_multiplier": 0.14,
       "rating_band": "C",
       "type": "State",
       "icon": {
@@ -386,12 +524,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 1,
+      "official_mixer_code": "Re",
+      "addiction": 0.104,
+      "description": "Slightly energizes the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "munchies",
       "name": "Munchies",
-      "price_multiplier": 0.126,
+      "price_multiplier": 0.12,
       "rating_band": "C",
       "type": "State",
       "icon": {
@@ -402,12 +546,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 1,
+      "official_mixer_code": "Mu",
+      "addiction": 0.096,
+      "description": "Makes the user hungry.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "calming",
       "name": "Calming",
-      "price_multiplier": 0.105,
+      "price_multiplier": 0.1,
       "rating_band": "C",
       "type": "State",
       "icon": {
@@ -418,12 +568,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 1,
+      "official_mixer_code": "Ca",
+      "addiction": 0,
+      "description": "Induces a slight calmness in the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "disorienting",
       "name": "Disorienting",
-      "price_multiplier": 0.004,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
@@ -434,12 +590,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 2,
+      "official_mixer_code": "Di",
+      "addiction": 0,
+      "description": "Causes unpredictable movement and slight visual impairment in the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "explosive",
       "name": "Explosive",
-      "price_multiplier": 0.003,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
@@ -450,12 +612,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 5,
+      "official_mixer_code": "Ex",
+      "addiction": 0,
+      "description": "Causes the user to explode shortly after consumption.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "laxative",
       "name": "Laxative",
-      "price_multiplier": 0.004,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
@@ -466,7 +634,13 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 3,
+      "official_mixer_code": "La",
+      "addiction": 0.1,
+      "description": "Causes the user to fart and shit uncontrollably.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "lethal",
@@ -482,12 +656,14 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "official_mixer_code": null,
+      "source": "Helper legacy effect; not exported by current Schedule1 Tools mixer package"
     },
     {
       "id": "paranoia",
       "name": "Paranoia",
-      "price_multiplier": 0.004,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
@@ -498,12 +674,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 1,
+      "official_mixer_code": "Pa",
+      "addiction": 0,
+      "description": "Induces paranoia in the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "schizophrenic",
-      "name": "Schizophrenic",
-      "price_multiplier": 0.009,
+      "name": "Schizophrenia",
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
@@ -514,12 +696,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 4,
+      "official_mixer_code": "Sc",
+      "addiction": 0,
+      "description": "Induces hallucinations and unpredictable behaviour in the user.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "seizure-inducing",
       "name": "Seizure-Inducing",
-      "price_multiplier": 0.002,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
@@ -530,12 +718,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 3,
+      "official_mixer_code": "Si",
+      "addiction": 0,
+      "description": "Consumption results in an instant seizure.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "smelly",
       "name": "Smelly",
-      "price_multiplier": 0.004,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
@@ -546,12 +740,18 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 1,
+      "official_mixer_code": "Sm",
+      "addiction": 0,
+      "description": "Makes the user unbearably smelly.",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     },
     {
       "id": "toxic",
       "name": "Toxic",
-      "price_multiplier": 0.008,
+      "price_multiplier": 0,
       "rating_band": "D",
       "type": "State",
       "icon": {
@@ -562,9 +762,17 @@
         "downloaded_to_repo": false,
         "verification": "No effect-specific asset was positively identified; nothing generic was accepted.",
         "synced_at": "2026-10-06T06:56:38.800003+00:00"
-      }
+      },
+      "tier": 2,
+      "official_mixer_code": "To",
+      "addiction": 0,
+      "description": "",
+      "source": "Schedule1 Tools open-source Mixer",
+      "source_repository": "https://github.com/Schedule1-Tools/mixer"
     }
   ],
   "updated_at": "2026-10-06T06:56:38.800003+00:00",
-  "pending_count": 35
+  "pending_count": 35,
+  "official_source": "https://github.com/Schedule1-Tools/mixer",
+  "official_effect_count": 34
 }
