@@ -25,9 +25,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/fionahancockunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/fionahancockunlocked.png",
-        "local_path": "./assets/game/customers/fionahancockunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -41,9 +42,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/herbertbleuballunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/herbertbleuballunlocked.png",
-        "local_path": "./assets/game/customers/herbertbleuballunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -57,9 +59,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/irenemeadowsunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/irenemeadowsunlocked.png",
-        "local_path": "./assets/game/customers/irenemeadowsunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -73,9 +76,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jenheardunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jenheardunlocked.png",
-        "local_path": "./assets/game/customers/jenheardunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -89,9 +93,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/lilyturnerunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/lilyturnerunlocked.png",
-        "local_path": "./assets/game/customers/lilyturnerunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -105,9 +110,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/michaelboogunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/michaelboogunlocked.png",
-        "local_path": "./assets/game/customers/michaelboogunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -121,9 +127,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/tobiaswentworthunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/tobiaswentworthunlocked.png",
-        "local_path": "./assets/game/customers/tobiaswentworthunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -137,9 +144,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/waltercusslerunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/waltercusslerunlocked.png",
-        "local_path": "./assets/game/customers/waltercusslerunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -153,9 +161,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/pearlmooreunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/pearlmooreunlocked.png",
-        "local_path": "./assets/game/customers/pearlmooreunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -169,9 +178,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/rayhoffmanunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/rayhoffmanunlocked.png",
-        "local_path": "./assets/game/customers/rayhoffmanunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -185,9 +195,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/alisonknightunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/alisonknightunlocked.png",
-        "local_path": "./assets/game/customers/alisonknightunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -201,9 +212,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/carlbundyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/carlbundyunlocked.png",
-        "local_path": "./assets/game/customers/carlbundyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -217,9 +229,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/chrissullivanunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/chrissullivanunlocked.png",
-        "local_path": "./assets/game/customers/chrissullivanunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -233,9 +246,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/denniskennedyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/denniskennedyunlocked.png",
-        "local_path": "./assets/game/customers/denniskennedyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -249,9 +263,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/hankstevensonunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/hankstevensonunlocked.png",
-        "local_path": "./assets/game/customers/hankstevensonunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -265,9 +280,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/haroldcoltunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/haroldcoltunlocked.png",
-        "local_path": "./assets/game/customers/haroldcoltunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -281,9 +297,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jackknightunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jackknightunlocked.png",
-        "local_path": "./assets/game/customers/jackknightunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -297,9 +314,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jackiestevensonunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jackiestevensonunlocked.png",
-        "local_path": "./assets/game/customers/jackiestevensonunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -313,9 +331,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jeremywilkinsonunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jeremywilkinsonunlocked.png",
-        "local_path": "./assets/game/customers/jeremywilkinsonunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -329,9 +348,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/georgegreeneunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/georgegreeneunlocked.png",
-        "local_path": "./assets/game/customers/georgegreeneunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -345,9 +365,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/geraldinepoonunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/geraldinepoonunlocked.png",
-        "local_path": "./assets/game/customers/geraldinepoonunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -361,9 +382,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/deanwebsterunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/deanwebsterunlocked.png",
-        "local_path": "./assets/game/customers/deanwebsterunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -377,9 +399,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/annachesterfieldunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/annachesterfieldunlocked.png",
-        "local_path": "./assets/game/customers/annachesterfieldunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -393,9 +416,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/billykramerunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/billykramerunlocked.png",
-        "local_path": "./assets/game/customers/billykramerunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -409,9 +433,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/brucenortonunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/brucenortonunlocked.png",
-        "local_path": "./assets/game/customers/brucenortonunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -425,9 +450,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/crankyfrankunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/crankyfrankunlocked.png",
-        "local_path": "./assets/game/customers/crankyfrankunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -441,9 +467,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/genghisbarnunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/genghisbarnunlocked.png",
-        "local_path": "./assets/game/customers/genghisbarnunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -457,9 +484,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kellyreynoldsunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kellyreynoldsunlocked.png",
-        "local_path": "./assets/game/customers/kellyreynoldsunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -473,9 +501,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/lisagardenerunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/lisagardenerunlocked.png",
-        "local_path": "./assets/game/customers/lisagardenerunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -489,9 +518,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/maccooperunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/maccooperunlocked.png",
-        "local_path": "./assets/game/customers/maccooperunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -505,9 +535,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/marcobaroneunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/marcobaroneunlocked.png",
-        "local_path": "./assets/game/customers/marcobaroneunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -521,9 +552,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/melissawoodunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/melissawoodunlocked.png",
-        "local_path": "./assets/game/customers/melissawoodunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -537,9 +569,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/shermangilesunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/shermangilesunlocked.png",
-        "local_path": "./assets/game/customers/shermangilesunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -553,9 +586,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/karenkennedyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/karenkennedyunlocked.png",
-        "local_path": "./assets/game/customers/karenkennedyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -569,9 +603,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/elizabethhomleyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/elizabethhomleyunlocked.png",
-        "local_path": "./assets/game/customers/elizabethhomleyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -585,9 +620,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/eugenebuckleyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/eugenebuckleyunlocked.png",
-        "local_path": "./assets/game/customers/eugenebuckleyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -601,9 +637,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/gregfiggleunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/gregfiggleunlocked.png",
-        "local_path": "./assets/game/customers/gregfiggleunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -617,9 +654,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jenniferriveraunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jenniferriveraunlocked.png",
-        "local_path": "./assets/game/customers/jenniferriveraunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -633,9 +671,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kevinoakleyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kevinoakleyunlocked.png",
-        "local_path": "./assets/game/customers/kevinoakleyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -649,9 +688,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kimdelaneyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kimdelaneyunlocked.png",
-        "local_path": "./assets/game/customers/kimdelaneyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -665,9 +705,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/louisfourierunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/louisfourierunlocked.png",
-        "local_path": "./assets/game/customers/louisfourierunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -681,9 +722,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/lucypenningtonunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/lucypenningtonunlocked.png",
-        "local_path": "./assets/game/customers/lucypenningtonunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -697,9 +739,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/peggymyersunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/peggymyersunlocked.png",
-        "local_path": "./assets/game/customers/peggymyersunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -713,9 +756,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/peterfileunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/peterfileunlocked.png",
-        "local_path": "./assets/game/customers/peterfileunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -729,9 +773,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/philipwentworthunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/philipwentworthunlocked.png",
-        "local_path": "./assets/game/customers/philipwentworthunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -745,9 +790,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/randycaulfieldunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/randycaulfieldunlocked.png",
-        "local_path": "./assets/game/customers/randycaulfieldunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -761,9 +807,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jessiwatersunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jessiwatersunlocked.png",
-        "local_path": "./assets/game/customers/jessiwatersunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -777,9 +824,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/javierperezunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/javierperezunlocked.png",
-        "local_path": "./assets/game/customers/javierperezunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -793,9 +841,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jerrymonterounlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jerrymonterounlocked.png",
-        "local_path": "./assets/game/customers/jerrymonterounlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -809,9 +858,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kylecooleyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kylecooleyunlocked.png",
-        "local_path": "./assets/game/customers/kylecooleyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -825,9 +875,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/austinsteinerunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/austinsteinerunlocked.png",
-        "local_path": "./assets/game/customers/austinsteinerunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -841,9 +892,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/kathyhendersonunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/kathyhendersonunlocked.png",
-        "local_path": "./assets/game/customers/kathyhendersonunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -857,9 +909,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/micklubbinunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/micklubbinunlocked.png",
-        "local_path": "./assets/game/customers/micklubbinunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -873,9 +926,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/charlesrowlandunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/charlesrowlandunlocked.png",
-        "local_path": "./assets/game/customers/charlesrowlandunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -889,9 +943,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/donnamartinunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/donnamartinunlocked.png",
-        "local_path": "./assets/game/customers/donnamartinunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -905,9 +960,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/dorislubbinunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/dorislubbinunlocked.png",
-        "local_path": "./assets/game/customers/dorislubbinunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -921,9 +977,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/jeffgilmoreunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/jeffgilmoreunlocked.png",
-        "local_path": "./assets/game/customers/jeffgilmoreunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -937,9 +994,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/joyceballunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/joyceballunlocked.png",
-        "local_path": "./assets/game/customers/joyceballunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -953,9 +1011,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/mrsmingunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/mrsmingunlocked.png",
-        "local_path": "./assets/game/customers/mrsmingunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -969,9 +1028,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/trentshermanunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/trentshermanunlocked.png",
-        "local_path": "./assets/game/customers/trentshermanunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -985,9 +1045,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/samthompsonunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/samthompsonunlocked.png",
-        "local_path": "./assets/game/customers/samthompsonunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -1001,9 +1062,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/bethpennunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/bethpennunlocked.png",
-        "local_path": "./assets/game/customers/bethpennunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -1017,9 +1079,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/chloebowersunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/chloebowersunlocked.png",
-        "local_path": "./assets/game/customers/chloebowersunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -1033,9 +1096,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/keithwagnerunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/keithwagnerunlocked.png",
-        "local_path": "./assets/game/customers/keithwagnerunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -1049,9 +1113,10 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/ludwigmeyerunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/ludwigmeyerunlocked.png",
-        "local_path": "./assets/game/customers/ludwigmeyerunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     },
     {
@@ -1065,10 +1130,13 @@
         "source_asset_path": "schedule_i_poptracker_razgriz/images/items/megcooleyunlocked.png",
         "source_commit": "ce6c329d36724e5f3673cff927ebdeb93b571dcb",
         "asset_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/ce6c329d36724e5f3673cff927ebdeb93b571dcb/schedule_i_poptracker_razgriz/images/items/megcooleyunlocked.png",
-        "local_path": "./assets/game/customers/megcooleyunlocked.png",
+        "local_path": null,
         "verified": true,
-        "license": "MIT (source repository); game/IP rights remain with respective owners"
+        "license": "MIT (source repository); game/IP rights remain with respective owners",
+        "render_mode": "remote-source"
       }
     }
-  ]
+  ],
+  "source_checked": "2026-10-06",
+  "note": "All 66 customer portraits are mapped to exact game-derived PopTracker assets. The repository is MIT-licensed; game/IP rights remain with their respective owners."
 }
