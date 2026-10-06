@@ -42,12 +42,23 @@ def norm(s: object) -> str:
 
 def get(url: str) -> requests.Response | None:
     try:
-        r = SESSION.get(url, timeout=25)
+        r=SESSION.get(url, timeout=35)
         if r.ok:
             return r
     except requests.RequestException:
         pass
     return None
+
+def get_reader(url: str) -> str | None:
+    reader_url="https://r.jina.ai/"+url
+    try:
+        r=SESSION.get(reader_url, timeout=45, headers={"Accept":"text/plain"})
+        if r.ok and len(r.text)>500:
+            return r.text
+    except requests.RequestException:
+        pass
+    return None
+
 
 def unwrap_next_image(url: str) -> str:
     if "_next/image" not in url:
@@ -87,6 +98,27 @@ def effect_candidates(effect_name: str) -> list[tuple[str,int,str]]:
     slug = slugify(effect_name)
     page = f"https://schedule1-lab.com/wiki/effects/{slug}"
     out: list[tuple[str,int,str]] = []
+
+    reader = get_reader(page)
+    if reader:
+        for alt, url in re.findall(r"!\\[([^]]*)\\]\\(([^)]+)\\)", reader):
+            alt_text=clean(alt).lower()
+            low=url.lower()
+            if any(x in low for x in ("/wordmark", "/logo", "/favicon", "/og-", "/site-icon")):
+                continue
+            score=0
+            if norm(effect_name) in norm(alt_text): score+=220
+            if slug in low: score+=170
+            if "/effects/" in low: score+=60
+            if score>=170:
+                out.append((url,score,"jina-effect-markdown"))
+
+        # Jina may preserve raw HTML in code/data blocks, so also inspect effect-specific URLs.
+        for raw in re.findall(r'https?://[^"\\s)]+', reader, flags=re.I):
+            low=raw.lower()
+            if slug in low and any(low.endswith(ext) or ext+"?" in low for ext in (".png",".webp",".jpg",".jpeg",".svg")):
+                out.append((raw,190,"jina-effect-url"))
+
     r = get(page)
     if r:
         soup = BeautifulSoup(r.text, "html.parser")
@@ -102,31 +134,23 @@ def effect_candidates(effect_name: str) -> list[tuple[str,int,str]]:
             if any(x in path for x in ("/wordmark", "/logo", "/favicon", "/og-", "/site-icon")):
                 continue
             score = 0
-            if target in alt:
-                score += 140
-            if target in title:
-                score += 60
-            if slug in path:
-                score += 80
-            if "/effects/" in path:
-                score += 30
-            # A generic page image without an effect-specific alt/title/path is never accepted.
-            if score < 140:
-                continue
-            out.append((u, score, "effect-specific-img"))
+            if target in alt: score += 140
+            if target in title: score += 60
+            if slug in path: score += 80
+            if "/effects/" in path: score += 30
+            if score >= 140:
+                out.append((u, score, "effect-specific-img"))
 
-        for img in soup.find_all("img"):
-            raw = img.get("srcset") or ""
-            for part in raw.split(","):
-                candidate = part.strip().split(" ")[0]
-                if not candidate:
-                    continue
-                u = urljoin(page, unwrap_next_image(candidate))
-                path = urlparse(u).path.lower()
-                if any(x in path for x in ("/wordmark", "/logo", "/favicon", "/og-", "/site-icon")):
-                    continue
-                if slug in path and "/effects/" in path:
-                    out.append((u, 90, "effect-specific-srcset"))
+    # Fandom's file redirect resolves an exact named wiki image without relying on page metadata.
+    filename_bases = {effect_name.replace(" ", "_"), effect_name.replace(" ", "-"), slug}
+    for base in sorted(filename_bases):
+        for ext in ("png","webp"):
+            filename=f"{base}_Icon.{ext}"
+            out.append((
+                "https://schedule-1.fandom.com/wiki/Special:Redirect/file/"+quote(filename),
+                220,
+                "fandom-exact-file-redirect",
+            ))
 
     # Direct paths are only considered when the URL itself names the exact effect.
     for ext in ("webp","png","jpg","jpeg"):
@@ -141,7 +165,7 @@ def effect_candidates(effect_name: str) -> list[tuple[str,int,str]]:
     for item in sorted(out, key=lambda x:x[1], reverse=True):
         if item[0] not in seen:
             seen.add(item[0]); dedup.append(item)
-    return dedup[:80]
+    return dedup[:120]
 
 def sync_effect_icons() -> dict:
     payload = json.loads(EFFECTS_FILE.read_text(encoding="utf-8"))
@@ -440,51 +464,92 @@ def dom_recipes(soup: BeautifulSoup):
         candidates.append(candidate)
     return candidates
 
+def parse_jina_community(reader: str) -> list[dict]:
+    recipes=[]
+    sections=re.split(r"(?m)^###\\s+",reader)
+    for sec in sections[1:]:
+        lines=sec.splitlines()
+        if not lines: continue
+        title=clean(lines[0])
+        if not title or "Open in Mixing" not in sec:
+            continue
+        base_match=re.search(r"(?m)^(.+?)\\s+·\\s+base\\s+\\$([0-9]+(?:\\.[0-9]+)?)\\s*$",sec)
+        if not base_match: continue
+        base=normalize_product(base_match.group(1))
+        if not base: continue
+
+        effect_match=re.search(r"Effects\\s*\\(\\s*(\\d+)\\s*\\)\\s*(.*?)(?=\\nIngredients\\s*\\(|\\Z)",sec,re.S|re.I)
+        ing_match=re.search(r"Ingredients\\s*\\(\\s*(\\d+)\\s*\\)\\s*(.*?)(?=\\nPrice breakdown|\\nCustomers|\\nOpen in Mixing|\\Z)",sec,re.S|re.I)
+        if not ing_match:
+            continue
+
+        declared_ings=int(ing_match.group(1))
+        ing_block=ing_match.group(2)
+        ingredients=[]
+        for m in re.finditer(r"(?:Image:\\s*)?([^\\n*]+?)(?:\\s+-\\s+\\$[0-9]+|\\$[0-9]+)\\s*(?:\\n|$)",ing_block):
+            name=clean(m.group(1))
+            x=normalize_ingredient(name)
+            if x: ingredients.append(x)
+        if len(ingredients)<declared_ings:
+            # More tolerant fallback: capture ingredient names from each Image line.
+            for line in ing_block.splitlines():
+                line=clean(line.lstrip("* "))
+                if not line: continue
+                m=re.search(r"Image:\\s*([^-$]+?)(?:\\s+-\\s+\\$|\\$)",line)
+                if m:
+                    x=normalize_ingredient(m.group(1))
+                    if x: ingredients.append(x)
+        ingredients=ingredients[:declared_ings]
+        if len(ingredients)!=declared_ings:
+            continue
+
+        effects=[]
+        if effect_match:
+            block=effect_match.group(2)
+            declared_eff=int(effect_match.group(1))
+            for line in block.splitlines():
+                name=clean(line.lstrip("* "))
+                x=next((e for e in EFFECTS if norm(e)==norm(name)),None)
+                if x and x not in effects: effects.append(x)
+            effects=effects[:declared_eff]
+
+        def card_num(label):
+            m=re.search(r"(?<![A-Za-z])"+re.escape(label)+r"\\s*\\$?\\s*([0-9]+(?:\\.[0-9]+)?)",sec,re.I)
+            if not m: return None
+            v=float(m.group(1)); return int(v) if v.is_integer() else v
+
+        cm=re.search(r"Customers\\s*\\(\\s*(\\d+)\\s*\\)",sec,re.I)
+        recipes.append({
+            "name":title,
+            "base_product":base,
+            "ingredients":ingredients,
+            "effects":effects,
+            "cost":card_num("Cost"),
+            "sell":card_num("Sells for"),
+            "profit":card_num("Profit"),
+            "customers":int(cm.group(1)) if cm else None,
+            "asking":card_num("Asking"),
+            "source_url":"https://schedule1-lab.com/community/recipes",
+            "source_type":"community",
+        })
+    return recipes
+
 def sync_community_recipes() -> dict:
     url="https://schedule1-lab.com/community/recipes"
-    r=get(url)
-    if not r:
-        raise RuntimeError("Community Recipes page could not be fetched")
-
-    soup=BeautifulSoup(r.text,"html.parser")
-    embedded=[]
-    for blob in parse_embedded_json(soup):
-        embedded.extend(extract_recipe_objects(blob))
-
-    embedded_unique=[]
-    seen=set()
-    for x in embedded:
-        key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
-        if key in seen:
-            continue
-        seen.add(key)
-        embedded_unique.append(x)
-
-    dom=dom_recipes(soup)
-    print(f"community recipe extraction: embedded={len(embedded_unique)} dom={len(dom)}")
-
-    # The public page itself reports 77/77. Accept exactly 77 unique recipe cards;
-    # otherwise fail rather than silently importing an incorrect catalog.
-    if len(embedded_unique)==77:
-        source=embedded_unique
-        extraction_source="embedded"
-    elif len(dom)==77:
-        source=dom
-        extraction_source="dom"
-    else:
-        raise RuntimeError(f"Expected exactly 77 community recipes, got embedded={len(embedded_unique)} dom={len(dom)}")
-
+    reader=get_reader(url)
+    if not reader:
+        raise RuntimeError("Community Recipes reader source could not be fetched")
+    recipes=parse_jina_community(reader)
     uniq=[]
     seen=set()
-    for x in source:
-        key=(clean(x["name"]).lower(), tuple(x["ingredients"]), clean(x.get("base_product") or "").lower())
-        if key in seen:
-            continue
-        seen.add(key)
-        uniq.append(x)
+    for x in recipes:
+        key=(clean(x["name"]).lower(),x["base_product"],tuple(x["ingredients"]))
+        if key in seen: continue
+        seen.add(key); uniq.append(x)
 
+    print(f"community reader extraction: {len(uniq)} unique recipe cards")
     if len(uniq)!=77:
-        raise RuntimeError(f"Expected exactly 77 unique community recipes after deduplication, got {len(uniq)}")
+        raise RuntimeError(f"Expected exactly 77 community recipes from reader, got {len(uniq)}")
 
     for i,x in enumerate(uniq,1):
         slug=slugify(x["name"])
@@ -493,23 +558,22 @@ def sync_community_recipes() -> dict:
         for k in ("cost","sell","profit","asking"):
             if x.get(k) is not None:
                 x[k]=int(x[k]) if float(x[k]).is_integer() else x[k]
-        if x.get("customers") is not None:
-            x["customers"]=int(x["customers"])
+        if x.get("customers") is not None: x["customers"]=int(x["customers"])
 
     now=datetime.now(timezone.utc).isoformat()
     out={
-        "schema_version":3,
+        "schema_version":4,
         "source":url,
         "expected_count":77,
         "verified_count":77,
         "status":"complete",
-        "extraction_source":extraction_source,
+        "extraction_source":"jina-reader",
         "snapshot_at":now,
         "recipes":uniq,
-        "note":"Exactly 77 recipes were imported from the public Community Recipes catalog. Effects/economics are captured when present in the published recipe data."
+        "note":"Exactly 77 recipe cards were imported from the published Community Recipes catalog. Card-level ingredients, effects and economics are captured when published."
     }
-    COMMUNITY_FILE.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    return {"expected_count":77,"verified_count":77,"status":"complete","extraction_source":extraction_source}
+    COMMUNITY_FILE.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    return {"expected_count":77,"verified_count":77,"status":"complete","extraction_source":"jina-reader"}
 
 def main():
     effect_audit=sync_effect_icons()
