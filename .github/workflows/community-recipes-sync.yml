@@ -1,0 +1,36 @@
+name: Sync community recipes
+on:
+  push:
+    branches: [audit-fixes-2026-10-05]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit-fixes-2026-10-05
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install browser tooling
+        run: |
+          npm init -y
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Sync and validate 77 recipes
+        run: node scripts/sync-community-recipes.mjs
+      - name: Commit database refresh
+        run: |
+          if git diff --quiet -- data/community-recipes.json; then
+            echo "No community recipe changes."
+            exit 0
+          fi
+          git config user.name "schedule1-helper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/community-recipes.json
+          git commit -m "chore: sync 77 community recipes [skip ci]"
+          git push origin HEAD:audit-fixes-2026-10-05
