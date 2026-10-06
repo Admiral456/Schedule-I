@@ -38,7 +38,7 @@
       "base_effect": "Gingeritis",
       "cost": 2,
       "rules": {
-        "Cyclopean": "Thought-Provoking",
+        "Cyclopean": "Energizing",
         "Energizing": "Thought-Provoking",
         "Toxic": "Smelly",
         "Long Faced": "Refreshing",
@@ -55,14 +55,16 @@
       "base_effect": "Sneaky",
       "cost": 3,
       "rules": {
-        "Energizing": "Paranoia",
         "Calming": "Slippery",
-        "Toxic": "Tropic Thunder",
-        "Spicy": "Bright-Eyed",
-        "Glowing": "Toxic",
+        "Electrifying": "Athletic",
+        "Energizing": "Paranoia",
+        "Focused": "Gingeritis",
         "Foggy": "Calming",
+        "Glowing": "Toxic",
         "Munchies": "Anti-Gravity",
-        "Electrifying": "Athletic"
+        "Paranoia": "Balding",
+        "Spicy": "Bright-Eyed",
+        "Toxic": "Tropic Thunder"
       }
     },
     {
@@ -71,10 +73,12 @@
       "base_effect": "Calorie-Dense",
       "cost": 3,
       "rules": {
-        "Balding": "Sneaky",
         "Anti-Gravity": "Slippery",
-        "Jennerising": "Gingeritis",
+        "Balding": "Sneaky",
+        "Calorie-Dense": "Explosive",
         "Focused": "Euphoric",
+        "Jennerising": "Gingeritis",
+        "Munchies": "Calming",
         "Shrinking": "Energizing"
       }
     },
@@ -87,7 +91,8 @@
         "Athletic": "Sneaky",
         "Euphoric": "Bright-Eyed",
         "Laxative": "Calming",
-        "Disorienting": "Toxic"
+        "Disorienting": "Toxic",
+        "Shrinking": "Gingeritis"
       }
     },
     {
@@ -145,14 +150,15 @@
       "base_effect": "Athletic",
       "cost": 6,
       "rules": {
+        "Disorienting": "Electrifying",
+        "Euphoric": "Energizing",
+        "Focused": "Shrinking",
+        "Foggy": "Laxative",
+        "Glowing": "Disorienting",
+        "Schizophrenic": "Balding",
         "Sedating": "Munchies",
         "Spicy": "Euphoric",
-        "Tropic Thunder": "Sneaky",
-        "Glowing": "Disorienting",
-        "Foggy": "Laxative",
-        "Disorienting": "Electrifying",
-        "Schizophrenic": "Balding",
-        "Focused": "Shrinking"
+        "Tropic Thunder": "Sneaky"
       }
     },
     {
@@ -174,17 +180,16 @@
       "base_effect": "Foggy",
       "cost": 7,
       "rules": {
-        "Energizing": "Cyclopean",
-        "Sneaky": "Calming",
-        "Jennerising": "Paranoia",
-        "Thought-Provoking": "Energizing",
         "Athletic": "Laxative",
-        "Slippery": "Toxic",
-        "Seizure-Inducing": "Focused",
-        "Focused": "Disorienting",
         "Calming": "Glowing",
+        "Energizing": "Cyclopean",
+        "Focused": "Disorienting",
+        "Jennerising": "Paranoia",
+        "Seizure-Inducing": "Focused",
         "Shrinking": "Electrifying",
-        "Foggy": "Glowing"
+        "Slippery": "Toxic",
+        "Sneaky": "Calming",
+        "Thought-Provoking": "Energizing"
       }
     },
     {
@@ -255,5 +260,8 @@
       }
     }
   ],
-  "transformation_rule_count": 109
+  "transformation_rule_count": 109,
+  "total_rule_count": 114,
+  "verified_source": "https://schedule1calculator.app/rules/",
+  "verification_note": "Transformation pairs cross-checked against current public Schedule 1 Calculator rule table on 2026-10-06."
 }
