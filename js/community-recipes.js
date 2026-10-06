@@ -1,7 +1,7 @@
 (() => {
   const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
   const norm = v => String(v ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
-  let recipes = [];
+  let recipes = []; let effectColors = {};
 
   function inject() {
     if (document.querySelector('.tab[data-tab="community"]')) return;
@@ -37,7 +37,7 @@
       .s1-community-meta{font-size:9px;color:var(--muted);margin-top:3px}
       .s1-community-ings{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
       .s1-community-ing{padding:4px 7px;border-radius:999px;border:1px solid var(--border);background:var(--panel2);font-size:9px}
-      .s1-community-source{font-size:8px;color:var(--muted);margin-top:9px}
+      .s1-community-effects{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}.s1-community-effect{padding:4px 7px;border-radius:999px;border:1px solid var(--border);background:color-mix(in srgb,var(--effect-color) 18%,var(--panel2));color:var(--effect-color);font-size:9px;font-weight:700}.s1-community-source{font-size:8px;color:var(--muted);margin-top:9px}
       @media(max-width:720px){.s1-community-grid{grid-template-columns:1fr}}
     `;
     document.head.appendChild(style);
@@ -59,7 +59,7 @@
         <div class="s1-community-name">${esc(r.name)}</div>
         <div class="s1-community-meta">Základ: ${esc(r.base_product || "neuvedený")}</div>
         <div class="s1-community-ings">${(r.ingredients||[]).map(x=>`<span class="s1-community-ing">${esc(x)}</span>`).join("")}</div>
-        <div class="s1-community-source">Source: Schedule1 Tools · verified shared mix</div>
+        <div class="s1-community-effects">${(r.effects||[]).map(e=>`<span class="s1-community-effect" style="--effect-color:${esc(effectColors[e]||"transparent")}">${esc(e)}</span>`).join("")}</div><div class="s1-community-source">Source: Schedule1 Tools · verified shared mix</div>
       </article>`).join("") || '<div class="empty">Žádný recept neodpovídá hledání.</div>';
   }
 
