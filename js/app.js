@@ -221,8 +221,13 @@ $("#clearLocalData").addEventListener("click",()=>{if(!confirm("Smazat lokální
       send.disabled=true;setStatus("Odesílám ověřovací kód…");
       try{
         const {error}=await window.s1Supabase.auth.signInWithOtp({email:value,options:{shouldCreateUser:true}});
-        if(error)throw error;
-        setStatus("Kód byl odeslán na email. Zadej ho níže.","good");code.focus();
+        if(error){
+          const msg=String(error.message||"");
+          if(/not authorized|unauthorized/i.test(msg)) throw new Error("Tento email není autorizovaný pro výchozí Supabase SMTP. Nastav vlastní SMTP, aby mohl kód chodit běžným uživatelům.");
+          if(/rate limit|too many/i.test(msg)) throw new Error("Supabase dočasně omezil počet přihlášení. Zkus to za chvíli.");
+          throw error;
+        }
+        setStatus("Kód byl odeslán. Zkontroluj doručenou poštu i Spam.","good");code.focus();
       }catch(err){setStatus("Kód se nepodařilo odeslat: "+(err?.message||"neznámá chyba"),"error");}
       finally{send.disabled=false;}
     };
@@ -272,11 +277,31 @@ $("#clearLocalData").addEventListener("click",()=>{if(!confirm("Smazat lokální
   }
   async function sendOtp(){
     const email=(document.querySelector("#authEmail")?.value||"").trim();
+    const sendBtn=document.querySelector("#sendAuthCode");
     if(!/^\S+@\S+\.\S+$/.test(email)){alert("Zadej platný email.");return;}
     const displayName=(document.querySelector("#displayName")?.value||"").trim().slice(0,40);
-    const {error}=await window.s1Supabase.auth.signInWithOtp({email,options:{shouldCreateUser:true,data:{display_name:displayName}}});
-    if(error){alert("Kód se nepodařilo odeslat: "+error.message);return;}
-    alert("Kód byl odeslán na email.");document.querySelector("#authCode")?.focus();
+    if(sendBtn){sendBtn.disabled=true;sendBtn.textContent="Odesílám…";}
+    try{
+      const {error}=await window.s1Supabase.auth.signInWithOtp({
+        email,
+        options:{shouldCreateUser:true,data:{display_name:displayName}}
+      });
+      if(error){
+        const msg=String(error.message||"");
+        if(/not authorized|unauthorized/i.test(msg)){
+          alert("Supabase tento email odmítl odeslat přes výchozí SMTP. Výchozí SMTP posílá pouze na adresy členů týmu projektu. Pro běžné uživatele je potřeba nastavit vlastní SMTP (např. Resend, Brevo, Postmark nebo AWS SES).");
+        }else if(/rate limit|too many/i.test(msg)){
+          alert("Supabase dočasně omezil počet odeslaných emailů. Zkus to později.");
+        }else{
+          alert("Kód se nepodařilo odeslat: "+msg);
+        }
+        return;
+      }
+      alert("Požadavek byl přijat. Zkontroluj doručenou poštu a Spam. Pokud používáš výchozí Supabase SMTP, email může být doručen pouze na autorizovanou adresu projektu.");
+      document.querySelector("#authCode")?.focus();
+    }finally{
+      if(sendBtn){sendBtn.disabled=false;sendBtn.textContent="Poslat kód";}
+    }
   }
   async function verifyOtp(){
     const email=(document.querySelector("#authEmail")?.value||"").trim(),token=(document.querySelector("#authCode")?.value||"").trim();
