@@ -19,6 +19,8 @@ async function loadCatalogData(){
   CATALOG.properties=Array.isArray(p.properties)?p.properties:[];
   CATALOG.businesses=Array.isArray(b.businesses)?b.businesses:[];
   CATALOG.vehicles=Array.isArray(v.vehicles)?v.vehicles:[];
+  window.__s1Catalog = CATALOG;
+  window.__s1Drugs = CATALOG.drugs;
   renderCatalog();
 }
 function imageMarkup(src,name){
