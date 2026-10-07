@@ -30,24 +30,63 @@ $("#customerPinFilter")?.addEventListener("change",renderCustomers);
 function searchEverything(raw){
  const value=searchNorm(raw);
  if(!value)return;
- const customer=state.customers.find(c=>searchNorm([c.name,c.district,c.tier,...c.preferred_effects].join(" ")).includes(value));
- if(customer){state.selectedCustomer=Number(customer.id);$("#customerSearch").value=String(raw);showTab("customers");renderCustomers();return;}
- const recipe=state.recipes.find(x=>searchNorm([x.name,x.drug,...x.ingredients,...x.effects].join(" ")).includes(value));
- if(recipe){$("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();return;}
- const product=window.__s1Products?.find(x=>searchNorm([x.name,x.family,x.base_product,...x.ingredients,...x.effects].join(" ")).includes(value));
- if(product){
+ const customers=state.customers||[];
+ const catalog=window.__s1Catalog||{};
+ const drugs=catalog.drugs||[];
+ const ingredients=catalog.ingredients||[];
+ const effects=catalog.effects||[];
+ const dealers=catalog.dealers||[];
+ const properties=catalog.properties||[];
+ const businesses=catalog.businesses||[];
+ const vehicles=catalog.vehicles||[];
+ const productList=window.__s1Products||[];
+
+ const exactCustomer=customers.find(c=>searchNorm(c.name)===value);
+ if(exactCustomer){state.selectedCustomer=Number(exactCustomer.id);$("#customerSearch").value=String(raw);showTab("customers");renderCustomers();return;}
+
+ const exactDrug=drugs.find(x=>searchNorm(x.name)===value||searchNorm(x.id)===value);
+ if(exactDrug){$("#catalogKind").value="drugs";$("#catalogSearch").value=exactDrug.name;showTab("catalog");$("#catalogSearch").dispatchEvent(new Event("input",{bubbles:true}));return;}
+
+ const exactIngredient=ingredients.find(x=>searchNorm(x.name)===value||searchNorm(x.id)===value);
+ if(exactIngredient){$("#catalogKind").value="ingredients";$("#catalogSearch").value=exactIngredient.name;showTab("catalog");$("#catalogSearch").dispatchEvent(new Event("input",{bubbles:true}));return;}
+
+ const exactEffect=effects.find(x=>searchNorm(x.name)===value||searchNorm(x.id)===value);
+ if(exactEffect){$("#catalogKind").value="effects";$("#catalogSearch").value=exactEffect.name;showTab("catalog");$("#catalogSearch").dispatchEvent(new Event("input",{bubbles:true}));return;}
+
+ const exactRecipe=state.recipes.find(x=>searchNorm(x.name)===value);
+ if(exactRecipe){$("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();return;}
+
+ const broadCustomer=customers.find(c=>searchNorm([c.name,c.district,c.tier,...(c.preferred_effects||[])].join(" ")).includes(value));
+ if(broadCustomer){state.selectedCustomer=Number(broadCustomer.id);$("#customerSearch").value=String(raw);showTab("customers");renderCustomers();return;}
+
+ const broadProduct=productList.find(x=>searchNorm([x.name,x.family,x.base_product,...(x.ingredients||[]),...(x.effects||[])].join(" ")).includes(value));
+ if(broadProduct){
    const tab=document.querySelector('.tab[data-tab="products"]');
-   tab?.click();
+   showTab("products");
+   tab?.classList.add("active");
    const input=$("#productSearch");
    if(input){input.value=String(raw);input.dispatchEvent(new Event("input",{bubbles:true}));}
    return;
  }
- $("#catalogSearch").value=String(raw);
- const catalog=window.__s1Catalog||{};
- const kindOrder=["ingredients","drugs","effects","dealers","properties","businesses","vehicles"];
- const hit=kindOrder.find(kind=>(catalog[kind]||[]).some(x=>[x.name,x.family,x.type,x.base_effect,x.location].filter(Boolean).join(" ").toLowerCase().includes(value)));
- if(hit){$("#catalogKind").value=hit;showTab("catalog");$("#catalogSearch").dispatchEvent(new Event("input",{bubbles:true}));return;}
- $("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();
+
+ const broadRecipe=state.recipes.find(x=>searchNorm([x.name,x.drug,...(x.ingredients||[]),...(x.effects||[])].join(" ")).includes(value));
+ if(broadRecipe){$("#recipeSearch").value=String(raw);showTab("recipes");renderRecipes();return;}
+
+ const catalogGroups=[
+   ["drugs",drugs],["ingredients",ingredients],["effects",effects],
+   ["dealers",dealers],["properties",properties],["businesses",businesses],["vehicles",vehicles]
+ ];
+ const hit=catalogGroups.find(([kind,items])=>items.some(x=>searchNorm([x.name,x.family,x.type,x.base_effect,x.location,x.specialty].filter(Boolean).join(" ")).includes(value)));
+ if(hit){
+   $("#catalogKind").value=hit[0];
+   $("#catalogSearch").value=String(raw);
+   showTab("catalog");
+   $("#catalogSearch").dispatchEvent(new Event("input",{bubbles:true}));
+   return;
+ }
+ $("#recipeSearch").value=String(raw);
+ showTab("recipes");
+ renderRecipes();
 }
 $("#homeSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")searchEverything(e.currentTarget.value);});
 
@@ -66,7 +105,7 @@ function portraitMarkup(c,variant="card"){const p=customerPortrait(c),local=type
 function bindPortraitFallbacks(){document.querySelectorAll("[data-customer-portrait]").forEach(img=>{if(img.dataset.portraitBound)return;img.dataset.portraitBound="1";img.addEventListener("error",()=>{if(img.dataset.portraitFallbackUsed)return;const fallback=img.dataset.portraitFallback||"";if(fallback&&img.getAttribute("src")!==fallback){img.dataset.portraitFallbackUsed="1";img.src=fallback;return;}img.hidden=true;img.parentElement?.classList.add("portrait-missing");});});}
 
 function verifiedCustomerCount(){return state.customers.filter(customerMapVerified).length;}function renderCategories(){$("#mapCategoryList").innerHTML=mapCategories.map(x=>"<div class='category-row'><span>"+esc(x.name)+"</span><b>"+x.count+"</b></div>").join("");}
-async function loadData(){const [c,r,e,p,s]=await Promise.all([fetch("./data/customers.json",{cache:"no-store"}).then(x=>x.json()),fetch("./data/recipes.json",{cache:"no-store"}).then(x=>x.json()),fetch("./data/effects.json",{cache:"no-store"}).then(x=>x.json()),fetch("./data/customer-portraits.json",{cache:"no-store"}).then(x=>x.json()).catch(()=>({customers:[]})),fetch("./data/customer-schedules.json",{cache:"no-store"}).then(x=>x.json()).catch(()=>({schedules:[]}))]);state.customers=Array.isArray(c.customers)?c.customers:[];state.recipes=Array.isArray(r.recipes)?r.recipes:[];state.effects=Array.isArray(e.effects)?e.effects:[];state.portraitRegistry=new Map((Array.isArray(p.customers)?p.customers:[]).map(x=>[Number(x.id),x.portrait||{}]));state.customerSchedules=new Map((Array.isArray(s.schedules)?s.schedules:[]).map(x=>[Number(x.id),x]));$("#customerCountBadge").textContent=state.customers.length;const districts=[...new Set(state.customers.map(x=>x.district))].sort();$("#districtFilter").insertAdjacentHTML("beforeend",districts.map(x=>"<option>"+esc(x)+"</option>").join(""));renderCategories();renderCustomers();renderRecipes();applySettings();applyIncomingShare();}
+async function loadData(){const [c,r,e,p,s,d]=await Promise.all([fetch("./data/customers.json",{cache:"no-store"}).then(x=>x.json()),fetch("./data/recipes.json",{cache:"no-store"}).then(x=>x.json()),fetch("./data/effects.json",{cache:"no-store"}).then(x=>x.json()),fetch("./data/customer-portraits.json",{cache:"no-store"}).then(x=>x.json()).catch(()=>({customers:[]})),fetch("./data/customer-schedules.json",{cache:"no-store"}).then(x=>x.json()).catch(()=>({schedules:[]})),fetch("./data/drugs.json",{cache:"no-store"}).then(x=>x.json()).catch(()=>({drugs:[]}))]);state.customers=Array.isArray(c.customers)?c.customers:[];state.recipes=Array.isArray(r.recipes)?r.recipes:[];state.effects=Array.isArray(e.effects)?e.effects:[];state.portraitRegistry=new Map((Array.isArray(p.customers)?p.customers:[]).map(x=>[Number(x.id),x.portrait||{}]));state.customerSchedules=new Map((Array.isArray(s.schedules)?s.schedules:[]).map(x=>[Number(x.id),x]));const drugSelect=$("#drugFilter");if(drugSelect){const current=drugSelect.value;drugSelect.innerHTML='<option value="">Všechny drogy</option>'+((Array.isArray(d.drugs)?d.drugs:[]).map(x=>"<option value=\""+esc(x.name)+"\">"+esc(x.name)+"</option>").join(""));if([...drugSelect.options].some(o=>o.value===current))drugSelect.value=current;}$("#customerCountBadge").textContent=state.customers.length;const districts=[...new Set(state.customers.map(x=>x.district))].sort();$("#districtFilter").insertAdjacentHTML("beforeend",districts.map(x=>"<option>"+esc(x)+"</option>").join(""));renderCategories();renderCustomers();renderRecipes();applySettings();applyIncomingShare();}
 
 function cMatch(c,q,d,t,day,pinOnly){const s=customerSchedule(c);if(d&&c.district!==d)return false;if(t&&c.tier!==t)return false;if(day&&s?.preferred_day!==day)return false;if(pinOnly&&!customerMapVerified(c))return false;if(!q)return true;return[c.name,c.district,c.tier,...c.preferred_effects].join(" ").toLowerCase().includes(q);}
 function renderCustomers(){
