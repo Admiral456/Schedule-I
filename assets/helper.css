@@ -417,3 +417,13 @@ button,input,select,textarea{max-width:100%}
 }
 
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+
+/* Final mobile cleanup */
+.customer-pin-canvas img{color:transparent;font-size:0}
+.customer-pin-canvas img[alt=""]{font-size:0}
+@media(max-width:620px){
+  .header-icon-actions .s1-update-btn{grid-column:1/-1;width:100%;min-height:36px!important;margin-top:1px!important}
+  .customer-pin-map{overflow:auto;-webkit-overflow-scrolling:touch}
+  .customer-pin-canvas{width:900px;max-width:none}
+}
