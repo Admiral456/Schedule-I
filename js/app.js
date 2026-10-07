@@ -3,9 +3,30 @@ const $=s=>document.querySelector(s);
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const savedKey="schedule1-helper-saved-v2",profileKey="schedule1-helper-profile-v1",settingsKey="schedule1-helper-settings-v1",shareKey="schedule1-helper-share-v1";
 const customerMapVerified=c=>c?.map_position?.status==="verified-source-map-coordinate"||c?.map_position?.status==="verified-external-pin";const searchNorm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();const mapCategories=[{"name":"ATM","count":16},{"name":"Recycler","count":13},{"name":"Telephone Booth","count":19},{"name":"Vending Machine","count":12},{"name":"Dead Drop","count":25},{"name":"Area / Location","count":40},{"name":"Stash","count":3},{"name":"RV","count":1},{"name":"Purchasable Area","count":5},{"name":"Main Mission","count":16},{"name":"Post Office","count":1},{"name":"Laundromat","count":1},{"name":"Car Wash","count":1},{"name":"Taco Ticklers","count":1},{"name":"Bleuball's Boutique","count":1},{"name":"Barbershop","count":1},{"name":"Casino","count":1},{"name":"Hardware","count":2},{"name":"Gas Mart","count":2},{"name":"Car Service","count":2},{"name":"Pawn Shop","count":1},{"name":"Ray's Realty","count":1},{"name":"Shred Shack","count":1},{"name":"Thrifty Threads","count":1},{"name":"Top Tattoo","count":1},{"name":"Warehouse","count":1},{"name":"Suppliers","count":6},{"name":"Dealers","count":6},{"name":"Customers","count":62}];
-function showTab(name){document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===name));document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+name));window.scrollTo({top:0,behavior:"smooth"});}\ndocument.addEventListener("s1-map-open",e=>{const d=e.detail||{};if(d.type==="customer"){state.selectedCustomer=Number(d.id);$("#customerSearch").value=d.name||"";showTab("customers");renderCustomers();return;}if(["dealer","property","business"].includes(d.type)){const kind=d.kind||({dealer:"dealers",property:"properties",business:"businesses"}[d.type]);$("#catalogKind").value=kind;$("#catalogSearch").value=d.name||"";showTab("catalog");$("#catalogSearch").dispatchEvent(new Event("input",{bubbles:true}));}});
-document.addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(b?.dataset.tab){e.preventDefault();showTab(b.dataset.tab);}});$("#customerPinFilter")?.addEventListener("change",renderCustomers);
-document.querySelectorAll("[data-tab-jump]").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tabJump)));
+function showTab(name){
+  const target=String(name||"").trim();
+  if(!target)return;
+  document.querySelectorAll("[data-tab]").forEach(b=>{
+    const t=b.getAttribute("data-tab");
+    b.classList.toggle("active",t===target);
+    b.setAttribute("aria-current",t===target?"page":"false");
+  });
+  document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+target));
+  const active=document.querySelector("#view-"+CSS.escape(target));
+  if(active){active.setAttribute("tabindex","-1");active.focus({preventScroll:true});}
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+// One navigation controller for every header/footer action. This also handles
+// buttons injected later by enhancement modules (Products/Planner/etc.).
+document.addEventListener("click",e=>{
+  const tab=e.target.closest("[data-tab]");
+  if(tab){e.preventDefault();e.stopImmediatePropagation();showTab(tab.dataset.tab);return;}
+  const jump=e.target.closest("[data-tab-jump]");
+  if(jump){e.preventDefault();e.stopImmediatePropagation();showTab(jump.dataset.tabJump);}
+},true);
+document.addEventListener("s1-map-open",e=>{const d=e.detail||{};if(d.type==="customer"){state.selectedCustomer=Number(d.id);$("#customerSearch").value=d.name||"";showTab("customers");renderCustomers();return;}if(["dealer","property","business"].includes(d.type)){const kind=d.kind||({dealer:"dealers",property:"properties",business:"businesses"}[d.type]);$("#catalogKind").value=kind;$("#catalogSearch").value=d.name||"";showTab("catalog");$("#catalogSearch").dispatchEvent(new Event("input",{bubbles:true}));}});
+$("#customerPinFilter")?.addEventListener("change",renderCustomers);
 function searchEverything(raw){
  const value=searchNorm(raw);
  if(!value)return;
