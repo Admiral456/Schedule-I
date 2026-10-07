@@ -7,32 +7,32 @@
     "Uptown": {
       "width": 670,
       "height": 570,
-      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/uptown.png"
+      "image_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/main/schedule_i_poptracker_razgriz/images/maps/uptown.png"
     },
     "Northtown": {
       "width": 770,
       "height": 560,
-      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/northtown.png"
+      "image_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/main/schedule_i_poptracker_razgriz/images/maps/northtown.png"
     },
     "Westville": {
       "width": 770,
       "height": 500,
-      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/westville.png"
+      "image_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/main/schedule_i_poptracker_razgriz/images/maps/westville.png"
     },
     "Downtown": {
       "width": 850,
       "height": 580,
-      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/downtown.png"
+      "image_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/main/schedule_i_poptracker_razgriz/images/maps/downtown.png"
     },
     "Docks": {
       "width": 750,
       "height": 600,
-      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/docks.png"
+      "image_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/main/schedule_i_poptracker_razgriz/images/maps/docks.png"
     },
     "Suburbia": {
       "width": 730,
       "height": 560,
-      "image_url": "https://github.com/RazgrizEast/schedule-1-poptracker-razgriz/raw/main/schedule_i_poptracker_razgriz/images/maps/suburbia.png"
+      "image_url": "https://raw.githubusercontent.com/RazgrizEast/schedule-1-poptracker-razgriz/main/schedule_i_poptracker_razgriz/images/maps/suburbia.png"
     }
   },
   "coordinates": [
