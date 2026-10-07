@@ -145,6 +145,27 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script type="module" src="./js/app.js"></script><script type="module" src="./js/shared.js"></script><script type="module" src="./js/ui-features.js"></script><script type="module" src="./js/catalog.js"></script><script type="module" src="./js/asset-ui.js"></script><script type="module" src="./js/asset-registry.js"></script><script type="module" src="./js/map-layer.js"></script>
 <script type="module" src="./js/recipe-assets-ui.js"></script>
 <script src="./js/ultimate-upgrade.js"></script>
-<script src="./js/saved-tools.js"></script><script src="./js/products.js"></script>
+<script src="./js/saved-tools.js"></script><script src="./js/products.js"></script><script>
+/* Navigation safety net: keeps the upper navigation usable even when an optional enhancement module fails. */
+(()=>{
+  function navigate(name){
+    if(!name)return;
+    document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+name));
+    document.querySelectorAll('.tab[data-tab],.s1-extra-nav button[data-s1tab]').forEach(b=>{
+      const target=b.dataset.tab||b.dataset.s1tab;
+      b.classList.toggle('active',target===name);
+    });
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  document.addEventListener('click',e=>{
+    const b=e.target.closest('[data-tab]');
+    if(b){ e.preventDefault(); e.stopImmediatePropagation(); navigate(b.dataset.tab); return; }
+    const x=e.target.closest('[data-tab-jump]');
+    if(x){ e.preventDefault(); e.stopImmediatePropagation(); navigate(x.dataset.tabJump); return; }
+  },true);
+  window.s1Navigate=navigate;
+})();
+</script>
+
 <script defer src="js/customer-pins.js"></script>
 </body></html>
