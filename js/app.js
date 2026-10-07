@@ -182,6 +182,67 @@ $("#clearLocalData").addEventListener("click",()=>{if(!confirm("Smazat lokální
   if(!window.supabase){console.error("Supabase JS klient není načten.");return;}
   window.s1Supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
   const authCard=document.querySelector("#view-account .account-card:nth-child(3)");
+  function ensureAuthGate(){
+    if(document.querySelector("#s1AuthGate"))return;
+    const style=document.createElement("style");
+    style.id="s1-auth-gate-style";
+    style.textContent=`
+      html.s1-login-locked,body.s1-login-locked{overflow:hidden!important}
+      #s1AuthGate{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:18px;background:rgba(4,7,9,.78);backdrop-filter:blur(18px) saturate(125%)}
+      #s1AuthGate[hidden]{display:none}
+      .s1-auth-gate-card{width:min(460px,100%);border:1px solid var(--border-strong);border-radius:22px;background:linear-gradient(180deg,#121a20,#0b1116);box-shadow:0 28px 100px rgba(0,0,0,.58);padding:26px}
+      .s1-auth-gate-kicker{color:var(--accent);font-size:10px;font-weight:850;letter-spacing:.18em}
+      .s1-auth-gate-card h2{margin:7px 0 8px;font-size:28px;letter-spacing:-.035em}
+      .s1-auth-gate-card p{margin:0 0 18px;color:var(--muted);font-size:11px;line-height:1.55}
+      .s1-auth-gate-form{display:grid;gap:9px}
+      .s1-auth-gate-form input{width:100%;min-height:44px;border:1px solid var(--border);background:var(--panel-2);color:var(--text);border-radius:12px;padding:9px 11px;box-sizing:border-box}
+      .s1-auth-gate-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+      .s1-auth-gate-actions .btn{width:100%}
+      #s1AuthGateStatus{min-height:18px;color:var(--muted);font-size:10px;line-height:1.45}
+      #s1AuthGateStatus.good{color:var(--accent)}
+      #s1AuthGateStatus.error{color:var(--danger)}
+      .s1-auth-gate-lock{margin-top:13px;padding-top:12px;border-top:1px solid var(--border);color:var(--muted-2);font-size:9px;line-height:1.45}
+      @media(max-width:520px){#s1AuthGate{padding:12px}.s1-auth-gate-card{padding:20px;border-radius:18px}.s1-auth-gate-card h2{font-size:24px}.s1-auth-gate-actions{grid-template-columns:1fr}}
+    `;
+    document.head.appendChild(style);
+    const gate=document.createElement("div");
+    gate.id="s1AuthGate";
+    gate.hidden=true;
+    gate.setAttribute("role","dialog");
+    gate.setAttribute("aria-modal","true");
+    gate.innerHTML=`<div class="s1-auth-gate-card"><div class="s1-auth-gate-kicker">SCHEDULE 1 HELPER</div><h2>Přihlášení je povinné</h2><p>Pro používání Helperu se musíš nejdřív přihlásit. Přihlášení probíhá přes email a jednorázový ověřovací kód.</p><form class="s1-auth-gate-form" id="s1AuthGateForm"><label class="field-label" for="s1GateEmail">Email</label><input id="s1GateEmail" type="email" autocomplete="email" placeholder="tvuj@email.cz" required><div class="s1-auth-gate-actions"><button class="btn" id="s1GateSend" type="button">Poslat kód</button><button class="btn primary" id="s1GateVerify" type="submit">Přihlásit</button></div><label class="field-label" for="s1GateCode">Ověřovací kód</label><input id="s1GateCode" inputmode="numeric" autocomplete="one-time-code" placeholder="Kód z emailu" required><div id="s1AuthGateStatus" aria-live="polite"></div></form><div class="s1-auth-gate-lock">Toto okno nejde zavřít ani přeskočit. Po úspěšném přihlášení se Helper automaticky odemkne.</div></div>`;
+    document.body.appendChild(gate);
+    const email=gate.querySelector("#s1GateEmail"),code=gate.querySelector("#s1GateCode"),status=gate.querySelector("#s1AuthGateStatus"),send=gate.querySelector("#s1GateSend"),verify=gate.querySelector("#s1GateVerify");
+    const setStatus=(message,type="")=>{status.textContent=message;status.className=type;};
+    const setLocked=locked=>{gate.hidden=!locked;document.documentElement.classList.toggle("s1-login-locked",locked);document.body.classList.toggle("s1-login-locked",locked);if(locked)setTimeout(()=>email.focus(),0);};
+    send.onclick=async()=>{
+      const value=email.value.trim();
+      if(!/^\\S+@\\S+\\.\\S+$/.test(value)){setStatus("Zadej platný email.","error");email.focus();return;}
+      send.disabled=true;setStatus("Odesílám ověřovací kód…");
+      try{
+        const {error}=await window.s1Supabase.auth.signInWithOtp({email:value,options:{shouldCreateUser:true}});
+        if(error)throw error;
+        setStatus("Kód byl odeslán na email. Zadej ho níže.","good");code.focus();
+      }catch(err){setStatus("Kód se nepodařilo odeslat: "+(err?.message||"neznámá chyba"),"error");}
+      finally{send.disabled=false;}
+    };
+    gate.querySelector("#s1AuthGateForm").onsubmit=async e=>{
+      e.preventDefault();
+      const value=email.value.trim(),token=code.value.trim();
+      if(!/^\\S+@\\S+\\.\\S+$/.test(value)){setStatus("Zadej platný email.","error");return;}
+      if(!token){setStatus("Zadej ověřovací kód.","error");return;}
+      verify.disabled=true;setStatus("Ověřuji přihlášení…");
+      try{
+        const {error}=await window.s1Supabase.auth.verifyOtp({email:value,token,type:"email"});
+        if(error)throw error;
+        setStatus("Přihlášení proběhlo úspěšně.","good");
+        await refreshAuth();
+      }catch(err){setStatus("Kód není platný nebo vypršel: "+(err?.message||"neznámá chyba"),"error");}
+      finally{verify.disabled=false;}
+    };
+    gate._setLocked=setLocked;
+  }
+
   function ensureAuthUI(){
     if(!authCard||document.querySelector("#s1ServerAuthUI"))return;
     const old=authCard.querySelector(".login-steps");
@@ -199,7 +260,10 @@ $("#clearLocalData").addEventListener("click",()=>{if(!confirm("Smazat lokální
   function updateVerifyButton(){const b=document.querySelector("#verifyAuthCode");if(b)b.disabled=!document.querySelector("#authEmail")?.value.trim()||!document.querySelector("#authCode")?.value.trim();}
   async function refreshAuth(){
     const {data}=await window.s1Supabase.auth.getSession();window.s1Session=data?.session||null;
+    ensureAuthGate();
     ensureAuthUI();
+    document.querySelector("#s1AuthGate")?._setLocked(!window.s1Session);
+    if(window.s1Session){document.querySelector("#s1AuthGateStatus")?.replaceChildren();}
     const status=document.querySelector("#serverAuthStatus");if(status)status.textContent=window.s1Session?"Přihlášen: "+(window.s1Session.user.email||""):"Nepřihlášen";
     const signout=document.querySelector("#serverSignOut");if(signout)signout.disabled=!window.s1Session;
     const name=document.querySelector("#displayName");
@@ -230,5 +294,5 @@ $("#clearLocalData").addEventListener("click",()=>{if(!confirm("Smazat lokální
     document.dispatchEvent(new CustomEvent("s1-profile-saved"));alert("Profil uložen na serveru.");
   }
   window.s1RefreshAuth=refreshAuth;
-  document.addEventListener("DOMContentLoaded",async()=>{ensureAuthUI();window.s1Supabase.auth.onAuthStateChange(()=>refreshAuth());await refreshAuth();});
+  document.addEventListener("DOMContentLoaded",async()=>{ensureAuthGate();ensureAuthUI();window.s1Supabase.auth.onAuthStateChange(()=>refreshAuth());await refreshAuth();});
 })();
